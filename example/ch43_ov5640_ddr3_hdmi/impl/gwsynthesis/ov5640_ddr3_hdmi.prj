@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25A" package="UBGA324" speed="1" partNumber="GW5A-LV25UG324ES"/>
+    <FileList>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\DVP_Capture\DVP_Capture.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_init\camera_init.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\camera_pll\camera_pll.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ddr_pll\ddr_pll.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\gowin_ddr\gowin_ddr.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\gowin_pll\gowin_pll.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ov5640_ddr3_hdmi.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\rd_data_fifo\rd_data_fifo.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\vga\disp_driver.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\vga\disp_parameter_cfg.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\vga\dvi_encoder.v" type="verilog"/>
+        <File path="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\wr_data_fifo\wr_data_fifo.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\impl\gwsynthesis\ov5640_ddr3_hdmi.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="gao_ov5640_ddr_hdmi"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

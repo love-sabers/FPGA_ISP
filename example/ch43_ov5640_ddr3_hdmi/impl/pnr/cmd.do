@@ -1,0 +1,12 @@
+-d H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\impl\gwsynthesis\ov5640_ddr3_hdmi.vg
+-p GW5A-25A-UBGA324-1
+-pn GW5A-LV25UG324ES
+-cst H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\src\ov5640_ddr3_hdmi.cst
+-cfg H:\01_gaoyun\gao_project\43_ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\ov5640_ddr3_hdmi\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
