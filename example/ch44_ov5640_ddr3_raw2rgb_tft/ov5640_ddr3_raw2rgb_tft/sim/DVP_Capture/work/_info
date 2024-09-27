@@ -1,0 +1,63 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/01_gaoyun/gao_project/39_uart_ddr3_tft_hdmi_sobel_filter/uart_ddr3_tft_hdmi_sobel_filter/sim
+T_opt
+!s110 1695886138
+V1n=^>64fOF[52NAZfU=J63
+04 14 4 work DVP_Capture_tb fast 0
+=1-1ca0b877e192-65152b3a-3a0-2f4c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.7;67
+vDVP_Capture
+Z1 !s110 1695886121
+!i10b 1
+!s100 HU=hMWAeFQJSFehDb317i1
+INWSiDcHJ]^5O;@=M;T4cM3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dH:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/sim/DVP_Capture
+w1682304247
+8H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture.v
+FH:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture.v
+L0 18
+Z4 OL;L;10.7;67
+r1
+!s85 0
+31
+Z5 !s108 1695886121.000000
+!s107 H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@d@v@p_@capture
+vDVP_Capture_tb
+R1
+!i10b 1
+!s100 6n^AdZ;_o83:OgKWC@o181
+I1HYDGO08XWF[P;Tlc@]YW3
+R2
+R3
+w1658962605
+8H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture_tb.v
+FH:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture_tb.v
+L0 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|H:/01_gaoyun/gao_project/41_ov5640_ddr3_tft/src/DVP_Capture/DVP_Capture_tb.v|
+!i113 0
+R6
+R0
+n@d@v@p_@capture_tb

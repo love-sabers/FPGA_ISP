@@ -1,0 +1,136 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\DVP_Capture\DVP_Capture.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\camera_init.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\ov5640_init_table_jpeg.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\ov5640_init_table_rgb.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\i2c_control\i2c_bit_shift.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\i2c_control\i2c_control.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v'
+Undeclared symbol 'app_rd_data_end', assumed default net type 'wire'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":145)
+Undeclared symbol 'app_sr_active', assumed default net type 'wire'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":148)
+Undeclared symbol 'app_ref_ack', assumed default net type 'wire'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":149)
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v'
+WARN  (EX2830) : Data object 'wr_rst' is already declared("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":48)
+Previous declaration of 'wr_rst' is from here("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":45)
+WARN  (EX3671) : Second declaration of 'wr_rst' is ignored("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":48)
+WARN  (EX3628) : Redeclaration of ANSI port 'app_addr' is not allowed("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":55)
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr_pll\ddr_pll.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\gowin_ddr\gowin_ddr.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\gowin_pll\gowin_pll.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v'
+Undeclared symbol 'wr_load', assumed default net type 'wire'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":144)
+Undeclared symbol 'wrfifo_wren', assumed default net type 'wire'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":163)
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\rd_data_fifo\rd_data_fifo.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_driver.v'
+Analyzing included file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_parameter_cfg.v'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_driver.v":16)
+Back to file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_driver.v'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_driver.v":16)
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_parameter_cfg.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\wr_data_fifo\wr_data_fifo.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_pll\camera_pll.v'
+Compiling module 'gao_ov5640_ddr_hdmi'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":1)
+Compiling module 'camera_pll'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_pll\camera_pll.v":10)
+Compiling module 'Gowin_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'camera_init(IMAGE_WIDTH=1280,IMAGE_HEIGHT=720)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\camera_init.v":18)
+Compiling module 'ov5640_init_table_rgb(IMAGE_WIDTH=1280,IMAGE_HEIGHT=720,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\ov5640_init_table_rgb.v":18)
+Compiling module 'i2c_control'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\i2c_control\i2c_control.v":18)
+Compiling module 'i2c_bit_shift'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\camera_init\i2c_control\i2c_bit_shift.v":18)
+Compiling module 'DVP_Capture'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\DVP_Capture\DVP_Capture.v":18)
+Compiling module 'ddr3_ctrl_2port'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":1)
+Compiling module 'fifo_ddr3_adapter'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":2)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 28("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":251)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 28("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":255)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 28("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":265)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 28("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":269)
+Compiling module 'rd_data_fifo'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\rd_data_fifo\rd_data_fifo.v":1555)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\rd_data_fifo\rd_data_fifo.v":0)
+Compiling module 'wr_data_fifo'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\wr_data_fifo\wr_data_fifo.v":830)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\wr_data_fifo\wr_data_fifo.v":0)
+Compiling module 'DDR3_Memory_Interface_Top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":13673)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'burst'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":153)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'ddr3_dq'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":195)
+WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'ddr3_dqs_n'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":196)
+WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'ddr3_dqs_p'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":197)
+WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'ddr3_dm'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":208)
+Compiling module 'disp_driver'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\disp_driver.v":18)
+Compiling module 'dvi_encoder'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":38)
+Compiling module 'encode'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":106)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":133)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":134)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":161)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":162)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":178)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":179)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":180)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":181)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":192)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":193)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":194)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":195)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":197)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":198)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":199)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":199)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":200)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":202)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":203)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":204)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":205)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":209)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":211)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":212)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":213)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":214)
+Compiling module 'serdes_4b_10to1'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\vga\dvi_encoder.v":222)
+Compiling module 'Gowin_DDR_1'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\gowin_ddr\gowin_ddr.v":9)
+NOTE  (EX0101) : Current top module is "gao_ov5640_ddr_hdmi"
+[5%] Running netlist conversion ...
+WARN  (CV0021) : Inout IO_ddr_dq[31:16] is unused("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":38)
+WARN  (CV0021) : Inout IO_ddr_dqs[3:2] is unused("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":39)
+WARN  (CV0021) : Inout IO_ddr_dqs_n[3:2] is unused("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\ISP_project\src\top.v":40)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+ERROR (RP0008) : There is no PLLA resource in current device, please change device
+GowinSynthesis finish

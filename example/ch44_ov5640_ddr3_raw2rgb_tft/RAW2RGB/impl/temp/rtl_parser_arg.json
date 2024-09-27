@@ -1,0 +1,33 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB_TOP.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/c_shift_ram_0/c_shift_ram_0.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/disp_driver.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/disp_parameter_cfg.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/impl/temp/rtl_parser.result",
+ "Top" : "RAW2RGB_TOP",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
