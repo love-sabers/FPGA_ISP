@@ -1,0 +1,8 @@
+Reading netlist file: "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg"
+Parsing netlist file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg" completed
+Processing netlist completed
+Reading constraint file: "D:\ren'ren\Documents\fpga\fpgaProject\test1\src\test1.cst"
+ERROR  (CT1136) : Bank 4 vccio(1.5) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'camera_sclk_obuf' : IO_TYPE = LVCMOS25 in the same bank
+ERROR  (CT1136) : Bank 4 vccio(1.5) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'camera_sdat_iobuf' : IO_TYPE = LVCMOS25 in the same bank
+ERROR  (CT1136) : Bank 4 vccio(1.5) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'clk50M_ibuf' : IO_TYPE = LVCMOS25 in the same bank
+Physical Constraint parsed completed with errors
