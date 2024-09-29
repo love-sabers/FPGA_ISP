@@ -1,0 +1,48 @@
+[
+ {
+  "InstFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB_TOP.v",
+  "InstLine" : 3,
+  "InstName" : "RAW2RGB_TOP",
+  "ModuleFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB_TOP.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "RAW2RGB_TOP",
+  "SubInsts" : [
+   {
+    "InstFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB_TOP.v",
+    "InstLine" : 32,
+    "InstName" : "RAW2RGB",
+    "ModuleFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "RAW2RGB",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB.v",
+      "InstLine" : 44,
+      "InstName" : "c_shift_ram_0",
+      "ModuleFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/c_shift_ram_0/c_shift_ram_0.v",
+      "ModuleLine" : 63057,
+      "ModuleName" : "c_shift_ram_0",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/c_shift_ram_0/c_shift_ram_0.v",
+        "InstLine" : 63072,
+        "InstName" : "u_RAM_based_shift_reg",
+        "ModuleFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/c_shift_ram_0/c_shift_ram_0.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "~RAM_based_shift_reg.c_shift_ram_0"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/RAW2RGB_TOP.v",
+    "InstLine" : 45,
+    "InstName" : "disp_driver",
+    "ModuleFile" : "H:/01_gaoyun/gao_project/44_ov5640_ddr3_raw2rgb_tft_hdmi/RAW2RGB/src/disp_driver.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "disp_driver"
+   }
+  ]
+ }
+]

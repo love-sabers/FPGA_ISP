@@ -1,0 +1,3 @@
+[submodule "i2c_control"]
+	path = i2c_control
+	url = ../i2c_control
