@@ -2,79 +2,79 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/DVP_Capture/DVP_Capture.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/DVP_Capture/DVP_Capture.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_init/camera_init.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_init/camera_init.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_init/i2c_control/i2c_bit_shift.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_init/i2c_control/i2c_bit_shift.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_init/i2c_control/i2c_control.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_init/i2c_control/i2c_control.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_init/ov5640_init_table_jpeg.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_init/ov5640_init_table_jpeg.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_init/ov5640_init_table_rgb.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_init/ov5640_init_table_rgb.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/camera_pll/camera_pll.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/camera_pll/camera_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_memory_interface/ddr3_memory_interface.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ddr3_memory_interface/ddr3_memory_interface.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr_pll/ddr_pll.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ddr_pll/ddr_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_ddr/gowin_ddr.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/gowin_ddr/gowin_ddr.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_pll/gowin_pll.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/gowin_pll/gowin_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ov5640_ddr3_hdmi.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ov5640_ddr3_hdmi.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/rd_data_fifo/rd_data_fifo.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/rd_data_fifo/rd_data_fifo.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/disp_driver.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/vga/disp_driver.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/disp_parameter_cfg.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/vga/disp_parameter_cfg.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/vga/dvi_encoder.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/wr_data_fifo/wr_data_fifo.v",
    "Type" : "verilog"
   }
  ],
@@ -82,7 +82,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/impl/temp/rtl_parser.result",
  "Top" : "gao_ov5640_ddr_hdmi",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
