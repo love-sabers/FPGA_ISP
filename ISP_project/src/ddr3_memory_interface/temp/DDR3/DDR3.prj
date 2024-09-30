@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25" package="UBGA324" speed="1" partNumber="GW5A-LV25UG324ES"/>
+    <FileList>
+        <File path="H:/0_gaoyun_p/1.9.9Beta-2/Gowin/Gowin_V1.9.9Beta-2/IDE/ipcore/DDR3/data/5at_ddr3_1_4code_hs/5at_ddr3_1_4code_hs.v" type="verilog"/>
+        <File path="H:/0_gaoyun_p/1.9.9Beta-2/Gowin/Gowin_V1.9.9Beta-2/IDE/ipcore/DDR3/data/5at_ddr3_1_4code_hs/DDR3_TOP.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="include_path" value="H:/0_gaoyun_p/1.9.9Beta-2/Gowin/Gowin_V1.9.9Beta-2/IDE/ipcore/DDR3/data/5at_ddr3_1_4code_hs"/>
+        <Option type="include_path" value="H:/01_gaoyun/gao_project/53_ov5640_ddr3_hdmi/ov5640_ddr3_hdmi/ov5640_ddr3_hdmi/src/ddr3_memory_interface/temp/DDR3"/>
+        <Option type="output_file" value="ddr3_memory_interface.vg"/>
+        <Option type="output_template" value="ddr3_memory_interface_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>

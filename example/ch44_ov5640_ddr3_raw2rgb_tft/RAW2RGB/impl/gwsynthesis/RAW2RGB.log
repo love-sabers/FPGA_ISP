@@ -1,0 +1,72 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v'
+Analyzing included file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_parameter_cfg.v'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":15)
+Back to file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":15)
+Analyzing Verilog file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_parameter_cfg.v'
+Analyzing Verilog file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v'
+Analyzing Verilog file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v'
+Analyzing Verilog file 'H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\c_shift_ram_0\c_shift_ram_0.v'
+Compiling module 'RAW2RGB_TOP'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":3)
+Compiling module 'RAW2RGB'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":3)
+Compiling module 'c_shift_ram_0'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\c_shift_ram_0\c_shift_ram_0.v":63057)
+Compiling module '**'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\c_shift_ram_0\c_shift_ram_0.v":0)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":67)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":68)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":70)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":71)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":73)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":74)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":83)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":84)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":85)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":92)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":93)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":94)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":101)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":102)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":103)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":110)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":111)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":112)
+Compiling module 'disp_driver'("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":17)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":83)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":85)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":87)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":94)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":97)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":99)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":102)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":106)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":109)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":110)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\disp_driver.v":111)
+WARN  (EX2629) : Delay control is not supported for synthesis("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":64)
+WARN  (EX1998) : Net 'Clk' does not have a driver("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":13)
+WARN  (EX1998) : Net 'Rst_n' does not have a driver("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":14)
+NOTE  (EX0101) : Current top module is "RAW2RGB_TOP"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input clk is unused("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":4)
+WARN  (CV0016) : Input rst_n is unused("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":5)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "RAW2RGB" instantiated to "RAW2RGB" is swept in optimizing("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":43)
+WARN  (NL0002) : The module "c_shift_ram_0" instantiated to "c_shift_ram_0" is swept in optimizing("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB.v":50)
+WARN  (NL0002) : The module "~RAM_based_shift_reg.c_shift_ram_0" instantiated to "u_RAM_based_shift_reg" is swept in optimizing("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\c_shift_ram_0\c_shift_ram_0.v":63078)
+WARN  (NL0002) : The module "disp_driver" instantiated to "disp_driver" is swept in optimizing("H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\src\RAW2RGB_TOP.v":59)
+[95%] Generate netlist file "H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\impl\gwsynthesis\RAW2RGB.vg" completed
+[100%] Generate report file "H:\01_gaoyun\gao_project\61_ov5640_ddr3_raw2rgb_tft_hdmi\RAW2RGB\impl\gwsynthesis\RAW2RGB_syn.rpt.html" completed
+GowinSynthesis finish
