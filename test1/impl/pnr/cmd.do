@@ -1,0 +1,15 @@
+-d D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg
+-p GW5AST-138B-PBGA676A-1
+-pn GW5AST-LV138PG676AES
+-cst D:\ren'ren\Documents\fpga\fpgaProject\test1\src\test1.cst
+-cfg D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
+-cst_error
+-correct_hold 1
+-route_maxfan 23
