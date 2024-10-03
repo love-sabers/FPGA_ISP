@@ -1,0 +1,16 @@
+-d D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\gwsynthesis\remake.vg
+-p GW5AST-138B-FCPBGA676A-1
+-pn GW5AST-LV138FPG676AES
+-cst D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.cst
+-cfg D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
+-cst_error
+-route_option 2
+-correct_hold 1
+-route_maxfan 23

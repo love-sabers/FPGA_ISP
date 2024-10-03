@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
+    <FileList>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\DVP_Capture\DVP_Capture.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\camera_init.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\fifo_top\rd_data_fifo.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\ddr_pll.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\gowin_pll.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\hdmi_pll.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\reset.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\disp_driver.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\video_timing_ctrl.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\gwsynthesis\remake.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

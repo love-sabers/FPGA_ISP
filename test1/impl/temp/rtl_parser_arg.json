@@ -82,10 +82,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_clk_drv.v",
    "Type" : "verilog"
   },
@@ -99,6 +95,10 @@
   },
   {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
    "Type" : "verilog"
   }
  ],
