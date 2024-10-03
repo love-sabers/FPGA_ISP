@@ -1,0 +1,73 @@
+{
+ "Device" : "GW5AST-138B",
+ "Files" : [
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/ddr3_memory_interface/ddr3_memory_interface.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/dvi-tx/dvi_tx_clk_drv.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/dvi-tx/dvi_tx_tmds_enc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/dvi-tx/dvi_tx_tmds_phy.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/dvi-tx/dvi_tx_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/fifo_top/rd_data_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/fifo_top/wr_data_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/ddr_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/hdmi_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/disp_driver.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/video_timing_ctrl.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

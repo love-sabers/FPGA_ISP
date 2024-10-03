@@ -1,7 +1,7 @@
-Reading netlist file: "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg"
-Parsing netlist file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg" completed
+Reading netlist file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\gwsynthesis\test1.vg"
+Parsing netlist file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\gwsynthesis\test1.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\ren'ren\Documents\fpga\fpgaProject\test1\src\test1.cst"
+Reading constraint file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\src\test1.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -10,19 +10,16 @@ Running placement......
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
-[70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'camera_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk50M_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\test1.pin.html" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\test1.rpt.html" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\test1.rpt.txt" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\test1.tr.html" completed
-Sun Sep 29 14:36:57 2024
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\pnr\test1.pin.html" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\pnr\test1.rpt.html" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\pnr\test1.rpt.txt" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\test1\impl\pnr\test1.tr.html" completed
+Mon Sep 30 16:11:33 2024
 

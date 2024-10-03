@@ -18,8 +18,8 @@
         <File path="src/ddr_pll/ddr_pll.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_ddr/gowin_ddr.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
-        <File path="src/ov5640_ddr3_hdmi.v" type="file.verilog" enable="1"/>
         <File path="src/rd_data_fifo/rd_data_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/test1.v" type="file.verilog" enable="1"/>
         <File path="src/vga/disp_driver.v" type="file.verilog" enable="1"/>
         <File path="src/vga/disp_parameter_cfg.v" type="file.verilog" enable="1"/>
         <File path="src/vga/dvi_encoder.v" type="file.verilog" enable="1"/>

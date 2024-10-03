@@ -54,10 +54,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ov5640_ddr3_hdmi.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/rd_data_fifo/rd_data_fifo.v",
    "Type" : "verilog"
   },
@@ -76,6 +72,10 @@
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/wr_data_fifo/wr_data_fifo.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/test1.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [
@@ -83,7 +83,7 @@
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/impl/temp/rtl_parser.result",
- "Top" : "gao_ov5640_ddr_hdmi",
+ "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }

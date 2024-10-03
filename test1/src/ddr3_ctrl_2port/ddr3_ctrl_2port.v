@@ -22,10 +22,10 @@ module ddr3_ctrl_2port(
     output  [15:0]  rfifo_dout          , //rd_fifo读出的数据信号 
 
     //DDR3   
-    inout   [15:0]     ddr3_dq             ,   //DDR3 数据
-    inout   [1:0]      ddr3_dqs_n          ,   //DDR3 dqs负
-    inout   [1:0]      ddr3_dqs_p          ,   //DDR3 dqs正  
-    output  [13:0]     ddr3_addr           ,   //DDR3 地址   
+    inout   [31:0]     ddr3_dq             ,   //DDR3 数据
+    inout   [3:0]      ddr3_dqs_n          ,   //DDR3 dqs负
+    inout   [3:0]      ddr3_dqs_p          ,   //DDR3 dqs正  
+    output  [14:0]     ddr3_addr           ,   //DDR3 地址   
     output  [2:0]      ddr3_ba             ,   //DDR3 banck 选择
     output             ddr3_ras_n          ,   //DDR3 行选择
     output             ddr3_cas_n          ,   //DDR3 列选择
@@ -35,7 +35,7 @@ module ddr3_ctrl_2port(
     output  [0:0]      ddr3_ck_n           ,   //DDR3 时钟负
     output  [0:0]      ddr3_cke            ,   //DDR3 时钟使能
     output  [0:0]      ddr3_cs_n           ,   //DDR3 片选
-    output  [1:0]      ddr3_dm             ,   //DDR3_dm
+    output  [3:0]      ddr3_dm             ,   //DDR3_dm
     output  [0:0]      ddr3_odt                //DDR3_odt   
 );
     wire    ui_clk;

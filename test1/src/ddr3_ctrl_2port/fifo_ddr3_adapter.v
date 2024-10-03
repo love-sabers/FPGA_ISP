@@ -1,4 +1,3 @@
-
 module fifo_ddr3_adapter(
     //时钟及复位
     input           ui_clk              ,    //DDR用户时钟信号
@@ -45,7 +44,6 @@ module fifo_ddr3_adapter(
     reg         wr_rst      ;       //输入源帧复位标志信号    
     reg         wr_load_d0  ;
     reg         wr_load_d1  ;  
-    reg         wr_rst      ;       //输入源帧复位标志
     reg         raddr_rst_h ;          //输出源的帧复位脉冲
     reg         rd_rst      ;               //输出源帧复位标志
     reg         rd_load_d0  ;
@@ -248,11 +246,11 @@ module fifo_ddr3_adapter(
                     WRITE:  begin
                         if(wr_addr_cnt == (wr_bust_len_a - 1) && app_rdy && app_wdf_rdy) begin
                             state <= DDR3_DONE;
-                            app_addr_wr <= app_addr_wr + 8; //DDR突发长度为8，一次写入8个数据
+                            app_addr_wr <= app_addr_wr + 28'd8; //DDR突发长度为8，一次写入8个数据
                         end
                         else if((app_rdy) && app_wdf_rdy) begin //写条件满足
                             wr_addr_cnt <= wr_addr_cnt + 1'd1;
-                            app_addr_wr <= app_addr_wr + 8;
+                            app_addr_wr <= app_addr_wr + 28'd8;
                         end
                         else begin //写条件不满足
                             wr_addr_cnt <= wr_addr_cnt;
@@ -262,11 +260,11 @@ module fifo_ddr3_adapter(
                     READ: begin
                         if(rd_addr_cnt == (rd_bust_len_a - 1) && app_rdy) begin
                             state <= DDR3_DONE;
-                            app_addr_rd <= app_addr_rd + 8;
+                            app_addr_rd <= app_addr_rd + 28'd8;
                         end
                         else if(app_rdy) begin
                             rd_addr_cnt <= rd_addr_cnt + 1'd1; //用户地址计数器每次加一
-                            app_addr_rd <= app_addr_rd + 8;
+                            app_addr_rd <= app_addr_rd + 28'd8;
                         end
                         else begin
                             rd_addr_cnt <= rd_addr_cnt;
