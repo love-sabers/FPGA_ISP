@@ -7,25 +7,25 @@ module ddr3_ctrl_2port(
     //用户接口
     input           rd_load             ,   //输出源更新信号
     input           wr_load             ,   //输入源更新信号
-    input   [27:0]  app_addr_rd_min     ,   //读DDR3的起始地址
-    input   [27:0]  app_addr_rd_max     ,   //读DDR3的结束地址
+    input   [29-1:0]  app_addr_rd_min     ,   //读DDR3的起始地址
+    input   [29-1:0]  app_addr_rd_max     ,   //读DDR3的结束地址
     input   [7:0]   rd_bust_len         ,   //从DDR3中读数据时的突发长度
-    input   [27:0]  app_addr_wr_min     ,   //写DD3的起始地址
-    input   [27:0]  app_addr_wr_max     ,   //写DDR的结束地址
+    input   [29-1:0]  app_addr_wr_min     ,   //写DD3的起始地址
+    input   [29-1:0]  app_addr_wr_max     ,   //写DDR的结束地址
     input   [7:0]   wr_bust_len         ,   //向DDR3中写数据时的突发长度
 
     input           wr_clk              ,//wr_fifo的写时钟信号
     input           wfifo_wren          , //wr_fifo的写使能信号
-    input   [15:0]  wfifo_din           , //写入到wr_fifo中的数据
+    input   [31:0]  wfifo_din           , //写入到wr_fifo中的数据
     input           rd_clk              , //rd_fifo的读时钟信号
     input           rfifo_rden          , //rd_fifo的读使能信号
-    output  [15:0]  rfifo_dout          , //rd_fifo读出的数据信号 
+    output  [31:0]  rfifo_dout          , //rd_fifo读出的数据信号 
 
     //DDR3   
-    inout   [15:0]     ddr3_dq             ,   //DDR3 数据
-    inout   [1:0]      ddr3_dqs_n          ,   //DDR3 dqs负
-    inout   [1:0]      ddr3_dqs_p          ,   //DDR3 dqs正  
-    output  [13:0]     ddr3_addr           ,   //DDR3 地址   
+    inout   [32-1:0]     ddr3_dq             ,   //DDR3 数据
+    inout   [4-1:0]      ddr3_dqs_n          ,   //DDR3 dqs负
+    inout   [4-1:0]      ddr3_dqs_p          ,   //DDR3 dqs正  
+    output  [15-1:0]     ddr3_addr           ,   //DDR3 地址   
     output  [2:0]      ddr3_ba             ,   //DDR3 banck 选择
     output             ddr3_ras_n          ,   //DDR3 行选择
     output             ddr3_cas_n          ,   //DDR3 列选择
@@ -35,7 +35,7 @@ module ddr3_ctrl_2port(
     output  [0:0]      ddr3_ck_n           ,   //DDR3 时钟负
     output  [0:0]      ddr3_cke            ,   //DDR3 时钟使能
     output  [0:0]      ddr3_cs_n           ,   //DDR3 片选
-    output  [1:0]      ddr3_dm             ,   //DDR3_dm
+    output  [4-1:0]      ddr3_dm             ,   //DDR3_dm
     output  [0:0]      ddr3_odt                //DDR3_odt   
 );
     wire    ui_clk;
@@ -43,13 +43,13 @@ module ddr3_ctrl_2port(
     wire    app_rdy;
     wire    app_wdf_rdy;
     wire    app_rd_data_valid;
-    wire [127:0] app_rd_data;
-    wire [27:0] app_addr;
+    wire [256-1:0] app_rd_data;
+    wire [29-1:0] app_addr;
     wire app_en;
     wire app_wdf_wren;
     wire app_wdf_end;
     wire [2:0] app_cmd;
-    wire [127:0] app_wdf_data;
+    wire [256-1:0] app_wdf_data;
 
     fifo_ddr3_adapter fifo_ddr3_adapter(
        .ui_clk(ui_clk)              ,    //DDR用户时钟信号
@@ -134,12 +134,12 @@ module ddr3_ctrl_2port(
 		.cmd_ready(app_rdy), //output cmd_ready
 		.cmd(app_cmd), //input [2:0] cmd
 		.cmd_en(app_en), //input cmd_en
-		.addr(app_addr), //input [27:0] addr
+		.addr(app_addr), //input [29-1:0] addr
 		.wr_data_rdy(app_wdf_rdy), //output wr_data_rdy
 		.wr_data(app_wdf_data), //input [127:0] wr_data
 		.wr_data_en(app_wdf_wren), //input wr_data_en
 		.wr_data_end(app_wdf_end), //input wr_data_end
-		.wr_data_mask(16'b0), //input [15:0] wr_data_mask
+		.wr_data_mask(32'b0), //input [15:0] wr_data_mask
 		.rd_data(app_rd_data), //output [127:0] rd_data
 		.rd_data_valid(app_rd_data_valid), //output rd_data_valid
 		.rd_data_end(app_rd_data_end), //output rd_data_end

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="rd_data_fifo" Register="112" Alu="32" Lut="306" Bsram="4"/>
+<Module name="rd_data_fifo" Register="112" Alu="32" Lut="478" Bsram="8"/>

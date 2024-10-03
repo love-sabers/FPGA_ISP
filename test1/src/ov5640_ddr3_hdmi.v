@@ -23,7 +23,7 @@ module gao_ov5640_ddr_hdmi(
 	output 	[2:0]   tmds_data_n,     //rgb
 
     //ddr
-    output [13:0] O_ddr_addr        ,
+    output [15-1:0] O_ddr_addr        ,
     output [2:0] O_ddr_ba           ,
     output O_ddr_cs_n               ,
     output O_ddr_ras_n              ,
@@ -34,10 +34,10 @@ module gao_ov5640_ddr_hdmi(
     output O_ddr_cke                ,
     output O_ddr_odt                ,
     output O_ddr_reset_n            ,
-    output [1:0] O_ddr_dqm          ,
-    inout [15:0] IO_ddr_dq          ,
-    inout [1:0] IO_ddr_dqs          ,
-    inout [1:0] IO_ddr_dqs_n        
+    output [4-1:0] O_ddr_dqm          ,
+    inout [32-1:0] IO_ddr_dq          ,
+    inout [4-1:0] IO_ddr_dqs          ,
+    inout [4-1:0] IO_ddr_dqs_n        
 
 );
     //Set IMAGE Size  
@@ -149,11 +149,11 @@ module gao_ov5640_ddr_hdmi(
 
     wire rdfifo_rden;
     wire wrfifo_clr;
-    wire [15:0] wrfifo_din;
+    wire [31:0] wrfifo_din;
     wire wrfifo_clk;
     wire rdfifo_clr;
     wire rdfifo_clk;
-    wire [15:0] rdfifo_dout;
+    wire [31:0] rdfifo_dout;
     
     
     assign wrfifo_clr = fifo_aclr;
@@ -162,9 +162,10 @@ module gao_ov5640_ddr_hdmi(
     assign rdfifo_clk = clk_vga;
     assign wrfifo_wren = fifo_wrreq;
     assign wrfifo_din = fifo_wrdata;
-    assign disp_data = {rdfifo_dout[15:11],3'd0,rdfifo_dout[10:5],2'd0,rdfifo_dout[4:0],3'd0}; 
+    assign disp_data = {rdfifo_dout[31:27], 3'd0, rdfifo_dout[26:21], 2'd0, rdfifo_dout[20:16], 3'd0};
 
-    wire [27:0] app_addr_max = IMAGE_WIDTH * IMAGE_HEIGHT;
+
+    wire [28:0] app_addr_max = IMAGE_WIDTH * IMAGE_HEIGHT;
     wire [7:0] burst_len = IMAGE_WIDTH[10:3];
 
     ddr3_ctrl_2port ddr3_ctrl_2port(
@@ -211,38 +212,55 @@ module gao_ov5640_ddr_hdmi(
    
 
     //HDMI显示
-    disp_driver disp_driver(
-		.ClkDisp(clk_vga),
-		.Rst_n(reset_n),
-		.Data(disp_data),
-		.DataReq(rdfifo_rden),
-		.H_Addr(hcount),
-		.V_Addr(vcount),
-		.Disp_HS(video_hs),
-		.Disp_VS(video_vs),
-		.Disp_Red(video_r),
-		.Disp_Green(video_g),
-		.Disp_Blue(video_b),
-        .Frame_Begin(),
-		.Disp_DE(video_de),
-		.Disp_PCLK()
-	);
-	
-	dvi_encoder u_dvi_encoder(
-		.pixelclk(clk_vga),// system clock
-		.pixelclk5x(clk_vgax5),// system clock x5
-		.rst_n(reset_n),// reset
-		.blue_din(video_b),// Blue data in
-		.green_din(video_g),// Green data in
-		.red_din(video_r),// Red data in
-		.hsync(video_hs),// hsync data
-		.vsync(video_vs),// vsync data
-		.de(video_de),// data enable
-		.tmds_clk_p(tmds_clk_p),
-		.tmds_clk_n(tmds_clk_n),
-		.tmds_data_p(tmds_data_p),//rgb
-		.tmds_data_n(tmds_data_n) //rgb
-	);
+//    disp_driver disp_driver(
+//		.ClkDisp(clk_vga),
+//		.Rst_n(reset_n),
+//		.Data(disp_data),
+//		.DataReq(rdfifo_rden),
+//		.H_Addr(hcount),
+//		.V_Addr(vcount),
+//		.Disp_HS(video_hs),
+//		.Disp_VS(video_vs),
+//		.Disp_Red(video_r),
+//		.Disp_Green(video_g),
+//		.Disp_Blue(video_b),
+//        .Frame_Begin(),
+//		.Disp_DE(video_de),
+//		.Disp_PCLK()
+//	);
+//	
+//	dvi_encoder u_dvi_encoder(
+//		.pixelclk(clk_vga),// system clock
+//		.pixelclk5x(clk_vgax5),// system clock x5
+//		.rst_n(reset_n),// reset
+//		.blue_din(video_b),// Blue data in
+//		.green_din(video_g),// Green data in
+//		.red_din(video_r),// Red data in
+//		.hsync(video_hs),// hsync data
+//		.vsync(video_vs),// vsync data
+//		.de(video_de),// data enable
+//		.tmds_clk_p(tmds_clk_p),
+//		.tmds_clk_n(tmds_clk_n),
+//		.tmds_data_p(tmds_data_p),//rgb
+//		.tmds_data_n(tmds_data_n) //rgb
+//	);
+// HDMI显示（使用第二段代码中的模块替代）
+dvi_tx_top dvi_tx_top_inst0(
+    .pixel_clock(clk_vga),         // 74.25MHz系统时钟
+    .ddr_bit_clock(clk_vgax5),     // 371.25MHz时钟（5倍频时钟）
+    .reset(~reset_n),              // 复位信号
+
+    .den(video_de),                // 数据有效信号
+    .hsync(video_hs),              // 水平同步信号
+    .vsync(video_vs),              // 垂直同步信号
+    .pixel_data({video_r, video_g, video_b}),  // 24位RGB数据
+
+    .tmds_clk({tmds_clk_p, tmds_clk_n}),  // HDMI时钟信号
+    .tmds_d0({tmds_data_p[0], tmds_data_n[0]}), // HDMI数据通道0
+    .tmds_d1({tmds_data_p[1], tmds_data_n[1]}), // HDMI数据通道1
+    .tmds_d2({tmds_data_p[2], tmds_data_n[2]})  // HDMI数据通道2
+);
+
 
 
 endmodule

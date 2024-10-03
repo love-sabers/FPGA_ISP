@@ -2,28 +2,25 @@
 <Module name="gao_ov5640_ddr_hdmi">
     <SubModule name="camera_pll"/>
     <SubModule name="Gowin_PLL"/>
-    <SubModule name="camera_init" Register="34" Lut="75">
+    <SubModule name="camera_init" Register="34" Lut="74">
         <SubModule name="ov5640_init_table_rgb_inst" Bsram="1"/>
-        <SubModule name="i2c_control" Register="44" Lut="109">
-            <SubModule name="i2c_bit_shift" Register="23" Lut="84"/>
+        <SubModule name="i2c_control" Register="44" Lut="114">
+            <SubModule name="i2c_bit_shift" Register="23" Lut="85"/>
         </SubModule>
     </SubModule>
     <SubModule name="DVP_Capture" Register="34" Lut="12"/>
     <SubModule name="ddr3_ctrl_2port">
-        <SubModule name="fifo_ddr3_adapter" Register="153" Lut="297">
-            <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="286" Bsram="4"/>
-            <SubModule name="wr_data_fifo" Register="92" Alu="20" Lut="79" Bsram="4"/>
+        <SubModule name="fifo_ddr3_adapter" Register="111" Lut="263">
+            <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="87"/>
+            <SubModule name="wr_data_fifo" Register="92" Alu="20" Lut="79" Bsram="8"/>
         </SubModule>
-        <SubModule name="your_instance_name" Register="3605" Alu="158" Lut="2295" Bsram="12"/>
+        <SubModule name="your_instance_name" Register="5082" Alu="207" Lut="3118" Bsram="24"/>
     </SubModule>
-    <SubModule name="disp_driver" Register="40" Lut="51"/>
-    <SubModule name="u_dvi_encoder">
-        <SubModule name="encb" Register="40" Alu="49" Lut="55"/>
-        <SubModule name="encg" Register="37" Alu="49" Lut="58"/>
-        <SubModule name="encr" Register="32" Alu="49" Lut="51"/>
-        <SubModule name="serdes_4b_10to1_inst" Register="41" Lut="37">
-            <SubModule name="Gowin_DDR_1"/>
-            <SubModule name="Gowin_DDR_2"/>
-        </SubModule>
+    <SubModule name="dvi_tx_top_inst0">
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="2"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
+        <SubModule name="clock_phy"/>
     </SubModule>
 </Module>

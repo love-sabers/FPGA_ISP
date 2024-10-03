@@ -27,6 +27,6 @@ RDEN_CTRL=false
 RESET=true
 RESET_SYNC=true
 Read_Write_Check_on_RAM=false
-SIZE_W=16
+SIZE_W=32
 STANDARD_FIFO=false
 Synthesis_tool=GowinSynthesis

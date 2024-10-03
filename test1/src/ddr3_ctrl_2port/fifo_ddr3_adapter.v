@@ -9,30 +9,30 @@ module fifo_ddr3_adapter(
     input           app_rdy             ,   //DDR IP核空闲
     input           app_wdf_rdy         ,   //DDR IP写空闲
     input           app_rd_data_valid   ,   //DDR读数据有效信号
-    input   [127:0] app_rd_data         ,
-    output  [27:0]  app_addr            ,   //DDR3地址信号
+    input   [256-1:0] app_rd_data         ,
+    output  [29-1:0]  app_addr            ,   //DDR3地址信号
     output          app_en              ,   //DDR3命令和数据使能信号
     output          app_wdf_wren        ,   //DDR3用户写使能信号
     output          app_wdf_end         ,   //DDR3写数据结束信号
     output  [2:0]   app_cmd             ,   //DDR3命令信号：0：写；1：读
-    output  [127:0] app_wdf_data        ,   //写入进DDR的数据
+    output  [256-1:0] app_wdf_data        ,   //写入进DDR的数据
     
     //用户接口
     input           rd_load             ,   //输出源更新信号
     input           wr_load             ,   //输入源更新信号
-    input   [27:0]  app_addr_rd_min     ,   //读DDR3的起始地址
-    input   [27:0]  app_addr_rd_max     ,   //读DDR3的结束地址
+    input   [29-1:0]  app_addr_rd_min     ,   //读DDR3的起始地址
+    input   [29-1:0]  app_addr_rd_max     ,   //读DDR3的结束地址
     input   [7:0]   rd_bust_len         ,   //从DDR3中读数据时的突发长度
-    input   [27:0]  app_addr_wr_min     ,   //写DD3的起始地址
-    input   [27:0]  app_addr_wr_max     ,   //写DDR的结束地址
+    input   [29-1:0]  app_addr_wr_min     ,   //写DD3的起始地址
+    input   [29-1:0]  app_addr_wr_max     ,   //写DDR的结束地址
     input   [7:0]   wr_bust_len         ,   //向DDR3中写数据时的突发长度
 
     input           wr_clk              ,//wr_fifo的写时钟信号
     input           wfifo_wren          , //wr_fifo的写使能信号
-    input   [15:0]  wfifo_din           , //写入到wr_fifo中的数据
+    input   [31:0]  wfifo_din           , //写入到wr_fifo中的数据
     input           rd_clk              , //rd_fifo的读时钟信号
     input           rfifo_rden          , //rd_fifo的读使能信号
-    output  [15:0]  rfifo_dout           //rd_fifo读出的数据信号                                      
+    output  [31:0]  rfifo_dout           //rd_fifo读出的数据信号                                      
 );
 
     //localparam 
@@ -52,15 +52,15 @@ module fifo_ddr3_adapter(
     reg         rd_load_d1  ;
     reg [10:0]  raddr_rst_h_cnt;      //输出源的帧复位脉冲进行计数 
 
-    reg [27:0]  app_addr;             //DDR3地址 
-    reg [27:0]  app_addr_wr      ;   //DDR3写地址
-    reg [27:0]  app_addr_wr_min_a;    //写DDR3的起始地址
-    reg [27:0]  app_addr_wr_max_a;    //写DDR3的结束地址
+    reg [29-1:0]  app_addr;             //DDR3地址 
+    reg [29-1:0]  app_addr_wr      ;   //DDR3写地址
+    reg [29-1:0]  app_addr_wr_min_a;    //写DDR3的起始地址
+    reg [29-1:0]  app_addr_wr_max_a;    //写DDR3的结束地址
     reg [23:0]  wr_addr_cnt      ;   //用户写地址计数
-    reg [27:0]  app_addr_rd      ;          //DDR3读地址
+    reg [29-1:0]  app_addr_rd      ;          //DDR3读地址
     reg [23:0]  rd_addr_cnt      ;          //用户读地址计数
-    reg [27:0]  app_addr_rd_min_a;    //读DDR3的起始地址
-    reg [27:0]  app_addr_rd_max_a;    //读DDR3的结束地址
+    reg [29-1:0]  app_addr_rd_min_a;    //读DDR3的起始地址
+    reg [29-1:0]  app_addr_rd_max_a;    //读DDR3的结束地址
 
     reg [7:0]   rd_bust_len_a    ;        //从DDR3中读数据时的突发长度
     reg [7:0]   wr_bust_len_a    ;        //从DDR3中写数据时的突发长度
@@ -70,16 +70,16 @@ module fifo_ddr3_adapter(
     wire [9:0]  rfifo_wcount;
     wire        rfifo_wren  ; 
 
-    reg  [15:0]  rd_load_d         ;  //由输出源场信号移位拼接得到           
-    reg  [15:0]  wr_load_d         ;  //由输入源场信号移位拼接得到 
+    reg  [31:0]  rd_load_d         ;  //由输出源场信号移位拼接得到           
+    reg  [31:0]  wr_load_d         ;  //由输入源场信号移位拼接得到 
     reg          wrfifo_load_d0    ;
     reg          rdfifo_load_d0    ;
     reg          rdfifo_rst_h      ;  //rfifo复位信号，高有效
     reg          wfifo_rst_h       ;  //wfifo复位信号，高有效
 
     wire         wfifo_rden        ;
-    wire [127:0] wfifo_dout        ; //从wr_fifo中读出的数据，需要写入进DDR中
-    wire [127:0] rfifo_din         ; //写入rd_fifo中的数据
+    wire [256-1:0] wfifo_dout        ; //从wr_fifo中读出的数据，需要写入进DDR中
+    wire [256-1:0] rfifo_din         ; //写入rd_fifo中的数据
 
     //在写状态且写有效,或者在读状态，此时使能信号为高，其他情况为低
     assign app_en = ((state == WRITE && (app_rdy && app_wdf_rdy))
@@ -156,9 +156,9 @@ module fifo_ddr3_adapter(
         if(~rst_n)
             app_addr <= 0;
         else if(state == READ )
-            app_addr <= {3'b0,app_addr_rd[24:0]};            
+            app_addr <= {4'b0,app_addr_rd[24:0]};            
         else
-            app_addr <= {3'b0,app_addr_wr[24:0]};        
+            app_addr <= {4'b0,app_addr_wr[24:0]};        
     end
 
     //对输出源的读地址做个帧复位脉冲 
@@ -187,10 +187,10 @@ module fifo_ddr3_adapter(
     always @(posedge ui_clk or negedge rst_n) begin
         if(~rst_n) begin
             state <= IDLE;
-            wr_addr_cnt <= 24'd0;
+            wr_addr_cnt <= 23'd0;
             app_addr_wr <= 28'd0;
             app_addr_rd <= 28'd0;
-            rd_addr_cnt <= 24'd0;
+            rd_addr_cnt <= 23'd0;
         end
         else begin
             case(state)
@@ -204,45 +204,45 @@ module fifo_ddr3_adapter(
                 DDR3_DONE:begin
                     if(wr_rst) begin   //当检测到写入更新标志之后，对地址进行复位计数
                         state <= DDR3_DONE;
-                        wr_addr_cnt <= 24'd0;
+                        wr_addr_cnt <= 23'd0;
                         app_addr_wr <= app_addr_wr_min_a;
                     end
                     else if(app_addr_rd >= app_addr_rd_max_a - 8) begin//读到读地址结束
                         state <= DDR3_DONE;
-                        rd_addr_cnt <= 24'd0;
+                        rd_addr_cnt <= 23'd0;
                         app_addr_rd <= app_addr_rd_min_a;
                     end
                     else if(app_addr_wr >= app_addr_wr_max_a -8) begin //写结束
                         state <=DDR3_DONE;
-                        wr_addr_cnt <= 24'd0;
+                        wr_addr_cnt <= 23'd0;
                         app_addr_wr <= app_addr_wr_min_a;
                     end
                     else if(wfifo_rcount >= wr_bust_len_a) begin
                         state <= WRITE; //跳至写操作
-                        wr_addr_cnt <= 24'd0;
+                        wr_addr_cnt <= 23'd0;
                         app_addr_wr <= app_addr_wr; 
                     end
                     else if(raddr_rst_h) begin  
                         if(raddr_rst_h_cnt >= 11'd201) begin
                             state <= READ;
-                            rd_addr_cnt <= 24'd0;
+                            rd_addr_cnt <= 23'd0;
                             app_addr_rd <= app_addr_rd_min_a;
                         end
                         else begin
                             state <= READ;
-                            rd_addr_cnt <= 24'd0;
+                            rd_addr_cnt <= 23'd0;
                             app_addr_rd <= app_addr_rd;
                         end
                     end
                     else if(rfifo_wcount <= rd_bust_len_a) begin
                         state <= READ;     //跳到读操作
-                        rd_addr_cnt <= 24'd0;
+                        rd_addr_cnt <= 23'd0;
                         app_addr_rd <= app_addr_rd;  //读地址不变
                     end
                     else begin
                         state <= state;
-                        wr_addr_cnt <= 24'd0;
-                        rd_addr_cnt <= 24'd0;
+                        wr_addr_cnt <= 23'd0;
+                        rd_addr_cnt <= 23'd0;
                     end
                 end
                     WRITE:  begin
@@ -275,8 +275,8 @@ module fifo_ddr3_adapter(
                     end
                     default:begin
                         state <= IDLE;
-                        wr_addr_cnt <= 24'd0;
-                        rd_addr_cnt <= 24'd0;
+                        wr_addr_cnt <= 23'd0;
+                        rd_addr_cnt <= 23'd0;
                     end
             endcase
         end
@@ -312,7 +312,7 @@ module fifo_ddr3_adapter(
     always @(posedge wr_clk or negedge rst_n) begin
         if(!rst_n)begin
             wrfifo_load_d0 <= 1'b0;
-            wr_load_d  <= 16'b0;        
+            wr_load_d  <= 32'b0;        
         end     
         else begin
             wrfifo_load_d0 <= wr_load;
@@ -324,14 +324,14 @@ module fifo_ddr3_adapter(
     always @(posedge wr_clk or negedge rst_n) begin
         if(!rst_n)
         wfifo_rst_h <= 1'b0;          
-        else if(wr_load_d[0] && !wr_load_d[15])
+        else if(wr_load_d[0] && !wr_load_d[31])
         wfifo_rst_h <= 1'b1;       
         else
         wfifo_rst_h <= 1'b0;                      
     end   
 
 	rd_data_fifo rd_data_fifo(
-		.Data(rfifo_din), //input [127:0] Data
+		.Data(rfifo_din), //input [256-1:0] Data
 		.Reset(~rst_n|rdfifo_rst_h), //input Reset
 		.WrClk(ui_clk), //input WrClk
 		.RdClk(rd_clk), //input RdClk
@@ -341,13 +341,13 @@ module fifo_ddr3_adapter(
 		.Rnum(), //output [12:0] Rnum
 		.Almost_Empty(), //output Almost_Empty
 		.Almost_Full(), //output Almost_Full
-		.Q(rfifo_dout), //output [15:0] Q
+		.Q(rfifo_dout), //output [31:0] Q
 		.Empty(), //output Empty
 		.Full() //output Full
 	);
 
 	wr_data_fifo wr_data_fifo(
-		.Data(wfifo_din), //input [15:0] Data
+		.Data(wfifo_din), //input [31:0] Data
 		.Reset(~rst_n|wfifo_rst_h), //input Reset
 		.WrClk(wr_clk), //input WrClk
 		.RdClk(ui_clk), //input RdClk
@@ -357,7 +357,7 @@ module fifo_ddr3_adapter(
 		.Rnum(wfifo_rcount), //output [9:0] Rnum
 		.Almost_Empty(), //output Almost_Empty
 		.Almost_Full(), //output Almost_Full
-		.Q(wfifo_dout), //output [127:0] Q
+		.Q(wfifo_dout), //output [256-1:0] Q
 		.Empty(), //output Empty
 		.Full() //output Full
 	);

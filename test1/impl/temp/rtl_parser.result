@@ -77,7 +77,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ov5640_ddr3_hdmi.v",
-    "InstLine" : 170,
+    "InstLine" : 171,
     "InstName" : "ddr3_ctrl_2port",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
     "ModuleLine" : 1,
@@ -96,12 +96,12 @@
         "InstLine" : 333,
         "InstName" : "rd_data_fifo",
         "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/rd_data_fifo/rd_data_fifo.v",
-        "ModuleLine" : 1424,
+        "ModuleLine" : 2025,
         "ModuleName" : "rd_data_fifo",
         "SubInsts" : [
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/rd_data_fifo/rd_data_fifo.v",
-          "InstLine" : 1455,
+          "InstLine" : 2056,
           "InstName" : "fifo_inst",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/rd_data_fifo/rd_data_fifo.v",
           "ModuleLine" : 1,
@@ -114,12 +114,12 @@
         "InstLine" : 349,
         "InstName" : "wr_data_fifo",
         "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
-        "ModuleLine" : 791,
+        "ModuleLine" : 851,
         "ModuleName" : "wr_data_fifo",
         "SubInsts" : [
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
-          "InstLine" : 822,
+          "InstLine" : 882,
           "InstName" : "fifo_inst",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/wr_data_fifo/wr_data_fifo.v",
           "ModuleLine" : 1,
@@ -134,12 +134,12 @@
       "InstLine" : 128,
       "InstName" : "your_instance_name",
       "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_memory_interface/ddr3_memory_interface.v",
-      "ModuleLine" : 21564,
+      "ModuleLine" : 31230,
       "ModuleName" : "DDR3_Memory_Interface_Top",
       "SubInsts" : [
        {
         "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_memory_interface/ddr3_memory_interface.v",
-        "InstLine" : 21649,
+        "InstLine" : 31315,
         "InstName" : "gw3_top",
         "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_memory_interface/ddr3_memory_interface.v",
         "ModuleLine" : 1,
@@ -151,69 +151,151 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ov5640_ddr3_hdmi.v",
-    "InstLine" : 214,
-    "InstName" : "disp_driver",
-    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/disp_driver.v",
-    "ModuleLine" : 18,
-    "ModuleName" : "disp_driver"
+    "InstLine" : 248,
+    "InstName" : "dvi_tx_top_inst0",
+    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "dvi_tx_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 37,
+      "InstName" : "gen_enc[0].dvi_tx_tmds_enc_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_enc.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_enc"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 48,
+      "InstName" : "gen_enc[0].dvi_tx_tmds_phy_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_phy.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_phy"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 37,
+      "InstName" : "gen_enc[1].dvi_tx_tmds_enc_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_enc.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_enc"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 48,
+      "InstName" : "gen_enc[1].dvi_tx_tmds_phy_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_phy.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_phy"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 37,
+      "InstName" : "gen_enc[2].dvi_tx_tmds_enc_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_enc.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_enc"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 48,
+      "InstName" : "gen_enc[2].dvi_tx_tmds_phy_inst",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_tmds_phy.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_tmds_phy"
+     },
+     {
+      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_top.v",
+      "InstLine" : 60,
+      "InstName" : "clock_phy",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_tx_clk_drv.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "dvi_tx_clk_drv"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/uart/uart_rx.v",
+  "InstLine" : 1,
+  "InstName" : "uart_rx",
+  "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/uart/uart_rx.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "uart_rx"
+ },
+ {
+  "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/uart/uart_tx.v",
+  "InstLine" : 1,
+  "InstName" : "uart_tx",
+  "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/uart/uart_tx.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "uart_tx"
+ },
+ {
+  "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/disp_driver.v",
+  "InstLine" : 18,
+  "InstName" : "disp_driver",
+  "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/disp_driver.v",
+  "ModuleLine" : 18,
+  "ModuleName" : "disp_driver"
+ },
+ {
+  "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+  "InstLine" : 38,
+  "InstName" : "dvi_encoder",
+  "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+  "ModuleLine" : 38,
+  "ModuleName" : "dvi_encoder",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "InstLine" : 58,
+    "InstName" : "encb",
+    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "ModuleLine" : 106,
+    "ModuleName" : "encode"
    },
    {
-    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ov5640_ddr3_hdmi.v",
-    "InstLine" : 231,
-    "InstName" : "u_dvi_encoder",
+    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "InstLine" : 68,
+    "InstName" : "encg",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-    "ModuleLine" : 38,
-    "ModuleName" : "dvi_encoder",
+    "ModuleLine" : 106,
+    "ModuleName" : "encode"
+   },
+   {
+    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "InstLine" : 78,
+    "InstName" : "encr",
+    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "ModuleLine" : 106,
+    "ModuleName" : "encode"
+   },
+   {
+    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "InstLine" : 88,
+    "InstName" : "serdes_4b_10to1_inst",
+    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
+    "ModuleLine" : 222,
+    "ModuleName" : "serdes_4b_10to1",
     "SubInsts" : [
      {
       "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "InstLine" : 58,
-      "InstName" : "encb",
-      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "ModuleLine" : 106,
-      "ModuleName" : "encode"
+      "InstLine" : 323,
+      "InstName" : "Gowin_DDR_1",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_ddr/gowin_ddr.v",
+      "ModuleLine" : 9,
+      "ModuleName" : "Gowin_DDR_1"
      },
      {
       "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "InstLine" : 68,
-      "InstName" : "encg",
-      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "ModuleLine" : 106,
-      "ModuleName" : "encode"
-     },
-     {
-      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "InstLine" : 78,
-      "InstName" : "encr",
-      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "ModuleLine" : 106,
-      "ModuleName" : "encode"
-     },
-     {
-      "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "InstLine" : 88,
-      "InstName" : "serdes_4b_10to1_inst",
-      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-      "ModuleLine" : 222,
-      "ModuleName" : "serdes_4b_10to1",
-      "SubInsts" : [
-       {
-        "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-        "InstLine" : 323,
-        "InstName" : "Gowin_DDR_1",
-        "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_ddr/gowin_ddr.v",
-        "ModuleLine" : 9,
-        "ModuleName" : "Gowin_DDR_1"
-       },
-       {
-        "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/vga/dvi_encoder.v",
-        "InstLine" : 361,
-        "InstName" : "Gowin_DDR_2",
-        "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_ddr/gowin_ddr.v",
-        "ModuleLine" : 9,
-        "ModuleName" : "Gowin_DDR_1"
-       }
-      ]
+      "InstLine" : 361,
+      "InstName" : "Gowin_DDR_2",
+      "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/test1/src/gowin_ddr/gowin_ddr.v",
+      "ModuleLine" : 9,
+      "ModuleName" : "Gowin_DDR_1"
      }
     ]
    }

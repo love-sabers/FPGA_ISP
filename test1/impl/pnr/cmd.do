@@ -1,6 +1,6 @@
 -d D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\gwsynthesis\test1.vg
--p GW5AST-138B-PBGA676A-1
--pn GW5AST-LV138PG676AES
+-p GW5AST-138B-FCPBGA676A-1
+-pn GW5AST-LV138FPG676AC1/I0
 -cst D:\ren'ren\Documents\fpga\fpgaProject\test1\src\test1.cst
 -cfg D:\ren'ren\Documents\fpga\fpgaProject\test1\impl\pnr\device.cfg
 -bit
