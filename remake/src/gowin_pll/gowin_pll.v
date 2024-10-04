@@ -5,16 +5,16 @@
 //Part Number: GW5AST-LV138PG676AES
 //Device: GW5AST-138B
 //Device Version: B
-//Created Time: Thu Oct  3 23:25:02 2024
+//Created Time: Fri Oct  4 11:11:42 2024
 
-module Gowin_PLL (clkout0, clkout1, clkin, reset);
+module Gowin_PLL (lock, clkout0, clkout1, clkin, reset);
 
+output lock;
 output clkout0;
 output clkout1;
 input clkin;
 input reset;
 
-wire lock;
 wire clkout2;
 wire clkout3;
 wire clkout4;

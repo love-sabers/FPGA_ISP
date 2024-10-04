@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Lut="1">
     <SubModule name="Gowin_PLL"/>
+    <SubModule name="u_Reset_Sync_1" Register="4" Alu="4" Lut="2"/>
     <SubModule name="camera_init" Register="34" Lut="73">
         <SubModule name="ov5640_init_table_rgb_inst" Bsram="1"/>
-        <SubModule name="i2c_control" Register="44" Lut="106">
+        <SubModule name="i2c_control" Register="44" Lut="112">
             <SubModule name="i2c_bit_shift" Register="23" Lut="75"/>
         </SubModule>
     </SubModule>
@@ -19,14 +20,14 @@
     <SubModule name="hdmi_PLL_inst"/>
     <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2"/>
     <SubModule name="disp_driver0" Lut="24">
-        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="61"/>
+        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="63"/>
     </SubModule>
     <SubModule name="dvi_tx_top_inst">
-        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="91"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="115"/>
         <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
-        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="90"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="96"/>
         <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
-        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="90"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="91"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
         <SubModule name="clock_phy"/>
     </SubModule>

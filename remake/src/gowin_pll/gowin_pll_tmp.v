@@ -5,12 +5,13 @@
 //Part Number: GW5AST-LV138PG676AES
 //Device: GW5AST-138B
 //Device Version: B
-//Created Time: Thu Oct  3 23:25:02 2024
+//Created Time: Fri Oct  4 11:11:42 2024
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
 
     Gowin_PLL your_instance_name(
+        .lock(lock_o), //output lock
         .clkout0(clkout0_o), //output clkout0
         .clkout1(clkout1_o), //output clkout1
         .clkin(clkin_i), //input clkin

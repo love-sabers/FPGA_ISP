@@ -22,7 +22,7 @@
 -clkfb_sel 0
 -dyn_fbdiv_sel false
 -fbdiv_sel 1
--en_lock false
+-en_lock true
 -dyn_dpa_en false
 -clkout0_bypass false
 -dyn_odiv0_sel false

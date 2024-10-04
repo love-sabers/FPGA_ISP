@@ -26,6 +26,7 @@ Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-m
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\video_timing_ctrl.v'
 Compiling module 'top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":1)
 Compiling module 'Gowin_PLL'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'Reset_Sync'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\reset.v":1)
 Compiling module 'camera_init(IMAGE_WIDTH=1280,IMAGE_HEIGHT=720)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\camera_init.v":18)
 Compiling module 'ov5640_init_table_rgb(IMAGE_WIDTH=1280,IMAGE_HEIGHT=720,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\ov5640_init_table_rgb.v":18)
 Compiling module 'i2c_control'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_control\i2c_control.v":18)
@@ -79,7 +80,6 @@ Compiling module '**'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_mem
 Compiling module '**'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
 Compiling module '**'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_memory_interface\ddr3_memory_interface.v":0)
 Compiling module 'hdmi_PLL'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\hdmi_pll.v":10)
-Compiling module 'Reset_Sync'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\reset.v":1)
 Compiling module 'disp_driver'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\disp_driver.v":3)
 Compiling module 'video_timing_ctrl'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\video_timing_ctrl.v":3)
 Compiling module 'dvi_tx_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_top.v":1)
