@@ -17,7 +17,7 @@ module top
     input clk,
     input reset_n,
 
-    //camera interface
+    // Camera interface
     output      camera_sclk,
     inout       camera_sdat,
     input       camera_vsync,
@@ -28,16 +28,16 @@ module top
     output      camera_rst_n,
     output      camera_pwdn,
 
-    //led
+    // LED
     output [3:0] led,
 
-    //hdmi
+    // HDMI
     output       tmds_clk_n_0,
     output       tmds_clk_p_0,
     output [2:0] tmds_d_n_0,
     output [2:0] tmds_d_p_0,
 
-    //ddr
+    // DDR
     output [2:0]  ddr_bank,
     output [14:0] ddr_addr,
     output ddr_odt,
@@ -56,127 +56,113 @@ module top
     inout [3:0] ddr_dqs_n
 );
 
-    //Set IMAGE Size  
-    parameter IMAGE_WIDTH  = 1280;
-    parameter IMAGE_HEIGHT = 720;
-
     // Internal wires and signals
-    wire          camera_init_done;
-    wire          pclk_bufg_o;
-    wire          loc_clk24m;
-    wire          g_rst_p;
-//    wire          clk_200M;
-    wire          pll_lock;
-    wire          loc_clk50m;
     wire          hdmi_pll_lock;
     wire          clk_hdmi5;
     wire          clk_hdmi;
 
-	wire fifo_aclr;
-	wire fifo_wrreq;
-	wire [31:0] fifo_wrdata;
+    wire          fifo_aclr;
+    wire          fifo_wrreq;
+    wire [31:0]   fifo_wrdata;
 
-    // ddr_PLL
-    wire ddr_pll_lock;
-    wire ddr_clk100m;
-    wire ddr_memory_clk;
-    wire ddr_pll_stop;
-    wire ddr_init_calib_complete;
+    // DDR PLL
+    wire          ddr_pll_lock;
+    wire          ddr_clk100m;
+    wire          ddr_memory_clk;
+    wire          ddr_pll_stop;
+    wire          ddr_init_calib_complete;
 
-    // dvi signals
-    wire [23:0] dvi_data;
-    wire dvi_den;
-    wire dvi_hsync;
-    wire dvi_vsync;
+    // DVI signals
+    wire [23:0]   dvi_data;
+    wire          dvi_den;
+    wire          dvi_hsync;
+    wire          dvi_vsync;
 
     // FIFO control signals
-    wire rd_load;
-    wire rdfifo_rden;
-    wire rdfifo_clk;
-    wire [31:0] rdfifo_dout;
+    wire          rd_load;
+    wire          rdfifo_rden;
+    wire          rdfifo_clk;
+    wire [31:0]   rdfifo_dout;
 
-    wire wr_load;
-    wire wrfifo_wren;
-    wire wrfifo_clk;
-    wire [31:0] wrfifo_din;
+    wire          wr_load;
+    wire          wrfifo_wren;
+    wire          wrfifo_clk;
+    wire [31:0]   wrfifo_din;
 
     // DDR3 configuration
-    wire [28:0] app_addr_max = video_h_visible * video_v_visible;
-    wire [7:0] burst_len = video_h_visible[10:3];
+    wire [28:0]   app_addr_max = video_h_visible * video_v_visible;
+    wire [7:0]    burst_len = video_h_visible[10:3];
 
-    // Assign reset signal and LED
-    assign  g_rst_p = ~pll_lock;
-//    assign led = {1'b0, ~camera_init_done, ddr_init_calib_complete, 1'b0};
-    assign led = {~g_rst_p,camera_init_done,ddr_init_calib_complete,pll_lock};
+    // Camera clock assignment
+    wire          loc_clk50m;
+    wire          loc_clk24m;
+    wire          cmos_clk;
+    wire[15:0]    cmos_16bit_data;
+    wire[9:0]     lut_index;
+    wire[31:0]    lut_data;
 
-    Gowin_PLL Gowin_PLL(
-        .lock(pll_lock), //output lock
+    assign camera_xclk = loc_clk24m;
+    assign camera_pwdn = 1'b0;
+    assign camera_rst_n = 1'b1;
+    assign wrfifo_din = {cmos_16bit_data[4:0], cmos_16bit_data[10:5], cmos_16bit_data[15:11]};
+
+    reg [5:0] cam_running;
+    assign cam_run = cam_running[5];
+    always @(posedge camera_vsync)
+        cam_running <= cam_running + 6'd1;
+
+    // PLL instances
+    Gowin_PLL Gowin_PLL_inst(
         .clkout0(loc_clk50m), //output clkout0
         .clkout1(loc_clk24m), //output clkout1
-        .clkin(clk), //input clkin
-        .reset(~reset_n) //input reset
-    );
-    wire sys_resetn_1;
-    Reset_Sync u_Reset_Sync_1 (
-        .reset_n(sys_resetn_1),
-        .ext_reset(reset_n & pll_lock),
-        .clk(loc_clk24m)
+        .clkin(clk),          //input clkin
+        .reset(~reset_n)      //input reset
     );
 
-//    CLKDIV u_clkdiv (
-//        .RESETN(pll_lock),
-//        .HCLKIN(clk_hdmi5_1), //clk  x5
-//        .CLKOUT(clk_hdmi_1), //clk  x1
-//        .CALIB(1'b1)
-//    );
-//    defparam u_clkdiv.DIV_MODE = "5";
-
-    // Assign camera clock signal
-    assign camera_xclk = loc_clk24m;
-
-    // Camera initialization
-    camera_init #(
-        .SYS_CLOCK(50_000_000), //系统时钟采用50MHz
-        .SCL_CLOCK(400_000), //SCL总线时钟采用400kHz
-        .CAMERA_TYPE("ov5640"), //"ov5640" or "ov7725"
-        .IMAGE_TYPE(0), // 0: RGB; 1: JPEG
-        .IMAGE_WIDTH(IMAGE_WIDTH), // 图片宽度
-        .IMAGE_HEIGHT(IMAGE_HEIGHT), // 图片高度
-        .IMAGE_FLIP_EN(0), // 0: 不翻转，1: 上下翻转
-        .IMAGE_MIRROR_EN(0) // 0: 不镜像，1: 左右镜像
-    ) camera_init (
-        .Clk(loc_clk50m),
-        .Rst_n(sys_resetn_1),
-        .Init_Done(camera_init_done),
-        .camera_rst_n(camera_rst_n),
-        .camera_pwdn(camera_pwdn),
-        .i2c_sclk(camera_sclk),
-        .i2c_sdat(camera_sdat)
+    // I2C master controller for camera configuration
+    i2c_config i2c_config_m0(
+        .rst(~reset_n),
+        .clk(clk_hdmi),
+        .clk_div_cnt(16'd500),
+        .i2c_addr_2byte(1'b1),
+        .lut_index(lut_index),
+        .lut_dev_addr(lut_data[31:24]),
+        .lut_reg_addr(lut_data[23:8]),
+        .lut_reg_data(lut_data[7:0]),
+        .i2c_scl(camera_sclk),
+        .i2c_sda(camera_sdat)
     );
 
-    assign pclk_bufg_o = camera_pclk;
-
-    // Capture camera data
-    DVP_Capture DVP_Capture(
-        .Rst_n(sys_resetn_1),
-        .PCLK(pclk_bufg_o),
-        .Vsync(camera_vsync),
-        .Href(camera_href),
-        .Data(camera_data),
-        .ImageState(fifo_aclr),
-        .DataValid(fifo_wrreq),
-        .DataPixel(fifo_wrdata),
-        .DataHs(),
-        .DataVs(wr_load),
-        .Xaddr(),
-        .Yaddr()
+    // Look-up table for camera configuration
+    lut_ov5640_rgb565_480_272 lut_ov5640_rgb565_480_272_m0(
+        .lut_index(lut_index),
+        .lut_data(lut_data)
     );
 
-    assign wrfifo_wren = fifo_wrreq;   // 将DVP的写入请求与DDR写入使能同步
-    assign wrfifo_din = fifo_wrdata;   // 将DVP的数据传递给DDR的写FIFO
-    assign wrfifo_clk = pclk_bufg_o;
+    // CMOS sensor 8-bit to 16-bit data conversion
+    cmos_8_16bit cmos_8_16bit_m0(
+        .rst(~reset_n),
+        .pclk(camera_pclk),
+        .pdata_i(camera_data),
+        .de_i(camera_href),
+        .pdata_o(cmos_16bit_data),
+        .de_o(cmos_16bit_wr)
+    );
+
+
+    assign wrfifo_wren = cmos_16bit_wr;   // 将DVP的写入请求与DDR写入使能同步
+    assign wrfifo_clk = camera_pclk;
     assign rdfifo_clk = clk_hdmi;   
+    assign wr_load = camera_vsync;   
 
+
+    // HDMI PLL instance
+    hdmi_PLL hdmi_PLL_inst(
+        .lock(hdmi_pll_lock),
+        .clkout0(clk_hdmi),
+        .clkout1(clk_hdmi5),
+        .clkin(clk)
+    );
 
     // DDR PLL instance
     ddr_PLL ddr_PLL_inst(
@@ -230,13 +216,7 @@ module top
         .ddr3_odt(ddr_odt) //DDR3_odt
     );
 
-    // HDMI PLL instance
-    hdmi_PLL hdmi_PLL_inst(
-        .lock(hdmi_pll_lock), //output lock
-        .clkout0(clk_hdmi), //output clkout0
-        .clkout1(clk_hdmi5), //output clkout1
-        .clkin(clk) //input clkin
-    );
+    
 
     // HDMI reset synchronization
     wire sys_resetn;

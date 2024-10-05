@@ -2,30 +2,6 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/DVP_Capture/DVP_Capture.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/camera_init.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_control/i2c_bit_shift.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_control/i2c_control.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/ov5640_init_table_jpeg.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/ov5640_init_table_rgb.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
    "Type" : "verilog"
   },
@@ -87,6 +63,42 @@
   },
   {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/video-misc/video_timing_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/i2c_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/i2c_master_bit_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/i2c_master_byte_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/i2c_master_defines.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/i2c_master_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/i2c_master/timescale.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/cmos_8_16bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/camera_init/video_timing_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/DVP_Capture/lut_ov5640_rgb565_480_272.v",
    "Type" : "verilog"
   }
  ],
