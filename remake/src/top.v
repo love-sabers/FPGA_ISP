@@ -106,6 +106,76 @@ module top
     assign camera_rst_n = 1'b1;
     assign wrfifo_din = {cmos_16bit_data[4:0], cmos_16bit_data[10:5], cmos_16bit_data[15:11]};
 
+    // Assign reset signal and LED
+//    assign  g_rst_p = ~pll_lock;
+//    assign led = {1'b0, ~camera_init_done, ddr_init_calib_complete, 1'b0};
+//    assign led = {~g_rst_p,camera_init_done,ddr_init_calib_complete,pll_lock};
+
+//    Gowin_PLL Gowin_PLL(
+//        .lock(pll_lock), //output lock
+//        .clkout0(loc_clk50m), //output clkout0
+//        .clkout1(loc_clk24m), //output clkout1
+//        .clkin(clk), //input clkin
+//        .reset(~reset_n) //input reset
+//    );
+//    wire sys_resetn_1;
+//    Reset_Sync u_Reset_Sync_1 (
+//        .reset_n(sys_resetn_1),
+//        .ext_reset(reset_n & pll_lock),
+//        .clk(loc_clk24m)
+//    );
+
+//    CLKDIV u_clkdiv (
+//        .RESETN(pll_lock),
+//        .HCLKIN(clk_hdmi5_1), //clk  x5
+//        .CLKOUT(clk_hdmi_1), //clk  x1
+//        .CALIB(1'b1)
+//    );
+//    defparam u_clkdiv.DIV_MODE = "5";
+
+    // Assign camera clock signal
+//    assign camera_xclk = loc_clk24m;
+
+    // Camera initialization
+//    camera_init #(
+//        .SYS_CLOCK(50_000_000), //系统时钟采用50MHz
+//        .SCL_CLOCK(400_000), //SCL总线时钟采用400kHz
+//        .CAMERA_TYPE("ov5640"), //"ov5640" or "ov7725"
+//        .IMAGE_TYPE(0), // 0: RGB; 1: JPEG
+//        .IMAGE_WIDTH(IMAGE_WIDTH), // 图片宽度
+//        .IMAGE_HEIGHT(IMAGE_HEIGHT), // 图片高度
+//        .IMAGE_FLIP_EN(0), // 0: 不翻转，1: 上下翻转
+//        .IMAGE_MIRROR_EN(0) // 0: 不镜像，1: 左右镜像
+//    ) camera_init (
+//        .Clk(loc_clk50m),
+//        .Rst_n(sys_resetn_1),
+//        .Init_Done(camera_init_done),
+//        .camera_rst_n(camera_rst_n),
+//        .camera_pwdn(camera_pwdn),
+//        .i2c_sclk(camera_sclk),
+//        .i2c_sdat(camera_sdat)
+//    );
+
+//    assign pclk_bufg_o = camera_pclk;
+
+//     Capture camera data
+//    DVP_Capture DVP_Capture(
+//        .Rst_n(sys_resetn_1),
+//        .PCLK(pclk_bufg_o),
+//        .Vsync(camera_vsync),
+//        .Href(camera_href),
+//        .Data(camera_data),
+//        .ImageState(fifo_aclr),
+//        .DataValid(fifo_wrreq),
+//        .DataPixel(fifo_wrdata),
+//        .DataHs(),
+//        .DataVs(wr_load),
+//        .Xaddr(),
+//        .Yaddr()
+//    );
+
+
+//using TangMega-138KPro-example\dvp_rgb\ov5640_480_272\src
     reg [5:0] cam_running;
     assign cam_run = cam_running[5];
     always @(posedge camera_vsync)

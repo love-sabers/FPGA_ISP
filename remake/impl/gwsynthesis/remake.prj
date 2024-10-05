@@ -4,6 +4,15 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\DVP_Capture\lut_ov5640_rgb565_480_272.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\cmos_8_16bit.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_config.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_defines.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\timescale.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\video_timing_data.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
@@ -20,15 +29,6 @@
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\disp_driver.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\video_timing_ctrl.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_config.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_defines.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_top.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\timescale.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\cmos_8_16bit.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\video_timing_data.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\DVP_Capture\lut_ov5640_rgb565_480_272.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
