@@ -1,0 +1,35 @@
+Reading netlist file: "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\gwsynthesis\remake.vg"
+Parsing netlist file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\gwsynthesis\remake.vg" completed
+WARN  (PA1019) : Invalid VCO frequency 'FCLKIN*FBDIV_SEL*(MDIV_SEL+MDIV_FRAC_SEL/8)/IDIV_SEL' to 'PLL_inst'(PLL) set by 'hdmi_PLL' of module, suitable range is from 800MHz to 2000MHz.
+WARN  (PA1019) : Invalid CLKOUT1 frequency 'FVCO/ODIV1_SEL' to 'PLL_inst'(PLL) set by 'hdmi_PLL' of module, suitable range is from 6.25MHz to 1000MHz.
+Processing netlist completed
+Reading constraint file: "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\top.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'camera_pclk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'wrfifo_clk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\remake.power.html" completed
+Generate file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\remake.pin.html" completed
+Generate file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\remake.rpt.html" completed
+Generate file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\remake.rpt.txt" completed
+Generate file "D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\remake.tr.html" completed
+Sun Oct  6 14:27:54 2024
+

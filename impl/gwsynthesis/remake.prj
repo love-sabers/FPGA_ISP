@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
+    <FileList>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\DVP_Capture\DVP_Capture.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\DVP_Capture\DVP_Capture_tb.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\RAM_based_shift_reg_top\RAM_based_shift_reg_top.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\RAW2RGB.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\camera_init.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\M24LC04B.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\M24LC64.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\i2c_bit_shift_tb.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\i2c_control\i2c_control_tb.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\camera_init\ov7725_init_table_rgb.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\dvi-tx\dvi_tx_top.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\fifo_top\rd_data_fifo.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\gowin_pll\camera_pll.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\gowin_pll\ddr_pll.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\gowin_pll\hdmi_pll.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\reset.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\top.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\video-misc\disp_driver.v" type="verilog"/>
+        <File path="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\video-misc\video_timing_ctrl.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\gwsynthesis\remake.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="vcc" value="0.9"/>
+        <Option type="vccx" value="1.8"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

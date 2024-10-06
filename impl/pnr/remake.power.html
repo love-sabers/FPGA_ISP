@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td {white-space:pre;  border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+<ul>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+</ul>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\gwsynthesis\remake.vg</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\top.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.10.02</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5AST-LV138FPG676AES</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5AST-138</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>B</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Oct  6 14:27:54 2024
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2024 Gowin Semiconductor Corporation. All rights reserved.</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Grade</td>
+<td>Commercial</td>
+</tr>
+<tr>
+<td class="label">Process</td>
+<td>Typical</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>852.247</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>96.683</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>755.564</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>36.079</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>13.000</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>73.921</td>
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>0.900</td>
+<td>588.930</td>
+<td>79.965</td>
+<td>602.005</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>1.800</td>
+<td>9.635</td>
+<td>7.200</td>
+<td>30.303</td>
+</tr>
+<tr>
+<td>VCCIO15</td>
+<td>1.500</td>
+<td>6.571</td>
+<td>2.018</td>
+<td>12.885</td>
+</tr>
+<tr>
+<td>VCCIO33</td>
+<td>3.300</td>
+<td>3.098</td>
+<td>0.899</td>
+<td>13.190</td>
+</tr>
+<tr>
+<td>VCC_LDO</td>
+<td>1.200</td>
+<td>156.754</td>
+<td>4.800</td>
+<td>193.864</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>4.402</td>
+<td>NA</td>
+<td>13.648</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>62.699
+<td>15.595
+<td>55.041
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>482.721
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>PLL</td>
+<td>188.104
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DDRDLL</td>
+<td>33.178
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DQS</td>
+<td>166.536
+<td>NA</td>
+<td>NA</td>
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>top</td>
+<td>874.941</td>
+<td>874.941(874.940)</td>
+<tr>
+<td>top/DVP_Capture/</td>
+<td>0.011</td>
+<td>0.011(0.000)</td>
+<tr>
+<td>top/camera_init/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/camera_init/i2c_control/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/camera_init/i2c_control/i2c_bit_shift/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/</td>
+<td>685.774</td>
+<td>685.774(685.774)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/fifo_ddr3_adapter/</td>
+<td>222.006</td>
+<td>222.006(221.882)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/fifo_ddr3_adapter/rd_data_fifo/</td>
+<td>139.117</td>
+<td>139.117(139.117)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/fifo_ddr3_adapter/rd_data_fifo/fifo_inst/</td>
+<td>139.117</td>
+<td>139.117(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/fifo_ddr3_adapter/wr_data_fifo/</td>
+<td>82.765</td>
+<td>82.765(82.765)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/fifo_ddr3_adapter/wr_data_fifo/fifo_inst/</td>
+<td>82.765</td>
+<td>82.765(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/</td>
+<td>463.769</td>
+<td>463.769(463.769)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/</td>
+<td>463.769</td>
+<td>463.769(463.591)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/</td>
+<td>375.104</td>
+<td>375.104(341.732)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/ddr_sync/</td>
+<td>0.029</td>
+<td>0.029(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_T_Auto_ADJ/</td>
+<td>0.225</td>
+<td>0.225(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_init/</td>
+<td>0.451</td>
+<td>0.451(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/</td>
+<td>340.730</td>
+<td>340.730(340.721)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/</td>
+<td>150.840</td>
+<td>150.840(150.801)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>41.677</td>
+<td>41.677(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>21.514</td>
+<td>21.514(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[0].u_ddr_phy_data_lane/u_out_fifo/</td>
+<td>87.610</td>
+<td>87.610(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/</td>
+<td>63.227</td>
+<td>63.227(63.188)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>41.674</td>
+<td>41.674(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[1].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>21.514</td>
+<td>21.514(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[2].u_ddr_phy_data_lane/</td>
+<td>63.227</td>
+<td>63.227(63.188)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[2].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>41.674</td>
+<td>41.674(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[2].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>21.514</td>
+<td>21.514(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[3].u_ddr_phy_data_lane/</td>
+<td>63.228</td>
+<td>63.228(63.189)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[3].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>41.675</td>
+<td>41.675(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/data_lane_gen[3].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>21.514</td>
+<td>21.514(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/fifo_ctrl_gen[0].fifo_ctrl/</td>
+<td>0.014</td>
+<td>0.014(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/fifo_ctrl_gen[1].fifo_ctrl/</td>
+<td>0.014</td>
+<td>0.014(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/fifo_ctrl_gen[2].fifo_ctrl/</td>
+<td>0.014</td>
+<td>0.014(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/fifo_ctrl_gen[3].fifo_ctrl/</td>
+<td>0.014</td>
+<td>0.014(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/of_fifo_ctrl_inst/</td>
+<td>0.013</td>
+<td>0.013(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/u_ddr_phy_cmd_lane/</td>
+<td>0.129</td>
+<td>0.129(0.106)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/u_ddr_phy_cmd_lane/u_cmd_fifo/</td>
+<td>0.088</td>
+<td>0.088(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/u_ddr_phy_cmd_lane/u_ddr_phy_cmd_io/</td>
+<td>0.018</td>
+<td>0.018(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_ddr_phy_wds/u_ddr_phy_reset_gen/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_eye_calib_rmove_mod/</td>
+<td>0.077</td>
+<td>0.077(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/u_init_rmove_mod/</td>
+<td>0.220</td>
+<td>0.220(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_eye_calib/</td>
+<td>0.182</td>
+<td>0.182(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/</td>
+<td>88.305</td>
+<td>88.305(88.187)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gw_cmd0/</td>
+<td>0.187</td>
+<td>0.187(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gw_rd_data0/</td>
+<td>0.140</td>
+<td>0.140(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gw_wr_data0/</td>
+<td>87.695</td>
+<td>87.695(87.639)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gw_wr_data0/wr_fifo/</td>
+<td>87.639</td>
+<td>87.639(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gwmc_bank_ctrl/</td>
+<td>0.129</td>
+<td>0.129(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gwmc_rank_ctrl/</td>
+<td>0.024</td>
+<td>0.024(0.000)</td>
+<tr>
+<td>top/ddr3_ctrl_2port/your_instance_name/gw3_top/u_gwmc_top/gwmc_timing_ctrl/</td>
+<td>0.012</td>
+<td>0.012(0.000)</td>
+<tr>
+<td>top/ddr_PLL_inst/</td>
+<td>56.301</td>
+<td>56.301(0.000)</td>
+<tr>
+<td>top/disp_driver0/</td>
+<td>0.079</td>
+<td>0.079(0.060)</td>
+<tr>
+<td>top/disp_driver0/video_timing_ctrl_inst0/</td>
+<td>0.060</td>
+<td>0.060(0.000)</td>
+<tr>
+<td>top/dvi_tx_top_inst/</td>
+<td>0.947</td>
+<td>0.947(0.947)</td>
+<tr>
+<td>top/dvi_tx_top_inst/gen_enc[0].dvi_tx_tmds_enc_inst/</td>
+<td>0.323</td>
+<td>0.323(0.000)</td>
+<tr>
+<td>top/dvi_tx_top_inst/gen_enc[0].dvi_tx_tmds_phy_inst/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/dvi_tx_top_inst/gen_enc[1].dvi_tx_tmds_enc_inst/</td>
+<td>0.310</td>
+<td>0.310(0.000)</td>
+<tr>
+<td>top/dvi_tx_top_inst/gen_enc[2].dvi_tx_tmds_enc_inst/</td>
+<td>0.313</td>
+<td>0.313(0.000)</td>
+<tr>
+<td>top/hdmi_PLL_inst/</td>
+<td>131.804</td>
+<td>131.804(0.000)</td>
+<tr>
+<td>top/u_Reset_Sync/</td>
+<td>0.025</td>
+<td>0.025(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>ddr3_ctrl_2port/your_instance_name/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>100.000</td>
+<td>350.180</td>
+</tr>
+<tr>
+<td>wrfifo_clk</td>
+<td>100.000</td>
+<td>39.685</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>ddr_PLL_inst/PLL_inst/CLKOUT1.default_gen_clk</td>
+<td>100.000</td>
+<td>0.034</td>
+</tr>
+<tr>
+<td>ddr_PLL_inst/PLL_inst/CLKOUT2.default_gen_clk</td>
+<td>400.000</td>
+<td>199.858</td>
+</tr>
+<tr>
+<td>hdmi_PLL_inst/PLL_inst/CLKOUT0.default_gen_clk</td>
+<td>222.500</td>
+<td>97.095</td>
+</tr>
+<tr>
+<td>camera_pclk</td>
+<td>100.000</td>
+<td>0.012</td>
+</tr>
+<tr>
+<td>hdmi_PLL_inst/PLL_inst/CLKOUT1.default_gen_clk</td>
+<td>1112.500</td>
+<td>0.027</td>
+</tr>
+<tr>
+<td>clk</td>
+<td>50.000</td>
+<td>188.104</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

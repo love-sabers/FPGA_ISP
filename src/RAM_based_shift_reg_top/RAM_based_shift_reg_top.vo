@@ -1,0 +1,2429 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Verilog Simulation Model file
+//Tool Version: V1.9.10.02
+//Created Time: Sun Oct  6 11:37:27 2024
+
+`timescale 100 ps/100 ps
+module RAM_based_shift_reg_top(
+	clk,
+	Reset,
+	Din,
+	Q
+);
+input clk;
+input Reset;
+input [7:0] Din;
+output [7:0] Q;
+wire [7:0] Din;
+wire GND;
+wire [7:0] Q;
+wire Reset;
+wire VCC;
+wire clk;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_17 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_18 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_19 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_20 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_21 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_22 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_23 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_24 ;
+wire \u_RAM_based_shift_reg/mem_268 ;
+wire \u_RAM_based_shift_reg/mem_239 ;
+wire \u_RAM_based_shift_reg/mem_241 ;
+wire \u_RAM_based_shift_reg/mem_243 ;
+wire \u_RAM_based_shift_reg/mem_245 ;
+wire \u_RAM_based_shift_reg/mem_247 ;
+wire \u_RAM_based_shift_reg/mem_253 ;
+wire \u_RAM_based_shift_reg/mem_255 ;
+wire \u_RAM_based_shift_reg/mem_257 ;
+wire \u_RAM_based_shift_reg/mem_259 ;
+wire \u_RAM_based_shift_reg/mem_261 ;
+wire \u_RAM_based_shift_reg/mem_263 ;
+wire \u_RAM_based_shift_reg/n134_6 ;
+wire \u_RAM_based_shift_reg/n128_6 ;
+wire \u_RAM_based_shift_reg/n127_6 ;
+wire \u_RAM_based_shift_reg/n129_6 ;
+wire \u_RAM_based_shift_reg/n130_6 ;
+wire \u_RAM_based_shift_reg/n131_6 ;
+wire \u_RAM_based_shift_reg/n132_6 ;
+wire \u_RAM_based_shift_reg/n133_6 ;
+wire \u_RAM_based_shift_reg/n60_6 ;
+wire \u_RAM_based_shift_reg/n61_6 ;
+wire \u_RAM_based_shift_reg/mem_271 ;
+wire \u_RAM_based_shift_reg/mem_273 ;
+wire \u_RAM_based_shift_reg/mem_275 ;
+wire \u_RAM_based_shift_reg/mem_277 ;
+wire \u_RAM_based_shift_reg/n60_9 ;
+wire \u_RAM_based_shift_reg/n59_11 ;
+wire \u_RAM_based_shift_reg/n62_9 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[0]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[6]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[7]_3 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_26 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_28 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_30 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_32 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_34 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_36 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_4 ;
+wire \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_4 ;
+wire [3:0] \u_RAM_based_shift_reg/wbin ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR (
+	.GSRI(VCC)
+);
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[0]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[0]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[1]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[1]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[2]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[2]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[3]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[3]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[4]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[4]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[5]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[5]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[6]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[6]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s14 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s7  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_17 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s7 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s8  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_18 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s8 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s9  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_19 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s9 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s10  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_20 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s10 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s11  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_21 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s11 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s12  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_22 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s12 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s13  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_23 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s13 .INIT=8'hCA;
+LUT3 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s14  (
+	.I0(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[7]_3 ),
+	.I1(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[7]_3 ),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_24 )
+);
+defparam \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s14 .INIT=8'hCA;
+LUT4 \u_RAM_based_shift_reg/mem_s235  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_268 )
+);
+defparam \u_RAM_based_shift_reg/mem_s235 .INIT=16'h0001;
+LUT4 \u_RAM_based_shift_reg/mem_s236  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_239 )
+);
+defparam \u_RAM_based_shift_reg/mem_s236 .INIT=16'h0100;
+LUT4 \u_RAM_based_shift_reg/mem_s237  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [0]),
+	.I3(\u_RAM_based_shift_reg/wbin [1]),
+	.F(\u_RAM_based_shift_reg/mem_241 )
+);
+defparam \u_RAM_based_shift_reg/mem_s237 .INIT=16'h0100;
+LUT4 \u_RAM_based_shift_reg/mem_s238  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [1]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_243 )
+);
+defparam \u_RAM_based_shift_reg/mem_s238 .INIT=16'h1000;
+LUT4 \u_RAM_based_shift_reg/mem_s239  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [0]),
+	.I3(\u_RAM_based_shift_reg/wbin [2]),
+	.F(\u_RAM_based_shift_reg/mem_245 )
+);
+defparam \u_RAM_based_shift_reg/mem_s239 .INIT=16'h0100;
+LUT4 \u_RAM_based_shift_reg/mem_s240  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_247 )
+);
+defparam \u_RAM_based_shift_reg/mem_s240 .INIT=16'h1000;
+LUT4 \u_RAM_based_shift_reg/mem_s243  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [0]),
+	.I3(\u_RAM_based_shift_reg/wbin [3]),
+	.F(\u_RAM_based_shift_reg/mem_253 )
+);
+defparam \u_RAM_based_shift_reg/mem_s243 .INIT=16'h0100;
+LUT4 \u_RAM_based_shift_reg/mem_s244  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_255 )
+);
+defparam \u_RAM_based_shift_reg/mem_s244 .INIT=16'h1000;
+LUT4 \u_RAM_based_shift_reg/mem_s245  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [0]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [1]),
+	.F(\u_RAM_based_shift_reg/mem_257 )
+);
+defparam \u_RAM_based_shift_reg/mem_s245 .INIT=16'h1000;
+LUT4 \u_RAM_based_shift_reg/mem_s246  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_259 )
+);
+defparam \u_RAM_based_shift_reg/mem_s246 .INIT=16'h4000;
+LUT4 \u_RAM_based_shift_reg/mem_s247  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [0]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [2]),
+	.F(\u_RAM_based_shift_reg/mem_261 )
+);
+defparam \u_RAM_based_shift_reg/mem_s247 .INIT=16'h1000;
+LUT4 \u_RAM_based_shift_reg/mem_s248  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [2]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_263 )
+);
+defparam \u_RAM_based_shift_reg/mem_s248 .INIT=16'h4000;
+LUT2 \u_RAM_based_shift_reg/n134_s2  (
+	.I0(Reset),
+	.I1(Din[0]),
+	.F(\u_RAM_based_shift_reg/n134_6 )
+);
+defparam \u_RAM_based_shift_reg/n134_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n128_s2  (
+	.I0(Reset),
+	.I1(Din[6]),
+	.F(\u_RAM_based_shift_reg/n128_6 )
+);
+defparam \u_RAM_based_shift_reg/n128_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n127_s2  (
+	.I0(Reset),
+	.I1(Din[7]),
+	.F(\u_RAM_based_shift_reg/n127_6 )
+);
+defparam \u_RAM_based_shift_reg/n127_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n129_s2  (
+	.I0(Reset),
+	.I1(Din[5]),
+	.F(\u_RAM_based_shift_reg/n129_6 )
+);
+defparam \u_RAM_based_shift_reg/n129_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n130_s2  (
+	.I0(Reset),
+	.I1(Din[4]),
+	.F(\u_RAM_based_shift_reg/n130_6 )
+);
+defparam \u_RAM_based_shift_reg/n130_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n131_s2  (
+	.I0(Reset),
+	.I1(Din[3]),
+	.F(\u_RAM_based_shift_reg/n131_6 )
+);
+defparam \u_RAM_based_shift_reg/n131_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n132_s2  (
+	.I0(Reset),
+	.I1(Din[2]),
+	.F(\u_RAM_based_shift_reg/n132_6 )
+);
+defparam \u_RAM_based_shift_reg/n132_s2 .INIT=4'h4;
+LUT2 \u_RAM_based_shift_reg/n133_s2  (
+	.I0(Reset),
+	.I1(Din[1]),
+	.F(\u_RAM_based_shift_reg/n133_6 )
+);
+defparam \u_RAM_based_shift_reg/n133_s2 .INIT=4'h4;
+LUT4 \u_RAM_based_shift_reg/n60_s2  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [0]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.I3(\u_RAM_based_shift_reg/n60_9 ),
+	.F(\u_RAM_based_shift_reg/n60_6 )
+);
+defparam \u_RAM_based_shift_reg/n60_s2 .INIT=16'h7800;
+LUT3 \u_RAM_based_shift_reg/n61_s2  (
+	.I0(\u_RAM_based_shift_reg/wbin [1]),
+	.I1(\u_RAM_based_shift_reg/wbin [0]),
+	.I2(\u_RAM_based_shift_reg/n60_9 ),
+	.F(\u_RAM_based_shift_reg/n61_6 )
+);
+defparam \u_RAM_based_shift_reg/n61_s2 .INIT=8'h60;
+LUT4 \u_RAM_based_shift_reg/mem_s252  (
+	.I0(\u_RAM_based_shift_reg/wbin [2]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [3]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_271 )
+);
+defparam \u_RAM_based_shift_reg/mem_s252 .INIT=16'h8000;
+LUT4 \u_RAM_based_shift_reg/mem_s253  (
+	.I0(\u_RAM_based_shift_reg/wbin [0]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.I3(\u_RAM_based_shift_reg/wbin [1]),
+	.F(\u_RAM_based_shift_reg/mem_273 )
+);
+defparam \u_RAM_based_shift_reg/mem_s253 .INIT=16'h4000;
+LUT4 \u_RAM_based_shift_reg/mem_s254  (
+	.I0(\u_RAM_based_shift_reg/wbin [3]),
+	.I1(\u_RAM_based_shift_reg/wbin [2]),
+	.I2(\u_RAM_based_shift_reg/wbin [1]),
+	.I3(\u_RAM_based_shift_reg/wbin [0]),
+	.F(\u_RAM_based_shift_reg/mem_275 )
+);
+defparam \u_RAM_based_shift_reg/mem_s254 .INIT=16'h4000;
+LUT4 \u_RAM_based_shift_reg/mem_s255  (
+	.I0(\u_RAM_based_shift_reg/wbin [3]),
+	.I1(\u_RAM_based_shift_reg/wbin [0]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.I3(\u_RAM_based_shift_reg/wbin [1]),
+	.F(\u_RAM_based_shift_reg/mem_277 )
+);
+defparam \u_RAM_based_shift_reg/mem_s255 .INIT=16'h1000;
+LUT3 \u_RAM_based_shift_reg/n60_s4  (
+	.I0(\u_RAM_based_shift_reg/wbin [3]),
+	.I1(\u_RAM_based_shift_reg/wbin [1]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.F(\u_RAM_based_shift_reg/n60_9 )
+);
+defparam \u_RAM_based_shift_reg/n60_s4 .INIT=8'h7F;
+LUT4 \u_RAM_based_shift_reg/n59_s4  (
+	.I0(\u_RAM_based_shift_reg/wbin [0]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [2]),
+	.I3(\u_RAM_based_shift_reg/wbin [1]),
+	.F(\u_RAM_based_shift_reg/n59_11 )
+);
+defparam \u_RAM_based_shift_reg/n59_s4 .INIT=16'h2CCC;
+LUT4 \u_RAM_based_shift_reg/n62_s4  (
+	.I0(\u_RAM_based_shift_reg/wbin [0]),
+	.I1(\u_RAM_based_shift_reg/wbin [3]),
+	.I2(\u_RAM_based_shift_reg/wbin [1]),
+	.I3(\u_RAM_based_shift_reg/wbin [2]),
+	.F(\u_RAM_based_shift_reg/n62_9 )
+);
+defparam \u_RAM_based_shift_reg/n62_s4 .INIT=16'h1555;
+DFFCE \u_RAM_based_shift_reg/wbin_3_s0  (
+	.D(\u_RAM_based_shift_reg/n59_11 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(\u_RAM_based_shift_reg/wbin [3])
+);
+defparam \u_RAM_based_shift_reg/wbin_3_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wbin_2_s0  (
+	.D(\u_RAM_based_shift_reg/n60_6 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(\u_RAM_based_shift_reg/wbin [2])
+);
+defparam \u_RAM_based_shift_reg/wbin_2_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wbin_1_s0  (
+	.D(\u_RAM_based_shift_reg/n61_6 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(\u_RAM_based_shift_reg/wbin [1])
+);
+defparam \u_RAM_based_shift_reg/wbin_1_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wbin_0_s0  (
+	.D(\u_RAM_based_shift_reg/n62_9 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(\u_RAM_based_shift_reg/wbin [0])
+);
+defparam \u_RAM_based_shift_reg/wbin_0_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_7_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[7])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_7_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_6_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[6])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_6_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_5_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[5])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_5_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_4_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[4])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_4_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_3_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[3])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_3_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_2_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[2])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_2_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_1_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[1])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_1_s0 .INIT=1'b0;
+DFFCE \u_RAM_based_shift_reg/wdata_q_0_s0  (
+	.D(\u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_4 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(Reset),
+	.Q(Q[0])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_0_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_268 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_239 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_1_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_241 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_2_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_243 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_3_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_245 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_4_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_247 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_5_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_277 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_6_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_275 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_7_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_253 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_8_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_255 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_9_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_257 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_10_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_259 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_11_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_261 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_12_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_263 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_13_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_273 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_14_G[7]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[0]_s0  (
+	.D(\u_RAM_based_shift_reg/n134_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[0]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[1]_s0  (
+	.D(\u_RAM_based_shift_reg/n133_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[1]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[2]_s0  (
+	.D(\u_RAM_based_shift_reg/n132_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[2]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[3]_s0  (
+	.D(\u_RAM_based_shift_reg/n131_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[3]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[4]_s0  (
+	.D(\u_RAM_based_shift_reg/n130_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[4]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[5]_s0  (
+	.D(\u_RAM_based_shift_reg/n129_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[5]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[6]_s0  (
+	.D(\u_RAM_based_shift_reg/n128_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[6]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[6]_s0 .INIT=1'b0;
+DFFRE \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[7]_s0  (
+	.D(\u_RAM_based_shift_reg/n127_6 ),
+	.CLK(clk),
+	.CE(\u_RAM_based_shift_reg/mem_271 ),
+	.RESET(GND),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[7]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_15_G[7]_s0 .INIT=1'b0;
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_32 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s3  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_17 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_18 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_26 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s4  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_19 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_20 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_28 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s5  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_21 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_22 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_30 )
+);
+MUX2_LUT5 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s6  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_23 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_24 ),
+	.S0(\u_RAM_based_shift_reg/wbin [2]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_32 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_36 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s1  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_26 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_28 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_34 )
+);
+MUX2_LUT6 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s2  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_30 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_32 ),
+	.S0(\u_RAM_based_shift_reg/wbin [1]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_36 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_7_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_0_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_22_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_15_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_37_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_30_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_52_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_45_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_67_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_60_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_82_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_75_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_97_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_90_G[0]_4 )
+);
+MUX2_LUT7 \u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_s0  (
+	.I0(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_34 ),
+	.I1(\u_RAM_based_shift_reg/mem_RAMOUT_112_G[3]_36 ),
+	.S0(\u_RAM_based_shift_reg/wbin [0]),
+	.O(\u_RAM_based_shift_reg/mem_RAMOUT_105_G[0]_4 )
+);
+endmodule

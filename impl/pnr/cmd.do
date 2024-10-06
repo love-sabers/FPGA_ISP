@@ -1,0 +1,18 @@
+-d D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\gwsynthesis\remake.vg
+-p GW5AST-138B-FCPBGA676A-1
+-pn GW5AST-LV138FPG676AES
+-cst D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\src\top.cst
+-cfg D:\Desktop\match\FPGA\git\FPGA_ISP_10_5\remake\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0

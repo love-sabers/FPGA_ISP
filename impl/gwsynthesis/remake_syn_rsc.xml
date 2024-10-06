@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="1" T_Register="6169(0)" T_Alu="368(0)" T_Lut="4755(1)" T_Bsram="41(0)">
+    <SubModule name="ddr_PLL_inst"/>
+    <SubModule name="ddr3_ctrl_2port" T_Register="5921(0)" T_Alu="247(0)" T_Lut="4123(0)" T_Bsram="40(0)">
+        <SubModule name="fifo_ddr3_adapter" Register="134" Lut="277" T_Register="324(134)" T_Alu="40(0)" T_Lut="726(277)" T_Bsram="16(0)">
+            <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="370" Bsram="8" T_Register="97(97)" T_Alu="20(20)" T_Lut="370(370)" T_Bsram="8(8)"/>
+            <SubModule name="wr_data_fifo" Register="93" Alu="20" Lut="79" Bsram="8" T_Register="93(93)" T_Alu="20(20)" T_Lut="79(79)" T_Bsram="8(8)"/>
+        </SubModule>
+        <SubModule name="your_instance_name" Register="5597" Alu="207" Lut="3397" Bsram="24" T_Register="5597(5597)" T_Alu="207(207)" T_Lut="3397(3397)" T_Bsram="24(24)"/>
+    </SubModule>
+    <SubModule name="hdmi_PLL_inst"/>
+    <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2" T_Register="4(4)" T_Alu="4(4)" T_Lut="2(2)"/>
+    <SubModule name="disp_driver0" Lut="24" T_Register="28(0)" T_Lut="85(24)">
+        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="61" T_Register="28(28)" T_Lut="61(61)"/>
+    </SubModule>
+    <SubModule name="dvi_tx_top_inst" T_Register="82(0)" T_Alu="117(0)" T_Lut="283(0)">
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="103" T_Register="29(29)" T_Alu="39(39)" T_Lut="103(103)"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1" T_Register="1(1)"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="88" T_Register="26(26)" T_Alu="39(39)" T_Lut="88(88)"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="92" T_Register="26(26)" T_Alu="39(39)" T_Lut="92(92)"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
+        <SubModule name="clock_phy"/>
+    </SubModule>
+    <SubModule name="CAMERA_PLL"/>
+    <SubModule name="camera_init" Register="33" Lut="70" T_Register="100(33)" T_Lut="251(70)" T_Bsram="1(0)">
+        <SubModule name="ov5640_init_table_rgb_inst" Bsram="1" T_Bsram="1(1)"/>
+        <SubModule name="i2c_control" Register="44" Lut="108" T_Register="67(44)" T_Lut="181(108)">
+            <SubModule name="i2c_bit_shift" Register="23" Lut="73" T_Register="23(23)" T_Lut="73(73)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="DVP_Capture" Register="34" Lut="10" T_Register="34(34)" T_Lut="10(10)"/>
+</Module>
