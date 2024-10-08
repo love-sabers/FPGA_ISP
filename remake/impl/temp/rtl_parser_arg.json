@@ -2,10 +2,6 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/DVP_Capture/DVP_Capture.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera_init/camera_init.v",
    "Type" : "verilog"
   },
@@ -87,6 +83,10 @@
   },
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/video-misc/video_timing_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvp_capture/DVP_Capture.v",
    "Type" : "verilog"
   }
  ],

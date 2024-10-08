@@ -73,7 +73,7 @@
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
     "InstLine" : 123,
     "InstName" : "DVP_Capture",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/DVP_Capture/DVP_Capture.v",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvp_capture/DVP_Capture.v",
     "ModuleLine" : 18,
     "ModuleName" : "DVP_Capture"
    },
