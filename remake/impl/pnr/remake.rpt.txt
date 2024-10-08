@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\gwsynthesis\remake.vg
-  <Physical Constraints File>: D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.cst
+  <Design File>: D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\gwsynthesis\remake.vg
+  <Physical Constraints File>: D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.cst
   <Timing Constraints File>: ---
   <Tool Version>: V1.9.9 (64-bit)
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Tue Oct  8 16:45:33 2024
+  <Created Time>:Tue Oct  8 17:03:49 2024
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 1: CPU time = 0h 0m 0.272s, Elapsed time = 0h 0m 0.272s
+    Placement Phase 1: CPU time = 0h 0m 0.226s, Elapsed time = 0h 0m 0.225s
     Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Total Placement: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
+    Total Placement: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.798s, Elapsed time = 0h 0m 0.798s
-    Routing Phase 1: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
-    Routing Phase 2: CPU time = 0h 0m 0.269s, Elapsed time = 0h 0m 0.269s
+    Routing Phase 0: CPU time = 0h 0m 0.839s, Elapsed time = 0h 0m 0.839s
+    Routing Phase 1: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s
+    Routing Phase 2: CPU time = 0h 0m 0.241s, Elapsed time = 0h 0m 0.241s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 32s, Elapsed time = 0h 0m 32s
+    Total Routing: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
  Generate output files:
     CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
 
- Total Time and Memory Usage: CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1829MB
+ Total Time and Memory Usage: CPU time = 0h 0m 50s, Elapsed time = 0h 0m 50s, Peak memory usage = 1827MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5187/138240  4%
-    --LUT,ALU,ROM16           | 5187(4788 LUT, 399 ALU, 0 ROM16)
+  Logic                       | 5152/138240  4%
+    --LUT,ALU,ROM16           | 5152(4753 LUT, 399 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 6193/139140  5%
+  Register                    | 6190/139140  5%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 6193/138240  5%
+    --Logic Register as FF    | 6190/138240  5%
     --I/O Register as Latch   | 0/900  0%
     --I/O Register as FF      | 0/900  0%
-  CLS                         | 5131/69120  8%
+  CLS                         | 5110/69120  8%
   I/O Port                    | 106
   I/O Buf                     | 97
     --Input Buf               | 13
@@ -119,7 +119,7 @@
   ddr_memory_clk400m| PRIMARY        |  PTR0 PBR0
   rdfifo_clk     | PRIMARY        |  PTR2 PTR3 PBR2
   hdmi5_clk742m5 | PRIMARY        |  PTR3
-  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PTR2 PTR3 PBR0 PBR1 PBR2
+  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
   ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst| LW             |  -
   ddr_memory_clk400m| HCLK           |  -
   hdmi5_clk742m5 | HCLK           |  -

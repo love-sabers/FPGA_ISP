@@ -1,8 +1,8 @@
--d D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\gwsynthesis\remake.vg
+-d D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\gwsynthesis\remake.vg
 -p GW5AST-138B-FCPBGA676A-1
 -pn GW5AST-LV138FPG676AES
--cst D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.cst
--cfg D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\device.cfg
+-cst D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.cst
+-cfg D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\device.cfg
 -bit
 -tr
 -ph

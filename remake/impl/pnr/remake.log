@@ -1,7 +1,7 @@
-Reading netlist file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\gwsynthesis\remake.vg"
-Parsing netlist file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\gwsynthesis\remake.vg" completed
+Reading netlist file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\gwsynthesis\remake.vg"
+Parsing netlist file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\gwsynthesis\remake.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.cst"
+Reading constraint file: "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,9 +20,9 @@ Running timing analysis......
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.pin.html" completed
-Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.rpt.html" completed
-Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.rpt.txt" completed
-Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.tr.html" completed
-Tue Oct  8 16:45:33 2024
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\remake.pin.html" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\remake.rpt.html" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\remake.rpt.txt" completed
+Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\remake.tr.html" completed
+Tue Oct  8 17:03:49 2024
 
