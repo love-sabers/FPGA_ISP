@@ -1,5 +1,23 @@
 [
  {
+  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/test_pattern_gen.v",
+  "InstLine" : 3,
+  "InstName" : "test_pattern_gen",
+  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/test_pattern_gen.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "test_pattern_gen",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/test_pattern_gen.v",
+    "InstLine" : 81,
+    "InstName" : "video_timing_ctrl_inst0",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/video_timing_ctrl.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "video_timing_ctrl"
+   }
+  ]
+ },
+ {
   "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
   "InstLine" : 1,
   "InstName" : "top",
@@ -9,7 +27,59 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 57,
+    "InstLine" : 88,
+    "InstName" : "camera_PLL_inst",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/camera_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "camera_PLL"
+   },
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
+    "InstLine" : 107,
+    "InstName" : "camera_init",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/camera_init.v",
+    "ModuleLine" : 18,
+    "ModuleName" : "camera_init",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/camera_init.v",
+      "InstLine" : 81,
+      "InstName" : "ov5640_init_table_rgb_inst",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/ov5640_init_table_rgb.v",
+      "ModuleLine" : 18,
+      "ModuleName" : "ov5640_init_table_rgb"
+     },
+     {
+      "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/camera_init.v",
+      "InstLine" : 134,
+      "InstName" : "i2c_control",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/i2c_control/i2c_control.v",
+      "ModuleLine" : 18,
+      "ModuleName" : "i2c_control",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/i2c_control/i2c_control.v",
+        "InstLine" : 65,
+        "InstName" : "i2c_bit_shift",
+        "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/i2c_control/i2c_bit_shift.v",
+        "ModuleLine" : 18,
+        "ModuleName" : "i2c_bit_shift"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
+    "InstLine" : 123,
+    "InstName" : "DVP_Capture",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/DVP_Capture/DVP_Capture.v",
+    "ModuleLine" : 18,
+    "ModuleName" : "DVP_Capture"
+   },
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
+    "InstLine" : 146,
     "InstName" : "ddr_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/ddr_pll.v",
     "ModuleLine" : 10,
@@ -17,7 +87,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 85,
+    "InstLine" : 183,
     "InstName" : "ddr3_ctrl_2port",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
     "ModuleLine" : 1,
@@ -91,7 +161,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 137,
+    "InstLine" : 235,
     "InstName" : "hdmi_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/hdmi_pll.v",
     "ModuleLine" : 10,
@@ -99,7 +169,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 146,
+    "InstLine" : 245,
     "InstName" : "u_Reset_Sync",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/reset.v",
     "ModuleLine" : 1,
@@ -107,7 +177,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 171,
+    "InstLine" : 272,
     "InstName" : "disp_driver0",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/disp_driver.v",
     "ModuleLine" : 3,
@@ -115,7 +185,7 @@
     "SubInsts" : [
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/disp_driver.v",
-      "InstLine" : 61,
+      "InstLine" : 64,
       "InstName" : "video_timing_ctrl_inst0",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/video-misc/video_timing_ctrl.v",
       "ModuleLine" : 3,
@@ -125,7 +195,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/top.v",
-    "InstLine" : 189,
+    "InstLine" : 290,
     "InstName" : "dvi_tx_top_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/dvi-tx/dvi_tx_top.v",
     "ModuleLine" : 1,

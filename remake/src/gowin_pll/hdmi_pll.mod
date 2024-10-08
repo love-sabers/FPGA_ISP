@@ -12,7 +12,7 @@
 -file_type vlg
 -ssc false
 -clock_en false
--rst false
+-rst true
 -rst_pwd false
 -rst_i false
 -rst_o false

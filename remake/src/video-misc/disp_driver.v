@@ -1,14 +1,17 @@
 `timescale 1ns / 1ns
 
 module disp_driver #(
+
+	parameter source_h  = 800,
+	parameter source_v  = 480,
 	
 	parameter video_hlength		= 2200,
-	parameter video_vlength		= 1125,
 	parameter video_hsync_pol	= 1,
 	parameter video_hsync_len	= 44,
-	parameter video_hbp_len		= 148,
-	
+	parameter video_hbp_len		= 148,	
 	parameter video_h_visible	= 1920,
+
+	parameter video_vlength		= 1125,
 	parameter video_vsync_pol	= 1,
 	parameter video_vsync_len	= 5,
 	parameter video_vbp_len		= 36,
@@ -30,18 +33,18 @@ module disp_driver #(
 	output	[23 : 0]	video_pixel//从高到低，RGB
 );
 
-	assign rd_load = video_vsync;
-	assign rd_clk = pixel_clock;
-	assign rfifo_rden = den_int;
-	assign video_den = den_int;
+	
 	
 	wire				den_int;
 	wire	[13 : 0]	pixel_x;
 	wire	[13 : 0]	pixel_y;
-	
-	assign video_pixel = (den_int) ? rfifo_dout[31:8] : 24'h000000;
-	
-	
+
+	assign rd_load = video_vsync;
+	assign rd_clk = pixel_clock;
+	assign rfifo_rden = den_int & (pixel_x<source_h) & (pixel_y<source_v);
+	assign video_den = den_int;
+
+	assign video_pixel = (rfifo_rden) ? rfifo_dout[31:8] : 24'h000000;
 	
 	video_timing_ctrl #(
 		

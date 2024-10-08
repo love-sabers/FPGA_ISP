@@ -2,6 +2,26 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/DVP_Capture/DVP_Capture.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/camera_init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/i2c_control/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/i2c_control/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/camera_init/ov5640_init_table_rgb.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
    "Type" : "verilog"
   },
@@ -38,6 +58,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/camera_pll.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/gowin_pll/ddr_pll.v",
    "Type" : "verilog"
   },
@@ -47,6 +71,10 @@
   },
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/remake/src/test_pattern_gen.v",
    "Type" : "verilog"
   },
   {

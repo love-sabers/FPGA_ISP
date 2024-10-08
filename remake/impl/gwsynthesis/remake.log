@@ -1,5 +1,10 @@
 GowinSynthesis start
 Running parser ...
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\DVP_Capture\DVP_Capture.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\camera_init.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\i2c_control\i2c_bit_shift.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\i2c_control\i2c_control.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\ov5640_init_table_rgb.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\ddr3_memory_interface\ddr3_memory_interface.v'
@@ -9,13 +14,21 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\dvi-tx\
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\dvi-tx\dvi_tx_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\fifo_top\rd_data_fifo.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\fifo_top\wr_data_fifo.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\gowin_pll\camera_pll.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\gowin_pll\ddr_pll.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\gowin_pll\hdmi_pll.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\reset.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\test_pattern_gen.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\video-misc\disp_driver.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\video-misc\video_timing_ctrl.v'
 Compiling module 'top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v":1)
+Compiling module 'camera_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\gowin_pll\camera_pll.v":10)
+Compiling module 'camera_init(IMAGE_WIDTH=800)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\camera_init.v":18)
+Compiling module 'ov5640_init_table_rgb(IMAGE_WIDTH=800,IMAGE_HEIGHT=480,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\ov5640_init_table_rgb.v":18)
+Compiling module 'i2c_control'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\i2c_control\i2c_control.v":18)
+Compiling module 'i2c_bit_shift'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\camera_init\i2c_control\i2c_bit_shift.v":18)
+Compiling module 'DVP_Capture'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\DVP_Capture\DVP_Capture.v":18)
 Compiling module 'ddr_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\gowin_pll\ddr_pll.v":10)
 Compiling module 'ddr3_ctrl_2port'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v":1)
 Compiling module 'fifo_ddr3_adapter'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v":2)
@@ -71,10 +84,6 @@ Compiling module 'dvi_tx_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\
 Compiling module 'dvi_tx_tmds_enc'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\dvi-tx\dvi_tx_tmds_enc.v":1)
 Compiling module 'dvi_tx_tmds_phy'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\dvi-tx\dvi_tx_tmds_phy.v":1)
 Compiling module 'dvi_tx_clk_drv'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\dvi-tx\dvi_tx_clk_drv.v":1)
-WARN  (EX1998) : Net 'wr_load' does not have a driver("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v":74)
-WARN  (EX1998) : Net 'wrfifo_wren' does not have a driver("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v":75)
-WARN  (EX1998) : Net 'wrfifo_clk' does not have a driver("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v":76)
-WARN  (EX1998) : Net 'wrfifo_din[31]' does not have a driver("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\src\top.v":77)
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
 Running device independent optimization ...

@@ -12,7 +12,8 @@ Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk50m_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'camera_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -23,5 +24,5 @@ Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.pin.
 Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.rpt.html" completed
 Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.rpt.txt" completed
 Generate file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\remake\impl\pnr\remake.tr.html" completed
-Thu Oct  3 18:23:24 2024
+Tue Oct  8 16:45:33 2024
 
