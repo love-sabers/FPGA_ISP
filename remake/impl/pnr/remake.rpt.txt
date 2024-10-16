@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Tue Oct  8 17:03:49 2024
+  <Created Time>:Wed Oct 16 18:21:14 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 1: CPU time = 0h 0m 0.226s, Elapsed time = 0h 0m 0.225s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Total Placement: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Placement Phase 0: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
+    Placement Phase 1: CPU time = 0h 0m 0.496s, Elapsed time = 0h 0m 0.496s
+    Placement Phase 2: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s
+    Placement Phase 3: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Total Placement: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.839s, Elapsed time = 0h 0m 0.839s
-    Routing Phase 1: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s
-    Routing Phase 2: CPU time = 0h 0m 0.241s, Elapsed time = 0h 0m 0.241s
+    Routing Phase 0: CPU time = 0h 0m 0.788s, Elapsed time = 0h 0m 0.787s
+    Routing Phase 1: CPU time = 0h 0m 42s, Elapsed time = 0h 0m 42s
+    Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
+    Total Routing: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s
  Generate output files:
-    CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
 
- Total Time and Memory Usage: CPU time = 0h 0m 50s, Elapsed time = 0h 0m 50s, Peak memory usage = 1827MB
+ Total Time and Memory Usage: CPU time = 0h 1m 26s, Elapsed time = 0h 1m 26s, Peak memory usage = 2161MB
 
 
 3. Resource Usage Summary
@@ -40,31 +40,34 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5152/138240  4%
-    --LUT,ALU,ROM16           | 5152(4753 LUT, 399 ALU, 0 ROM16)
-    --SSRAM(RAM16)            | 0
-  Register                    | 6190/139140  5%
+  Logic                       | 17771/138240  13%
+    --LUT,ALU,ROM16           | 17531(14048 LUT, 3483 ALU, 0 ROM16)
+    --SSRAM(RAM16)            | 40
+  Register                    | 13368/139140  10%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 6190/138240  5%
+    --Logic Register as FF    | 13368/138240  10%
     --I/O Register as Latch   | 0/900  0%
     --I/O Register as FF      | 0/900  0%
-  CLS                         | 5110/69120  8%
-  I/O Port                    | 106
-  I/O Buf                     | 97
-    --Input Buf               | 13
-    --Output Buf              | 47
-    --Inout Buf               | 37
+  CLS                         | 14280/69120  21%
+  I/O Port                    | 110
+  I/O Buf                     | 101
+    --Input Buf               | 15
+    --Output Buf              | 48
+    --Inout Buf               | 38
   IOLOGIC                     | 35%
     --IDES8_MEM               | 32
     --OSER8                   | 25
     --OSER8_MEM               | 40
     --OSER10                  | 3
     --IODELAY                 | 32
-  BSRAM                       | 13%
-    --SDPB                    | 24
-    --SDPX9B                  | 16
+  BSRAM                       | 37%
+    --SDPB                    | 39
+    --SDPX9B                  | 17
+    --DPB                     | 68
     --pROM                    | 1
-  DSP                         | 0%
+  DSP                         | 11%
+    --MULT27X36               | 11
+    --MULTALU27X18            | 10
   PLL                         | 3/12  25%
   DDRDLL                      | 1/4  25%
   DCS                         | 0/20  0%
@@ -83,8 +86,8 @@
   -----------------------
   I/O Bank  | Usage       
   -----------------------
-  bank 2   | 8/50(16%)   
-  bank 3   | 11/50(22%)  
+  bank 2   | 10/50(20%)  
+  bank 3   | 13/50(26%)  
   bank 4   | 1/50(2%)    
   bank 5   | 15/50(30%)  
   bank 6   | 44/50(88%)  
@@ -99,8 +102,8 @@
   Global Clock  | Usage       
   -------------------------------
   PRIMARY       | 8/8(100%)
-  LW            | 1/8(13%)
-  GCLK_PIN      | 11/24(46%)
+  LW            | 4/8(50%)
+  GCLK_PIN      | 12/24(50%)
   PLL           | 3/12(25%)
   CLKDIV        | 1/24(5%)
   DLLDLY        | 0/12(0%)
@@ -112,15 +115,18 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  clk50m_d       | PRIMARY        |  PBR2 PBR3
-  camera_pclk_d  | PRIMARY        |  PTR2 PBR1 PBR2
+  camera_pclk_d  | PRIMARY        |  PTR1 PTR2 PBR1 PBR2
   camera_xclk_d  | PRIMARY        |  PBR1
-  ddr_clk100m    | PRIMARY        |  PTR1 PBR1
+  ddr_clk100m    | PRIMARY        |  PBR1
   ddr_memory_clk400m| PRIMARY        |  PTR0 PBR0
-  rdfifo_clk     | PRIMARY        |  PTR2 PTR3 PBR2
+  rdfifo_clk     | PRIMARY        |  PTR1 PTR2 PTR3 PBR1
   hdmi5_clk742m5 | PRIMARY        |  PTR3
-  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
+  gowin_add_ibuf_net_clk50m| PRIMARY        |  PTR2 PTR3 PBR2 PBR3
+  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PBR0 PBR1
+  camera_rst_n_d | LW             |  -
   ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst| LW             |  -
+  Gowin_EMPU_M1_Top_inst/JTAG_9_1| LW             |  -
+  Gowin_EMPU_M1_Top_inst/AHB1HRESET_d| LW             |  -
   ddr_memory_clk400m| HCLK           |  -
   hdmi5_clk742m5 | HCLK           |  -
   ===========================================
@@ -144,6 +150,7 @@ camera_data[4]  |           | E20/5         | Y          | in    | IOB68[A] | LV
 camera_data[5]  |           | D18/5         | Y          | in    | IOB62[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_data[6]  |           | C18/5         | Y          | in    | IOB62[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_data[7]  |           | B17/5         | Y          | in    | IOB51[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+MCU_UART_RX     |           | V22/2         | Y          | in    | IOR31[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[0]          |           | J14/4         | Y          | out   | IOB97[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[1]          |           | R26/3         | Y          | out   | IOR65[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[2]          |           | L20/3         | Y          | out   | IOR92[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
@@ -157,6 +164,7 @@ camera_pwdn     |           | D16/5         | Y          | out   | IOB53[B] | LV
 i2c_sel[0]      |           | N19/3         | Y          | out   | IOR71[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 i2c_sel[1]      |           | P19/3         | Y          | out   | IOR71[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 i2c_sel[2]      |           | P26/3         | Y          | out   | IOR65[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+MCU_UART_TX     |           | U22/2         | Y          | out   | IOR31[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 ddr_bank[0]     |           | M4/7          | Y          | out   | IOL49[A] | SSTL15     | 12    | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5        | MEDIUM       
 ddr_bank[1]     |           | L5/7          | Y          | out   | IOL47[A] | SSTL15     | 12    | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5        | MEDIUM       
 ddr_bank[2]     |           | K3/7          | Y          | out   | IOL51[A] | SSTL15     | 12    | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5        | MEDIUM       
@@ -192,6 +200,8 @@ tmds_d_p_0[0]   | tmds_d_n_0[0] | AB24,AC24/2   | Y          | out   | IOR35    
 tmds_d_p_0[1]   | tmds_d_n_0[1] | V24,W24/2     | Y          | out   | IOR47    | LVCMOS33D  | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 tmds_d_p_0[2]   | tmds_d_n_0[2] | AA22,AA23/2   | Y          | out   | IOR33    | LVCMOS33D  | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_sdat     |           | K26/3         | Y          | io    | IOR94[B] | LVCMOS33   | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+swdio           |           | P23/3         | Y          | io    | IOR74[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+swclk           |           | P24/3         | Y          | io    | IOR74[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 ddr_dq[0]       |           | G4/6          | Y          | io    | IOL78[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM       
 ddr_dq[1]       |           | J6/6          | Y          | io    | IOL74[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM       
 ddr_dq[2]       |           | L8/6          | Y          | io    | IOL76[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM       
@@ -480,8 +490,8 @@ U21/2    | -               | in    | IOR26[A] | LVCMOS33 | 8     | UP        | O
 V21/2    | -               | in    | IOR26[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 Y22/2    | tmds_clk_p_0    | out   | IOR29[A] | LVCMOS33D | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 Y23/2    | tmds_clk_n_0    | out   | IOR29[B] | LVCMOS33D | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-U22/2    | -               | in    | IOR31[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-V22/2    | -               | in    | IOR31[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+U22/2    | MCU_UART_TX     | out   | IOR31[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+V22/2    | MCU_UART_RX     | in    | IOR31[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AA22/2   | tmds_d_p_0[2]   | out   | IOR33[A] | LVCMOS33D | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AA23/2   | tmds_d_n_0[2]   | out   | IOR33[B] | LVCMOS33D | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 AB24/2   | tmds_d_p_0[0]   | out   | IOR35[A] | LVCMOS33D | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
@@ -520,8 +530,8 @@ R21/3    | -               | in    | IOR69[B] | LVCMOS33 | 8     | NONE      | O
 P19/3    | i2c_sel[1]      | out   | IOR71[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 N19/3    | i2c_sel[0]      | out   | IOR71[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R18/3    | -               | in    | IOR73[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-P23/3    | -               | in    | IOR74[A] | LVCMOS33 | 8     | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-P24/3    | -               | in    | IOR74[B] | LVCMOS33 | 8     | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+P23/3    | swdio           | io    | IOR74[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+P24/3    | swclk           | in    | IOR74[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 N23/3    | led[5]          | out   | IOR76[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 N24/3    | -               | in    | IOR76[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 P20/3    | -               | in    | IOR78[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       

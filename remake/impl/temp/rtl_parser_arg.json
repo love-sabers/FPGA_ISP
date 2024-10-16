@@ -2,55 +2,59 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera_init/camera_init.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/camera_init.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera_init/i2c_control/i2c_bit_shift.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/i2c_control/i2c_bit_shift.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera_init/i2c_control/i2c_control.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/i2c_control/i2c_control.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera_init/ov5640_init_table_rgb.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_jpeg.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_raw.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_rgb.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr3_memory_interface/ddr3_memory_interface.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/dvp_capture/DVP_Capture_raw.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvi-tx/dvi_tx_clk_drv.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/dvp_capture/DVP_Capture_rgb565.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvi-tx/dvi_tx_tmds_enc.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvi-tx/dvi_tx_tmds_phy.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/ddr3_ctrl_2port/fifo_ddr3_adapter.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvi-tx/dvi_tx_top.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/ddr3_memory_interface/ddr3_memory_interface.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/fifo_top/rd_data_fifo.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/fifo_top/rd_data_fifo.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/fifo_top/wr_data_fifo.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/fifo_top/wr_data_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_empu_m1/gowin_empu_m1.v",
    "Type" : "verilog"
   },
   {
@@ -66,27 +70,59 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/reset.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_clk_drv.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test_pattern_gen.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_tmds_enc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_tmds_phy.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/disp_driver.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/video_timing_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/aeawb/aeawb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/ahb_isp.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/video-misc/disp_driver.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/video-misc/video_timing_ctrl.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/dvp_capture/DVP_Capture.v",
    "Type" : "verilog"
   }
  ],

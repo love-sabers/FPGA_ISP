@@ -4,28 +4,37 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\DVP_Capture\DVP_Capture.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera_init\camera_init.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera_init\i2c_control\i2c_control.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\dvi-tx\dvi_tx_top.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\fifo_top\rd_data_fifo.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\camera_init.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_raw.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\fifo_top\rd_data_fifo.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\gowin_empu_m1.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\camera_pll.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\ddr_pll.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\hdmi_pll.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\reset.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test_pattern_gen.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_top.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\reset.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\video_timing_ctrl.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\aeawb\aeawb.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ahb_isp.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa_interpolation\cfa_interpolation.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\color_correction_matrix\color_correction_matrix.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma_correction\gamma_correction.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\video-misc\disp_driver.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\video-misc\video_timing_ctrl.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

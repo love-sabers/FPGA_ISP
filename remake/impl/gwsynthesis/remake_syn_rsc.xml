@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Lut="3">
     <SubModule name="camera_PLL_inst"/>
-    <SubModule name="camera_init" Register="34" Lut="74">
-        <SubModule name="ov5640_init_table_rgb_inst" Bsram="1"/>
-        <SubModule name="i2c_control" Register="44" Lut="105">
+    <SubModule name="camera_init" Register="34" Lut="72">
+        <SubModule name="ov5640_init_table_raw_inst" Bsram="1"/>
+        <SubModule name="i2c_control" Register="44" Lut="106">
             <SubModule name="i2c_bit_shift" Register="23" Lut="75"/>
         </SubModule>
     </SubModule>
-    <SubModule name="DVP_Capture" Register="34" Lut="12"/>
+    <SubModule name="isp_inst" Register="326" Lut="67">
+        <SubModule name="AEAWB_top_inst" Register="2778" Alu="2080" Lut="2497" MULTALU27X18="1" MULT27X36="9" Bsram="7" Ssram="24"/>
+        <SubModule name="cfa_Top_inst" Register="626" Alu="554" Lut="872" Bsram="6"/>
+        <SubModule name="ccm_Top_inst" Register="650" Alu="216" Lut="91" MULTALU27X18="9"/>
+        <SubModule name="Gamma_Top_inst" Register="30" Lut="5" Bsram="3"/>
+    </SubModule>
     <SubModule name="ddr_PLL_inst"/>
     <SubModule name="ddr3_ctrl_2port">
-        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="275">
+        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="293">
             <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="370" Bsram="8"/>
-            <SubModule name="wr_data_fifo" Register="92" Alu="20" Lut="79" Bsram="8"/>
+            <SubModule name="wr_data_fifo" Register="95" Alu="20" Lut="79" Bsram="8"/>
         </SubModule>
         <SubModule name="your_instance_name" Register="5597" Alu="207" Lut="3397" Bsram="24"/>
     </SubModule>
     <SubModule name="hdmi_PLL_inst"/>
     <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2"/>
-    <SubModule name="disp_driver0" Lut="36">
-        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="56"/>
+    <SubModule name="disp_driver0" Lut="37">
+        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="54"/>
     </SubModule>
     <SubModule name="dvi_tx_top_inst">
-        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="97"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="96"/>
         <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
-        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="93"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="89"/>
         <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
-        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="89"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="98"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
         <SubModule name="clock_phy"/>
     </SubModule>
+    <SubModule name="ahb_isp_inst" Register="182" Lut="118"/>
+    <SubModule name="Gowin_EMPU_M1_Top_inst" Register="2617" Alu="155" Lut="5739" MULT27X36="2" Bsram="68" Ssram="16"/>
 </Module>

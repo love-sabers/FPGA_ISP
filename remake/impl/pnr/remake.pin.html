@@ -78,7 +78,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Oct  8 17:03:49 2024
+<td>Wed Oct 16 18:21:14 2024
 </td>
 </tr>
 <tr>
@@ -356,6 +356,25 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>MEDIUM</td>
 </tr>
 <tr>
+<td class="label">MCU_UART_RX</td>
+<td></td>
+<td>V22/2</td>
+<td>Y</td>
+<td>in</td>
+<td>IOR31[B]</td>
+<td>LVCMOS33</td>
+<td>OFF</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>ON</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
 <td class="label">led[0]</td>
 <td></td>
 <td>J14/4</td>
@@ -590,6 +609,25 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>Y</td>
 <td>out</td>
 <td>IOR65[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">MCU_UART_TX</td>
+<td></td>
+<td>U22/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR31[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
 <td>NONE</td>
@@ -1260,6 +1298,44 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>UP</td>
 <td>OFF</td>
 <td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">swdio</td>
+<td></td>
+<td>P23/3</td>
+<td>Y</td>
+<td>io</td>
+<td>IOR74[A]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">swclk</td>
+<td></td>
+<td>P24/3</td>
+<td>Y</td>
+<td>io</td>
+<td>IOR74[B]</td>
+<td>LVCMOS33</td>
+<td>OFF</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>ON</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6037,14 +6113,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">U22/2</td>
-<td>-</td>
-<td>in</td>
+<td>MCU_UART_TX</td>
+<td>out</td>
 <td>IOR31[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6054,12 +6130,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">V22/2</td>
-<td>-</td>
+<td>MCU_UART_RX</td>
 <td>in</td>
 <td>IOR31[B]</td>
 <td>LVCMOS33</td>
-<td>8</td>
-<td>UP</td>
+<td>OFF</td>
+<td>NONE</td>
 <td>OFF</td>
 <td>ON</td>
 <td>OFF</td>
@@ -6717,14 +6793,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">P23/3</td>
-<td>-</td>
-<td>in</td>
+<td>swdio</td>
+<td>io</td>
 <td>IOR74[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
 <td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6734,11 +6810,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">P24/3</td>
-<td>-</td>
+<td>swclk</td>
 <td>in</td>
 <td>IOR74[B]</td>
 <td>LVCMOS33</td>
-<td>8</td>
+<td>OFF</td>
 <td>NONE</td>
 <td>OFF</td>
 <td>ON</td>

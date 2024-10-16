@@ -1,0 +1,885 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ahb_def_slave.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_define.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_static_macro_define.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":0)
+Analyzing included file 'can_parameter.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can.v":5664)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_define.vh'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_static_macro_define.vh'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_define.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v":49)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v":49)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_static_macro_define.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v":49)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\can_top.v":49)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_adder.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ahb.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_fns.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ahb.v":907)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ahb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ahb.v":907)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v":150)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v":150)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v":150)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v":150)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_core.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v":2099)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v":2099)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v":2099)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v":2099)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl_add3.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v":94)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v":94)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v":94)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v":94)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_mux.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v":352)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v":352)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v":352)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v":352)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":771)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v":535)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v":535)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v":535)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v":535)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":358)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_sys.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v":232)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v":232)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v":232)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v":232)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_sys.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_tcm.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v":912)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v":912)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v":912)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v":912)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_fns.vh'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":924)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v":2111)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v":2111)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v":2111)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v":2111)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_fetch.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_fns.vh'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_matrix_check_fns.vh'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_mem_ctl.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_multiplier.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_multiply_shift.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_mux4.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v":393)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v":393)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v":393)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v":393)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":794)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v":297)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v":297)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v":297)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v":297)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v":188)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v":188)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v":188)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v":188)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":138)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":138)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":138)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":138)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v":94)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v":94)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v":94)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v":94)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v":194)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v":194)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v":194)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v":194)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_reg_bank.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v":181)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v":181)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v":181)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v":181)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_undefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'
+Analyzing included file 'triple_speed_mac_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\triple_speed_mac_name.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+WARN  (EX3705) : Macro '**' is redefined("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\triple_speed_mac_name.v":0)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing included file 'triple_speed_mac_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing included file 'triple_speed_mac_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing included file 'triple_speed_mac_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing included file 'triple_speed_mac_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+WARN  (EX3788) : Block identifier is required on this block("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":0)
+Analyzing included file 'triple_speed_mac_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac.v":2856)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_miim_wrapper.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_rx_buffer_to_ahb.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_rx_to_buffer.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_rx_wrapper.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_sdp_wrapper_32bit.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v'
+Analyzing included file 'triple_speed_mac_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v":127)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v":127)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\triple_speed_mac_name.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v":127)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_top.v":127)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_tx_wrapper.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_ethmac_wrapper.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_gpio.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v":768)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v":768)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v":768)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash.v":768)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v":286)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v":286)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v":286)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ahbif_ctrl.v":286)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v":193)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v":193)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v":193)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_arbiter.v":193)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_async_fifo_clr.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v":472)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v":472)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v":472)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_ctrl.v":472)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v":153)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v":153)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v":153)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_eilmif_ctrl.v":153)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v":83)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v":83)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v":83)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_fifo.v":83)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_gck.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_pad_lib.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v":431)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v":431)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v":431)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_reg.v":431)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v":135)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v":135)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v":135)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif.v":135)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v":88)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v":88)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v":88)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_regif_ctrl.v":88)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v":317)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v":317)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v":317)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_spiif.v":317)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_sync.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_sync_l2l.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_sync_p2p.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_to_iop.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers.v":246)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers.v":246)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_defs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_frc.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_frc.v":421)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_frc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_dualtimers_frc.v":421)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_spi.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_timer.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v":238)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v":238)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v":238)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_autocorrelation.v":238)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_balancefilter.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_balancefilter.v":110)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_balancefilter.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_balancefilter.v":110)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_collector.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_collector.v":68)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_collector.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_collector.v":68)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_crngt_to_trng.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_crngt_to_trng.v":70)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_crngt_to_trng.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_crngt_to_trng.v":70)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_inv_chain.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v":94)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v":94)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v":94)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dx_trng_top.v":94)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_ff.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_ff.v":38)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_ff.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_ff.v":38)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_interrupt_low.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_interrupt_low.v":53)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_interrupt_low.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_interrupt_low.v":53)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux.v":38)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux.v":38)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux_clk.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux_clk.v":38)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux_clk.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_mux_clk.v":38)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_sync.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_sync.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_sync.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_dxm_sync.v":43)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v":89)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v":89)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_addr_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v":89)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_ehr.v":89)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_entropy_gen.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_gtech_models.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_lfsr_new.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_line.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_noise_gen.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v":84)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v":84)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v":84)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_pmf_table.v":84)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_prng_top_wrap.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_prng_top_wrap.v":186)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_prng_top_wrap.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_prng_top_wrap.v":186)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_addr_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_reg_file.v":144)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v":79)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v":79)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v":79)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_engine.v":79)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_addr_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_misc.v":281)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v":193)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v":193)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v":193)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top.v":193)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top_wrap_unconnected.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top_wrap_unconnected.v":44)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top_wrap_unconnected.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rng_top_wrap_unconnected.v":44)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rosc.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rst_logic.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rst_logic.v":65)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rst_logic.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_rst_logic.v":65)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v":55)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v":55)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v":55)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sample_cntr.v":55)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_slave_bus_ifc.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_slave_bus_ifc.v":74)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_slave_bus_ifc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_slave_bus_ifc.v":74)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sync.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sync.v":138)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sync.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_sync.v":138)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_tests_misc.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_tests_misc.v":78)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_tests_misc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_tests_misc.v":78)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v":230)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v":230)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v":230)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_trng_top.v":230)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_uart.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog.v":251)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog.v":251)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_defs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_frc.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_frc.v":374)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_frc.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_watchdog_frc.v":374)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_iop_gpio.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'
+Analyzing included file 'cm1_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_undefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":851)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegration.v'
+Analyzing included file 'cm1_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegration.v":395)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegration.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegration.v":395)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegrationWrapper.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapahbap.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapahbap.v":214)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapahbap.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapahbap.v":214)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApAhbSync.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApAhbSync.v":111)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApAhbSync.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApAhbSync.v":111)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDapSync.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDapSync.v":126)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDapSync.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDapSync.v":126)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApMst.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApMst.v":567)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApMst.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApMst.v":567)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSlv.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSlv.v":904)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSlv.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSlv.v":904)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSyn.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDecMux.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbSync.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpEnSync.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpIMux.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpSync.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v":85)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v":85)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":662)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v":85)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpDefs.v":85)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":662)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v":393)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v":393)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v":116)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v":116)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpProtocol.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpProtocol.v":1209)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v":116)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpDefs.v":116)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpProtocol.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpProtocol.v":1209)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpSync.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapswjdp.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjDpDefs.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjWatcher.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjDpDefs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjWatcher.v":232)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjWatcher.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjWatcher.v":232)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_name.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+WARN  (EX3705) : Macro '**' is redefined("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_name.v":0)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+WARN  (EX3628) : Redeclaration of ANSI port '**' is not allowed("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_pll_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+WARN  (EX3638) : '**' is already implicitly declared on line **("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+WARN  (EX3801) : Parameter '**' becomes localparam in '**' with formal parameter declaration list("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+WARN  (EX3680) : Concatenation with an unsized literal will be treated as 32 bits("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":5028)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+WARN  (EX2830) : Data object '**' is already declared("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Previous declaration of '**' is from here("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+WARN  (EX3671) : Second declaration of '**' is ignored("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_1_4code.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_define.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_name.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_to_ahb_top.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ddr3_name.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DDR3_TOP.v":133)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":4)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":4)
+Undeclared symbol 'JTAGNSW', assumed default net type 'wire'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":1280)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinAhbExt.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Analyzing included file 'cm1_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_config.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_spi_flash_const.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Analyzing included file 'triple_speed_mac_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":1729)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v":700)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v":700)
+Analyzing included file 'triple_speed_mac_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v":700)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v":700)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_ahb_psram.v'
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_ahb_psram.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_i2c.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_i2c.v":591)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_i2c.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_i2c.v":591)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":466)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":466)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v'
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_sd.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_gpio.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\InputStage.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS0.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS1.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS2.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb1.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb2.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb3.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage1.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage2.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage3.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\p_sse050_interconnect_f0_ahb_to_apb.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\p_sse050_interconnect_f0_apb_slave_mux.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+WARN  (EX3705) : Macro '**' is redefined("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v":0)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Undeclared symbol '**', assumed default net type '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":1411)
+WARN  (EX3788) : Block identifier is required on this block("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_code.v":0)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":3)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":3)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_define.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":4)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":4)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":30)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":30)
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_local_param.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":31)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\psram_top.v":31)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_addr_params.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_cc_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_params.v":43)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Rtc.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcApbif.v'
+Analyzing included file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcParams.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcApbif.v":499)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcApbif.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcApbif.v":499)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcControl.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcCounter.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcInterrupt.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcParams.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcRevAnd.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcSynctoPCLK.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\RtcUpdate.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_int_apb_decoder.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v'
+Analyzing included file 'ahb_option_defs.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v":581)
+Back to file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v":581)
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sync_p2p.v'
+Analyzing Verilog file 'D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\triple_speed_mac_name.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\cm1_option_defs.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\ahb_option_defs.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\can_parameter.vh'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\triple_speed_mac_param.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\triple_speed_mac_define.v'
+WARN  (EX2582) : Parameter '**' declared inside ** '**' shall be treated as localparam("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gwmc_param.v":0)
+WARN  (EX2582) : Parameter '**' declared inside ** '**' shall be treated as localparam("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\rng_addr_params.v":0)
+WARN  (EX2582) : Parameter 'CFIFO_DEPTH' declared inside compilation unit '$unit_d__program_files_gowin_gowin_v1_9_9_x64_ide_ipcore_gowin_empu_m1_data_debug_ahb_def_slave_v' shall be treated as localparam("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\can_parameter.vh":1)
+WARN  (EX2582) : Parameter 'RGMII_INPUT_DELAY_VALUE' declared inside compilation unit '$unit_d__program_files_gowin_gowin_v1_9_9_x64_ide_ipcore_gowin_empu_m1_data_debug_ahb_def_slave_v' shall be treated as localparam("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\triple_speed_mac_param.v":1)
+WARN  (EX2582) : Parameter 'MIIM_CLK_DIVIDER' declared inside compilation unit '$unit_d__program_files_gowin_gowin_v1_9_9_x64_ide_ipcore_gowin_empu_m1_data_debug_ahb_def_slave_v' shall be treated as localparam("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\triple_speed_mac_param.v":2)
+Compiling module 'Gowin_EMPU_M1_Top'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":6)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegrationWrapper.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1DbgIntegration.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\CortexM1Dbg.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_ahb_os.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_tree.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_num.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_pri_lvl.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_nvic_main.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_sys.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_mtx_dbg.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_sys.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_dec.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ahb_mux.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_ctl.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_bp.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_dw.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_rom_tb.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_tcm.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_core.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_fetch.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_decoder.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ctl_add3.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_excpt.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_reg_bank.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_reg_bank.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_reg_bank.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_alu_dec.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_adder.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_multiply_shift.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_shifter.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_multiplier.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_mem_ctl.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_mux4.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_ahb.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapahbap.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSlv.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApMst.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApDapSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSyn.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApAhbSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPAhbApSyn.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\itcmdbg.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+Extracting RAM for identifier '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+WARN  (EX3988) : Cannot open file '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dtcmdbg.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapswjdp.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwjWatcher.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpProtocol.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpIMux.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v":0)
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpApbIf.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpApbSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpEnSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDpSync.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPDecMux.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExtWrapper.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinAhbExt.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\InputStage.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS0.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS1.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\MatrixDecodeS2.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage1.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb1.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage3.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb3.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputStage2.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\OutputArb2.v":0)
+WARN  (EX3670) : Actual bit length ** differs from formal bit length ** for port '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_gpio.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_ahb_to_iop.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_iop_gpio.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\ahb_def_slave.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\p_sse050_interconnect_f0_ahb_to_apb.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\p_sse050_interconnect_f0_apb_slave_mux.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_int_apb_decoder.v":0)
+Compiling module '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cmsdk_apb_uart.v":0)
+WARN  (EX3670) : Actual bit length ** differs from formal bit length ** for port '**'("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+WARN  (EX1998) : Net '**' does not have a driver("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+WARN  (EX1998) : Net 'JTAG_3' does not have a driver("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":1202)
+WARN  (EX1998) : Net 'JTAG_5' does not have a driver("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":1204)
+WARN  (EX1998) : Net 'wdog_reset_req' does not have a driver("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":1234)
+NOTE  (EX0101) : Current top module is "Gowin_EMPU_M1_Top"
+WARN  (EX0200) : Property "syn_encoding" set invalid for "JTAGcurr[2]"("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":0)
+WARN  (EX0200) : Property "syn_encoding" set invalid for "JTAGcurr[1]"("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":0)
+WARN  (EX0200) : Property "syn_encoding" set invalid for "JTAGcurr[0]"("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":0)
+WARN  (EX0200) : Property "syn_encoding" set invalid for "JTAGcurr[3]"("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPJtagDpProtocol.v":0)
+[5%] Running netlist conversion ...
+WARN  (CV0018) : Input AHB1HRESP[1] is unused("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\Gowin_EMPU_M1_top.v":1008)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "cm1_mux4" instantiated to "u_rf0_mux" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dp.v":0)
+WARN  (NL0002) : The module "cm1_dbg_ahb_dec" instantiated to "dbg_ahb_dec" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\cm1_dbg_sys.v":0)
+WARN  (NL0002) : The module "DAPJtagDpProtocol" instantiated to "uDAPJtagDpProtocol" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapswjdp.v":0)
+WARN  (NL0002) : The module "DAPDpSync" instantiated to "uCDBGRSTACK" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\DAPSwDpSync.v":0)
+WARN  (NL0002) : The module "DAPSwjWatcher" instantiated to "uDAPSwjWatcher" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\dapswjdp.v":0)
+WARN  (NL0002) : The module "ahb_def_slave" instantiated to "u_ahb7" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+WARN  (NL0002) : The module "ahb_def_slave" instantiated to "u_ahb_ahbext" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\GowinCM1AhbExt.v":0)
+WARN  (NL0002) : The module "InputStage" instantiated to "uInputStage1" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v":0)
+WARN  (NL0002) : The module "InputStage" instantiated to "uInputStage2" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v":0)
+WARN  (NL0002) : The module "MatrixDecodeS1" instantiated to "uMatrixDecodeS1" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v":0)
+WARN  (NL0002) : The module "MatrixDecodeS2" instantiated to "uMatrixDecodeS2" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\BusMatrix.v":0)
+WARN  (NL0002) : The module "sse050_int_apb_decoder" instantiated to "u_decoder_uart0" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\sse050_integration_peripherals.v":0)
+WARN  (NL0002) : The module "p_sse050_interconnect_f0_apb_slave_mux" instantiated to "u_p_sse050_interconnect_f0_apb_slave_mux" is swept in optimizing("D:\Program Files\Gowin\Gowin_V1.9.9_x64\IDE\ipcore\GOWIN_EMPU_M1\data\debug\gw_apb_int_wrapper.v":0)
+[95%] Generate netlist file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\gowin_empu_m1.vg" completed
+Generate template file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\gowin_empu_m1_tmp.v" completed
+[100%] Generate report file "D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\temp\gw_empu_m1\gowin_empu_m1_syn.rpt.html" completed
+GowinSynthesis finish
