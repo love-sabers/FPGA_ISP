@@ -8,11 +8,11 @@ module ddr3_ctrl_2port(
     //用户接口
     input           rd_load             ,   //输出源更新信号
     input           wr_load             ,   //输入源更新信号
-    input   [28:0]  app_addr_rd_min     ,   //读DDR3的起始地址
-    input   [28:0]  app_addr_rd_max     ,   //读DDR3的结束地址
+    input   [28:0]  app_addr_rd_min_in     ,   //读DDR3的起始地址
+    input   [28:0]  app_addr_rd_max_in     ,   //读DDR3的结束地址
     input   [7:0]   rd_bust_len         ,   //从DDR3中读数据时的突发长度
-    input   [28:0]  app_addr_wr_min     ,   //写DD3的起始地址
-    input   [28:0]  app_addr_wr_max     ,   //写DDR的结束地址
+    input   [28:0]  app_addr_wr_min_in     ,   //写DD3的起始地址
+    input   [28:0]  app_addr_wr_max_in     ,   //写DDR的结束地址
     input   [7:0]   wr_bust_len         ,   //向DDR3中写数据时的突发长度
 
     input           wr_clk              ,//wr_fifo的写时钟信号
@@ -51,6 +51,47 @@ module ddr3_ctrl_2port(
     wire app_wdf_end;
     wire [2:0] app_cmd;
     wire [255:0] app_wdf_data;
+
+    // ab frame
+
+    wire [28:0] app_addr_rd_min;
+    wire [28:0] app_addr_rd_max;
+    wire [28:0] app_addr_wr_min;
+    wire [28:0] app_addr_wr_max;
+
+    wire [28:0] app_addr_max;
+
+    assign app_addr_max=app_addr_rd_max_in>app_addr_wr_max_in?app_addr_rd_max_in:app_addr_wr_max_in;
+
+    reg rd_count;
+    reg wr_count;
+    initial begin
+        rd_count<=1'b0;
+        wr_count<=1'b0;
+    end
+
+    // always @(posedge rd_clk or negedge sys_rst_n) begin
+    //     if(!sys_rst_n)begin
+    //         rd_count<=1'b0;
+    //     end else if(rd_load) begin
+    //         rd_count<=~wr_count;  
+    //     end
+    // end
+
+    // always @(posedge wr_clk or negedge sys_rst_n) begin
+    //     if(!sys_rst_n)begin
+    //         wr_count<=1'b1;
+    //     end else if(wr_load)begin
+    //         wr_count<=~wr_count;
+    //     end
+    // end
+
+    assign app_addr_rd_min = rd_count ? app_addr_rd_min_in +app_addr_max : app_addr_rd_min_in;
+    assign app_addr_rd_max = rd_count ? app_addr_rd_max_in +app_addr_max : app_addr_rd_max_in;
+    assign app_addr_wr_min = wr_count ? app_addr_wr_min_in +app_addr_max : app_addr_wr_min_in;
+    assign app_addr_wr_max = wr_count ? app_addr_wr_max_in +app_addr_max : app_addr_wr_max_in;
+
+
 
     fifo_ddr3_adapter fifo_ddr3_adapter(
        .ui_clk(ui_clk)              ,    //DDR用户时钟信号

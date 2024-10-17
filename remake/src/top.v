@@ -1,7 +1,7 @@
 module top
 #(
-	parameter source_h  = 800,
-	parameter source_v  = 480,
+	parameter source_h  = 1920,
+	parameter source_v  = 1080,
 
 	parameter video_hlength		= 2200,
 	parameter video_hsync_pol	= 1,
@@ -36,10 +36,10 @@ module top
     output[2:0] i2c_sel, 
 
     //mcu
-    output			MCU_UART_TX,
-	input			MCU_UART_RX,
-    inout           swdio,
-    inout           swclk,
+    // output			MCU_UART_TX,
+	// input			MCU_UART_RX,
+    // inout           swdio,
+    // inout           swclk,
 
     //ddr
     output [2:0]  ddr_bank        ,
@@ -131,71 +131,71 @@ module top
 	wire        cam_aec_en; 
 	wire [19:0] cam_aec_exposure; 
 
-    //isp
-	wire isp_clk;
-	wire isp_vs_out;
-	wire isp_de_out;
-	wire [7:0] isp_data_R;
-	wire [7:0] isp_data_G;
-	wire [7:0] isp_data_B;
+    // //isp
+	// wire isp_clk;
+	// wire isp_vs_out;
+	// wire isp_de_out;
+	// wire [7:0] isp_data_R;
+	// wire [7:0] isp_data_G;
+	// wire [7:0] isp_data_B;
 	
-	wire isp_rd_rdy;
-	wire isp_reg_wr_en;
-	wire [15:0] isp_reg_addr;
-	wire [31:0] isp_reg_wr_data;
-	wire isp_reg_rd_en;
-	wire [31:0] isp_reg_rd_data;
-	wire [3:0] isp_disp_mode;
-    wire isp_image_mask;
+	// wire isp_rd_rdy;
+	// wire isp_reg_wr_en;
+	// wire [15:0] isp_reg_addr;
+	// wire [31:0] isp_reg_wr_data;
+	// wire isp_reg_rd_en;
+	// wire [31:0] isp_reg_rd_data;
+	// wire [3:0] isp_disp_mode;
+    // wire isp_image_mask;
 
-    wire [3:0] isp_mode;
-    assign isp_mode=4'h0;//0:GAMMA 1:RAW 2:CFA 3:CCM  
+    // wire [3:0] isp_mode;
+    // assign isp_mode=4'h0;//0:GAMMA 1:RAW 2:CFA 3:CCM  
 
-    isp_top  #(
-		.DATA_WIDTH(8)
-	)isp_inst(
-		.clk(camera_pclk), 
-		.rstn(camera_rst_n),
+    // isp_top  #(
+	// 	.DATA_WIDTH(8)
+	// )isp_inst(
+	// 	.clk(camera_pclk), 
+	// 	.rstn(camera_rst_n),
 
-		.in_vs(camera_vsync),
-		.in_de(camera_href),
-		.in_data(camera_data),
+	// 	.in_vs(camera_vsync),
+	// 	.in_de(camera_href),
+	// 	.in_data(camera_data),
 		
-		.isp_rd_rdy(isp_rd_rdy),
-		.isp_reg_wr_en(isp_reg_wr_en),
-		.isp_reg_addr(isp_reg_addr),
-		.isp_reg_wr_data(isp_reg_wr_data),
-		.isp_reg_rd_en(isp_reg_rd_en),
-		.isp_reg_rd_data(isp_reg_rd_data),
-        .isp_disp_mode(isp_mode),
+	// 	.isp_rd_rdy(isp_rd_rdy),
+	// 	.isp_reg_wr_en(isp_reg_wr_en),
+	// 	.isp_reg_addr(isp_reg_addr),
+	// 	.isp_reg_wr_data(isp_reg_wr_data),
+	// 	.isp_reg_rd_en(isp_reg_rd_en),
+	// 	.isp_reg_rd_data(isp_reg_rd_data),
+    //     .isp_disp_mode(isp_mode),
 	
-        .out_clk(isp_clk),
-		.out_vs(isp_vs_out),
-		.out_de(isp_de_out),
-		.out_data_R(isp_data_R),
-		.out_data_G(isp_data_G),
-		.out_data_B(isp_data_B)
-	);
+    //     .out_clk(isp_clk),
+	// 	.out_vs(isp_vs_out),
+	// 	.out_de(isp_de_out),
+	// 	.out_data_R(isp_data_R),
+	// 	.out_data_G(isp_data_G),
+	// 	.out_data_B(isp_data_B)
+	// );
 
-    // wire DVP_DataValid;
-    // wire DVP_DataVs;
-    // wire [7:0] DVP_DataPixel;
+    wire DVP_DataValid;
+    wire DVP_DataVs;
+    wire [7:0] DVP_DataPixel;
 
-    // DVP_Capture_raw DVP_Capture(
-    //     .Rst_n      (reset_n         ),//input
-    //     .PCLK       (camera_pclk      ),//input
-    //     .Vsync      (camera_vsync     ),//input
-    //     .Href       (camera_href      ),//input
-    //     .Data       (camera_data      ),//input     [7:0]
+    DVP_Capture_raw DVP_Capture(
+        .Rst_n      (reset_n         ),//input
+        .PCLK       (camera_pclk      ),//input
+        .Vsync      (camera_vsync     ),//input
+        .Href       (camera_href      ),//input
+        .Data       (camera_data      ),//input     [7:0]
 
-    //     .ImageState (                 ),//output reg
-    //     .DataValid  (DVP_DataValid    ),//output
-    //     .DataPixel  (DVP_DataPixel    ),//output    [15:0]
-    //     .DataHs     (                 ),//output
-    //     .DataVs     (DVP_DataVs       ),//output
-    //     .Xaddr      (                 ),//output    [11:0],start is 1
-    //     .Yaddr      (                 ) //output    [11:0],start is 1
-    // );
+        .ImageState (                 ),//output reg
+        .DataValid  (DVP_DataValid    ),//output
+        .DataPixel  (DVP_DataPixel    ),//output    [15:0]
+        .DataHs     (                 ),//output
+        .DataVs     (DVP_DataVs       ),//output
+        .Xaddr      (                 ),//output    [11:0],start is 1
+        .Yaddr      (                 ) //output    [11:0],start is 1
+    );
 
     //ddr_PLL
 
@@ -226,23 +226,25 @@ module top
     wire wrfifo_clk;
     wire [31:0] wrfifo_din;
 
-    assign wr_load=isp_vs_out;
-    assign wrfifo_wren=isp_de_out;
-    assign wrfifo_clk=isp_clk;
-    assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
+    //isp
+    // assign wr_load=isp_vs_out;
+    // assign wrfifo_wren=isp_de_out;
+    // assign wrfifo_clk=isp_clk;
+    // assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
 
+    //dvp raw
+    assign wr_load=DVP_DataVs;
+    assign wrfifo_wren=DVP_DataValid;
+    assign wrfifo_clk=camera_pclk;
+    assign wrfifo_din={DVP_DataPixel[7:0],DVP_DataPixel[7:0],DVP_DataPixel[7:0],8'hFF};
 
-    // assign wr_load=DVP_DataVs;
-    // assign wrfifo_wren=DVP_DataValid;
-    // assign wrfifo_clk=camera_pclk;
-    // assign wrfifo_din={DVP_DataPixel[7:0],DVP_DataPixel[7:0],DVP_DataPixel[7:0],8'hFF};
-
-
+    //dvp rgb
     // assign wr_load=DVP_DataVs;
     // assign wrfifo_wren=DVP_DataValid;
     // assign wrfifo_clk=camera_pclk;
     // assign wrfifo_din={DVP_DataPixel[15:11],3'd0,DVP_DataPixel[10:5],2'd0,DVP_DataPixel[4:0],3'd0,8'hFF};
 
+    //gen
     // assign wr_load=gen_vsync;
     // assign wrfifo_wren=gen_den;
     // assign wrfifo_clk=hdmi_clk148m5;
@@ -266,11 +268,11 @@ module top
         .wr_load(wr_load)             ,   //输入源更新信号
 
             //常数
-        .app_addr_rd_min(29'd0)     ,   //读DDR3的起始地址
-        .app_addr_rd_max(app_addr_max)     ,   //读DDR3的结束地址
+        .app_addr_rd_min_in(29'd0)     ,   //读DDR3的起始地址
+        .app_addr_rd_max_in(app_addr_max)     ,   //读DDR3的结束地址
         .rd_bust_len(burst_len)         ,   //从DDR3中读数据时的突发长度
-        .app_addr_wr_min(29'd0)     ,   //写DD3的起始地址
-        .app_addr_wr_max(app_addr_max)     ,   //写DDR的结束地址
+        .app_addr_wr_min_in(29'd0)     ,   //写DD3的起始地址
+        .app_addr_wr_max_in(app_addr_max)     ,   //写DDR的结束地址
         .wr_bust_len(burst_len)         ,   //向DDR3中写数据时的突发长度
             //控制接口
         .wr_clk(wrfifo_clk)             ,//wr_fifo的写时钟信号
@@ -379,90 +381,90 @@ module top
 
 
     //ahb
-    wire [31:0] AHB1HRDATA;      // Data from slave to master
-	wire        AHB1HREADYOUT;   // Slave ready signal
-	wire [1:0]  AHB1HRESP;       // Slave response signal  
-	wire [1:0]  AHB1HTRANS;      // Transfer type
-	wire [2:0]  AHB1HBURST;      // Burst type
-	wire [3:0]  AHB1HPROT;       // Transfer protection bits
-	wire [2:0]  AHB1HSIZE;       // Transfer size
-	wire        AHB1HWRITE;      // Transfer direction
-	wire        AHB1HMASTLOCK;   // Transfer is a locked transfer
-	wire        AHB1HREADYMUX;   // Ready mux signal
-	wire [3:0]  AHB1HMASTER;     // Transfer is a locked transfer
-	wire [31:0] AHB1HADDR;       // Transfer address
-	wire [31:0] AHB1HWDATA;      // Data from master to slave
-	wire        AHB1HSEL;        // Select
-	wire        AHB1HCLK;        // Bus clock signal
-	wire        AHB1HRESET;      // Bus reset signal
+    // wire [31:0] AHB1HRDATA;      // Data from slave to master
+	// wire        AHB1HREADYOUT;   // Slave ready signal
+	// wire [1:0]  AHB1HRESP;       // Slave response signal  
+	// wire [1:0]  AHB1HTRANS;      // Transfer type
+	// wire [2:0]  AHB1HBURST;      // Burst type
+	// wire [3:0]  AHB1HPROT;       // Transfer protection bits
+	// wire [2:0]  AHB1HSIZE;       // Transfer size
+	// wire        AHB1HWRITE;      // Transfer direction
+	// wire        AHB1HMASTLOCK;   // Transfer is a locked transfer
+	// wire        AHB1HREADYMUX;   // Ready mux signal
+	// wire [3:0]  AHB1HMASTER;     // Transfer is a locked transfer
+	// wire [31:0] AHB1HADDR;       // Transfer address
+	// wire [31:0] AHB1HWDATA;      // Data from master to slave
+	// wire        AHB1HSEL;        // Select
+	// wire        AHB1HCLK;        // Bus clock signal
+	// wire        AHB1HRESET;      // Bus reset signal
 
-      ahb_isp ahb_isp_inst(
-		.AHB_HRDATA(AHB1HRDATA),
-		.AHB_HREADY(AHB1HREADYOUT),//ready signal, slave to MCU master, 1'b1
-		.AHB_HRESP(AHB1HRESP),//respone signal, slave to MCU master
-		.AHB_HTRANS(AHB1HTRANS),
-		.AHB_HBURST(AHB1HBURST),
-		.AHB_HPROT(AHB1HPROT),
-		.AHB_HSIZE(AHB1HSIZE),
-		.AHB_HWRITE(AHB1HWRITE),
-		.AHB_HMASTLOCK(AHB1HMASTLOCK),
-		.AHB_HMASTER(AHB1HMASTER),
-		.AHB_HADDR(AHB1HADDR),
-		.AHB_HWDATA(AHB1HWDATA),
-		.AHB_HSEL(AHB1HSEL),
-		.AHB_HCLK(AHB1HCLK),
-		.AHB_HRESETn(AHB1HRESET),
+    //   ahb_isp ahb_isp_inst(
+	// 	.AHB_HRDATA(AHB1HRDATA),
+	// 	.AHB_HREADY(AHB1HREADYOUT),//ready signal, slave to MCU master, 1'b1
+	// 	.AHB_HRESP(AHB1HRESP),//respone signal, slave to MCU master
+	// 	.AHB_HTRANS(AHB1HTRANS),
+	// 	.AHB_HBURST(AHB1HBURST),
+	// 	.AHB_HPROT(AHB1HPROT),
+	// 	.AHB_HSIZE(AHB1HSIZE),
+	// 	.AHB_HWRITE(AHB1HWRITE),
+	// 	.AHB_HMASTLOCK(AHB1HMASTLOCK),
+	// 	.AHB_HMASTER(AHB1HMASTER),
+	// 	.AHB_HADDR(AHB1HADDR),
+	// 	.AHB_HWDATA(AHB1HWDATA),
+	// 	.AHB_HSEL(AHB1HSEL),
+	// 	.AHB_HCLK(AHB1HCLK),
+	// 	.AHB_HRESETn(AHB1HRESET),
 		
-		.isp_reg_rd_en(isp_reg_rd_en),
-		.isp_reg_wr_en(isp_reg_wr_en),
-		.isp_reg_addr(isp_reg_addr),
-		.isp_reg_wr_data(isp_reg_wr_data),
-		.isp_reg_rd_data(isp_reg_rd_data),
-		.isp_rd_rdy(isp_rd_rdy),
+	// 	.isp_reg_rd_en(isp_reg_rd_en),
+	// 	.isp_reg_wr_en(isp_reg_wr_en),
+	// 	.isp_reg_addr(isp_reg_addr),
+	// 	.isp_reg_wr_data(isp_reg_wr_data),
+	// 	.isp_reg_rd_data(isp_reg_rd_data),
+	// 	.isp_rd_rdy(isp_rd_rdy),
 
-        .isp_vs(camera_vsync),
-		.isp_disp_mode(isp_disp_mode),
+    //     .isp_vs(camera_vsync),
+	// 	.isp_disp_mode(isp_disp_mode),
 		
-		.update_valid(update_valid),
-		.cam_awb_en(cam_awb_en),
-		.cam_awb_gain_r(cam_awb_gain_r),
-		.cam_awb_gain_g(cam_awb_gain_g),
-		.cam_awb_gain_b(cam_awb_gain_b),
-		.cam_agc_en(cam_agc_en),
-		.cam_agc_gain(cam_agc_gain),
-		.cam_aec_en(cam_aec_en),
-		.cam_aec_exposure(cam_aec_exposure)
-	);
+	// 	.update_valid(update_valid),
+	// 	.cam_awb_en(cam_awb_en),
+	// 	.cam_awb_gain_r(cam_awb_gain_r),
+	// 	.cam_awb_gain_g(cam_awb_gain_g),
+	// 	.cam_awb_gain_b(cam_awb_gain_b),
+	// 	.cam_agc_en(cam_agc_en),
+	// 	.cam_agc_gain(cam_agc_gain),
+	// 	.cam_aec_en(cam_aec_en),
+	// 	.cam_aec_exposure(cam_aec_exposure)
+	// );
 
-    //mcu
-    Gowin_EMPU_M1_Top Gowin_EMPU_M1_Top_inst(
-		.LOCKUP         (),
-	    .GPIOIN			({15'b0, isp_rd_rdy}),
-		.GPIOOUT		(),
-		.GPIOOUTEN		(),
-        .JTAG_7(swdio), //inout JTAG_7 //swdio
-		.JTAG_9(swclk), //inout JTAG_9 //swclk
-		.UART0RXD       (MCU_UART_RX),
-		.UART0TXD       (MCU_UART_TX),  
-		.AHB1HRDATA		(AHB1HRDATA),       // Data from slave to master
-		.AHB1HREADYOUT	(AHB1HREADYOUT), // Slave ready signal, from slave, 1'b1
-		.AHB1HRESP		(AHB1HRESP),         // Slave response signal  
-		.AHB1HTRANS		(AHB1HTRANS),       // Transfer type
-		.AHB1HBURST		(AHB1HBURST),       // Burst type
-		.AHB1HPROT		(AHB1HPROT),         // Transfer protection bits
-		.AHB1HSIZE		(AHB1HSIZE),         // Transfer size
-		.AHB1HWRITE		(AHB1HWRITE),       // Transfer direction
-		.AHB1HREADYMUX	(AHB1HREADYMUX), // Ready mux
-		.AHB1HMASTLOCK	(AHB1HMASTLOCK), // Transfer is a locked transfer
-		.AHB1HMASTER	(AHB1HMASTER),     // Transfer is a locked transfer
-		.AHB1HADDR		(AHB1HADDR),         // Transfer address
-		.AHB1HWDATA		(AHB1HWDATA),       // Data from master to slave
-		.AHB1HSEL		(AHB1HSEL),           // Select
-		.AHB1HCLK		(AHB1HCLK),           // Clock
-		.AHB1HRESET		(AHB1HRESET),       // Reset
-		.HCLK           (clk50m),			// 50M
-		.hwRstn         (reset_n)
-	  );
+    // //mcu
+    // Gowin_EMPU_M1_Top Gowin_EMPU_M1_Top_inst(
+	// 	.LOCKUP         (),
+	//     .GPIOIN			({15'b0, isp_rd_rdy}),
+	// 	.GPIOOUT		(),
+	// 	.GPIOOUTEN		(),
+    //     .JTAG_7(swdio), //inout JTAG_7 //swdio
+	// 	.JTAG_9(swclk), //inout JTAG_9 //swclk
+	// 	.UART0RXD       (MCU_UART_RX),
+	// 	.UART0TXD       (MCU_UART_TX),  
+	// 	.AHB1HRDATA		(AHB1HRDATA),       // Data from slave to master
+	// 	.AHB1HREADYOUT	(AHB1HREADYOUT), // Slave ready signal, from slave, 1'b1
+	// 	.AHB1HRESP		(AHB1HRESP),         // Slave response signal  
+	// 	.AHB1HTRANS		(AHB1HTRANS),       // Transfer type
+	// 	.AHB1HBURST		(AHB1HBURST),       // Burst type
+	// 	.AHB1HPROT		(AHB1HPROT),         // Transfer protection bits
+	// 	.AHB1HSIZE		(AHB1HSIZE),         // Transfer size
+	// 	.AHB1HWRITE		(AHB1HWRITE),       // Transfer direction
+	// 	.AHB1HREADYMUX	(AHB1HREADYMUX), // Ready mux
+	// 	.AHB1HMASTLOCK	(AHB1HMASTLOCK), // Transfer is a locked transfer
+	// 	.AHB1HMASTER	(AHB1HMASTER),     // Transfer is a locked transfer
+	// 	.AHB1HADDR		(AHB1HADDR),         // Transfer address
+	// 	.AHB1HWDATA		(AHB1HWDATA),       // Data from master to slave
+	// 	.AHB1HSEL		(AHB1HSEL),           // Select
+	// 	.AHB1HCLK		(AHB1HCLK),           // Clock
+	// 	.AHB1HRESET		(AHB1HRESET),       // Reset
+	// 	.HCLK           (clk50m),			// 50M
+	// 	.hwRstn         (reset_n)
+	//   );
 
 	
 

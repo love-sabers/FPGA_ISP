@@ -8,7 +8,7 @@
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_control.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw_2.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_raw.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v" type="verilog"/>

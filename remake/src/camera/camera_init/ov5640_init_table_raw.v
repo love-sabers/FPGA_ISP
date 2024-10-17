@@ -257,7 +257,7 @@ module ov5640_init_table_raw #(
     rom[206] = 24'h5025_00;
     rom[207] = 24'h3008_02; // wake up from standby, bit[6]
 
-    // 12824'h720, 30fps
+    // 1280'h720, 30fps
     // input clock 24Mhz, PCLK 42Mhz
     rom[208] = 24'h3035_21; // PLL  21:30fps  41:15fps  81:7.5fps
     rom[209] = 24'h3036_69; // PLL

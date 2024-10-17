@@ -9,7 +9,8 @@
         <File path="src/camera/camera_init/i2c_control/i2c_bit_shift.v" type="file.verilog" enable="1"/>
         <File path="src/camera/camera_init/i2c_control/i2c_control.v" type="file.verilog" enable="1"/>
         <File path="src/camera/camera_init/ov5640_init_table_jpeg.v" type="file.verilog" enable="1"/>
-        <File path="src/camera/camera_init/ov5640_init_table_raw.v" type="file.verilog" enable="1"/>
+        <File path="src/camera/camera_init/ov5640_init_table_raw.v" type="file.verilog" enable="0"/>
+        <File path="src/camera/camera_init/ov5640_init_table_raw_2.v" type="file.verilog" enable="1"/>
         <File path="src/camera/camera_init/ov5640_init_table_rgb.v" type="file.verilog" enable="1"/>
         <File path="src/camera/dvp_capture/DVP_Capture_raw.v" type="file.verilog" enable="1"/>
         <File path="src/camera/dvp_capture/DVP_Capture_rgb565.v" type="file.verilog" enable="1"/>
