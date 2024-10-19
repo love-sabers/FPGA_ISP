@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top" Lut="3">
     <SubModule name="camera_PLL_inst"/>
-    <SubModule name="camera_init" Register="34" Lut="73">
+    <SubModule name="camera_init" Register="34" Lut="72">
         <SubModule name="ov5640_init_table_raw_inst" Bsram="1"/>
-        <SubModule name="i2c_control" Register="44" Lut="109">
-            <SubModule name="i2c_bit_shift" Register="23" Lut="77"/>
+        <SubModule name="i2c_control" Register="44" Lut="107">
+            <SubModule name="i2c_bit_shift" Register="23" Lut="74"/>
         </SubModule>
     </SubModule>
-    <SubModule name="DVP_Capture" Register="25" Lut="9"/>
+    <SubModule name="isp_inst" Register="143" Lut="69">
+        <SubModule name="cfa_Top_inst" Register="626" Alu="554" Lut="872" Bsram="6"/>
+        <SubModule name="ccm_Top_inst" Register="650" Alu="216" Lut="91" MULTALU27X18="9"/>
+        <SubModule name="Gamma_Top_inst" Register="30" Lut="5" Bsram="3"/>
+    </SubModule>
     <SubModule name="ddr_PLL_inst"/>
     <SubModule name="ddr3_ctrl_2port">
-        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="282">
+        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="279">
             <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="370" Bsram="8"/>
             <SubModule name="wr_data_fifo" Register="93" Alu="20" Lut="79" Bsram="8"/>
         </SubModule>
@@ -18,13 +22,13 @@
     </SubModule>
     <SubModule name="hdmi_PLL_inst"/>
     <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2"/>
-    <SubModule name="disp_driver0" Lut="36">
-        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="49"/>
+    <SubModule name="disp_driver0" Lut="34">
+        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="51"/>
     </SubModule>
     <SubModule name="dvi_tx_top_inst">
-        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="93"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="113"/>
         <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
-        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="87"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="95"/>
         <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="94"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>

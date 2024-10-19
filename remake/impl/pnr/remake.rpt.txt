@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Thu Oct 17 16:35:04 2024
+  <Created Time>:Sat Oct 19 14:40:49 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.456s, Elapsed time = 0h 0m 0.456s
+    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Placement Phase 1: CPU time = 0h 0m 0.241s, Elapsed time = 0h 0m 0.241s
     Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Total Placement: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.985s, Elapsed time = 0h 0m 0.986s
-    Routing Phase 1: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
-    Routing Phase 2: CPU time = 0h 0m 0.288s, Elapsed time = 0h 0m 0.288s
+    Routing Phase 0: CPU time = 0h 0m 0.782s, Elapsed time = 0h 0m 0.782s
+    Routing Phase 1: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
+    Routing Phase 2: CPU time = 0h 0m 0.286s, Elapsed time = 0h 0m 0.286s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 36s, Elapsed time = 0h 0m 36s
+    Total Routing: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s
  Generate output files:
     CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
 
- Total Time and Memory Usage: CPU time = 0h 0m 53s, Elapsed time = 0h 0m 53s, Peak memory usage = 1840MB
+ Total Time and Memory Usage: CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1816MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5150/138240  4%
-    --LUT,ALU,ROM16           | 5150(4751 LUT, 399 ALU, 0 ROM16)
+  Logic                       | 6984/138240  6%
+    --LUT,ALU,ROM16           | 6984(5795 LUT, 1189 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 6182/139140  5%
+  Register                    | 7606/139140  6%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 6182/138240  5%
+    --Logic Register as FF    | 7606/138240  6%
     --I/O Register as Latch   | 0/900  0%
     --I/O Register as FF      | 0/900  0%
-  CLS                         | 5090/69120  8%
+  CLS                         | 6520/69120  10%
   I/O Port                    | 106
   I/O Buf                     | 97
     --Input Buf               | 13
@@ -60,11 +60,12 @@
     --OSER8_MEM               | 40
     --OSER10                  | 3
     --IODELAY                 | 32
-  BSRAM                       | 13%
-    --SDPB                    | 24
+  BSRAM                       | 15%
+    --SDPB                    | 33
     --SDPX9B                  | 16
     --pROM                    | 1
-  DSP                         | 0%
+  DSP                         | 4%
+    --MULTALU27X18            | 9
   PLL                         | 3/12  25%
   DDRDLL                      | 1/4  25%
   DCS                         | 0/20  0%
@@ -112,8 +113,8 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  clk50m_d       | PRIMARY        |  PBR2 PBR3
-  camera_pclk_d  | PRIMARY        |  PTR2 PBR1 PBR2
+  clk50m_d       | PRIMARY        |  PTR2 PBR2 PBR3
+  camera_pclk_d  | PRIMARY        |  PTR2 PBR2
   camera_xclk_d  | PRIMARY        |  PBR1
   ddr_clk100m    | PRIMARY        |  PTR1 PBR1
   ddr_memory_clk400m| PRIMARY        |  PTR0 PBR0

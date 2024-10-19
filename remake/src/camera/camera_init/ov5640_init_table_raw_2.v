@@ -38,7 +38,7 @@ module ov5640_init_table_raw #(
 
   
 
-  always@(*) begin
+  initial begin
     rom[ 0]=   24'h3008_82;//0x3008[7] high 重置摄像头
     rom[ 1]=   24'h3103_03;//看不懂
     

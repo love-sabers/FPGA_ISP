@@ -12,7 +12,10 @@
 // `include "define.vh"
 // `include "parameter.vh"
 module isp_top #(
-	parameter 						    DATA_WIDTH = 8)(
+	parameter	DATA_WIDTH = 8,
+	parameter	H_PIXELS = 1920,
+	parameter   V_PIXELS = 1080
+	)(
 	input 							    clk, 
 	input							    rstn,
 
@@ -21,12 +24,12 @@ module isp_top #(
 	input [8-1:0] 			    		in_data,
 	
 	
-	output reg						    isp_rd_rdy,
-	input								isp_reg_wr_en,
-	input								isp_reg_rd_en,
-	input [15:0]						isp_reg_addr,
-	input [31:0]						isp_reg_wr_data,
-	output reg [31:0]					isp_reg_rd_data,
+	// output reg						    isp_rd_rdy,
+	// input								isp_reg_wr_en,
+	// input								isp_reg_rd_en,
+	// input [15:0]						isp_reg_addr,
+	// input [31:0]						isp_reg_wr_data,
+	// output reg [31:0]					isp_reg_rd_data,
 	input [3:0]                         isp_disp_mode,
 	
 	output 								out_clk,
@@ -39,8 +42,6 @@ module isp_top #(
 //**********************************************************************
 // --- Parameter
 //**********************************************************************
-	localparam H_PIXELS = 1920;
-	localparam V_PIXELS = 1080;
 	localparam NUM_CYCLE = 2;
 	localparam NUM_FRAME = 8;
 	
@@ -55,12 +56,12 @@ module isp_top #(
 	reg de_posedge_d;
 	reg [8-1:0] data_r0, data_r1, data_r2;
 
-	reg isp_reg_wr_en_r0, isp_reg_wr_en_r1, isp_reg_wr_en_r2;
-	reg isp_reg_rd_en_r0, isp_reg_rd_en_r1, isp_reg_rd_en_r2;
-	reg [31:0] isp_reg_wr_data_r0, isp_reg_wr_data_r1, isp_reg_wr_data_r2;
-	reg [15:0] isp_reg_addr_r0, isp_reg_addr_r1, isp_reg_addr_r2;
-	reg [3:0] isp_disp_mode_r0, isp_disp_mode_r1, isp_disp_mode_r2;
-    wire [31:0] isp_reg_rd_data_r;
+	// reg isp_reg_wr_en_r0, isp_reg_wr_en_r1, isp_reg_wr_en_r2;
+	// reg isp_reg_rd_en_r0, isp_reg_rd_en_r1, isp_reg_rd_en_r2;
+	// reg [31:0] isp_reg_wr_data_r0, isp_reg_wr_data_r1, isp_reg_wr_data_r2;
+	// reg [15:0] isp_reg_addr_r0, isp_reg_addr_r1, isp_reg_addr_r2;
+	// reg [3:0] isp_disp_mode_r0, isp_disp_mode_r1, isp_disp_mode_r2;
+    // wire [31:0] isp_reg_rd_data_r;
 
 	reg [3:0] cnt_cycle_in;
 
@@ -176,50 +177,50 @@ module isp_top #(
 
             
 	
-    always @(posedge clk or negedge rstn) begin
-		if(!rstn) begin
-			isp_reg_wr_en_r0 <= 0;
-			isp_reg_wr_en_r1 <= 0;
-			isp_reg_wr_en_r2 <= 0;
+    // always @(posedge clk or negedge rstn) begin
+	// 	if(!rstn) begin
+	// 		isp_reg_wr_en_r0 <= 0;
+	// 		isp_reg_wr_en_r1 <= 0;
+	// 		isp_reg_wr_en_r2 <= 0;
 
-            isp_reg_rd_en_r0 <= 0;
-			isp_reg_rd_en_r1 <= 0;
-			isp_reg_rd_en_r2 <= 0;
+    //         isp_reg_rd_en_r0 <= 0;
+	// 		isp_reg_rd_en_r1 <= 0;
+	// 		isp_reg_rd_en_r2 <= 0;
 
-            isp_reg_wr_data_r0 <= 0;
-            isp_reg_wr_data_r1 <= 0; 
-            isp_reg_wr_data_r2 <= 0;
+    //         isp_reg_wr_data_r0 <= 0;
+    //         isp_reg_wr_data_r1 <= 0; 
+    //         isp_reg_wr_data_r2 <= 0;
 
-            isp_reg_addr_r0 <= 0;
-            isp_reg_addr_r1 <= 0;
-            isp_reg_addr_r2 <= 0;
+    //         isp_reg_addr_r0 <= 0;
+    //         isp_reg_addr_r1 <= 0;
+    //         isp_reg_addr_r2 <= 0;
 
-            isp_disp_mode_r0 <= 0;
-            isp_disp_mode_r1 <= 0; 
-            isp_disp_mode_r2 <= 0;
-		end
-		else begin
-			isp_reg_wr_en_r0 <= isp_reg_wr_en;
-			isp_reg_wr_en_r1 <= isp_reg_wr_en_r0;
-			isp_reg_wr_en_r2 <= isp_reg_wr_en_r1;
+    //         isp_disp_mode_r0 <= 0;
+    //         isp_disp_mode_r1 <= 0; 
+    //         isp_disp_mode_r2 <= 0;
+	// 	end
+	// 	else begin
+	// 		isp_reg_wr_en_r0 <= isp_reg_wr_en;
+	// 		isp_reg_wr_en_r1 <= isp_reg_wr_en_r0;
+	// 		isp_reg_wr_en_r2 <= isp_reg_wr_en_r1;
 
-            isp_reg_rd_en_r0 <= isp_reg_rd_en;
-			isp_reg_rd_en_r1 <= isp_reg_rd_en_r0;
-			isp_reg_rd_en_r2 <= isp_reg_rd_en_r1;
+    //         isp_reg_rd_en_r0 <= isp_reg_rd_en;
+	// 		isp_reg_rd_en_r1 <= isp_reg_rd_en_r0;
+	// 		isp_reg_rd_en_r2 <= isp_reg_rd_en_r1;
 
-            isp_reg_wr_data_r0 <= isp_reg_wr_data;
-            isp_reg_wr_data_r1 <= isp_reg_wr_data_r0; 
-            isp_reg_wr_data_r2 <= isp_reg_wr_data_r1;
+    //         isp_reg_wr_data_r0 <= isp_reg_wr_data;
+    //         isp_reg_wr_data_r1 <= isp_reg_wr_data_r0; 
+    //         isp_reg_wr_data_r2 <= isp_reg_wr_data_r1;
 
-            isp_reg_addr_r0 <= isp_reg_addr;
-            isp_reg_addr_r1 <= isp_reg_addr_r0;
-            isp_reg_addr_r2 <= isp_reg_addr_r1;
+    //         isp_reg_addr_r0 <= isp_reg_addr;
+    //         isp_reg_addr_r1 <= isp_reg_addr_r0;
+    //         isp_reg_addr_r2 <= isp_reg_addr_r1;
 
-            isp_disp_mode_r0 <= isp_disp_mode;
-            isp_disp_mode_r1 <= isp_disp_mode_r0; 
-            isp_disp_mode_r2 <= isp_disp_mode_r1;
-		end
-	end
+    //         isp_disp_mode_r0 <= isp_disp_mode;
+    //         isp_disp_mode_r1 <= isp_disp_mode_r0; 
+    //         isp_disp_mode_r2 <= isp_disp_mode_r1;
+	// 	end
+	// end
 
 //**********************************************************************
 // --- Module: 
@@ -252,30 +253,30 @@ module isp_top #(
 // --- Module: AEAWB
 // --- Description:	
 //**********************************************************************
-    wire histo_rd_rdy;
+    // wire histo_rd_rdy;
 
-	AEAWB_Top AEAWB_top_inst(
-		.clk(clk), //input clk
-		.rstn(rstn), //input rstn
-		.ce(1'b1), //input ce
+	// AEAWB_Top AEAWB_top_inst(
+	// 	.clk(clk), //input clk
+	// 	.rstn(rstn), //input rstn
+	// 	.ce(1'b1), //input ce
 		
-		.waddr(isp_reg_addr_r2), //input [15:0] waddr
-		.wdata(isp_reg_wr_data_r2), //input [31:0] wdata
-		.wr(isp_reg_wr_en_r2), //input wr
+	// 	.waddr(isp_reg_addr_r2), //input [15:0] waddr
+	// 	.wdata(isp_reg_wr_data_r2), //input [31:0] wdata
+	// 	.wr(isp_reg_wr_en_r2), //input wr
 
-		.rdata(isp_reg_rd_data_r), //output [31:0] rdata
-		.rd(isp_reg_rd_en_r2), //input rd
+	// 	.rdata(isp_reg_rd_data_r), //output [31:0] rdata
+	// 	.rd(isp_reg_rd_en_r2), //input rd
 
-		.frame_sync(isp_frame_sync_i), //input frame_sync
-		.line_sync(isp_line_sync_i), //input line_sync
-		.inpvalid(isp_inpvalid_i), //input inpvalid
-		.din(isp_din), //input [7:0] din
+	// 	.frame_sync(isp_frame_sync_i), //input frame_sync
+	// 	.line_sync(isp_line_sync_i), //input line_sync
+	// 	.inpvalid(isp_inpvalid_i), //input inpvalid
+	// 	.din(isp_din), //input [7:0] din
 
-		.frame_sync_o(aa_frame_sync_o), //output frame_sync_o
-		.line_sync_o(aa_line_sync_o), //output line_sync_o
-		.outvalid(aa_outvalid_o), //output outvalid
-		.dout(aa_dout) //output [7:0] dout
-	);
+	// 	.frame_sync_o(aa_frame_sync_o), //output frame_sync_o
+	// 	.line_sync_o(aa_line_sync_o), //output line_sync_o
+	// 	.outvalid(aa_outvalid_o), //output outvalid
+	// 	.dout(aa_dout) //output [7:0] dout
+	// );
 
 //**********************************************************************
 // --- Module: CFA
@@ -321,9 +322,9 @@ module isp_top #(
 		.G_din(cfa_G_dout), //input [7:0] G_din
 		.B_din(cfa_B_dout), //input [7:0] B_din
 		
-		.wr(isp_reg_wr_en_r2), //input wr
-		.waddr(isp_reg_addr_r2), //input [15:0] waddr
-		.wdata(isp_reg_wr_data_r2), //input [31:0] wdata
+		.wr(1'b0), //input wr
+		.waddr(16'd0), //input [15:0] waddr
+		.wdata(32'd0), //input [31:0] wdata
 		
 		.frame_sync_o(ccm_frame_sync_o), //output frame_sync_o
 		.line_sync_o(ccm_line_sync_o), //output line_sync_o
@@ -510,7 +511,7 @@ module isp_top #(
             reg_data_B <= 0;
             out_data_B <= 0;
             
-            isp_rd_rdy <= 1'b0;
+//            isp_rd_rdy <= 1'b0;
         end
         else begin
             reg_data_R <= isp_R_dout;
@@ -522,18 +523,18 @@ module isp_top #(
             reg_data_B <= isp_B_dout;
             out_data_B <= reg_data_B;
 
-            isp_rd_rdy <= 1'd1;
+//            isp_rd_rdy <= 1'd1;
         end
     end
 
-	always @(posedge clk or negedge rstn) begin
-		if(!rstn) begin
-			isp_reg_rd_data <= 32'hffff_ffff;
-		end
-		else if(isp_reg_rd_en_r2) begin
-			isp_reg_rd_data <= isp_reg_rd_data_r;
-		end
-	end
+	// always @(posedge clk or negedge rstn) begin
+	// 	if(!rstn) begin
+	// 		isp_reg_rd_data <= 32'hffff_ffff;
+	// 	end
+	// 	else if(isp_reg_rd_en_r2) begin
+	// 		isp_reg_rd_data <= isp_reg_rd_data_r;
+	// 	end
+	// end
 
 
 	always @(posedge clk or negedge rstn) begin

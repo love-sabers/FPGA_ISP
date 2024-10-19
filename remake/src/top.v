@@ -35,12 +35,6 @@ module top
 
     output[2:0] i2c_sel, 
 
-    //mcu
-    // output			MCU_UART_TX,
-	// input			MCU_UART_RX,
-    // inout           swdio,
-    // inout           swclk,
-
     //ddr
     output [2:0]  ddr_bank        ,
     output [14:0] ddr_addr        ,
@@ -120,64 +114,6 @@ module top
         .i2c_sdat    (camera_sdat      )
     );
 
-        //camera reg
-    wire update_valid;
-	wire cam_awb_en;
-	wire [15:0] cam_awb_gain_r; 
-	wire [15:0] cam_awb_gain_g;
-	wire [15:0] cam_awb_gain_b; 
-	wire cam_agc_en;
-	wire [15:0] cam_agc_gain; 
-	wire        cam_aec_en; 
-	wire [19:0] cam_aec_exposure; 
-
-
-    // //isp
-	// wire isp_clk;
-	// wire isp_vs_out;
-	// wire isp_de_out;
-	// wire [7:0] isp_data_R;
-	// wire [7:0] isp_data_G;
-	// wire [7:0] isp_data_B;
-	
-	// wire isp_rd_rdy;
-	// wire isp_reg_wr_en;
-	// wire [15:0] isp_reg_addr;
-	// wire [31:0] isp_reg_wr_data;
-	// wire isp_reg_rd_en;
-	// wire [31:0] isp_reg_rd_data;
-	// wire [3:0] isp_disp_mode;
-    // wire isp_image_mask;
-
-    // wire [3:0] isp_mode;
-    // assign isp_mode=4'h0;//0:GAMMA 1:RAW 2:CFA 3:CCM  
-
-    // isp_top  #(
-	// 	.DATA_WIDTH(8)
-	// )isp_inst(
-	// 	.clk(camera_pclk), 
-	// 	.rstn(camera_rst_n),
-
-	// 	.in_vs(camera_vsync),
-	// 	.in_de(camera_href),
-	// 	.in_data(camera_data),
-		
-	// 	.isp_rd_rdy(isp_rd_rdy),
-	// 	.isp_reg_wr_en(isp_reg_wr_en),
-	// 	.isp_reg_addr(isp_reg_addr),
-	// 	.isp_reg_wr_data(isp_reg_wr_data),
-	// 	.isp_reg_rd_en(isp_reg_rd_en),
-	// 	.isp_reg_rd_data(isp_reg_rd_data),
-    //     .isp_disp_mode(isp_mode),
-	
-    //     .out_clk(isp_clk),
-	// 	.out_vs(isp_vs_out),
-	// 	.out_de(isp_de_out),
-	// 	.out_data_R(isp_data_R),
-	// 	.out_data_G(isp_data_G),
-	// 	.out_data_B(isp_data_B)
-	// );
-
     wire DVP_DataValid;
     wire DVP_DataVs;
     wire [7:0] DVP_DataPixel;
@@ -197,6 +133,49 @@ module top
         .Xaddr      (                 ),//output    [11:0],start is 1
         .Yaddr      (                 ) //output    [11:0],start is 1
     );
+
+    //isp
+	wire isp_clk;
+	wire isp_vs_out;
+	wire isp_de_out;
+	wire [7:0] isp_data_R;
+	wire [7:0] isp_data_G;
+	wire [7:0] isp_data_B;
+	
+	wire [3:0] isp_disp_mode;
+
+    wire [3:0] isp_mode;
+    assign isp_mode=4'h0;//0:GAMMA 1:RAW 2:CFA 3:CCM  
+
+    isp_top  #(
+		.DATA_WIDTH(8),
+        .H_PIXELS(source_h),
+        .V_PIXELS(source_v)
+	)isp_inst(
+		.clk(camera_pclk), 
+		.rstn(camera_rst_n),
+
+		.in_vs(camera_vsync),
+		.in_de(camera_href),
+		.in_data(camera_data),
+		
+		// .isp_rd_rdy(isp_rd_rdy),
+		// .isp_reg_wr_en(isp_reg_wr_en),
+		// .isp_reg_addr(isp_reg_addr),
+		// .isp_reg_wr_data(isp_reg_wr_data),
+		// .isp_reg_rd_en(isp_reg_rd_en),
+		// .isp_reg_rd_data(isp_reg_rd_data),
+        .isp_disp_mode(isp_mode),
+	
+        .out_clk(isp_clk),
+		.out_vs(isp_vs_out),
+		.out_de(isp_de_out),
+		.out_data_R(isp_data_R),
+		.out_data_G(isp_data_G),
+		.out_data_B(isp_data_B)
+	);
+
+    
 
     //ddr_PLL
 
@@ -228,16 +207,16 @@ module top
     wire [31:0] wrfifo_din;
 
     //isp
-    // assign wr_load=isp_vs_out;
-    // assign wrfifo_wren=isp_de_out;
-    // assign wrfifo_clk=isp_clk;
-    // assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
+    assign wr_load=isp_vs_out;
+    assign wrfifo_wren=isp_de_out;
+    assign wrfifo_clk=isp_clk;
+    assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
 
     //dvp raw
-    assign wr_load=DVP_DataVs;
-    assign wrfifo_wren=DVP_DataValid;
-    assign wrfifo_clk=camera_pclk;
-    assign wrfifo_din={DVP_DataPixel[7:0],DVP_DataPixel[7:0],DVP_DataPixel[7:0],8'hFF};
+    // assign wr_load=DVP_DataVs;
+    // assign wrfifo_wren=DVP_DataValid;
+    // assign wrfifo_clk=camera_pclk;
+    // assign wrfifo_din={DVP_DataPixel[7:0],DVP_DataPixel[7:0],DVP_DataPixel[7:0],8'hFF};
 
     //dvp rgb
     // assign wr_load=DVP_DataVs;
