@@ -208,3 +208,25 @@ IO_LOC "tmds_d_p_0[2]" AA22,AA23;
 IO_PORT "tmds_d_p_0[2]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
 IO_LOC "tmds_clk_p_0" Y22,Y23;
 IO_PORT "tmds_clk_p_0" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+
+//outlook
+IO_LOC "outlook_clk" U22;
+IO_PORT "outlook_clk" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs" V19;
+IO_PORT "outlook_vs" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den" W20;
+IO_PORT "outlook_den" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "outlook_clk_dvp" V22
+IO_PORT "outlook_clk_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs_dvp" W19;
+IO_PORT "outlook_vs_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den_dvp" Y20;
+IO_PORT "outlook_den_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "outlook_clk_cam" Y21;
+IO_PORT "outlook_clk_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs_cam" V17;
+IO_PORT "outlook_vs_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den_cam" V16;
+IO_PORT "outlook_den_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;

@@ -34,6 +34,7 @@
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\color_correction_matrix\color_correction_matrix.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma_correction\gamma_correction.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v" type="verilog"/>
+        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v" type="verilog"/>
     </FileList>
     <OptionList>

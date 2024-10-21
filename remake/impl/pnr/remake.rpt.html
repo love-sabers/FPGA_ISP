@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sat Oct 19 14:40:49 2024
+<td>Sun Oct 20 18:49:44 2024
 </td>
 </tr>
 <tr>
@@ -98,23 +98,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td class="label">Place & Route Process</td>
 <td>Running placement:
    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-   Placement Phase 1: CPU time = 0h 0m 0.241s, Elapsed time = 0h 0m 0.241s
+   Placement Phase 1: CPU time = 0h 0m 0.387s, Elapsed time = 0h 0m 0.386s
    Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
    Total Placement: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.782s, Elapsed time = 0h 0m 0.782s
-   Routing Phase 1: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
-   Routing Phase 2: CPU time = 0h 0m 0.286s, Elapsed time = 0h 0m 0.286s
+   Routing Phase 0: CPU time = 0h 0m 0.738s, Elapsed time = 0h 0m 0.739s
+   Routing Phase 1: CPU time = 0h 0m 29s, Elapsed time = 0h 0m 29s
+   Routing Phase 2: CPU time = 0h 0m 0.284s, Elapsed time = 0h 0m 0.284s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s
+   Total Routing: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
 Generate output files:
-   CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+   CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1816MB</td>
+<td>CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1864MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>6984/138240</td>
+<td>7047/138240</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>6984(5795 LUT, 1189 ALU, 0 ROM16)</td>
+<td>7047(5855 LUT, 1192 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>7606/139140</td>
+<td>7615/139140</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>7606/138240</td>
+<td>7615/138240</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -169,27 +169,27 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>6520/69120</td>
+<td>6560/69120</td>
 <td>10%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
-<td>106</td>
+<td>115</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label">I/O Buf</td>
-<td>97</td>
+<td>98</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label"> &nbsp &nbsp --Input Buf</td>
-<td>13</td>
+<td>5</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label"> &nbsp &nbsp --Output Buf</td>
-<td>47</td>
+<td>56</td>
 <td>-</td>
 </tr>
 <tr>
@@ -265,7 +265,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">bank 2</td>
-<td>8/50(16%)</td>
+<td>17/50(34%)</td>
 </tr>
 <tr>
 <td class="label">bank 3</td>
@@ -305,11 +305,11 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>1/8(13%)</td>
+<td>2/8(25%)</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
-<td>11/24(46%)</td>
+<td>12/24(50%)</td>
 </tr>
 <tr>
 <td class="label">PLL</td>
@@ -335,12 +335,12 @@ Generate output files:
 <tr>
 <td class="label">clk50m_d</td>
 <td>PRIMARY</td>
-<td> PTR2 PBR2 PBR3</td>
+<td> PBR2 PBR3</td>
 </tr>
 <tr>
-<td class="label">camera_pclk_d</td>
+<td class="label">outlook_clk_d</td>
 <td>PRIMARY</td>
-<td> PTR2 PBR2</td>
+<td> PTR2 PTR3 PBR2</td>
 </tr>
 <tr>
 <td class="label">camera_xclk_d</td>
@@ -371,6 +371,11 @@ Generate output files:
 <td class="label">ddr3_ctrl_2port/ui_clk</td>
 <td>PRIMARY</td>
 <td> PTR0 PTR1 PTR2 PBR0 PBR1 PBR2</td>
+</tr>
+<tr>
+<td class="label">outlook_clk_cam_d</td>
+<td>LW</td>
+<td> -</td>
 </tr>
 <tr>
 <td class="label">ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst</td>
@@ -1539,6 +1544,177 @@ Generate output files:
 <td>out</td>
 <td>IOR33</td>
 <td>LVCMOS33D</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_clk</td>
+<td></td>
+<td>U22/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR31[A]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_vs</td>
+<td></td>
+<td>V19/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR15[A]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_den</td>
+<td></td>
+<td>W20/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR17[A]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_clk_dvp</td>
+<td></td>
+<td>V22/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR31[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_vs_dvp</td>
+<td></td>
+<td>W19/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR15[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_den_dvp</td>
+<td></td>
+<td>Y20/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR17[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_clk_cam</td>
+<td></td>
+<td>Y21/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR24[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_vs_cam</td>
+<td></td>
+<td>V17/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR2[B]</td>
+<td>LVCMOS33</td>
+<td>8</td>
+<td>NONE</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>OFF</td>
+<td>3.3</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td class="label">outlook_den_cam</td>
+<td></td>
+<td>V16/2</td>
+<td>Y</td>
+<td>out</td>
+<td>IOR2[A]</td>
+<td>LVCMOS33</td>
 <td>8</td>
 <td>NONE</td>
 <td>OFF</td>
@@ -5897,14 +6073,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">V16/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_den_cam</td>
+<td>out</td>
 <td>IOR2[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -5914,14 +6090,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">V17/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_vs_cam</td>
+<td>out</td>
 <td>IOR2[B]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6101,14 +6277,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">V19/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_vs</td>
+<td>out</td>
 <td>IOR15[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6118,14 +6294,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">W19/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_vs_dvp</td>
+<td>out</td>
 <td>IOR15[B]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6135,14 +6311,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">W20/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_den</td>
+<td>out</td>
 <td>IOR17[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6152,14 +6328,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Y20/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_den_dvp</td>
+<td>out</td>
 <td>IOR17[B]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6254,14 +6430,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Y21/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_clk_cam</td>
+<td>out</td>
 <td>IOR24[B]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6339,14 +6515,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">U22/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_clk</td>
+<td>out</td>
 <td>IOR31[A]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
@@ -6356,14 +6532,14 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">V22/2</td>
-<td>-</td>
-<td>in</td>
+<td>outlook_clk_dvp</td>
+<td>out</td>
 <td>IOR31[B]</td>
 <td>LVCMOS33</td>
 <td>8</td>
-<td>UP</td>
+<td>NONE</td>
 <td>OFF</td>
-<td>ON</td>
+<td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>
 <td>OFF</td>

@@ -57,28 +57,50 @@ module top
     output       tmds_clk_n_0,
 	output       tmds_clk_p_0,
 	output [2:0] tmds_d_n_0,
-	output [2:0] tmds_d_p_0
+	output [2:0] tmds_d_p_0,
+
+    output outlook_clk,
+    output outlook_vs,
+    output outlook_den,
+
+    output outlook_clk_dvp,
+    output outlook_vs_dvp,
+    output outlook_den_dvp,
+
+    output outlook_clk_cam,
+    output outlook_vs_cam,
+    output outlook_den_cam
 
 );
     assign i2c_sel = 'b101;
-    assign led={1'b1,~camera_init_done,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
+    assign led={1'b1,1'b1,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
 
 
-    // wire 	[23 : 0]	gen_data;
-	// wire				gen_den;
-	// wire				gen_hsync;
-	// wire				gen_vsync;
+    wire 	[23 : 0]	    gen_data;
+	wire				    gen_den;
+	wire				    gen_hsync;
+	wire				    gen_vsync;
+
+    reg tmp_clk;
+
+    always @(posedge hdmi_clk148m5 or negedge reset_n) begin
+        if(!reset_n)begin
+            tmp_clk<=1'd0;
+        end else begin
+            tmp_clk<=~tmp_clk;
+        end
+    end
     
-    // test_pattern_gen test_gen0(
+    test_pattern_gen test_gen0(
 		
-	// 	.pixel_clock		(hdmi_clk148m5),
-	// 	.reset				(~sys_resetn),
+		.pixel_clock		(tmp_clk),
+		.reset				(~sys_resetn),
 		
-	// 	.video_vsync		(gen_vsync),
-	// 	.video_hsync		(gen_hsync),
-	// 	.video_den			(gen_den),
-	// 	.video_pixel_even	(gen_data)
-	// );
+		.video_vsync		(gen_vsync),
+		.video_hsync		(gen_hsync),
+		.video_den			(gen_den),
+		.video_pixel_even	(gen_data)
+	);
     
 
     //camera
@@ -114,6 +136,7 @@ module top
         .i2c_sdat    (camera_sdat      )
     );
 
+    wire DVP_clk;
     wire DVP_DataValid;
     wire DVP_DataVs;
     wire [7:0] DVP_DataPixel;
@@ -126,6 +149,7 @@ module top
         .Data       (camera_data      ),//input     [7:0]
 
         .ImageState (                 ),//output reg
+        .DataClk    (DVP_clk          ),
         .DataValid  (DVP_DataValid    ),//output
         .DataPixel  (DVP_DataPixel    ),//output    [15:0]
         .DataHs     (                 ),//output
@@ -133,6 +157,18 @@ module top
         .Xaddr      (                 ),//output    [11:0],start is 1
         .Yaddr      (                 ) //output    [11:0],start is 1
     );
+
+    assign outlook_clk_cam=camera_pclk;
+    assign outlook_vs_cam=camera_vsync;
+    assign outlook_den_cam=camera_href;
+
+    assign outlook_clk_dvp=DVP_clk;
+    assign outlook_vs_dvp=DVP_DataVs;
+    assign outlook_den_dvp=DVP_DataValid;
+
+    assign outlook_clk=tmp_clk;
+    assign outlook_vs=gen_vsync;
+    assign outlook_den=gen_den;
 
     //isp
 	wire isp_clk;
@@ -152,12 +188,18 @@ module top
         .H_PIXELS(source_h),
         .V_PIXELS(source_v)
 	)isp_inst(
-		.clk(camera_pclk), 
-		.rstn(camera_rst_n),
 
-		.in_vs(camera_vsync),
-		.in_de(camera_href),
-		.in_data(camera_data),
+        .rstn(reset_n),
+
+		// .clk(DVP_clk), 
+		// .in_vs(DVP_DataVs),
+		// .in_de(DVP_DataValid),
+		// .in_data(DVP_DataPixel),
+
+        .clk(tmp_clk), 
+		.in_vs(gen_vsync),
+		.in_de(gen_den),
+		.in_data(gen_data[7:0]),
 		
 		// .isp_rd_rdy(isp_rd_rdy),
 		// .isp_reg_wr_en(isp_reg_wr_en),
@@ -327,6 +369,7 @@ module top
 	)disp_driver0(
 		.pixel_clock		(hdmi_clk148m5),
 		.reset				(~sys_resetn),
+        .ext_sync			(isp_vs_out),
 
         //读ddr
         .rd_load(rd_load)                   ,//输出源更新信号
@@ -402,7 +445,7 @@ module top
 	// 	.isp_reg_rd_data(isp_reg_rd_data),
 	// 	.isp_rd_rdy(isp_rd_rdy),
 
-    //     .isp_vs(camera_vsync),
+    //  .isp_vs(camera_vsync),
 	// 	.isp_disp_mode(isp_disp_mode),
 		
 	// 	.update_valid(update_valid),

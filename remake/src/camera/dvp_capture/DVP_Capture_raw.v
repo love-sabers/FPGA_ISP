@@ -6,13 +6,16 @@ module DVP_Capture_raw(
   input     [7:0]  Data,
 
   output reg       ImageState,
+  output           DataClk,
   output           DataValid,
-  output    [7:0] DataPixel,
+  output    [7:0]  DataPixel,
   output           DataHs,
   output           DataVs,
   output    [13:0] Xaddr,
   output    [13:0] Yaddr
 );
+
+  assign DataClk=PCLK;
 
   reg       r_Vsync;
   reg       r_Href;

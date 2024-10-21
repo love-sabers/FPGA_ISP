@@ -20,6 +20,7 @@ module disp_driver #(
 (
 	input				pixel_clock,
 	input				reset,
+	input				ext_sync,
 
 	output				rd_load		, //输出源更新信号
 	output 				rd_clk      , //rd_fifo的读时钟信号
@@ -65,7 +66,7 @@ module disp_driver #(
 		
 		.pixel_clock		(pixel_clock),
 		.reset				(reset),
-		.ext_sync			(1'b0),
+		.ext_sync			(ext_sync),
 		
 		.timing_h_pos		(),
 		.timing_v_pos		(),
