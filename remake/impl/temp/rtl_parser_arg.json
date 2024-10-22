@@ -54,10 +54,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_empu_m1/gowin_empu_m1.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/camera_pll.v",
    "Type" : "verilog"
   },
@@ -98,14 +94,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/aeawb/aeawb.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/ahb_isp.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
    "Type" : "verilog"
   },
@@ -119,10 +107,6 @@
   },
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
    "Type" : "verilog"
   },
   {

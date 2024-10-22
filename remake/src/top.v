@@ -73,34 +73,24 @@ module top
 
 );
     assign i2c_sel = 'b101;
-    assign led={1'b1,1'b1,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
+    assign led={1'b1,~camera_init_done,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
 
 
-    wire 	[23 : 0]	    gen_data;
-	wire				    gen_den;
-	wire				    gen_hsync;
-	wire				    gen_vsync;
-
-    reg tmp_clk;
-
-    always @(posedge hdmi_clk148m5 or negedge reset_n) begin
-        if(!reset_n)begin
-            tmp_clk<=1'd0;
-        end else begin
-            tmp_clk<=~tmp_clk;
-        end
-    end
+    // wire 	[23 : 0]	gen_data;
+	// wire				gen_den;
+	// wire				gen_hsync;
+	// wire				gen_vsync;
     
-    test_pattern_gen test_gen0(
+    // test_pattern_gen test_gen0(
 		
-		.pixel_clock		(tmp_clk),
-		.reset				(~sys_resetn),
+	// 	.pixel_clock		(hdmi_clk148m5),
+	// 	.reset				(~sys_resetn),
 		
-		.video_vsync		(gen_vsync),
-		.video_hsync		(gen_hsync),
-		.video_den			(gen_den),
-		.video_pixel_even	(gen_data)
-	);
+	// 	.video_vsync		(gen_vsync),
+	// 	.video_hsync		(gen_hsync),
+	// 	.video_den			(gen_den),
+	// 	.video_pixel_even	(gen_data)
+	// );
     
 
     //camera
@@ -166,14 +156,14 @@ module top
     assign outlook_vs_dvp=DVP_DataVs;
     assign outlook_den_dvp=DVP_DataValid;
 
-    assign outlook_clk=tmp_clk;
-    assign outlook_vs=gen_vsync;
-    assign outlook_den=gen_den;
+    // assign outlook_clk=tmp_clk;
+    // assign outlook_vs=gen_vsync;
+    // assign outlook_den=gen_den;
 
     //isp
 	wire isp_clk;
-	wire isp_vs_out;
-	wire isp_de_out;
+	wire isp_vsync;
+	wire isp_den;
 	wire [7:0] isp_data_R;
 	wire [7:0] isp_data_G;
 	wire [7:0] isp_data_B;
@@ -188,18 +178,12 @@ module top
         .H_PIXELS(source_h),
         .V_PIXELS(source_v)
 	)isp_inst(
+		.clk(camera_pclk), 
+		.rstn(camera_rst_n),
 
-        .rstn(reset_n),
-
-		// .clk(DVP_clk), 
-		// .in_vs(DVP_DataVs),
-		// .in_de(DVP_DataValid),
-		// .in_data(DVP_DataPixel),
-
-        .clk(tmp_clk), 
-		.in_vs(gen_vsync),
-		.in_de(gen_den),
-		.in_data(gen_data[7:0]),
+		.in_vs(camera_vsync),
+		.in_de(camera_href),
+		.in_data(camera_data),
 		
 		// .isp_rd_rdy(isp_rd_rdy),
 		// .isp_reg_wr_en(isp_reg_wr_en),
@@ -210,12 +194,17 @@ module top
         .isp_disp_mode(isp_mode),
 	
         .out_clk(isp_clk),
-		.out_vs(isp_vs_out),
-		.out_de(isp_de_out),
+		.out_vs(isp_vsync),
+		.out_de(isp_den),
 		.out_data_R(isp_data_R),
 		.out_data_G(isp_data_G),
 		.out_data_B(isp_data_B)
 	);
+
+    assign outlook_clk=isp_clk;
+    assign outlook_den=isp_den;
+    assign outlook_vs=isp_vsync;
+
 
     
 
@@ -249,8 +238,8 @@ module top
     wire [31:0] wrfifo_din;
 
     //isp
-    assign wr_load=isp_vs_out;
-    assign wrfifo_wren=isp_de_out;
+    assign wr_load=isp_vsync;
+    assign wrfifo_wren=isp_den;
     assign wrfifo_clk=isp_clk;
     assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
 
@@ -369,7 +358,7 @@ module top
 	)disp_driver0(
 		.pixel_clock		(hdmi_clk148m5),
 		.reset				(~sys_resetn),
-        .ext_sync			(isp_vs_out),
+        .ext_sync			(1'b0),
 
         //读ddr
         .rd_load(rd_load)                   ,//输出源更新信号
@@ -445,7 +434,7 @@ module top
 	// 	.isp_reg_rd_data(isp_reg_rd_data),
 	// 	.isp_rd_rdy(isp_rd_rdy),
 
-    //  .isp_vs(camera_vsync),
+    //     .isp_vs(camera_vsync),
 	// 	.isp_disp_mode(isp_disp_mode),
 		
 	// 	.update_valid(update_valid),

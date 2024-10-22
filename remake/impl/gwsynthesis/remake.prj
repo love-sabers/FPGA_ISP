@@ -17,7 +17,6 @@
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\fifo_top\rd_data_fifo.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\fifo_top\wr_data_fifo.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_empu_m1\gowin_empu_m1.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\camera_pll.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\ddr_pll.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\hdmi_pll.v" type="verilog"/>
@@ -28,13 +27,10 @@
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\reset.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\video_timing_ctrl.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\aeawb\aeawb.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ahb_isp.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa_interpolation\cfa_interpolation.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\color_correction_matrix\color_correction_matrix.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma_correction\gamma_correction.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v" type="verilog"/>
-        <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v" type="verilog"/>
         <File path="D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v" type="verilog"/>
     </FileList>
     <OptionList>

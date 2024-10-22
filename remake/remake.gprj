@@ -11,7 +11,6 @@
         <File path="src/camera/camera_init/ov5640_init_table_jpeg.v" type="file.verilog" enable="1"/>
         <File path="src/camera/camera_init/ov5640_init_table_raw.v" type="file.verilog" enable="0"/>
         <File path="src/camera/camera_init/ov5640_init_table_raw_2.v" type="file.verilog" enable="1"/>
-        <File path="src/camera/camera_init/ov5640_init_table_raw_3.v" type="file.verilog" enable="0"/>
         <File path="src/camera/camera_init/ov5640_init_table_rgb.v" type="file.verilog" enable="1"/>
         <File path="src/camera/dvp_capture/DVP_Capture_raw.v" type="file.verilog" enable="1"/>
         <File path="src/camera/dvp_capture/DVP_Capture_rgb565.v" type="file.verilog" enable="1"/>
@@ -20,7 +19,6 @@
         <File path="src/ddr/ddr3_memory_interface/ddr3_memory_interface.v" type="file.verilog" enable="1"/>
         <File path="src/ddr/fifo_top/rd_data_fifo.v" type="file.verilog" enable="1"/>
         <File path="src/ddr/fifo_top/wr_data_fifo.v" type="file.verilog" enable="1"/>
-        <File path="src/gowin_empu_m1/gowin_empu_m1.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/camera_pll.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/ddr_pll.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/hdmi_pll.v" type="file.verilog" enable="1"/>
@@ -31,13 +29,10 @@
         <File path="src/hdmi/reset.v" type="file.verilog" enable="1"/>
         <File path="src/hdmi/video-misc/disp_driver.v" type="file.verilog" enable="1"/>
         <File path="src/hdmi/video-misc/video_timing_ctrl.v" type="file.verilog" enable="1"/>
-        <File path="src/isp/aeawb/aeawb.v" type="file.verilog" enable="1"/>
-        <File path="src/isp/ahb_isp.v" type="file.verilog" enable="1"/>
         <File path="src/isp/cfa_interpolation/cfa_interpolation.v" type="file.verilog" enable="1"/>
         <File path="src/isp/color_correction_matrix/color_correction_matrix.v" type="file.verilog" enable="1"/>
         <File path="src/isp/gamma_correction/gamma_correction.v" type="file.verilog" enable="1"/>
         <File path="src/isp/isp_top.v" type="file.verilog" enable="1"/>
-        <File path="src/test/test_pattern_gen.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/top.cst" type="file.cst" enable="1"/>
     </FileList>

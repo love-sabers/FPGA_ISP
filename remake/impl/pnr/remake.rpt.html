@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sun Oct 20 18:49:44 2024
+<td>Tue Oct 22 15:47:11 2024
 </td>
 </tr>
 <tr>
@@ -97,15 +97,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-   Placement Phase 1: CPU time = 0h 0m 0.387s, Elapsed time = 0h 0m 0.386s
+   Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   Placement Phase 1: CPU time = 0h 0m 0.238s, Elapsed time = 0h 0m 0.238s
    Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
    Total Placement: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.738s, Elapsed time = 0h 0m 0.739s
-   Routing Phase 1: CPU time = 0h 0m 29s, Elapsed time = 0h 0m 29s
-   Routing Phase 2: CPU time = 0h 0m 0.284s, Elapsed time = 0h 0m 0.284s
+   Routing Phase 0: CPU time = 0h 0m 0.759s, Elapsed time = 0h 0m 0.759s
+   Routing Phase 1: CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
+   Routing Phase 2: CPU time = 0h 0m 0.276s, Elapsed time = 0h 0m 0.277s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
    Total Routing: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
 Generate output files:
@@ -114,7 +114,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1864MB</td>
+<td>CPU time = 0h 0m 46s, Elapsed time = 0h 0m 46s, Peak memory usage = 1821MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>7047/138240</td>
+<td>6975/138240</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>7047(5855 LUT, 1192 ALU, 0 ROM16)</td>
+<td>6975(5786 LUT, 1189 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>6560/69120</td>
+<td>6545/69120</td>
 <td>10%</td>
 </tr>
 <tr>
@@ -179,12 +179,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">I/O Buf</td>
-<td>98</td>
+<td>106</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label"> &nbsp &nbsp --Input Buf</td>
-<td>5</td>
+<td>13</td>
 <td>-</td>
 </tr>
 <tr>
@@ -305,7 +305,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>2/8(25%)</td>
+<td>1/8(13%)</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
@@ -335,10 +335,10 @@ Generate output files:
 <tr>
 <td class="label">clk50m_d</td>
 <td>PRIMARY</td>
-<td> PBR2 PBR3</td>
+<td> PTR2 PBR2 PBR3</td>
 </tr>
 <tr>
-<td class="label">outlook_clk_d</td>
+<td class="label">outlook_clk_cam_d</td>
 <td>PRIMARY</td>
 <td> PTR2 PTR3 PBR2</td>
 </tr>
@@ -371,11 +371,6 @@ Generate output files:
 <td class="label">ddr3_ctrl_2port/ui_clk</td>
 <td>PRIMARY</td>
 <td> PTR0 PTR1 PTR2 PBR0 PBR1 PBR2</td>
-</tr>
-<tr>
-<td class="label">outlook_clk_cam_d</td>
-<td>LW</td>
-<td> -</td>
 </tr>
 <tr>
 <td class="label">ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst</td>
