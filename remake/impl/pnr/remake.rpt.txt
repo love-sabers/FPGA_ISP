@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Tue Oct 22 15:47:11 2024
+  <Created Time>:Fri Oct 25 19:31:17 2024
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.238s, Elapsed time = 0h 0m 0.238s
+    Placement Phase 1: CPU time = 0h 0m 0.251s, Elapsed time = 0h 0m 0.251s
     Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Total Placement: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0.759s, Elapsed time = 0h 0m 0.759s
-    Routing Phase 1: CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
-    Routing Phase 2: CPU time = 0h 0m 0.276s, Elapsed time = 0h 0m 0.277s
+    Routing Phase 1: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
+    Routing Phase 2: CPU time = 0h 0m 0.284s, Elapsed time = 0h 0m 0.284s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
+    Total Routing: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s
  Generate output files:
     CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
 
- Total Time and Memory Usage: CPU time = 0h 0m 46s, Elapsed time = 0h 0m 46s, Peak memory usage = 1821MB
+ Total Time and Memory Usage: CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s, Peak memory usage = 1838MB
 
 
 3. Resource Usage Summary
@@ -40,18 +40,18 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 6975/138240  6%
-    --LUT,ALU,ROM16           | 6975(5786 LUT, 1189 ALU, 0 ROM16)
+  Logic                       | 7037/138240  6%
+    --LUT,ALU,ROM16           | 7037(5848 LUT, 1189 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 7615/139140  6%
+  Register                    | 7619/139140  6%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 7615/138240  6%
+    --Logic Register as FF    | 7619/138240  6%
     --I/O Register as Latch   | 0/900  0%
     --I/O Register as FF      | 0/900  0%
-  CLS                         | 6545/69120  10%
-  I/O Port                    | 115
-  I/O Buf                     | 106
-    --Input Buf               | 13
+  CLS                         | 6541/69120  10%
+  I/O Port                    | 116
+  I/O Buf                     | 107
+    --Input Buf               | 14
     --Output Buf              | 56
     --Inout Buf               | 37
   IOLOGIC                     | 35%
@@ -87,7 +87,7 @@
   bank 2   | 17/50(34%)  
   bank 3   | 11/50(22%)  
   bank 4   | 1/50(2%)    
-  bank 5   | 15/50(30%)  
+  bank 5   | 16/50(32%)  
   bank 6   | 44/50(88%)  
   bank 7   | 27/50(54%)  
   bank 10  | 0/12(0%)    
@@ -113,8 +113,8 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  clk50m_d       | PRIMARY        |  PTR2 PBR2 PBR3
-  outlook_clk_cam_d| PRIMARY        |  PTR2 PTR3 PBR2
+  clk50m_d       | PRIMARY        |  PBR2 PBR3
+  outlook_clk_cam_d| PRIMARY        |  PTR2 PTR3 PBR1 PBR2
   camera_xclk_d  | PRIMARY        |  PBR1
   ddr_clk100m    | PRIMARY        |  PTR1 PBR1
   ddr_memory_clk400m| PRIMARY        |  PTR0 PBR0
@@ -134,6 +134,7 @@ Port Name        | Diff Pair | Loc./Bank     | Constraint | Dir.  | Site     | I
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 clk50m           |           | P16/3         | Y          | in    | IOR103[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 reset_n          |           | G16/5         | Y          | in    | IOB85[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+button           |           | G15/5         | Y          | in    | IOB78[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_vsync     |           | G17/5         | Y          | in    | IOB80[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_href      |           | E16/5         | Y          | in    | IOB53[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_pclk      |           | D20/5         | Y          | in    | IOB68[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
@@ -286,7 +287,7 @@ B22/5    | camera_data[2]   | in    | IOB74[A] | LVCMOS33 | OFF   | NONE      | 
 A22/5    | camera_data[1]   | in    | IOB74[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 E21/5    | camera_data[3]   | in    | IOB76[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 D21/5    | camera_data[0]   | in    | IOB76[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-G15/5    | -                | in    | IOB78[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+G15/5    | button           | in    | IOB78[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 F15/5    | -                | in    | IOB78[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 G17/5    | camera_vsync     | in    | IOB80[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 F17/5    | camera_rst_n     | out   | IOB80[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       

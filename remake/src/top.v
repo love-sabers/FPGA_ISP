@@ -22,6 +22,9 @@ module top
     //led
     output [5:0] led,
 
+    //
+    input button,
+
     //camera interface
     output      camera_sclk   ,
     inout       camera_sdat   ,
@@ -129,6 +132,7 @@ module top
     wire DVP_clk;
     wire DVP_DataValid;
     wire DVP_DataVs;
+    wire DVP_DataHs;
     wire [7:0] DVP_DataPixel;
 
     DVP_Capture_raw DVP_Capture(
@@ -170,8 +174,23 @@ module top
 	
 	wire [3:0] isp_disp_mode;
 
-    wire [3:0] isp_mode;
-    assign isp_mode=4'h0;//0:GAMMA 1:RAW 2:CFA 3:CCM  
+    reg [3:0] isp_mode;//0:GAMMA 1:RAW 2:CFA 3:CCM  
+    reg lastbutton;
+    reg curbutton;
+    always @(negedge clk50m or negedge reset_n) begin
+        if(!reset_n)begin
+            isp_mode<=4'd0;
+        end else begin
+            lastbutton<=curbutton;
+            curbutton<=button;
+            if(!lastbutton & curbutton)begin
+                if(isp_mode < 3)
+                    isp_mode<=isp_mode + 4'b1;
+                else 
+                    isp_mode<=4'd0;
+            end    
+        end
+    end
 
     isp_top  #(
 		.DATA_WIDTH(8),
@@ -179,7 +198,12 @@ module top
         .V_PIXELS(source_v)
 	)isp_inst(
 		.clk(camera_pclk), 
-		.rstn(camera_rst_n),
+		.rstn(reset_n),
+
+        // .in_vs(DVP_DataVs),
+        // .in_hs(DVP_DataHs),
+		// .in_de(DVP_DataValid),
+		// .in_data(DVP_DataPixel),
 
 		.in_vs(camera_vsync),
 		.in_de(camera_href),
