@@ -11,8 +11,8 @@ module DVP_Capture_raw(
   output    [7:0]  DataPixel,
   output           DataHs,
   output           DataVs,
-  output    [13:0] Xaddr,
-  output    [13:0] Yaddr
+  // output    [13:0] Xaddr,
+  // output    [13:0] Yaddr
 );
 
   assign DataClk=PCLK;
@@ -25,8 +25,8 @@ module DVP_Capture_raw(
   reg       r_DataValid;
   reg       r_DataHs;
   reg       r_DataVs;
-  reg [11:0]Hcount;
-  reg [10:0]Vcount;
+  // reg [11:0]Hcount;
+  // reg [10:0]Vcount;
   reg [3:0] FrameCnt;
 
   reg       dump_frame;
@@ -46,14 +46,14 @@ module DVP_Capture_raw(
     r_Data  <= Data;
   end
 
-  //在HREF为高电平时，计数输出数据个数
-  always@(posedge PCLK or negedge Rst_n)
-  if(!Rst_n)
-    Hcount <= 0;
-  else if(r_Href)
-    Hcount <= Hcount + 1'd1;
-  else
-    Hcount <= 0;
+  // //在HREF为高电平时，计数输出数据个数
+  // always@(posedge PCLK or negedge Rst_n)
+  // if(!Rst_n)
+  //   Hcount <= 0;
+  // else if(r_Href)
+  //   Hcount <= Hcount + 1'd1;
+  // else
+  //   Hcount <= 0;
 
   /*将DVP接口数据端口上的数据存到输出像素数据*/
   always@(posedge PCLK or negedge Rst_n)
@@ -66,10 +66,8 @@ module DVP_Capture_raw(
   always@(posedge PCLK or negedge Rst_n)
   if(!Rst_n)
     r_DataValid <= 0;
-  else if(r_Href)
-    r_DataValid <= 1;
-  else
-    r_DataValid <= 0;
+  else 
+    r_DataValid <= r_Href;
 
   always@(posedge PCLK)
   begin
@@ -77,21 +75,21 @@ module DVP_Capture_raw(
     r_DataVs <= ~r_Vsync;
   end
 
-  /*使用Vcount计数器对HREF信号的高电平进行计数，统计
-  一帧图像中的每一行图像的行号*/
-  always@(posedge PCLK or negedge Rst_n)
-  if(!Rst_n)
-    Vcount <= 0;
-  else if(r_Vsync)
-    Vcount <= 0;
-  else if({r_Href,Href} == 2'b01)
-    Vcount <= Vcount + 1'd1;
-  else
-    Vcount <= Vcount;
+  // /*使用Vcount计数器对HREF信号的高电平进行计数，统计
+  // 一帧图像中的每一行图像的行号*/
+  // always@(posedge PCLK or negedge Rst_n)
+  // if(!Rst_n)
+  //   Vcount <= 0;
+  // else if(r_Vsync)
+  //   Vcount <= 0;
+  // else if({r_Href,Href} == 2'b01)
+  //   Vcount <= Vcount + 1'd1;
+  // else
+  //   Vcount <= Vcount;
 
-  /*输出X地址*/  
-  assign Yaddr = Vcount;
-  assign Xaddr = Hcount;
+  // /*输出X地址*/  
+  // assign Yaddr = Vcount;
+  // assign Xaddr = Hcount;
 
   /*帧计数器，对每次系统开始运行后的前10帧图像进行计数*/
   always@(posedge PCLK or negedge Rst_n)

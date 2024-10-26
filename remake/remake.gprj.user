@@ -4,19 +4,12 @@
     <Version>1.0</Version>
     <FlowState>
         <Process ID="Synthesis" State="2"/>
-        <Process ID="Pnr" State="2"/>
-        <Process ID="Gao" State="2"/>
+        <Process ID="Pnr" State="0"/>
+        <Process ID="Gao" State="0"/>
         <Process ID="Rtl_Gao" State="2"/>
     </FlowState>
     <ResultFileList>
         <ResultFile ResultFileType="RES.netlist" ResultFilePath="impl/gwsynthesis/remake.vg"/>
-        <ResultFile ResultFileType="RES.pnr.bitstream" ResultFilePath="impl/pnr/remake.fs"/>
-        <ResultFile ResultFileType="RES.pnr.pin.rpt" ResultFilePath="impl/pnr/remake.pin.html"/>
-        <ResultFile ResultFileType="RES.pnr.posp.bin" ResultFilePath="impl/pnr/remake.db"/>
-        <ResultFile ResultFileType="RES.pnr.pwr.rpt" ResultFilePath="impl/pnr/remake.power.html"/>
-        <ResultFile ResultFileType="RES.pnr.report" ResultFilePath="impl/pnr/remake.rpt.html"/>
-        <ResultFile ResultFileType="RES.pnr.timing.paths" ResultFilePath="impl/pnr/remake.timing_paths"/>
-        <ResultFile ResultFileType="RES.pnr.timing.rpt" ResultFilePath="impl/pnr/remake.tr.html"/>
         <ResultFile ResultFileType="RES.syn.report" ResultFilePath="impl/gwsynthesis/remake_syn.rpt.html"/>
         <ResultFile ResultFileType="RES.syn.resource" ResultFilePath="impl/gwsynthesis/remake_syn_rsc.xml"/>
     </ResultFileList>

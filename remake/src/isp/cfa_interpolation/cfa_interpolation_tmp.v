@@ -5,7 +5,7 @@
 //Part Number: GW5AST-LV138FPG676AES
 //Device: GW5AST-138
 //Device Version: B
-//Created Time: Tue Oct 22 16:41:18 2024
+//Created Time: Fri Oct 25 19:58:34 2024
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------

@@ -286,7 +286,7 @@ module isp_top #(
 	assign cfa_frame_sync_i =  isp_frame_sync_i;
 	assign cfa_line_sync_i =   isp_line_sync_i;
 	assign cfa_inpvalid_i =    isp_inpvalid_i;
-	assign cfa_din =       	isp_din;
+	assign cfa_din =       	   isp_din;
 
 	Color_Filter_Array_Interpolation_Top cfa_Top_inst(
 		.clk(clk), //input clk

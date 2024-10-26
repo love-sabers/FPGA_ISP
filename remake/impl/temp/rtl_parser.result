@@ -17,6 +17,24 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
+    "InstLine" : 87,
+    "InstName" : "test_gen0",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "test_pattern_gen",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
+      "InstLine" : 88,
+      "InstName" : "video_timing_ctrl_inst0",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/video_timing_ctrl.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "video_timing_ctrl"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
     "InstLine" : 104,
     "InstName" : "camera_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/camera_pll.v",
@@ -133,7 +151,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 242,
+    "InstLine" : 248,
     "InstName" : "ddr_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/ddr_pll.v",
     "ModuleLine" : 10,
@@ -141,7 +159,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 293,
+    "InstLine" : 299,
     "InstName" : "ddr3_ctrl_2port",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
     "ModuleLine" : 1,
@@ -215,7 +233,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 345,
+    "InstLine" : 351,
     "InstName" : "hdmi_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/hdmi_pll.v",
     "ModuleLine" : 10,
@@ -223,7 +241,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 355,
+    "InstLine" : 361,
     "InstName" : "u_Reset_Sync",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/reset.v",
     "ModuleLine" : 1,
@@ -231,7 +249,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 382,
+    "InstLine" : 388,
     "InstName" : "disp_driver0",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/disp_driver.v",
     "ModuleLine" : 3,
@@ -249,7 +267,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 401,
+    "InstLine" : 407,
     "InstName" : "dvi_tx_top_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_top.v",
     "ModuleLine" : 1,
@@ -312,6 +330,24 @@
       "ModuleName" : "dvi_tx_clk_drv"
      }
     ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+  "InstLine" : 63825,
+  "InstName" : "RAM_reg_top",
+  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+  "ModuleLine" : 63825,
+  "ModuleName" : "RAM_reg_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+    "InstLine" : 63840,
+    "InstName" : "u_RAM_based_shift_reg",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "~RAM_based_shift_reg.RAM_reg_top"
    }
   ]
  }

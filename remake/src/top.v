@@ -1,7 +1,7 @@
 module top
 #(
-	parameter source_h  = 1920,
-	parameter source_v  = 1080,
+	parameter source_h  = 1024,
+	parameter source_v  = 1024,
 
 	parameter video_hlength		= 2200,
 	parameter video_hsync_pol	= 1,
@@ -79,21 +79,21 @@ module top
     assign led={1'b1,~camera_init_done,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
 
 
-    // wire 	[23 : 0]	gen_data;
-	// wire				gen_den;
-	// wire				gen_hsync;
-	// wire				gen_vsync;
+    wire 	[7 : 0]	    gen_data;
+	wire				gen_den;
+	wire				gen_hsync;
+	wire				gen_vsync;
     
-    // test_pattern_gen test_gen0(
+    test_pattern_gen test_gen0(
 		
-	// 	.pixel_clock		(hdmi_clk148m5),
-	// 	.reset				(~sys_resetn),
+		.pixel_clock		(hdmi_clk148m5),
+		.reset				(~sys_resetn),
 		
-	// 	.video_vsync		(gen_vsync),
-	// 	.video_hsync		(gen_hsync),
-	// 	.video_den			(gen_den),
-	// 	.video_pixel_even	(gen_data)
-	// );
+		.video_vsync		(gen_vsync),
+		.video_hsync		(gen_hsync),
+		.video_den			(gen_den),
+		.video_pixel_raw 	(gen_data)
+	);
     
 
     //camera
@@ -197,17 +197,23 @@ module top
         .H_PIXELS(source_h),
         .V_PIXELS(source_v)
 	)isp_inst(
-		.clk(camera_pclk), 
+		
 		.rstn(reset_n),
+
+        .clk(hdmi_clk148m5),
+        .in_vs(~gen_vsync),
+		.in_de(gen_den),
+		.in_data(gen_data[7:0]),
 
         // .in_vs(DVP_DataVs),
         // .in_hs(DVP_DataHs),
 		// .in_de(DVP_DataValid),
 		// .in_data(DVP_DataPixel),
 
-		.in_vs(camera_vsync),
-		.in_de(camera_href),
-		.in_data(camera_data),
+        // .clk(camera_pclk), 
+		// .in_vs(camera_vsync),
+		// .in_de(camera_href),
+		// .in_data(camera_data),
 		
 		// .isp_rd_rdy(isp_rd_rdy),
 		// .isp_reg_wr_en(isp_reg_wr_en),
