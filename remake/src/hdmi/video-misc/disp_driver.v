@@ -30,7 +30,6 @@ module disp_driver #(
 	output				video_vsync,
 	output				video_hsync,
 	output				video_den,
-	output				video_line_start,
 	output	[23 : 0]	video_pixel//从高到低，RGB
 );
 
@@ -76,7 +75,7 @@ module disp_driver #(
 		.video_vsync		(video_vsync),
 		.video_hsync		(video_hsync),
 		.video_den			(den_int),
-		.video_line_start	(video_line_start)
+		.video_line_start	()
 	);
 	
 endmodule

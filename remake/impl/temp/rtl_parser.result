@@ -8,78 +8,6 @@
   "ModuleName" : "DVP_Capture_rgb565"
  },
  {
-  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
-  "InstLine" : 63836,
-  "InstName" : "RAM_reg_top",
-  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
-  "ModuleLine" : 63836,
-  "ModuleName" : "RAM_reg_top",
-  "SubInsts" : [
-   {
-    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
-    "InstLine" : 63851,
-    "InstName" : "u_RAM_based_shift_reg",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "~RAM_based_shift_reg.RAM_reg_top"
-   }
-  ]
- },
- {
-  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
-  "InstLine" : 6136,
-  "InstName" : "Color_Filter_Array_Interpolation_Top",
-  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
-  "ModuleLine" : 6136,
-  "ModuleName" : "Color_Filter_Array_Interpolation_Top",
-  "SubInsts" : [
-   {
-    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
-    "InstLine" : 6165,
-    "InstName" : "cfa_top",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "~cfa_top.Color_Filter_Array_Interpolation_Top"
-   }
-  ]
- },
- {
-  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
-  "InstLine" : 3083,
-  "InstName" : "Color_Correction_Matrix_Top",
-  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
-  "ModuleLine" : 3083,
-  "ModuleName" : "Color_Correction_Matrix_Top",
-  "SubInsts" : [
-   {
-    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
-    "InstLine" : 3122,
-    "InstName" : "ccm_top",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "~ccm_top.Color_Correction_Matrix_Top"
-   }
-  ]
- },
- {
-  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
-  "InstLine" : 251,
-  "InstName" : "Gamma_Correction_Top",
-  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
-  "ModuleLine" : 251,
-  "ModuleName" : "Gamma_Correction_Top",
-  "SubInsts" : [
-   {
-    "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
-    "InstLine" : 290,
-    "InstName" : "gamma_top",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "~gamma_top.Gamma_Correction_Top"
-   }
-  ]
- },
- {
   "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
   "InstLine" : 3,
   "InstName" : "test_pattern_gen",
@@ -107,7 +35,7 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 104,
+    "InstLine" : 106,
     "InstName" : "camera_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/camera_pll.v",
     "ModuleLine" : 10,
@@ -115,7 +43,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 122,
+    "InstLine" : 124,
     "InstName" : "camera_init",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/camera_init.v",
     "ModuleLine" : 18,
@@ -125,7 +53,7 @@
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/camera_init.v",
       "InstLine" : 114,
       "InstName" : "ov5640_init_table_raw_inst",
-      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_raw_2.v",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_raw.v",
       "ModuleLine" : 15,
       "ModuleName" : "ov5640_init_table_raw"
      },
@@ -151,7 +79,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 138,
+    "InstLine" : 140,
     "InstName" : "DVP_Capture",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/dvp_capture/DVP_Capture_raw.v",
     "ModuleLine" : 1,
@@ -159,15 +87,25 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 206,
-    "InstName" : "cfa_top_inst",
-    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
+    "InstLine" : 208,
+    "InstName" : "isp_inst",
+    "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
     "ModuleLine" : 1,
-    "ModuleName" : "cfa_top"
+    "ModuleName" : "isp_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
+      "InstLine" : 37,
+      "InstName" : "cfa_top_inst",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "cfa_top"
+     }
+    ]
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 277,
+    "InstLine" : 241,
     "InstName" : "ddr_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/ddr_pll.v",
     "ModuleLine" : 10,
@@ -175,7 +113,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 334,
+    "InstLine" : 292,
     "InstName" : "ddr3_ctrl_2port",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/ddr/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
     "ModuleLine" : 1,
@@ -249,7 +187,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 386,
+    "InstLine" : 344,
     "InstName" : "hdmi_PLL_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/gowin_pll/hdmi_pll.v",
     "ModuleLine" : 10,
@@ -257,7 +195,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 396,
+    "InstLine" : 354,
     "InstName" : "u_Reset_Sync",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/reset.v",
     "ModuleLine" : 1,
@@ -265,7 +203,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 423,
+    "InstLine" : 381,
     "InstName" : "disp_driver0",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/disp_driver.v",
     "ModuleLine" : 3,
@@ -273,7 +211,7 @@
     "SubInsts" : [
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/disp_driver.v",
-      "InstLine" : 65,
+      "InstLine" : 64,
       "InstName" : "video_timing_ctrl_inst0",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/video-misc/video_timing_ctrl.v",
       "ModuleLine" : 3,
@@ -283,7 +221,7 @@
    },
    {
     "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-    "InstLine" : 442,
+    "InstLine" : 399,
     "InstName" : "dvi_tx_top_inst",
     "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/hdmi/dvi-tx/dvi_tx_top.v",
     "ModuleLine" : 1,

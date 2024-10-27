@@ -1,1 +1,0 @@
-`define RGMII_IF

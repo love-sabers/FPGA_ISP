@@ -18,7 +18,7 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_raw_2.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/camera/camera_init/ov5640_init_table_raw.v",
    "Type" : "verilog"
   },
   {
@@ -94,23 +94,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/color_correction_matrix/color_correction_matrix.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma_correction/gamma_correction.v",
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
    "Type" : "verilog"
   },
   {

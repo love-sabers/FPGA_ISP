@@ -4,7 +4,7 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\sr
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_control.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_jpeg.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw_2.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_rgb.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_raw.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v'
@@ -23,21 +23,20 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\sr
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\reset.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\video_timing_ctrl.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\RAM_based_shift_reg_top\RAM_based_shift_reg_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa_interpolation\cfa_interpolation.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\color_correction_matrix\color_correction_matrix.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma_correction\gamma_correction.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v'
+WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":225)
 Compiling module 'top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":1)
 Compiling module 'camera_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\camera_pll.v":10)
 Compiling module 'camera_init(IMAGE_TYPE=2,IMAGE_WIDTH=512,IMAGE_HEIGHT=512)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\camera_init.v":18)
-Compiling module 'ov5640_init_table_raw(IMAGE_WIDTH=512,IMAGE_HEIGHT=512,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw_2.v":15)
-Extracting RAM for identifier 'rom'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw_2.v":36)
+Compiling module 'ov5640_init_table_raw(IMAGE_WIDTH=512,IMAGE_HEIGHT=512,IMAGE_FLIP_EN=0,IMAGE_MIRROR_EN=0)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw.v":15)
+Extracting RAM for identifier 'rom'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\ov5640_init_table_raw.v":36)
 Compiling module 'i2c_control'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_control.v":18)
 Compiling module 'i2c_bit_shift'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v":18)
 Compiling module 'DVP_Capture_raw'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_raw.v":1)
+Compiling module 'isp_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":1)
 Compiling module 'cfa_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v":1)
 Extracting RAM for identifier 'ram'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v":102)
 Compiling module 'ddr_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\ddr_pll.v":10)
@@ -96,11 +95,16 @@ Compiling module 'dvi_tx_tmds_enc'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_I
 Compiling module 'dvi_tx_tmds_phy'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_tmds_phy.v":1)
 Compiling module 'dvi_tx_clk_drv'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_clk_drv.v":1)
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "outlook_clk" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":65)
-WARN  (EX0211) : The output port "outlook_vs" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":66)
-WARN  (EX0211) : The output port "outlook_den" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":67)
+WARN  (EX0211) : The output port "outlook_clk" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":67)
+WARN  (EX0211) : The output port "outlook_vs" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":68)
+WARN  (EX0211) : The output port "outlook_den" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":69)
+WARN  (EX0211) : The output port "outlook_clk_dvp" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":71)
+WARN  (EX0211) : The output port "outlook_vs_dvp" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":72)
+WARN  (EX0211) : The output port "outlook_den_dvp" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":73)
+WARN  (EX0211) : The output port "outlook_clk_cam" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":75)
+WARN  (EX0211) : The output port "outlook_vs_cam" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":76)
+WARN  (EX0211) : The output port "outlook_den_cam" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":77)
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input button is unused("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":26)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed

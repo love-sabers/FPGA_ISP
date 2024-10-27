@@ -13,7 +13,9 @@ module top
 	parameter video_vsync_pol	= 1,
 	parameter video_vsync_len	= 5,
 	parameter video_vbp_len		= 36,
-	parameter video_v_visible	= 1080
+	parameter video_v_visible	= 1080,
+
+    parameter isp_disp_mode_num	= 4
 )
 (
 
@@ -152,13 +154,13 @@ module top
         // .Yaddr      (                 ) //output    [11:0],start is 1
     );
 
-    assign outlook_clk_cam=camera_pclk;
-    assign outlook_vs_cam=camera_vsync;
-    assign outlook_den_cam=camera_href;
+    // assign outlook_clk_cam=camera_pclk;
+    // assign outlook_vs_cam=camera_vsync;
+    // assign outlook_den_cam=camera_href;
 
-    assign outlook_clk_dvp=DVP_clk;
-    assign outlook_vs_dvp=DVP_DataVs;
-    assign outlook_den_dvp=DVP_DataValid;
+    // assign outlook_clk_dvp=DVP_clk;
+    // assign outlook_vs_dvp=DVP_DataVs;
+    // assign outlook_den_dvp=DVP_DataValid;
 
     // assign outlook_clk=tmp_clk;
     // assign outlook_vs=gen_vsync;
@@ -172,19 +174,24 @@ module top
 	wire [7:0] isp_data_G;
 	wire [7:0] isp_data_B;
 	
+    //isp mode select
 	wire [3:0] isp_disp_mode;
 
-    reg [3:0] isp_mode;//0:GAMMA 1:RAW 2:CFA 3:CCM  
+    reg [3:0] isp_mode;//0:RAW 1:CFA 2:AWB 3:CCM 4:GAMMA  
     reg lastbutton;
     reg curbutton;
-    always @(negedge clk50m or negedge reset_n) begin
+
+    initial begin
+        isp_mode<=4'd0;
+    end
+    always @(posedge clk50m or negedge reset_n) begin
         if(!reset_n)begin
             isp_mode<=4'd0;
         end else begin
             lastbutton<=curbutton;
             curbutton<=button;
             if(!lastbutton & curbutton)begin
-                if(isp_mode < 3)
+                if(isp_mode < isp_disp_mode_num)
                     isp_mode<=isp_mode + 4'b1;
                 else 
                     isp_mode<=4'd0;
@@ -192,73 +199,30 @@ module top
         end
     end
 
-    wire cfa_vsync;
-    wire cfa_hsync;
-    wire cfa_den;
-    wire [7:0] cfa_R;
-    wire [7:0] cfa_G;
-    wire [7:0] cfa_B;
-
-
-    cfa_top#(
-        .source_h(512),
-	    .source_v(512)
-    )cfa_top_inst(
-        .clk(DVP_clk),
-        .reset_n(reset_n),
-        .in_vsync(DVP_DataVs),		
-        .in_hsync(DVP_DataHs),		
-        .in_den(DVP_DataValid),			
-        .in_raw(DVP_DataPixel), 	
-        
-        .out_vsync(cfa_vsync),		
-        .out_hsync(cfa_hsync),		
-        .out_den(cfa_den),			
-        .out_R(cfa_R), 	
-        .out_G(cfa_G),
-        .out_B(cfa_B)
-    );
-
+    
     
 
-    // isp_top  #(
-	// 	.DATA_WIDTH(8),
-    //     .H_PIXELS(source_h),
-    //     .V_PIXELS(source_v)
-	// )isp_inst(
-		
-	// 	.rstn(reset_n),
+    isp_top  #(
+        .source_h(source_h),
+        .source_v(source_v)
+	)isp_inst(
+		.reset_n    (reset_n),
 
-    //     .clk(hdmi_clk148m5),
-    //     .in_vs(~gen_vsync),
-	// 	.in_de(gen_den),
-	// 	.in_data(gen_data[7:0]),
+        .clk        (DVP_clk),
+        .in_vsync   (DVP_DataVs),
+        .in_hsync   (DVP_DataHs),
+		.in_den     (DVP_DataValid),
+		.in_data    (DVP_DataPixel),
 
-    //     // .in_vs(DVP_DataVs),
-    //     // .in_hs(DVP_DataHs),
-	// 	// .in_de(DVP_DataValid),
-	// 	// .in_data(DVP_DataPixel),
-
-    //     // .clk(camera_pclk), 
-	// 	// .in_vs(camera_vsync),
-	// 	// .in_de(camera_href),
-	// 	// .in_data(camera_data),
-		
-	// 	// .isp_rd_rdy(isp_rd_rdy),
-	// 	// .isp_reg_wr_en(isp_reg_wr_en),
-	// 	// .isp_reg_addr(isp_reg_addr),
-	// 	// .isp_reg_wr_data(isp_reg_wr_data),
-	// 	// .isp_reg_rd_en(isp_reg_rd_en),
-	// 	// .isp_reg_rd_data(isp_reg_rd_data),
-    //     .isp_disp_mode(isp_mode),
+        .isp_disp_mode(isp_mode),
 	
-    //     .out_clk(isp_clk),
-	// 	.out_vs(isp_vsync),
-	// 	.out_de(isp_den),
-	// 	.out_data_R(isp_data_R),
-	// 	.out_data_G(isp_data_G),
-	// 	.out_data_B(isp_data_B)
-	// );
+        .out_clk    (isp_clk),
+		.out_vsync  (isp_vsync),
+		.out_den    (isp_den),
+		.out_data_R (isp_data_R),
+		.out_data_G (isp_data_G),
+		.out_data_B (isp_data_B)
+	);
 
     // assign outlook_clk=isp_clk;
     // assign outlook_den=isp_den;
@@ -296,17 +260,11 @@ module top
     wire wrfifo_clk;
     wire [31:0] wrfifo_din;
 
-    //CFA
-    assign wr_load=cfa_vsync;
-    assign wrfifo_wren=cfa_den;
-    assign wrfifo_clk=DVP_clk;
-    assign wrfifo_din={cfa_R[7:0],cfa_G[7:0],cfa_B[7:0],8'hFF};
-
     //isp
-    // assign wr_load=isp_vsync;
-    // assign wrfifo_wren=isp_den;
-    // assign wrfifo_clk=isp_clk;
-    // assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
+    assign wr_load=isp_vsync;
+    assign wrfifo_wren=isp_den;
+    assign wrfifo_clk=isp_clk;
+    assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
 
     //dvp raw
     // assign wr_load=DVP_DataVs;
@@ -327,7 +285,7 @@ module top
     // assign wrfifo_din={gen_data,8'hFF};
 
     //大小参数
-    wire [28:0] app_addr_max = source_h*source_v;//奇偶帧缓存
+    wire [28:0] app_addr_max = source_h*source_v;
     wire [7:0] burst_len = source_h[10:3];
 
 
@@ -435,8 +393,7 @@ module top
 		.video_vsync		(dvi_vsync),
 		.video_hsync		(dvi_hsync),
 		.video_den			(dvi_den),
-		.video_pixel       	(dvi_data),
-        .video_line_start   ()
+		.video_pixel       	(dvi_data)
 	);
 
     dvi_tx_top dvi_tx_top_inst(//tmds 发送器

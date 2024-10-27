@@ -12,9 +12,9 @@ module cfa_top #(
     output reg      out_vsync,		
     output reg      out_hsync,		
     output reg      out_den,			
-	output reg[7:0] out_R, 	
-    output reg[7:0] out_G,
-    output reg[7:0] out_B
+	output reg[7:0] out_data_R, 	
+    output reg[7:0] out_data_G,
+    output reg[7:0] out_data_B
 );
 
 //对输入信号进行打拍处理
@@ -129,40 +129,40 @@ always @(posedge clk or negedge reset_n) begin
         out_vsync<=1'b0;
         out_hsync<=1'b0;
         out_den<=1'b0;
-        out_R<=8'd0;
-        out_G<=8'd0;
-        out_B<=8'd0;
+        out_data_R<=8'd0;
+        out_data_G<=8'd0;
+        out_data_B<=8'd0;
     end else begin
         out_vsync<=r_vsync;
         out_hsync<=r_hsync;
         out_den<=r_den;
         
         if (r_Xaddr<=10'd1 | r_Yaddr<=10'd1) begin
-            out_R<=8'hff;
-            out_G<=8'h00; 
-            out_B<=8'h00;
+            out_data_R<=8'hff;
+            out_data_G<=8'h00; 
+            out_data_B<=8'h00;
         // end else begin
-        //     out_R<=r_up_raw;
-        //     out_G<=r_up_raw; 
-        //     out_B<=r_up_raw;
+        //     out_data_R<=r_up_raw;
+        //     out_data_G<=r_up_raw; 
+        //     out_data_B<=r_up_raw;
         // end
 
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-            out_R<=r_ul_raw;
-            out_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-            out_B<=r_in_raw;
+            out_data_R<=r_ul_raw;
+            out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
+            out_data_B<=r_in_raw;
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-            out_R<=r_up_raw;
-            out_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-            out_B<=r_le_raw;
+            out_data_R<=r_up_raw;
+            out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
+            out_data_B<=r_le_raw;
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-            out_R<=r_le_raw;
-            out_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-            out_B<=r_up_raw;
+            out_data_R<=r_le_raw;
+            out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
+            out_data_B<=r_up_raw;
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-            out_R<=r_in_raw;
-            out_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-            out_B<=r_ul_raw;
+            out_data_R<=r_in_raw;
+            out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
+            out_data_B<=r_ul_raw;
         end
 
     end
