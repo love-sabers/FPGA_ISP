@@ -1,7 +1,7 @@
 module top
 #(
-	parameter source_h  = 1920,
-	parameter source_v  = 1080,
+	parameter source_h  = 512,
+	parameter source_v  = 512,
 
 	parameter video_hlength		= 2200,
 	parameter video_hsync_pol	= 1,

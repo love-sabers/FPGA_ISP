@@ -42,6 +42,12 @@ reg [11:0] r_index;
 reg [11:0] r_Xaddr;
 reg [11:0] r_Yaddr;
 
+initial begin
+    r_Xaddr<=12'd0;
+    r_index<=12'd0;
+    r_Yaddr<=12'd0;
+end
+
 always @(posedge clk or negedge reset_n) begin
     if(!reset_n)begin
         r_Xaddr<=12'd0;
@@ -73,20 +79,10 @@ reg [7:0]  r_le_raw;//left
 
 reg [7:0]  ram[source_h:0];
 assign r_up_raw=ram[r_index];
-// assign r_up_raw=r_in_raw;
 
 always @(posedge clk ) begin
     ram[r_index]<=r_in_raw;
 end
-
-// //RAW reg
-// RAM_reg_top RAM_reg(
-//     .clk(clk), //input clk
-//     .Reset(reset_n), //input Reset
-//     .Din(r_in_raw), //input [7:0] Din
-//     .ADDR(in_delay), //input [9:0] ADDR
-//     .Q(r_up_raw) //output [7:0] Q
-// );
 
 //存储left，upleft
 always @(posedge clk ) begin
@@ -113,11 +109,6 @@ always @(posedge clk or negedge reset_n) begin
             out_data_R<=8'h00;
             out_data_G<=8'h00; 
             out_data_B<=8'h00;
-        // end else begin
-        //     out_data_R<=r_up_raw;
-        //     out_data_G<=r_up_raw; 
-        //     out_data_B<=r_up_raw;
-        // end
 
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
             out_data_R<=r_in_raw;

@@ -8,6 +8,14 @@
   "ModuleName" : "DVP_Capture_rgb565"
  },
  {
+  "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
+  "InstLine" : 1,
+  "InstName" : "awb_top",
+  "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "awb_top"
+ },
+ {
   "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
   "InstLine" : 3,
   "InstName" : "test_pattern_gen",
@@ -95,7 +103,7 @@
     "SubInsts" : [
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-      "InstLine" : 37,
+      "InstLine" : 39,
       "InstName" : "cfa_top_inst",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
       "ModuleLine" : 1,

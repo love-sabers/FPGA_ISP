@@ -94,6 +94,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
    "Type" : "verilog"
   },

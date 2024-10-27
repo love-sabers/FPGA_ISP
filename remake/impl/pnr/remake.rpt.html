@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sun Oct 27 15:46:18 2024
+<td>Sun Oct 27 18:50:06 2024
 </td>
 </tr>
 <tr>
@@ -97,24 +97,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-   Placement Phase 1: CPU time = 0h 0m 0.209s, Elapsed time = 0h 0m 0.21s
-   Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-   Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-   Total Placement: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+   Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   Placement Phase 1: CPU time = 0h 0m 0.473s, Elapsed time = 0h 0m 0.473s
+   Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   Placement Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   Total Placement: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.749s, Elapsed time = 0h 0m 0.749s
-   Routing Phase 1: CPU time = 0h 0m 26s, Elapsed time = 0h 0m 26s
-   Routing Phase 2: CPU time = 0h 0m 0.275s, Elapsed time = 0h 0m 0.276s
+   Routing Phase 0: CPU time = 0h 0m 0.816s, Elapsed time = 0h 0m 0.816s
+   Routing Phase 1: CPU time = 0h 1m 6s, Elapsed time = 0h 1m 6s
+   Routing Phase 2: CPU time = 0h 0m 0.287s, Elapsed time = 0h 0m 0.287s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
+   Total Routing: CPU time = 0h 1m 7s, Elapsed time = 0h 1m 7s
 Generate output files:
-   CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+   CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 41s, Elapsed time = 0h 0m 41s, Peak memory usage = 1840MB</td>
+<td>CPU time = 0h 1m 27s, Elapsed time = 0h 1m 27s, Peak memory usage = 1921MB</td>
 </tr>
 </table>
 <br/>
@@ -129,22 +129,22 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>7424/138240</td>
-<td>6%</td>
+<td>8761/138240</td>
+<td>7%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>5972(5555 LUT, 417 ALU, 0 ROM16)</td>
+<td>8365(7883 LUT, 482 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --SSRAM(RAM16)</td>
-<td>242</td>
+<td>66</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>6294/139140</td>
+<td>6407/139140</td>
 <td>5%</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>6294/138240</td>
+<td>6407/138240</td>
 <td>5%</td>
 </tr>
 <tr>
@@ -169,8 +169,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>6257/69120</td>
-<td>10%</td>
+<td>7127/69120</td>
+<td>11%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
@@ -209,7 +209,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">DSP</td>
-<td>0</td><td>0%</td>
+<td>2 MULTALU27X18<br/></td><td><1%</td>
 </tr>
 <tr>
 <td class="label">PLL</td>
@@ -305,7 +305,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>5/8(63%)</td>
+<td>1/8(13%)</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
@@ -340,7 +340,7 @@ Generate output files:
 <tr>
 <td class="label">camera_pclk_d</td>
 <td>PRIMARY</td>
-<td> PTR2 PBR2</td>
+<td> PTR2 PBR1 PBR2</td>
 </tr>
 <tr>
 <td class="label">camera_xclk_d</td>
@@ -371,26 +371,6 @@ Generate output files:
 <td class="label">ddr3_ctrl_2port/ui_clk</td>
 <td>PRIMARY</td>
 <td> PTR0 PTR1 PTR2 PBR0 PBR1 PBR2</td>
-</tr>
-<tr>
-<td class="label">isp_inst/cfa_top_inst/r_index[0]</td>
-<td>LW</td>
-<td> -</td>
-</tr>
-<tr>
-<td class="label">isp_inst/cfa_top_inst/r_index[1]</td>
-<td>LW</td>
-<td> -</td>
-</tr>
-<tr>
-<td class="label">isp_inst/cfa_top_inst/r_index[2]</td>
-<td>LW</td>
-<td> -</td>
-</tr>
-<tr>
-<td class="label">isp_inst/cfa_top_inst/r_index[3]</td>
-<td>LW</td>
-<td> -</td>
 </tr>
 <tr>
 <td class="label">ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst</td>

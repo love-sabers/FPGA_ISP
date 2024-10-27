@@ -7,7 +7,9 @@ module awb_top #(
     input       in_vsync,		
     input       in_hsync,		
     input       in_den,			
-	input [7:0] in_raw, 	
+	input [7:0] in_data_R, 	
+    input [7:0] in_data_G, 	
+    input [7:0] in_data_B, 	
 
     output reg      out_vsync,		
     output reg      out_hsync,		
@@ -21,109 +23,92 @@ module awb_top #(
 reg         r_vsync;
 reg         r_hsync;
 reg         r_den;
-reg [7:0]   r_in_raw;
 always @(posedge clk) begin
     r_vsync<=in_vsync;
     r_hsync<=in_hsync;
     r_den<=in_den;
 end
 
-always @(posedge clk) begin
-    if(in_den) begin
-        r_in_raw<=in_raw;
-    end else begin
-        r_in_raw<=8'hff;
-    end
-    
+//计算增益
+reg [16-1:0] line_R;
+reg [16-1:0] line_G;
+reg [16-1:0] line_B;
+
+reg [16-1:0] frame_R;
+reg [16-1:0] frame_G;
+reg [16-1:0] frame_B;
+
+reg [16-1:0] mean_R;
+reg [16-1:0] mean_G;
+reg [16-1:0] mean_B;
+
+reg [24-1:0] gain_R;
+reg [24-1:0] gain_B;
+
+
+initial begin
+    // mean_R  <=16'd1;
+    // mean_G  <=16'd1;
+    // mean_B  <=16'd1;
+    gain_R  <=24'd1;
+    gain_B  <=24'd1;
+    line_R  <=16'd0;
+    line_G  <=16'd0;
+    line_B  <=16'd0;
+    frame_R <=16'd16;
+    frame_G <=16'd16;
+    frame_B <=16'd16;
 end
-
-//计算位置
-reg [9:0] r_index;
-reg [9:0] r_Xaddr;
-reg [9:0] r_Yaddr;
-
 always @(posedge clk or negedge reset_n) begin
     if(!reset_n)begin
-        r_Xaddr<=10'd0;
-        r_index<=10'd0;
-    end else if (in_hsync) begin
-        r_Xaddr<=r_Xaddr+10'd1;
-        r_index<=r_index+10'd1;
-    end else begin
-        r_Xaddr<=10'd0;
-        r_index<=10'd0;
-    end
-end
-
-always @(posedge clk or negedge reset_n) begin
-    if(!reset_n)begin
-        r_Yaddr<=10'd0;
+        // mean_R  <=16'd1;
+        // mean_G  <=16'd1;
+        // mean_B  <=16'd1;
+        gain_R  <=24'd1;
+        gain_B  <=24'd1;
+        line_R  <=16'd0;
+        line_G  <=16'd0;
+        line_B  <=16'd0;
+        frame_R <=16'd16;
+        frame_G <=16'd16;
+        frame_B <=16'd16;
     end else if (~in_vsync) begin
-        r_Yaddr<=10'd0;
-    end else if ({r_hsync,in_hsync}==2'b01) begin
-        r_Yaddr<=r_Yaddr+10'd1;
-    end else begin
-        r_Yaddr<=r_Yaddr;
-    end
+        gain_R<=24'd256*{8'd0,frame_G}/{{8'd0,frame_R}};
+        gain_B<=24'd256*{8'd0,frame_G}/{{8'd0,frame_B}};
+        // mean_R  <={4'd0,frame_R[15:4]};
+        // mean_G  <={4'd0,frame_G[15:4]};
+        // mean_B  <={4'd0,frame_B[15:4]};
+        frame_R <=16'd0;
+        frame_G <=16'd0;
+        frame_B <=16'd0;
+    end else if ({r_hsync,in_hsync}==2'b10) begin
+        frame_R <=frame_R+{8'd0,line_R[15:8]};
+        frame_G <=frame_G+{8'd0,line_R[15:8]};
+        frame_B <=frame_B+{8'd0,line_R[15:8]};
+        line_R  <=16'd0;
+        line_G  <=16'd0;
+        line_B  <=16'd0;
+    end else if (in_hsync) begin
+        line_R  <=line_R+{12'd0,in_data_R[7:4]};
+        line_G  <=line_G+{12'd0,in_data_G[7:4]};
+        line_B  <=line_B+{12'd0,in_data_B[7:4]};
+    end 
 end
 
-//计算行延迟
-reg [9:0] delay_count;
-reg [9:0] delay_value;
-reg delay_over_vs;
-
-// always @(posedge clk or negedge reset_n) begin
-//     if(!reset_n)begin
-//         delay_count<=10'd0;
-//         delay_value<=10'd0;
-//         delay_over_vs<=1'b0;
-//     end else begin
-//         delay_value<=in_delay;
-//     end
-//     // end else if(!in_vsync) begin
-//     //     delay_over_vs<=1'b1;
-//     // end else if ({r_hsync,in_hsync}==2'b01) begin
-//     //     if (~delay_over_vs & delay_count>delay_value) begin
-//     //         delay_value<=delay_count;
-//     //     end
-//     //     delay_over_vs<=1'b0;
-//     //     delay_count<=10'd0;
-//     // end else begin
-//     //     delay_count<=delay_count+10'd1;
-//     // end
-// end
-
-// assign delay_value=10'd512;
-
-wire[7:0]  r_up_raw;//up 
-reg [7:0]  r_ul_raw;//up left
-reg [7:0]  r_le_raw;//left
-
-reg [7:0]  ram[source_h:0];
-assign r_up_raw=ram[r_index];
-// assign r_up_raw=r_in_raw;
-
+//计算图像
+reg [16-1:0] r_data_R;
+reg [8-1:0] r_data_G;
+reg [16-1:0] r_data_B;
 always @(posedge clk ) begin
-    ram[r_index]<=r_in_raw;
+    r_data_R<={8'd0,in_data_R}*gain_R[15:0];
+    r_data_G<=in_data_G;
+    r_data_B<={8'd0,in_data_B}*gain_B[15:0];
+
+    // r_data_R<={4'd0,mean_R+mean_G};
+    // r_data_B<={4'd0,mean_B+mean_G};
 end
 
-// //RAW reg
-// RAM_reg_top RAM_reg(
-//     .clk(clk), //input clk
-//     .Reset(reset_n), //input Reset
-//     .Din(r_in_raw), //input [7:0] Din
-//     .ADDR(in_delay), //input [9:0] ADDR
-//     .Q(r_up_raw) //output [7:0] Q
-// );
-
-//存储left，upleft
-always @(posedge clk ) begin
-    r_ul_raw<=r_up_raw;
-    r_le_raw<=r_in_raw;
-end
-
-
-//cfa输出
+//awb输出
 always @(posedge clk or negedge reset_n) begin
     if (!reset_n) begin
         out_vsync<=1'b0;
@@ -136,38 +121,27 @@ always @(posedge clk or negedge reset_n) begin
         out_vsync<=r_vsync;
         out_hsync<=r_hsync;
         out_den<=r_den;
-        
-        if (r_Xaddr<=10'd1 | r_Yaddr<=10'd1) begin
-            out_data_R<=8'hff;
-            out_data_G<=8'h00; 
-            out_data_B<=8'h00;
+
+        out_data_R<=r_data_R[15:8];
+        out_data_G<=r_data_G[7:0];
+        out_data_B<=r_data_B[15:8];
+
+        // if (r_data_R<20'd255) begin
+        //     out_data_R<=r_data_R[7:0];
         // end else begin
-        //     out_data_R<=r_up_raw;
-        //     out_data_G<=r_up_raw; 
-        //     out_data_B<=r_up_raw;
+        //     out_data_R<=8'hff;
         // end
 
-        end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-            out_data_R<=r_ul_raw;
-            out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-            out_data_B<=r_in_raw;
-        end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-            out_data_R<=r_up_raw;
-            out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-            out_data_B<=r_le_raw;
-        end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-            out_data_R<=r_le_raw;
-            out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-            out_data_B<=r_up_raw;
-        end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-            out_data_R<=r_in_raw;
-            out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-            out_data_B<=r_ul_raw;
-        end
+        // out_data_G<=r_data_G; 
+
+        // if (r_data_B<20'd255) begin
+        //     out_data_B<=r_data_B[7:0];
+        // end else begin
+        //     out_data_B<=8'hff;
+        // end
+        
 
     end
 end
-
-
     
 endmodule
