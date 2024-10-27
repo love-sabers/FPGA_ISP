@@ -112,6 +112,10 @@
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

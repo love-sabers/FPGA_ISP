@@ -54,33 +54,33 @@ module isp_top #(
 
 
 	//awb
-	// wire 		awb_vsync;
-    // wire 		awb_hsync;
-    // wire 		awb_den;
-    // wire [7:0] 	awb_R;
-    // wire [7:0] 	awb_G;
-    // wire [7:0] 	awb_B;
+	wire 		awb_vsync;
+    wire 		awb_hsync;
+    wire 		awb_den;
+    wire [7:0] 	awb_R;
+    wire [7:0] 	awb_G;
+    wire [7:0] 	awb_B;
 
-	// awb_top#(
-    //     .source_h	(source_h),
-	//     .source_v	(source_v)
-    // )awb_top_inst(
-    //     .clk		(clk),
-    //     .reset_n	(reset_n),
-    //     .in_vsync	(cfa_vsync),		
-    //     .in_hsync	(cfa_hsync),		
-    //     .in_den		(cfa_den),			
-    //     .in_data_R	(cfa_R), 	
-	// 	.in_data_G	(cfa_G), 	
-	// 	.in_data_B	(cfa_B), 	
+	awb_top#(
+        .source_h	(source_h),
+	    .source_v	(source_v)
+    )awb_top_inst(
+        .clk		(clk),
+        .reset_n	(reset_n),
+        .in_vsync	(cfa_vsync),		
+        .in_hsync	(cfa_hsync),		
+        .in_den		(cfa_den),			
+        .in_data_R	(cfa_R), 	
+		.in_data_G	(cfa_G), 	
+		.in_data_B	(cfa_B), 	
 
-    //     .out_vsync	(awb_vsync),		
-    //     .out_hsync	(awb_hsync),		
-    //     .out_den	(awb_den),			
-    //     .out_data_R	(awb_R), 	
-    //     .out_data_G	(awb_G),
-    //     .out_data_B	(awb_B)
-    // );
+        .out_vsync	(awb_vsync),		
+        .out_hsync	(awb_hsync),		
+        .out_den	(awb_den),			
+        .out_data_R	(awb_R), 	
+        .out_data_G	(awb_G),
+        .out_data_B	(awb_B)
+    );
 
 
 	always @(posedge clk or negedge reset_n) begin
@@ -109,14 +109,14 @@ module isp_top #(
 					out_data_G 	<=  cfa_G;
 					out_data_B 	<=  cfa_B;
 				end
-				// 4'h2: begin									// AWB
-				// 	out_vsync 	<=  awb_vsync;
-				// 	out_hsync 	<=  awb_hsync;
-				// 	out_den    	<=  awb_den;
-				// 	out_data_R 	<= 	awb_R;
-				// 	out_data_G 	<=  awb_G;
-				// 	out_data_B 	<=  awb_B;		
-				// end	
+				4'h2: begin									// AWB
+					out_vsync 	<=  awb_vsync;
+					out_hsync 	<=  awb_hsync;
+					out_den    	<=  awb_den;
+					out_data_R 	<= 	awb_R;
+					out_data_G 	<=  awb_G;
+					out_data_B 	<=  awb_B;		
+				end	
 				4'h3: begin									// CCM
 					out_vsync 	<=  in_vsync;
 					out_hsync 	<=  in_hsync;
