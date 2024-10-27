@@ -94,6 +94,14 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa_interpolation/cfa_interpolation.v",
    "Type" : "verilog"
   },
@@ -106,19 +114,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/test/test_pattern_gen.v",
    "Type" : "verilog"
   },
   {
    "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/top.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
    "Type" : "verilog"
   }
  ],

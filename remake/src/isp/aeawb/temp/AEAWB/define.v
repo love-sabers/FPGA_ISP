@@ -1,5 +1,0 @@
-`define MODULE_NAME AEAWB_Top
-`define IMAGE_WIDTH 1920
-`define IMAGE_HEIGHT 1080
-`define IMAGE_BITS 8
-`define RGGB

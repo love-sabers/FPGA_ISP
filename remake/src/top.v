@@ -1,7 +1,7 @@
 module top
 #(
-	parameter source_h  = 1024,
-	parameter source_v  = 1024,
+	parameter source_h  = 512,
+	parameter source_v  = 512,
 
 	parameter video_hlength		= 2200,
 	parameter video_hsync_pol	= 1,
@@ -79,21 +79,21 @@ module top
     assign led={1'b1,~camera_init_done,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
 
 
-    wire 	[7 : 0]	    gen_data;
-	wire				gen_den;
-	wire				gen_hsync;
-	wire				gen_vsync;
+    // wire 	[7 : 0]	    gen_data;
+	// wire				gen_den;
+	// wire				gen_hsync;
+	// wire				gen_vsync;
     
-    test_pattern_gen test_gen0(
+    // test_pattern_gen test_gen0(
 		
-		.pixel_clock		(hdmi_clk148m5),
-		.reset				(~sys_resetn),
+	// 	.pixel_clock		(hdmi_clk148m5),
+	// 	.reset				(~sys_resetn),
 		
-		.video_vsync		(gen_vsync),
-		.video_hsync		(gen_hsync),
-		.video_den			(gen_den),
-		.video_pixel_raw 	(gen_data)
-	);
+	// 	.video_vsync		(gen_vsync),
+	// 	.video_hsync		(gen_hsync),
+	// 	.video_den			(gen_den),
+	// 	.video_pixel_raw 	(gen_data)
+	// );
     
 
     //camera
@@ -146,10 +146,10 @@ module top
         .DataClk    (DVP_clk          ),
         .DataValid  (DVP_DataValid    ),//output
         .DataPixel  (DVP_DataPixel    ),//output    [15:0]
-        .DataHs     (                 ),//output
-        .DataVs     (DVP_DataVs       ),//output
-        .Xaddr      (                 ),//output    [11:0],start is 1
-        .Yaddr      (                 ) //output    [11:0],start is 1
+        .DataHs     (DVP_DataHs       ),//output
+        .DataVs     (DVP_DataVs       )//output
+        // .Xaddr      (                 ),//output    [11:0],start is 1
+        // .Yaddr      (                 ) //output    [11:0],start is 1
     );
 
     assign outlook_clk_cam=camera_pclk;
@@ -192,48 +192,77 @@ module top
         end
     end
 
-    isp_top  #(
-		.DATA_WIDTH(8),
-        .H_PIXELS(source_h),
-        .V_PIXELS(source_v)
-	)isp_inst(
+    wire cfa_vsync;
+    wire cfa_hsync;
+    wire cfa_den;
+    wire [7:0] cfa_R;
+    wire [7:0] cfa_G;
+    wire [7:0] cfa_B;
+
+
+    cfa_top#(
+        .source_h(512),
+	    .source_v(512)
+    )cfa_top_inst(
+        .clk(DVP_clk),
+        .reset_n(reset_n),
+        .in_vsync(DVP_DataVs),		
+        .in_hsync(DVP_DataHs),		
+        .in_den(DVP_DataValid),			
+        .in_raw(DVP_DataPixel), 	
+        
+        .out_vsync(cfa_vsync),		
+        .out_hsync(cfa_hsync),		
+        .out_den(cfa_den),			
+        .out_R(cfa_R), 	
+        .out_G(cfa_G),
+        .out_B(cfa_B)
+    );
+
+    
+
+    // isp_top  #(
+	// 	.DATA_WIDTH(8),
+    //     .H_PIXELS(source_h),
+    //     .V_PIXELS(source_v)
+	// )isp_inst(
 		
-		.rstn(reset_n),
+	// 	.rstn(reset_n),
 
-        .clk(hdmi_clk148m5),
-        .in_vs(~gen_vsync),
-		.in_de(gen_den),
-		.in_data(gen_data[7:0]),
+    //     .clk(hdmi_clk148m5),
+    //     .in_vs(~gen_vsync),
+	// 	.in_de(gen_den),
+	// 	.in_data(gen_data[7:0]),
 
-        // .in_vs(DVP_DataVs),
-        // .in_hs(DVP_DataHs),
-		// .in_de(DVP_DataValid),
-		// .in_data(DVP_DataPixel),
+    //     // .in_vs(DVP_DataVs),
+    //     // .in_hs(DVP_DataHs),
+	// 	// .in_de(DVP_DataValid),
+	// 	// .in_data(DVP_DataPixel),
 
-        // .clk(camera_pclk), 
-		// .in_vs(camera_vsync),
-		// .in_de(camera_href),
-		// .in_data(camera_data),
+    //     // .clk(camera_pclk), 
+	// 	// .in_vs(camera_vsync),
+	// 	// .in_de(camera_href),
+	// 	// .in_data(camera_data),
 		
-		// .isp_rd_rdy(isp_rd_rdy),
-		// .isp_reg_wr_en(isp_reg_wr_en),
-		// .isp_reg_addr(isp_reg_addr),
-		// .isp_reg_wr_data(isp_reg_wr_data),
-		// .isp_reg_rd_en(isp_reg_rd_en),
-		// .isp_reg_rd_data(isp_reg_rd_data),
-        .isp_disp_mode(isp_mode),
+	// 	// .isp_rd_rdy(isp_rd_rdy),
+	// 	// .isp_reg_wr_en(isp_reg_wr_en),
+	// 	// .isp_reg_addr(isp_reg_addr),
+	// 	// .isp_reg_wr_data(isp_reg_wr_data),
+	// 	// .isp_reg_rd_en(isp_reg_rd_en),
+	// 	// .isp_reg_rd_data(isp_reg_rd_data),
+    //     .isp_disp_mode(isp_mode),
 	
-        .out_clk(isp_clk),
-		.out_vs(isp_vsync),
-		.out_de(isp_den),
-		.out_data_R(isp_data_R),
-		.out_data_G(isp_data_G),
-		.out_data_B(isp_data_B)
-	);
+    //     .out_clk(isp_clk),
+	// 	.out_vs(isp_vsync),
+	// 	.out_de(isp_den),
+	// 	.out_data_R(isp_data_R),
+	// 	.out_data_G(isp_data_G),
+	// 	.out_data_B(isp_data_B)
+	// );
 
-    assign outlook_clk=isp_clk;
-    assign outlook_den=isp_den;
-    assign outlook_vs=isp_vsync;
+    // assign outlook_clk=isp_clk;
+    // assign outlook_den=isp_den;
+    // assign outlook_vs=isp_vsync;
 
 
     
@@ -267,11 +296,17 @@ module top
     wire wrfifo_clk;
     wire [31:0] wrfifo_din;
 
+    //CFA
+    assign wr_load=cfa_vsync;
+    assign wrfifo_wren=cfa_den;
+    assign wrfifo_clk=DVP_clk;
+    assign wrfifo_din={cfa_R[7:0],cfa_G[7:0],cfa_B[7:0],8'hFF};
+
     //isp
-    assign wr_load=isp_vsync;
-    assign wrfifo_wren=isp_den;
-    assign wrfifo_clk=isp_clk;
-    assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
+    // assign wr_load=isp_vsync;
+    // assign wrfifo_wren=isp_den;
+    // assign wrfifo_clk=isp_clk;
+    // assign wrfifo_din={isp_data_R[7:0],isp_data_G[7:0],isp_data_B[7:0],8'hFF};
 
     //dvp raw
     // assign wr_load=DVP_DataVs;
@@ -420,93 +455,6 @@ module top
 		.tmds_d1			({tmds_d_p_0[1], tmds_d_n_0[1]}),
 		.tmds_d2			({tmds_d_p_0[2], tmds_d_n_0[2]})
 	);
-
-
-    //ahb
-    // wire [31:0] AHB1HRDATA;      // Data from slave to master
-	// wire        AHB1HREADYOUT;   // Slave ready signal
-	// wire [1:0]  AHB1HRESP;       // Slave response signal  
-	// wire [1:0]  AHB1HTRANS;      // Transfer type
-	// wire [2:0]  AHB1HBURST;      // Burst type
-	// wire [3:0]  AHB1HPROT;       // Transfer protection bits
-	// wire [2:0]  AHB1HSIZE;       // Transfer size
-	// wire        AHB1HWRITE;      // Transfer direction
-	// wire        AHB1HMASTLOCK;   // Transfer is a locked transfer
-	// wire        AHB1HREADYMUX;   // Ready mux signal
-	// wire [3:0]  AHB1HMASTER;     // Transfer is a locked transfer
-	// wire [31:0] AHB1HADDR;       // Transfer address
-	// wire [31:0] AHB1HWDATA;      // Data from master to slave
-	// wire        AHB1HSEL;        // Select
-	// wire        AHB1HCLK;        // Bus clock signal
-	// wire        AHB1HRESET;      // Bus reset signal
-
-    //   ahb_isp ahb_isp_inst(
-	// 	.AHB_HRDATA(AHB1HRDATA),
-	// 	.AHB_HREADY(AHB1HREADYOUT),//ready signal, slave to MCU master, 1'b1
-	// 	.AHB_HRESP(AHB1HRESP),//respone signal, slave to MCU master
-	// 	.AHB_HTRANS(AHB1HTRANS),
-	// 	.AHB_HBURST(AHB1HBURST),
-	// 	.AHB_HPROT(AHB1HPROT),
-	// 	.AHB_HSIZE(AHB1HSIZE),
-	// 	.AHB_HWRITE(AHB1HWRITE),
-	// 	.AHB_HMASTLOCK(AHB1HMASTLOCK),
-	// 	.AHB_HMASTER(AHB1HMASTER),
-	// 	.AHB_HADDR(AHB1HADDR),
-	// 	.AHB_HWDATA(AHB1HWDATA),
-	// 	.AHB_HSEL(AHB1HSEL),
-	// 	.AHB_HCLK(AHB1HCLK),
-	// 	.AHB_HRESETn(AHB1HRESET),
-		
-	// 	.isp_reg_rd_en(isp_reg_rd_en),
-	// 	.isp_reg_wr_en(isp_reg_wr_en),
-	// 	.isp_reg_addr(isp_reg_addr),
-	// 	.isp_reg_wr_data(isp_reg_wr_data),
-	// 	.isp_reg_rd_data(isp_reg_rd_data),
-	// 	.isp_rd_rdy(isp_rd_rdy),
-
-    //     .isp_vs(camera_vsync),
-	// 	.isp_disp_mode(isp_disp_mode),
-		
-	// 	.update_valid(update_valid),
-	// 	.cam_awb_en(cam_awb_en),
-	// 	.cam_awb_gain_r(cam_awb_gain_r),
-	// 	.cam_awb_gain_g(cam_awb_gain_g),
-	// 	.cam_awb_gain_b(cam_awb_gain_b),
-	// 	.cam_agc_en(cam_agc_en),
-	// 	.cam_agc_gain(cam_agc_gain),
-	// 	.cam_aec_en(cam_aec_en),
-	// 	.cam_aec_exposure(cam_aec_exposure)
-	// );
-
-    // //mcu
-    // Gowin_EMPU_M1_Top Gowin_EMPU_M1_Top_inst(
-	// 	.LOCKUP         (),
-	//     .GPIOIN			({15'b0, isp_rd_rdy}),
-	// 	.GPIOOUT		(),
-	// 	.GPIOOUTEN		(),
-    //     .JTAG_7(swdio), //inout JTAG_7 //swdio
-	// 	.JTAG_9(swclk), //inout JTAG_9 //swclk
-	// 	.UART0RXD       (MCU_UART_RX),
-	// 	.UART0TXD       (MCU_UART_TX),  
-	// 	.AHB1HRDATA		(AHB1HRDATA),       // Data from slave to master
-	// 	.AHB1HREADYOUT	(AHB1HREADYOUT), // Slave ready signal, from slave, 1'b1
-	// 	.AHB1HRESP		(AHB1HRESP),         // Slave response signal  
-	// 	.AHB1HTRANS		(AHB1HTRANS),       // Transfer type
-	// 	.AHB1HBURST		(AHB1HBURST),       // Burst type
-	// 	.AHB1HPROT		(AHB1HPROT),         // Transfer protection bits
-	// 	.AHB1HSIZE		(AHB1HSIZE),         // Transfer size
-	// 	.AHB1HWRITE		(AHB1HWRITE),       // Transfer direction
-	// 	.AHB1HREADYMUX	(AHB1HREADYMUX), // Ready mux
-	// 	.AHB1HMASTLOCK	(AHB1HMASTLOCK), // Transfer is a locked transfer
-	// 	.AHB1HMASTER	(AHB1HMASTER),     // Transfer is a locked transfer
-	// 	.AHB1HADDR		(AHB1HADDR),         // Transfer address
-	// 	.AHB1HWDATA		(AHB1HWDATA),       // Data from master to slave
-	// 	.AHB1HSEL		(AHB1HSEL),           // Select
-	// 	.AHB1HCLK		(AHB1HCLK),           // Clock
-	// 	.AHB1HRESET		(AHB1HRESET),       // Reset
-	// 	.HCLK           (clk50m),			// 50M
-	// 	.hwRstn         (reset_n)
-	//   );
 
 	
 

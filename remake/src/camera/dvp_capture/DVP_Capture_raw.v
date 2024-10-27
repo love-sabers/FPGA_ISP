@@ -10,7 +10,7 @@ module DVP_Capture_raw(
   output           DataValid,
   output    [7:0]  DataPixel,
   output           DataHs,
-  output           DataVs,
+  output           DataVs
   // output    [13:0] Xaddr,
   // output    [13:0] Yaddr
 );

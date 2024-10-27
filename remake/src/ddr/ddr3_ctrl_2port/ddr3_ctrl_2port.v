@@ -59,16 +59,16 @@ module ddr3_ctrl_2port(
     wire [28:0] app_addr_wr_min;
     wire [28:0] app_addr_wr_max;
 
-    wire [28:0] app_addr_max;
+    // wire [28:0] app_addr_max;
 
-    assign app_addr_max=app_addr_rd_max_in>app_addr_wr_max_in?app_addr_rd_max_in:app_addr_wr_max_in;
+    // assign app_addr_max=app_addr_rd_max_in>app_addr_wr_max_in?app_addr_rd_max_in:app_addr_wr_max_in;
 
-    reg rd_count;
-    reg wr_count;
-    initial begin
-        rd_count<=1'b0;
-        wr_count<=1'b0;
-    end
+    // reg rd_count;
+    // reg wr_count;
+    // initial begin
+    //     rd_count<=1'b0;
+    //     wr_count<=1'b0;
+    // end
 
     // always @(posedge rd_clk or negedge sys_rst_n) begin
     //     if(!sys_rst_n)begin
@@ -86,10 +86,15 @@ module ddr3_ctrl_2port(
     //     end
     // end
 
-    assign app_addr_rd_min = rd_count ? app_addr_rd_min_in +app_addr_max : app_addr_rd_min_in;
-    assign app_addr_rd_max = rd_count ? app_addr_rd_max_in +app_addr_max : app_addr_rd_max_in;
-    assign app_addr_wr_min = wr_count ? app_addr_wr_min_in +app_addr_max : app_addr_wr_min_in;
-    assign app_addr_wr_max = wr_count ? app_addr_wr_max_in +app_addr_max : app_addr_wr_max_in;
+    // assign app_addr_rd_min = rd_count ? app_addr_rd_min_in +app_addr_max : app_addr_rd_min_in;
+    // assign app_addr_rd_max = rd_count ? app_addr_rd_max_in +app_addr_max : app_addr_rd_max_in;
+    // assign app_addr_wr_min = wr_count ? app_addr_wr_min_in +app_addr_max : app_addr_wr_min_in;
+    // assign app_addr_wr_max = wr_count ? app_addr_wr_max_in +app_addr_max : app_addr_wr_max_in;
+
+    assign app_addr_rd_min =  app_addr_rd_min_in;
+    assign app_addr_rd_max =  app_addr_rd_max_in;
+    assign app_addr_wr_min =  app_addr_wr_min_in;
+    assign app_addr_wr_max =  app_addr_wr_max_in;
 
 
 
