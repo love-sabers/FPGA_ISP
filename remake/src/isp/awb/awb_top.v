@@ -124,13 +124,31 @@ assign r_data_R_fix = {16'd0,r_data_R}*gain_R;
 assign r_data_G_fix = {16'd0,r_data_G};
 assign r_data_B_fix = {16'd0,r_data_B}*gain_B;
 
-wire [8-1:0]    r_data_R_cut;
-wire [8-1:0]    r_data_G_cut;
-wire [8-1:0]    r_data_B_cut;
+//打拍同步
+reg             rr_vsync;
+reg             rr_hsync;
+reg             rr_den;
+reg [24-1:0]     rr_data_R;
+reg [24-1:0]     rr_data_G;
+reg [24-1:0]     rr_data_B;
 
-assign r_data_R_cut = r_data_R_fix[23:8]>255?8'hff:r_data_R_fix[15:8];
-assign r_data_G_cut = r_data_G_fix[7:0];
-assign r_data_B_cut = r_data_B_fix[23:8]>255?8'hff:r_data_B_fix[15:8];
+always @(posedge clk ) begin
+    rr_vsync<=r_vsync;
+    rr_hsync<=r_hsync;
+    rr_den<=r_den;
+    rr_data_R<=r_data_R_fix;
+    rr_data_G<=r_data_G_fix;
+    rr_data_B<=r_data_B_fix;   
+end
+
+
+wire [8-1:0]    rr_data_R_cut;
+wire [8-1:0]    rr_data_G_cut;
+wire [8-1:0]    rr_data_B_cut;
+
+assign rr_data_R_cut = rr_data_R[23:8]>255?8'hff:rr_data_R[15:8];
+assign rr_data_G_cut = rr_data_G[7:0];
+assign rr_data_B_cut = rr_data_B[23:8]>255?8'hff:rr_data_B[15:8];
 
 //awb输出
 always @(posedge clk or negedge reset_n) begin
@@ -142,12 +160,12 @@ always @(posedge clk or negedge reset_n) begin
         out_data_G  <=8'd0;
         out_data_B  <=8'd0;
     end else begin
-        out_vsync   <=r_vsync;
-        out_hsync   <=r_hsync;
-        out_den     <=r_den;
-        out_data_R  <=r_data_R_cut;
-        out_data_G  <=r_data_G_cut;
-        out_data_B  <=r_data_B_cut;
+        out_vsync   <=rr_vsync;
+        out_hsync   <=rr_hsync;
+        out_den     <=rr_den;
+        out_data_R  <=rr_data_R_cut;
+        out_data_G  <=rr_data_G_cut;
+        out_data_B  <=rr_data_B_cut;
 
     end
 end

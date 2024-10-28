@@ -24,11 +24,11 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\sr
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\video_timing_ctrl.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\awb_top.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v'
-Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v'
 WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":225)
 Compiling module 'top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":1)
 Compiling module 'camera_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\camera_pll.v":10)

@@ -105,11 +105,10 @@ always @(posedge clk or negedge reset_n) begin
         out_hsync<=r_hsync;
         out_den<=r_den;
         
-        if (r_Xaddr<=10'd1 | r_Yaddr<=10'd1) begin
-            out_data_R<=8'h00;
-            out_data_G<=8'h00; 
-            out_data_B<=8'h00;
-
+        if (r_Xaddr<=12'd1 | r_Yaddr<=12'd1) begin
+            out_data_R<=8'h01;
+            out_data_G<=8'h01; 
+            out_data_B<=8'h01;
         end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
             out_data_R<=r_in_raw;
             out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
