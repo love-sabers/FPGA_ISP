@@ -6,7 +6,6 @@
 -bit
 -tr
 -ph
--o
 -timing
 -ireg_not_in_iob
 -oreg_not_in_iob

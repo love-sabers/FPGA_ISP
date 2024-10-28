@@ -1,6 +1,6 @@
 module cfa_top #(
-    parameter source_h  = 512,
-	parameter source_v  = 512
+    parameter source_h  = 1024,
+	parameter source_v  = 1024
 ) (
     input       clk,
     input       reset_n,

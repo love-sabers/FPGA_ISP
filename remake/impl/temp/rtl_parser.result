@@ -111,7 +111,7 @@
       "SubInsts" : [
        {
         "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
-        "InstLine" : 102,
+        "InstLine" : 87,
         "InstName" : "gain_R_inst",
         "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
         "ModuleLine" : 6829,
@@ -129,7 +129,25 @@
        },
        {
         "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
-        "InstLine" : 109,
+        "InstLine" : 94,
+        "InstName" : "gain_G_inst",
+        "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
+        "ModuleLine" : 6829,
+        "ModuleName" : "Integer_Division_Top",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
+          "InstLine" : 6844,
+          "InstName" : "integer_division_inst",
+          "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
+          "ModuleLine" : 1,
+          "ModuleName" : "~integer_division.Integer_Division_Top"
+         }
+        ]
+       },
+       {
+        "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
+        "InstLine" : 101,
         "InstName" : "gain_B_inst",
         "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/integer_division/integer_division.v",
         "ModuleLine" : 6829,

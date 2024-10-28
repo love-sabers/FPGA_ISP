@@ -1,6 +1,6 @@
 module awb_top #(
-    parameter source_h  = 512,
-	parameter source_v  = 512
+    parameter source_h  = 1024,
+	parameter source_v  = 1024
 ) (
     input       clk,
     input       reset_n,
@@ -50,79 +50,74 @@ reg [32-1:0] mean_G;
 reg [32-1:0] mean_B;
 
 initial begin
-    mean_R  <=32'd1;
-    mean_G  <=32'd1;
-    mean_B  <=32'd1;
-    // line_R  <=32'd0;
-    // line_G  <=32'd0;
-    // line_B  <=32'd0;
-    frame_R <=32'd1;
-    frame_G <=32'd1;
-    frame_B <=32'd1;
+    mean_R  <={16'd1,16'd0};
+    mean_G  <={16'd1,16'd0};
+    mean_B  <={16'd1,16'd0};
+    frame_R <=32'd0;
+    frame_G <=32'd0;
+    frame_B <=32'd0;
 end
 always @(posedge clk or negedge reset_n) begin
     if(!reset_n)begin
-        mean_R  <=32'd1;
-        mean_G  <=32'd1;
-        mean_B  <=32'd1;
-        // line_R  <=32'd0;
-        // line_G  <=32'd0;
-        // line_B  <=32'd0;
-        frame_R <=32'd1;
-        frame_G <=32'd1;
-        frame_B <=32'd1;
+        mean_R  <={16'd1,16'd0};
+        mean_G  <={16'd1,16'd0};
+        mean_B  <={16'd1,16'd0};
+        frame_R <=32'd0;
+        frame_G <=32'd0;
+        frame_B <=32'd0;
     end else if ({r_vsync,in_vsync}==2'b10) begin
-        mean_R  <=frame_R;
-        mean_G  <=frame_G;
-        mean_B  <=frame_B;
+        mean_R  <=frame_R+{16'd1,16'd0};//expand 0
+        mean_G  <=frame_G+{16'd1,16'd0};
+        mean_B  <=frame_B+{16'd1,16'd0};
     end else if ({r_vsync,in_vsync}==2'b01) begin
-        frame_R <=32'd1;
-        frame_G <=32'd1;
-        frame_B <=32'd1;
-    // end else if ({r_hsync,in_hsync}==2'b10) begin
-    //     // frame_R <=frame_R+line_R;
-    //     // frame_G <=frame_G+line_G;
-    //     // frame_B <=frame_B+line_B;
-    //     // line_R  <=32'd0;
-    //     // line_G  <=32'd0;
-    //     // line_B  <=32'd0;
+        frame_R <=32'd0;
+        frame_G <=32'd0;
+        frame_B <=32'd0;
     end else if (in_hsync) begin
-        // line_R  <=line_R+in_data_R;
-        // line_G  <=line_G+in_data_G;
-        // line_B  <=line_B+in_data_B;
-        frame_R<=frame_R+in_data_R;
-        frame_G<=frame_G+in_data_G;
-        frame_B<=frame_B+in_data_B;
+        frame_R<=frame_R+in_data_R[7:4];
+        frame_G<=frame_G+in_data_G[7:4];
+        frame_B<=frame_B+in_data_B[7:4];
     end 
 end
 
 //计算增益
 wire [23:0] gain_R;
+wire [23:0] gain_G;
 wire [23:0] gain_B;
 Integer_Division_Top gain_R_inst(
-		.clk(clk), //input clk
-		.rstn(reset_n), //input rstn
-		.dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
-		.divisor(mean_R[31:16]), //input [15:0] divisor
-		.quotient(gain_R) //output [23:0] quotient
-	);
+    .clk(clk), //input clk
+    .rstn(reset_n), //input rstn
+    .dividend({16'd128,8'd0}), //input [23:0] dividend
+    .divisor(mean_R[31:16]), //input [15:0] divisor
+    .quotient(gain_R) //output [23:0] quotient
+);
+Integer_Division_Top gain_G_inst(
+    .clk(clk), //input clk
+    .rstn(reset_n), //input rstn
+    .dividend({16'd128,8'd0}), //input [23:0] dividend
+    .divisor(mean_G[31:16]), //input [15:0] divisor
+    .quotient(gain_G) //output [23:0] quotient
+);
 Integer_Division_Top gain_B_inst(
-		.clk(clk), //input clk
-		.rstn(reset_n), //input rstn
-		.dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
-		.divisor(mean_B[31:16]), //input [15:0] divisor
-		.quotient(gain_B) //output [23:0] quotient
-	);
+    .clk(clk), //input clk
+    .rstn(reset_n), //input rstn
+    .dividend({16'd128,8'd0}), //input [23:0] dividend
+    .divisor(mean_B[31:16]), //input [15:0] divisor
+    .quotient(gain_B) //output [23:0] quotient
+);
 
 //计算图像
 
 wire [24-1:0]    r_data_R_fix;
 wire [24-1:0]    r_data_G_fix;
 wire [24-1:0]    r_data_B_fix;
+// wire [16-1:0]    r_data_R_fix_l;
+// wire [16-1:0]    r_data_G_fix_l;
+// wire [16-1:0]    r_data_B_fix_l;
 
-assign r_data_R_fix = {16'd0,r_data_R}*gain_R;
-assign r_data_G_fix = {16'd0,r_data_G};
-assign r_data_B_fix = {16'd0,r_data_B}*gain_B;
+assign r_data_R_fix = r_data_R*gain_R;
+assign r_data_G_fix = r_data_G*gain_G;
+assign r_data_B_fix = r_data_B*gain_B;
 
 //打拍同步
 reg             rr_vsync;
@@ -147,7 +142,7 @@ wire [8-1:0]    rr_data_G_cut;
 wire [8-1:0]    rr_data_B_cut;
 
 assign rr_data_R_cut = rr_data_R[23:8]>255?8'hff:rr_data_R[15:8];
-assign rr_data_G_cut = rr_data_G[7:0];
+assign rr_data_G_cut = rr_data_G[23:8]>255?8'hff:rr_data_G[15:8];
 assign rr_data_B_cut = rr_data_B[23:8]>255?8'hff:rr_data_B[15:8];
 
 //awb输出

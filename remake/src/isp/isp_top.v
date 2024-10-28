@@ -1,6 +1,6 @@
 module isp_top #(
-	parameter	source_h = 512,
-	parameter   source_v = 512
+	parameter	source_h = 1024,
+	parameter   source_v = 1024
 	)(
 	input 							    clk, 
 	input							    reset_n,
@@ -117,22 +117,22 @@ module isp_top #(
 					out_data_G 	<=  awb_G;
 					out_data_B 	<=  awb_B;		
 				end	
-				4'h3: begin									// CCM
-					out_vsync 	<=  in_vsync;
-					out_hsync 	<=  in_hsync;
-					out_den    	<=  in_den;
-					out_data_R 	<= 	in_data;
-					out_data_G 	<=  in_data;
-					out_data_B 	<=  in_data;
-				end
-				4'h4: begin									// CCM
-					out_vsync 	<=  in_vsync;
-					out_hsync 	<=  in_hsync;
-					out_den    	<=  in_den;
-					out_data_R 	<= 	in_data;
-					out_data_G 	<=  in_data;
-					out_data_B 	<=  in_data;
-				end
+				// 4'h3: begin									// CCM
+				// 	out_vsync 	<=  in_vsync;
+				// 	out_hsync 	<=  in_hsync;
+				// 	out_den    	<=  in_den;
+				// 	out_data_R 	<= 	in_data;
+				// 	out_data_G 	<=  in_data;
+				// 	out_data_B 	<=  in_data;
+				// end
+				// 4'h4: begin									// CCM
+				// 	out_vsync 	<=  in_vsync;
+				// 	out_hsync 	<=  in_hsync;
+				// 	out_den    	<=  in_den;
+				// 	out_data_R 	<= 	in_data;
+				// 	out_data_G 	<=  in_data;
+				// 	out_data_B 	<=  in_data;
+				// end
 				default: begin                              // debug
 					out_vsync 	<=  in_vsync;
 					out_hsync 	<=  in_hsync;
