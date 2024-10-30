@@ -10,7 +10,7 @@
     <OptionList>
         <Option type="disable_insert_pad" value="1"/>
         <Option type="include_path" value="D:/Program Files/Gowin/Gowin_V1.9.9_x64/IDE/ipcore/DDR3/data/ddr3_1_4code_hs"/>
-        <Option type="include_path" value="D:/ren'ren/Documents/fpga/fpgaProject/test1/src/ddr3_memory_interface/temp/DDR3"/>
+        <Option type="include_path" value="D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/test1/src/ddr3_memory_interface/temp/DDR3"/>
         <Option type="output_file" value="ddr3_memory_interface.vg"/>
         <Option type="output_template" value="ddr3_memory_interface_tmp.v"/>
         <Option type="ram_balance" value="1"/>
