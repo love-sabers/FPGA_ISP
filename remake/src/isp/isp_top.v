@@ -111,6 +111,35 @@ module isp_top #(
         .out_data_B	(ccm_B)
     );
 
+	//gamma
+	wire 		gma_vsync;
+    wire 		gma_hsync;
+    wire 		gma_den;
+    wire [7:0] 	gma_R;
+    wire [7:0] 	gma_G;
+    wire [7:0] 	gma_B;
+
+	gma_top#(
+        .source_h	(source_h),
+	    .source_v	(source_v)
+	)gma_top_inst(
+        .clk		(clk),
+        .reset_n	(reset_n),
+        .in_vsync	(ccm_vsync),		
+        .in_hsync	(ccm_hsync),		
+        .in_den		(ccm_den),			
+        .in_data_R	(ccm_R), 	
+		.in_data_G	(ccm_G), 	
+		.in_data_B	(ccm_B), 	
+
+        .out_vsync	(gma_vsync),		
+        .out_hsync	(gma_hsync),		
+        .out_den	(gma_den),			
+        .out_data_R	(gma_R), 	
+        .out_data_G	(gma_G),
+        .out_data_B	(gma_B)
+    );
+
 
 	always @(posedge clk or negedge reset_n) begin
 		if(~reset_n)begin
@@ -121,7 +150,7 @@ module isp_top #(
 			out_data_G	<=8'd0;
 			out_data_B	<=8'd0;
 		end else begin
-			casez(isp_disp_mode)
+			casez(isp_disp_mode) /* synthesis parallel_case */
 				4'h0: begin									// RAW
 					out_vsync 	<=  in_vsync;
 					out_hsync 	<=  in_hsync;
@@ -154,14 +183,14 @@ module isp_top #(
 					out_data_G 	<=  ccm_G;
 					out_data_B 	<=  ccm_B;
 				end
-				// 4'h4: begin									// CCM
-				// 	out_vsync 	<=  in_vsync;
-				// 	out_hsync 	<=  in_hsync;
-				// 	out_den    	<=  in_den;
-				// 	out_data_R 	<= 	in_R;
-				// 	out_data_G 	<=  in_G;
-				// 	out_data_B 	<=  in_B;
-				// end
+				4'h4: begin									// CCM
+					out_vsync 	<=  gma_vsync;
+					out_hsync 	<=  gma_hsync;
+					out_den    	<=  gma_den;
+					out_data_R 	<= 	gma_R;
+					out_data_G 	<=  gma_G;
+					out_data_B 	<=  gma_B;
+				end
 				default: begin                              // debug
 					out_vsync 	<=  in_vsync;
 					out_hsync 	<=  in_hsync;

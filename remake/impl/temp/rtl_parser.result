@@ -198,6 +198,24 @@
         "ModuleName" : "lut_multiplier"
        }
       ]
+     },
+     {
+      "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
+      "InstLine" : 125,
+      "InstName" : "gma_top_inst",
+      "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma/gamma_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "gma_top",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma/gamma_top.v",
+        "InstLine" : 48,
+        "InstName" : "gamma_lut_inst",
+        "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma/gamma_lut/gamma_lut.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "gamma_lut"
+       }
+      ]
      }
     ]
    },

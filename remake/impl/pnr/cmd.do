@@ -3,7 +3,6 @@
 -pn GW5AST-LV138FPG676AES
 -cst D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.cst
 -cfg D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\impl\pnr\device.cfg
--sdc D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.sdc
 -bit
 -tr
 -ph

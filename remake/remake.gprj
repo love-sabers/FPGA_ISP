@@ -33,10 +33,11 @@
         <File path="src/isp/ccm/ccm_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/ccm/lut_multiplier.v" type="file.verilog" enable="1"/>
         <File path="src/isp/cfa/cfa_top.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/gamma/gamma_lut/gamma_lut.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/gamma/gamma_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/isp_top.v" type="file.verilog" enable="1"/>
         <File path="src/test/test_pattern_gen.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/top.cst" type="file.cst" enable="1"/>
-        <File path="src/top.sdc" type="file.sdc" enable="1"/>
     </FileList>
 </Project>

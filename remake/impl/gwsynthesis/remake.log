@@ -31,6 +31,8 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\sr
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_top.v'
+Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_lut\gamma_lut.v'
 WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":225)
 Compiling module 'top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":1)
 Compiling module 'camera_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\camera_pll.v":10)
@@ -84,6 +86,9 @@ Compiling module 'lut_multiplier(r_value=20'b11111111111110010000,g_value=20'b11
 Extracting RAM for identifier 'r_lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":12)
 Extracting RAM for identifier 'g_lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":13)
 Extracting RAM for identifier 'b_lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":14)
+Compiling module 'gma_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_top.v":1)
+Compiling module 'gamma_lut(gamma_type=2)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_lut\gamma_lut.v":1)
+Extracting RAM for identifier 'lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_lut\gamma_lut.v":14)
 Compiling module 'ddr_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\ddr_pll.v":10)
 Compiling module 'ddr3_ctrl_2port'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_ctrl_2port\ddr3_ctrl_2port.v":1)
 Compiling module 'fifo_ddr3_adapter'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_ctrl_2port\fifo_ddr3_adapter.v":2)
