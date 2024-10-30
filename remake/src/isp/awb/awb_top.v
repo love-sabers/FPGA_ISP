@@ -87,21 +87,21 @@ wire [23:0] gain_B;
 Integer_Division_Top gain_R_inst(
     .clk(clk), //input clk
     .rstn(reset_n), //input rstn
-    .dividend({16'd64,8'd0}), //input [23:0] dividend//补低8位，乘256
+    .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend//补低8位，乘256
     .divisor(mean_R[31:16]), //input [15:0] divisor//丢弃低16位，除256*256
     .quotient(gain_R) //output [23:0] quotient
 );
 Integer_Division_Top gain_G_inst(
     .clk(clk), //input clk
     .rstn(reset_n), //input rstn
-    .dividend({16'd64,8'd0}), //input [23:0] dividend
+    .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
     .divisor(mean_G[31:16]), //input [15:0] divisor
     .quotient(gain_G) //output [23:0] quotient
 );
 Integer_Division_Top gain_B_inst(
     .clk(clk), //input clk
     .rstn(reset_n), //input rstn
-    .dividend({16'd64,8'd0}), //input [23:0] dividend
+    .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
     .divisor(mean_B[31:16]), //input [15:0] divisor
     .quotient(gain_B) //output [23:0] quotient
 );

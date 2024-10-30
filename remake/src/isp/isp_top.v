@@ -24,14 +24,19 @@ module isp_top #(
 	//clk
 	assign out_clk=clk;
 
+	wire 		in_vsync/* synthesis syn_keep= 1 */;
+    wire 		in_hsync/* synthesis syn_keep= 1 */;
+    wire 		in_den/* synthesis syn_keep= 1 */;
+    wire [7:0] 	in_data/* synthesis syn_keep= 1 */;
+
 
 	//cfa
-	wire 		cfa_vsync;
-    wire 		cfa_hsync;
-    wire 		cfa_den;
-    wire [7:0] 	cfa_R;
-    wire [7:0] 	cfa_G;
-    wire [7:0] 	cfa_B;
+	wire 		cfa_vsync/* synthesis syn_keep= 1 */;
+    wire 		cfa_hsync/* synthesis syn_keep= 1 */;
+    wire 		cfa_den/* synthesis syn_keep= 1 */;
+    wire [7:0] 	cfa_R/* synthesis syn_keep= 1 */;
+    wire [7:0] 	cfa_G/* synthesis syn_keep= 1 */;
+    wire [7:0] 	cfa_B/* synthesis syn_keep= 1 */;
 
     cfa_top#(
         .source_h	(source_h),
@@ -54,12 +59,12 @@ module isp_top #(
 
 
 	//awb
-	wire 		awb_vsync;
-    wire 		awb_hsync;
-    wire 		awb_den;
-    wire [7:0] 	awb_R;
-    wire [7:0] 	awb_G;
-    wire [7:0] 	awb_B;
+	wire 		awb_vsync/* synthesis syn_keep= 1 */;
+    wire 		awb_hsync/* synthesis syn_keep= 1 */;
+    wire 		awb_den/* synthesis syn_keep= 1 */;
+    wire [7:0] 	awb_R/* synthesis syn_keep= 1 */;
+    wire [7:0] 	awb_G/* synthesis syn_keep= 1 */;
+    wire [7:0] 	awb_B/* synthesis syn_keep= 1 */;
 
 	awb_top#(
         .source_h	(source_h),
@@ -83,12 +88,12 @@ module isp_top #(
     );
 
 	//ccm
-	wire 		ccm_vsync;
-    wire 		ccm_hsync;
-    wire 		ccm_den;
-    wire [7:0] 	ccm_R;
-    wire [7:0] 	ccm_G;
-    wire [7:0] 	ccm_B;
+	wire 		ccm_vsync/* synthesis syn_keep= 1 */;
+    wire 		ccm_hsync/* synthesis syn_keep= 1 */;
+    wire 		ccm_den/* synthesis syn_keep= 1 */;
+    wire [7:0] 	ccm_R/* synthesis syn_keep= 1 */;
+    wire [7:0] 	ccm_G/* synthesis syn_keep= 1 */;
+    wire [7:0] 	ccm_B/* synthesis syn_keep= 1 */;
 
 	ccm_top#(
         .source_h	(source_h),
@@ -112,12 +117,12 @@ module isp_top #(
     );
 
 	//gamma
-	wire 		gma_vsync;
-    wire 		gma_hsync;
-    wire 		gma_den;
-    wire [7:0] 	gma_R;
-    wire [7:0] 	gma_G;
-    wire [7:0] 	gma_B;
+	wire 		gma_vsync/* synthesis syn_keep= 1 */;
+    wire 		gma_hsync/* synthesis syn_keep= 1 */;
+    wire 		gma_den/* synthesis syn_keep= 1 */;
+    wire [7:0] 	gma_R/* synthesis syn_keep= 1 */;
+    wire [7:0] 	gma_G/* synthesis syn_keep= 1 */;
+    wire [7:0] 	gma_B/* synthesis syn_keep= 1 */;
 
 	gma_top#(
         .source_h	(source_h),

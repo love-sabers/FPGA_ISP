@@ -4,12 +4,12 @@
     <SubModule name="camera_init" Register="34" Lut="73">
         <SubModule name="ov5640_init_table_raw_inst" Bsram="1"/>
         <SubModule name="i2c_control" Register="44" Lut="103">
-            <SubModule name="i2c_bit_shift" Register="23" Lut="72"/>
+            <SubModule name="i2c_bit_shift" Register="23" Lut="75"/>
         </SubModule>
     </SubModule>
-    <SubModule name="DVP_Capture" Register="26" Lut="7"/>
+    <SubModule name="DVP_Capture" Register="26" Lut="10"/>
     <SubModule name="isp_inst" Register="26" Lut="90">
-        <SubModule name="cfa_top_inst" Register="78" Alu="14" Lut="566" Ssram="130"/>
+        <SubModule name="cfa_top_inst" Register="79" Alu="14" Lut="570" Ssram="130"/>
         <SubModule name="awb_top_inst" Register="174" Alu="138" Lut="135" MULTALU27X18="3">
             <SubModule name="gain_R_inst" Register="1591" Alu="602" Lut="133"/>
             <SubModule name="gain_G_inst" Register="1591" Alu="602" Lut="133"/>
@@ -21,12 +21,12 @@
             <SubModule name="lut_mul_instB" Bsram="3"/>
         </SubModule>
         <SubModule name="gma_top_inst" Register="52">
-            <SubModule name="gamma_lut_inst" Lut="372"/>
+            <SubModule name="gamma_lut_inst" Lut="370"/>
         </SubModule>
     </SubModule>
     <SubModule name="ddr_PLL_inst"/>
     <SubModule name="ddr3_ctrl_2port">
-        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="274">
+        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="278">
             <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="370" Bsram="8"/>
             <SubModule name="wr_data_fifo" Register="90" Alu="20" Lut="79" Bsram="8"/>
         </SubModule>
@@ -40,9 +40,9 @@
     <SubModule name="dvi_tx_top_inst">
         <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="95"/>
         <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
-        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="93"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="91"/>
         <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
-        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="93"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="95"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
         <SubModule name="clock_phy"/>
     </SubModule>
