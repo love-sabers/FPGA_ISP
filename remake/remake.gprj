@@ -30,6 +30,7 @@
         <File path="src/hdmi/video-misc/video_timing_ctrl.v" type="file.verilog" enable="1"/>
         <File path="src/isp/awb/awb_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/awb/integer_division/integer_division.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/awb/integer_division_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/ccm/ccm_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/ccm/lut_multiplier.v" type="file.verilog" enable="1"/>
         <File path="src/isp/cfa/cfa_top.v" type="file.verilog" enable="1"/>

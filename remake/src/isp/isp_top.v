@@ -155,7 +155,7 @@ module isp_top #(
 			out_data_G	<=8'd0;
 			out_data_B	<=8'd0;
 		end else begin
-			casez(isp_disp_mode) /* synthesis parallel_case */
+			casez(isp_disp_mode)/* synthesis parallel_case */
 				4'h0: begin									// RAW
 					out_vsync 	<=  in_vsync;
 					out_hsync 	<=  in_hsync;
