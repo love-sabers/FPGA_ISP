@@ -24,10 +24,18 @@ module isp_top #(
 	//clk
 	assign out_clk=clk;
 
-	wire 		in_vsync/* synthesis syn_keep= 1 */;
-    wire 		in_hsync/* synthesis syn_keep= 1 */;
-    wire 		in_den/* synthesis syn_keep= 1 */;
-    wire [7:0] 	in_data/* synthesis syn_keep= 1 */;
+	// reg 		raw_vsync/* synthesis syn_keep= 1 */;
+    // reg 		raw_hsync/* synthesis syn_keep= 1 */;
+    // reg 		raw_den/* synthesis syn_keep= 1 */;
+    // reg [7:0] 	raw_data/* synthesis syn_keep= 1 */;
+
+
+	// always @(posedge clk ) begin
+	// 	raw_vsync<=in_vsync;
+	// 	raw_hsync<=in_hsync;
+	// 	raw_den<=in_den;
+	// 	raw_data<=in_data;
+	// end
 
 
 	//cfa

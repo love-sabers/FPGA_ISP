@@ -95,7 +95,7 @@
     "SubInsts" : [
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-      "InstLine" : 44,
+      "InstLine" : 52,
       "InstName" : "cfa_top_inst",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/cfa/cfa_top.v",
       "ModuleLine" : 1,
@@ -103,7 +103,7 @@
      },
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-      "InstLine" : 72,
+      "InstLine" : 80,
       "InstName" : "awb_top_inst",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/awb/awb_top.v",
       "ModuleLine" : 1,
@@ -141,7 +141,7 @@
      },
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-      "InstLine" : 101,
+      "InstLine" : 109,
       "InstName" : "ccm_top_inst",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/ccm/ccm_top.v",
       "ModuleLine" : 1,
@@ -175,7 +175,7 @@
      },
      {
       "InstFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/isp_top.v",
-      "InstLine" : 130,
+      "InstLine" : 138,
       "InstName" : "gma_top_inst",
       "ModuleFile" : "D:/BaiduSyncdisk/TongjiRubbishBin/ISP/FPGA_ISP/remake/src/isp/gamma/gamma_top.v",
       "ModuleLine" : 1,

@@ -2,8 +2,8 @@
 
 module disp_driver #(
 
-	parameter source_h  = 800,
-	parameter source_v  = 480,
+	parameter source_h  = 1024,
+	parameter source_v  = 1024,
 	
 	parameter video_hlength		= 2200,
 	parameter video_hsync_pol	= 1,

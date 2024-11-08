@@ -32,10 +32,6 @@ Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\sr
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_lut\gamma_lut.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\gamma\gamma_top.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v'
-WARN  (EX3628) : Redeclaration of ANSI port 'in_vsync' is not allowed("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":27)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_hsync' is not allowed("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":28)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_den' is not allowed("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":29)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_data' is not allowed("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":30)
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\test\test_pattern_gen.v'
 Analyzing Verilog file 'D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v'
 WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\top.v":225)
@@ -49,7 +45,7 @@ Compiling module 'i2c_bit_shift'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP
 Compiling module 'DVP_Capture_raw'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\camera\dvp_capture\DVP_Capture_raw.v":1)
 Compiling module 'isp_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\isp_top.v":1)
 Compiling module 'cfa_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v":1)
-Extracting RAM for identifier 'ram'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v":80)
+Extracting RAM for identifier 'ram'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\cfa\cfa_top.v":85)
 Compiling module 'awb_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\awb_top.v":1)
 Compiling module 'integer_division_core_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division_top.v":1)
 Compiling module 'Integer_Division_Top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v":6829)
@@ -79,7 +75,7 @@ Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src
 Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v":0)
 Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v":0)
 Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\awb\integer_division\integer_division.v":0)
-Compiling module 'ccm_top(source_h=1024,source_v=1024)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\ccm_top.v":1)
+Compiling module 'ccm_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\ccm_top.v":1)
 Compiling module 'lut_multiplier(r_value=20'b00000000000110001110,g_value=20'b11111111111111000110,b_value=20'b11111111111111100111)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":1)
 Extracting RAM for identifier 'r_lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":12)
 Extracting RAM for identifier 'g_lut'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\isp\ccm\lut_multiplier.v":13)
@@ -144,7 +140,7 @@ Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src
 Compiling module '**'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v":0)
 Compiling module 'hdmi_PLL'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\gowin_pll\hdmi_pll.v":10)
 Compiling module 'Reset_Sync'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\reset.v":1)
-Compiling module 'disp_driver(source_h=1024,source_v=1024)'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v":3)
+Compiling module 'disp_driver'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\disp_driver.v":3)
 Compiling module 'video_timing_ctrl'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\video-misc\video_timing_ctrl.v":3)
 Compiling module 'dvi_tx_top'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_top.v":1)
 Compiling module 'dvi_tx_tmds_enc'("D:\BaiduSyncdisk\TongjiRubbishBin\ISP\FPGA_ISP\remake\src\hdmi\dvi-tx\dvi_tx_tmds_enc.v":1)

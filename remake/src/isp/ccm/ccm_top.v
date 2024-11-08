@@ -1,6 +1,6 @@
 module ccm_top #(
-    parameter source_h  = 512,
-	parameter source_v  = 512
+    parameter source_h  = 1024,
+	parameter source_v  = 1024
 ) (
     input       clk,
     input       reset_n,
@@ -11,12 +11,12 @@ module ccm_top #(
     input [7:0] in_data_G, 	
     input [7:0] in_data_B, 	
 
-    output reg      out_vsync,		
-    output reg      out_hsync,		
-    output reg      out_den,			
-	output reg[7:0] out_data_R, 	
-    output reg[7:0] out_data_G,
-    output reg[7:0] out_data_B
+    output       out_vsync,		
+    output       out_hsync,		
+    output       out_den,			
+	output [7:0] out_data_R, 	
+    output [7:0] out_data_G,
+    output [7:0] out_data_B
 );
 
 //对输入信号进行打拍处理
@@ -194,30 +194,36 @@ assign rrr_data_B_cut = rrr_data_B_sum[12-1] ? 8'h00 : rrr_data_B_sum[12-2:8]>0 
 
 
 //ccm输出
-always @(posedge clk or negedge reset_n) begin
-    if (!reset_n) begin
-        out_vsync   <=1'b0;
-        out_hsync   <=1'b0;
-        out_den     <=1'b0;
-        out_data_R  <=8'd0;
-        out_data_G  <=8'd0;
-        out_data_B  <=8'd0;
-    end else begin
-        out_vsync   <=rrr_vsync;
-        out_hsync   <=rrr_hsync;
-        out_den     <=rrr_den;
-        out_data_R  <=rrr_data_R_cut;
-        out_data_G  <=rrr_data_G_cut;
-        out_data_B  <=rrr_data_B_cut;
+assign out_vsync   = rrr_vsync;
+assign out_hsync   = rrr_hsync;
+assign out_den     = rrr_den;
+assign out_data_R  = rrr_data_R_cut;
+assign out_data_G  = rrr_data_G_cut;
+assign out_data_B  = rrr_data_B_cut;
+// always @(posedge clk or negedge reset_n) begin
+//     if (!reset_n) begin
+//         out_vsync   <=1'b0;
+//         out_hsync   <=1'b0;
+//         out_den     <=1'b0;
+//         out_data_R  <=8'd0;
+//         out_data_G  <=8'd0;
+//         out_data_B  <=8'd0;
+//     end else begin
+//         out_vsync   <=rrr_vsync;
+//         out_hsync   <=rrr_hsync;
+//         out_den     <=rrr_den;
+//         out_data_R  <=rrr_data_R_cut;
+//         out_data_G  <=rrr_data_G_cut;
+//         out_data_B  <=rrr_data_B_cut;
 
-        // out_vsync   <=rr_vsync;
-        // out_hsync   <=rr_hsync;
-        // out_den     <=rr_den;
-        // out_data_R  <=rr_data_R_sum[7:0];
-        // out_data_G  <=rr_data_G_sum[7:0];
-        // out_data_B  <=rr_data_B_sum[7:0];
+//         // out_vsync   <=rr_vsync;
+//         // out_hsync   <=rr_hsync;
+//         // out_den     <=rr_den;
+//         // out_data_R  <=rr_data_R_sum[7:0];
+//         // out_data_G  <=rr_data_G_sum[7:0];
+//         // out_data_B  <=rr_data_B_sum[7:0];
 
-    end
-end
+//     end
+// end
     
 endmodule

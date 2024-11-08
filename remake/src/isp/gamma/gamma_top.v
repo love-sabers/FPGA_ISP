@@ -11,12 +11,12 @@ module gma_top #(
     input [7:0] in_data_G, 	
     input [7:0] in_data_B, 	
 
-    output reg      out_vsync,		
-    output reg      out_hsync,		
-    output reg      out_den,			
-	output reg[7:0] out_data_R, 	
-    output reg[7:0] out_data_G,
-    output reg[7:0] out_data_B
+    output       out_vsync,		
+    output       out_hsync,		
+    output       out_den,			
+	output [7:0] out_data_R, 	
+    output [7:0] out_data_G,
+    output [7:0] out_data_B
 );
 
 //对输入信号进行打拍处理
@@ -56,23 +56,29 @@ gamma_lut #(
 
 
 //gamma输出
-always @(posedge clk or negedge reset_n) begin
-    if (!reset_n) begin
-        out_vsync   <=1'b0;
-        out_hsync   <=1'b0;
-        out_den     <=1'b0;
-        out_data_R  <=8'd0;
-        out_data_G  <=8'd0;
-        out_data_B  <=8'd0;
-    end else begin
-        out_vsync   <=r_vsync;
-        out_hsync   <=r_hsync;
-        out_den     <=r_den;
-        out_data_R  <=r_data_R_fix;
-        out_data_G  <=r_data_G_fix;
-        out_data_B  <=r_data_B_fix;
+assign out_vsync   = r_vsync;
+assign out_hsync   = r_hsync;
+assign out_den     = r_den;
+assign out_data_R  = r_data_R_fix;
+assign out_data_G  = r_data_G_fix;
+assign out_data_B  = r_data_B_fix;
+// always @(posedge clk or negedge reset_n) begin
+//     if (!reset_n) begin
+//         out_vsync   <=1'b0;
+//         out_hsync   <=1'b0;
+//         out_den     <=1'b0;
+//         out_data_R  <=8'd0;
+//         out_data_G  <=8'd0;
+//         out_data_B  <=8'd0;
+//     end else begin
+//         out_vsync   <=r_vsync;
+//         out_hsync   <=r_hsync;
+//         out_den     <=r_den;
+//         out_data_R  <=r_data_R_fix;
+//         out_data_G  <=r_data_G_fix;
+//         out_data_B  <=r_data_B_fix;
 
-    end
-end
+//     end
+// end
     
 endmodule

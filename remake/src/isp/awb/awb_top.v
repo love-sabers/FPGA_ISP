@@ -11,12 +11,12 @@ module awb_top #(
     input [7:0] in_data_G, 	
     input [7:0] in_data_B, 	
 
-    output reg      out_vsync,		
-    output reg      out_hsync,		
-    output reg      out_den,			
-	output reg[7:0] out_data_R, 	
-    output reg[7:0] out_data_G,
-    output reg[7:0] out_data_B
+    output       out_vsync,		
+    output       out_hsync,		
+    output       out_den,			
+	output [7:0] out_data_R, 	
+    output [7:0] out_data_G,
+    output [7:0] out_data_B
 );
 
 //对输入信号进行打拍处理
@@ -158,23 +158,29 @@ assign rr_data_G_cut = rr_data_G>255?8'hff:rr_data_G[7:0];
 assign rr_data_B_cut = rr_data_B>255?8'hff:rr_data_B[7:0];
 
 //awb输出
-always @(posedge clk or negedge reset_n) begin
-    if (!reset_n) begin
-        out_vsync   <=1'b0;
-        out_hsync   <=1'b0;
-        out_den     <=1'b0;
-        out_data_R  <=8'd0;
-        out_data_G  <=8'd0;
-        out_data_B  <=8'd0;
-    end else begin
-        out_vsync   <=rr_vsync;
-        out_hsync   <=rr_hsync;
-        out_den     <=rr_den;
-        out_data_R  <=rr_data_R_cut;
-        out_data_G  <=rr_data_G_cut;
-        out_data_B  <=rr_data_B_cut;
+assign out_vsync   = rr_vsync;
+assign out_hsync   = rr_hsync;
+assign out_den     = rr_den;
+assign out_data_R  = rr_data_R_cut;
+assign out_data_G  = rr_data_G_cut;
+assign out_data_B  = rr_data_B_cut;
+// always @(posedge clk or negedge reset_n) begin
+//     if (!reset_n) begin
+//         out_vsync   <=1'b0;
+//         out_hsync   <=1'b0;
+//         out_den     <=1'b0;
+//         out_data_R  <=8'd0;
+//         out_data_G  <=8'd0;
+//         out_data_B  <=8'd0;
+//     end else begin
+//         out_vsync   <=rr_vsync;
+//         out_hsync   <=rr_hsync;
+//         out_den     <=rr_den;
+//         out_data_R  <=rr_data_R_cut;
+//         out_data_G  <=rr_data_G_cut;
+//         out_data_B  <=rr_data_B_cut;
 
-    end
-end
+//     end
+// end
     
 endmodule
