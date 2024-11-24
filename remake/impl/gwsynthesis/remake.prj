@@ -4,31 +4,84 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\DVP_Capture\lut_ov5640_rgb565_480_272.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\cmos_8_16bit.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_config.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_defines.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\i2c_master_top.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\i2c_master\timescale.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera_init\video_timing_data.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\dvi-tx\dvi_tx_top.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\fifo_top\rd_data_fifo.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\camera_init.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_control.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_jpeg.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_raw.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_rgb.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_raw.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\ddr3_ctrl_2port.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\fifo_ddr3_adapter.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\rd_data_fifo.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\wr_data_fifo.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\camera_pll.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\ddr_pll.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\gowin_pll.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\hdmi_pll.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\reset.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_clk_drv.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_enc.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_phy.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\reset.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\disp_driver.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\video_timing_ctrl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\awb_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division\integer_division.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\ccm_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\lut_multiplier.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\cfa\cfa_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\test\test_pattern_gen.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\disp_driver.v" type="verilog"/>
-        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\video-misc\video_timing_ctrl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_impl.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_wrapper.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\swg_common.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\swg_pkg.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_FMPadding_rtl_0_iktn04pl\FMPadding_rtl_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_FMPadding_rtl_0_iktn04pl\axi2we.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_FMPadding_rtl_0_iktn04pl\fmpadding.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_FMPadding_rtl_0_iktn04pl\fmpadding_axi.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_MVAU_rtl_0_e7beb_18\MVAU_rtl_0_wrapper.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingDataWidthConverter_rtl_0_us7w5nyq\StreamingDataWidthConverter_rtl_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingDataWidthConverter_rtl_0_us7w5nyq\dwc.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingDataWidthConverter_rtl_0_us7w5nyq\dwc_axi.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_0_5xy9yi8d\Q_srl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_0_5xy9yi8d\StreamingFIFO_rtl_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_1_83gexlb6\Q_srl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_1_83gexlb6\StreamingFIFO_rtl_1.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_2_n93ibf3a\Q_srl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_2_n93ibf3a\StreamingFIFO_rtl_2.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_3_wa_qr4gh\Q_srl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_3_wa_qr4gh\StreamingFIFO_rtl_3.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_4_7owosbh5\Q_srl.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_StreamingFIFO_rtl_4_7owosbh5\StreamingFIFO_rtl_4.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\complementaryfunctions.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\hdl\finn_design_wrapper.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_ConvolutionInputGenerator_rtl_0_0\synth\finn_design_ConvolutionInputGenerator_rtl_0_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_FMPadding_rtl_0_0\synth\finn_design_FMPadding_rtl_0_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_MVAU_rtl_0_0\synth\finn_design_MVAU_rtl_0_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_MVAU_rtl_0_wstrm_0\synth\finn_design_MVAU_rtl_0_wstrm_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingDataWidthConverter_rtl_0_0\synth\finn_design_StreamingDataWidthConverter_rtl_0_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingFIFO_rtl_0_0\synth\finn_design_StreamingFIFO_rtl_0_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingFIFO_rtl_1_0\synth\finn_design_StreamingFIFO_rtl_1_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingFIFO_rtl_2_0\synth\finn_design_StreamingFIFO_rtl_2_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingFIFO_rtl_3_0\synth\finn_design_StreamingFIFO_rtl_3_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ip\finn_design_StreamingFIFO_rtl_4_0\synth\finn_design_StreamingFIFO_rtl_4_0.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ipshared\bcb1\hdl\axilite_if.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ipshared\bcb1\hdl\memstream.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ipshared\bcb1\hdl\memstream_axi.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\ipshared\bcb1\hdl\memstream_axi_wrapper.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\synth\finn_design.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\gowin_multalu\gowin_multalu.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\mvu_8sx8u_dsp48.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\mvu_vvu_axi.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\replay_buffer.sv" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\ai_top.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
@@ -37,7 +90,7 @@
         <Option type="print_all_synthesis_warning" value="0"/>
         <Option type="ram_rw_check" value="0"/>
         <Option type="top_module" value="top"/>
-        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="verilog_language" value="sysv-2017"/>
         <Option type="vhdl_language" value="vhdl-1993"/>
     </OptionList>
 </Project>

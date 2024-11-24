@@ -5,14 +5,15 @@
 //Part Number: GW5AST-LV138FPG676AES
 //Device: GW5AST-138B
 //Device Version: B
-//Created Time: Thu Oct  3 09:57:59 2024
+//Created Time: Sun Oct  6 13:53:50 2024
 
-module hdmi_PLL (lock, clkout0, clkout1, clkin);
+module hdmi_PLL (lock, clkout0, clkout1, clkin, reset);
 
 output lock;
 output clkout0;
 output clkout1;
 input clkin;
+input reset;
 
 wire clkout2;
 wire clkout3;
@@ -38,7 +39,7 @@ PLL PLL_inst (
     .CLKFBOUT(clkfbout),
     .CLKIN(clkin),
     .CLKFB(gw_gnd),
-    .RESET(gw_gnd),
+    .RESET(reset),
     .PLLPWD(gw_gnd),
     .RESET_I(gw_gnd),
     .RESET_O(gw_gnd),

@@ -167,6 +167,6 @@ LPFRESStaticValue=X
 LPFSELDynamic=true
 LPFSELStatic=false
 PLLPowerDown=false
-PLLReset=false
+PLLReset=true
 clkfbExternal=false
 clkfbExternalValue=

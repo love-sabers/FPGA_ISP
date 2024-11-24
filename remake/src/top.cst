@@ -1,12 +1,16 @@
+IO_LOC "clk50m" P16;
+IO_PORT "clk50m" BANK_VCCIO=3.3 PULL_MODE=NONE;
 IO_LOC "reset_n" G16;
 IO_PORT "reset_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=OFF;
-IO_LOC "clk" P16;
-IO_PORT "clk"  IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=OFF;
 
-//IO_LOC "led[5]" N23;
-//IO_PORT "led[5]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
-//IO_LOC "led[4]" N21;
-//IO_PORT "led[4]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "button" G15;
+IO_PORT "button" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=OFF;
+
+IO_LOC "led[5]" N23;
+IO_PORT "led[5]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "led[4]" N21;
+IO_PORT "led[4]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
 IO_LOC "led[3]" M25;
 IO_PORT "led[3]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
 IO_LOC "led[2]" L20;
@@ -16,15 +20,49 @@ IO_PORT "led[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
 IO_LOC "led[0]" J14;
 IO_PORT "led[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
 
-IO_LOC "tmds_d_p_0[0]" AB24,AC24;
-IO_PORT "tmds_d_p_0[0]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_d_p_0[1]" V24,W24;
-IO_PORT "tmds_d_p_0[1]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_d_p_0[2]" AA22,AA23;
-IO_PORT "tmds_d_p_0[2]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_clk_p_0" Y22,Y23;
-IO_PORT "tmds_clk_p_0" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+//camera
 
+IO_LOC "i2c_sel[0]" N19;
+IO_PORT "i2c_sel[0]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "i2c_sel[1]" P19;
+IO_PORT "i2c_sel[1]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "i2c_sel[2]" P26;
+IO_PORT "i2c_sel[2]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "camera_sclk" K25;
+IO_PORT "camera_sclk" BANK_VCCIO=3.3 PULL_MODE=UP;
+IO_LOC "camera_sdat" K26;
+IO_PORT "camera_sdat" BANK_VCCIO=3.3 PULL_MODE=UP;
+IO_LOC "camera_vsync" G17;
+IO_PORT "camera_vsync" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_href" E16;
+IO_PORT "camera_href" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_pclk" D20;
+IO_PORT "camera_pclk" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_xclk" C17;
+IO_PORT "camera_xclk" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_rst_n" F17;
+IO_PORT "camera_rst_n" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_pwdn" D16;
+IO_PORT "camera_pwdn" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[0]" D21;
+IO_PORT "camera_data[0]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[1]" A22;
+IO_PORT "camera_data[1]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[2]" B22;
+IO_PORT "camera_data[2]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[3]" E21;
+IO_PORT "camera_data[3]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[4]" E20;
+IO_PORT "camera_data[4]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[5]" D18;
+IO_PORT "camera_data[5]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[6]" C18;
+IO_PORT "camera_data[6]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "camera_data[7]" B17;
+IO_PORT "camera_data[7]" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+//ddr
 IO_LOC "ddr_bank[2]" K3;
 IO_PORT "ddr_bank[2]" IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=12 BANK_VCCIO=1.5;
 IO_LOC "ddr_bank[1]" L5;
@@ -165,35 +203,34 @@ IO_PORT "ddr_dqs[1]" IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
 IO_LOC "ddr_dqs[0]" J4,H4;
 IO_PORT "ddr_dqs[0]" IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
 
-IO_LOC "camera_pwdn" D16;
-IO_PORT "camera_pwdn" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
-IO_LOC "camera_rst_n" F17;
-IO_PORT "camera_rst_n" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
-IO_LOC "camera_xclk" C17;
-IO_PORT "camera_xclk" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
-IO_LOC "camera_sclk" K25;
-IO_PORT "camera_sclk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
-IO_LOC "camera_sdat" K26;
-IO_PORT "camera_sdat" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
-IO_LOC "camera_data[7]" B17;
-IO_PORT "camera_data[7]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[6]" C18;
-IO_PORT "camera_data[6]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[5]" D18;
-IO_PORT "camera_data[5]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[4]" E20;
-IO_PORT "camera_data[4]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[3]" E21;
-IO_PORT "camera_data[3]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[2]" B22;
-IO_PORT "camera_data[2]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[1]" A22;
-IO_PORT "camera_data[1]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_data[0]" D21;
-IO_PORT "camera_data[0]" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_pclk" D20;
-IO_PORT "camera_pclk" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_href" E16;
-IO_PORT "camera_href" PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC "camera_vsync" G17;
-IO_PORT "camera_vsync" PULL_MODE=NONE BANK_VCCIO=3.3;
+//hdmi
+IO_LOC "tmds_d_p_0[0]" AB24,AC24;
+IO_PORT "tmds_d_p_0[0]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p_0[1]" V24,W24;
+IO_PORT "tmds_d_p_0[1]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_d_p_0[2]" AA22,AA23;
+IO_PORT "tmds_d_p_0[2]" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+IO_LOC "tmds_clk_p_0" Y22,Y23;
+IO_PORT "tmds_clk_p_0" IO_TYPE=LVCMOS33D PULL_MODE=NONE DRIVE=8;
+
+//outlook
+IO_LOC "outlook_clk" U22;
+IO_PORT "outlook_clk" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs" V19;
+IO_PORT "outlook_vs" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den" W20;
+IO_PORT "outlook_den" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "outlook_clk_dvp" V22
+IO_PORT "outlook_clk_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs_dvp" W19;
+IO_PORT "outlook_vs_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den_dvp" Y20;
+IO_PORT "outlook_den_dvp" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "outlook_clk_cam" Y21;
+IO_PORT "outlook_clk_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_vs_cam" V17;
+IO_PORT "outlook_vs_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
+IO_LOC "outlook_den_cam" V16;
+IO_PORT "outlook_den_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
