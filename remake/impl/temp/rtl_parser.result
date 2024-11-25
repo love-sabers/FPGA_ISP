@@ -127,7 +127,15 @@
         "SubInsts" : [
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 394,
+          "InstName" : "u_ram",
+          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
+          "ModuleLine" : 329,
+          "ModuleName" : "simple_dp_ram"
+         },
+         {
+          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[1].u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
@@ -135,7 +143,7 @@
          },
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[2].u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
@@ -143,16 +151,8 @@
          },
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[3].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 329,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 410,
-          "InstName" : "u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
           "ModuleName" : "simple_dp_ram"
@@ -179,7 +179,15 @@
         "SubInsts" : [
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 394,
+          "InstName" : "u_ram",
+          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
+          "ModuleLine" : 329,
+          "ModuleName" : "simple_dp_ram"
+         },
+         {
+          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[1].u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
@@ -187,7 +195,7 @@
          },
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[2].u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
@@ -195,16 +203,8 @@
          },
          {
           "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 397,
+          "InstLine" : 407,
           "InstName" : "gen_ram_inst[3].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 329,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 410,
-          "InstName" : "u_ram",
           "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
           "ModuleLine" : 329,
           "ModuleName" : "simple_dp_ram"

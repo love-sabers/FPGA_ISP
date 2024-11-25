@@ -45,12 +45,12 @@ module isp_dpc
 	wire [BITS-1:0] tap3x, tap2x, tap1x, tap0x/* synthesis syn_keep= 1 */;
 	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
 	
-	reg [BITS-1:0] in_raw_r;
-	reg [BITS-1:0] p11,p12,p13,p14,p15;
-	reg [BITS-1:0] p21,p22,p23,p24,p25;
-	reg [BITS-1:0] p31,p32,p33,p34,p35;
-	reg [BITS-1:0] p41,p42,p43,p44,p45;
-	reg [BITS-1:0] p51,p52,p53,p54,p55;
+	reg [BITS-1:0] in_raw_r/* synthesis syn_keep= 1 */;
+	reg [BITS-1:0] p11,p12,p13,p14,p15/* synthesis syn_keep= 1 */;
+	reg [BITS-1:0] p21,p22,p23,p24,p25/* synthesis syn_keep= 1 */;
+	reg [BITS-1:0] p31,p32,p33,p34,p35/* synthesis syn_keep= 1 */;
+	reg [BITS-1:0] p41,p42,p43,p44,p45/* synthesis syn_keep= 1 */;
+	reg [BITS-1:0] p51,p52,p53,p54,p55/* synthesis syn_keep= 1 */;
 	always @ (posedge pclk or negedge rst_n) begin
 		if (!rst_n) begin
 			in_raw_r <= 0;
@@ -342,7 +342,7 @@ module simple_dp_ram
 	output reg [DW-1:0] q
 );
 
-	reg [DW-1:0] mem [SZ-1:0];
+	reg [DW-1:0] mem [SZ-1:0]/* synthesis syn_keep= 1 */;
 	always @ (posedge clk) begin
 		if (wren) begin
 			mem[wraddr] <= data;
@@ -391,22 +391,6 @@ module shift_register
 	end
 	wire [BITS-1:0] line_out[LINES-1:0]/* synthesis syn_keep= 1 */;
 //    simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram(clock, clken, pos, line_out[1-1], clken, pos, line_out[1])/* synthesis syn_keep= 1 */;
-	generate
-		genvar i;  // genvar 在 generate 块内定义
-		for (i = 1; i < LINES; i = i + 1) begin : gen_ram_inst
-			simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (
-				.clk(clock),
-				.wren(clken),  // 假设clken用来控制写使能
-				.wraddr(pos),  // 假设pos用作写地址
-				.data(line_out[i-1]),  // 数据来自前一条线
-				.rden(clken),  // 假设clken用来控制读使能
-				.rdaddr(pos),  // 假设pos用作读地址
-				.q(line_out[i])  // 输出到当前线
-			) /* synthesis syn_keep= 1 */;
-		end
-	endgenerate
-
-	// 最初的单个实例化 (不在generate循环中)
 	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (
 		.clk(clock),
 		.wren(clken),
@@ -416,12 +400,27 @@ module shift_register
 		.rdaddr(pos),
 		.q(line_out[0])
 	) /* synthesis syn_keep= 1 */;
+    generate
+		genvar i;
+		for (i = 1; i < LINES; i = i + 1) begin : gen_ram_inst/* synthesis syn_keep= 1 */
+			/* synthesis syn_keep= 1 */
+            simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (/* synthesis syn_keep= 1 */
+				.clk(clock)/* synthesis syn_keep= 1 */,
+				.wren(clken)/* synthesis syn_keep= 1 */,
+				.wraddr(pos)/* synthesis syn_keep= 1 */,
+				.data(line_out[i-1])/* synthesis syn_keep= 1 */,
+				.rden(clken)/* synthesis syn_keep= 1 */,
+				.rdaddr(pos)/* synthesis syn_keep= 1 */,
+				.q(line_out[i])/* synthesis syn_keep= 1 */
+			) /* synthesis syn_keep=1 */;
+		end
+	endgenerate	
 
-	assign shiftout = line_out[LINES-1];
+	assign shiftout = line_out[LINES-1]/* synthesis syn_keep= 1 */;
 	generate
 		genvar j;
 		for (j = 0; j < LINES; j = j + 1) begin : gen_taps_assign
-			assign tapsx[(BITS*j)+:BITS] = line_out[j];
+			assign tapsx[(BITS*j)+:BITS] = line_out[j]/* synthesis syn_keep= 1 */;
 		end
 	endgenerate
 
