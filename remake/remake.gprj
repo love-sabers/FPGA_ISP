@@ -77,9 +77,12 @@
         <File path="src/isp/awb/awb_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/awb/integer_division/integer_division.v" type="file.verilog" enable="1"/>
         <File path="src/isp/awb/integer_division_top.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/blc/isp_blc.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/bnr/isp_bnr.v" type="file.verilog" enable="1"/>
         <File path="src/isp/ccm/ccm_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/ccm/lut_multiplier.v" type="file.verilog" enable="1"/>
         <File path="src/isp/cfa/cfa_top.v" type="file.verilog" enable="1"/>
+        <File path="src/isp/dpc/isp_dpc.v" type="file.verilog" enable="1"/>
         <File path="src/isp/gamma/gamma_lut/gamma_lut.v" type="file.verilog" enable="1"/>
         <File path="src/isp/gamma/gamma_top.v" type="file.verilog" enable="1"/>
         <File path="src/isp/isp_top.v" type="file.verilog" enable="1"/>

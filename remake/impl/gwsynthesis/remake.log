@@ -1,43 +1,6 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\camera_init.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_control.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_jpeg.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_raw.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_rgb.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_raw.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\ddr3_ctrl_2port.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\fifo_ddr3_adapter.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\rd_data_fifo.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\wr_data_fifo.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\camera_pll.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\ddr_pll.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\hdmi_pll.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_clk_drv.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_enc.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_phy.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\reset.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\disp_driver.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\video_timing_ctrl.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\awb_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division\integer_division.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\ccm_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\lut_multiplier.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\cfa\cfa_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_top.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v'
-WARN  (EX3628) : Redeclaration of ANSI port 'in_vsync' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":27)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_hsync' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":28)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_den' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":29)
-WARN  (EX3628) : Redeclaration of ANSI port 'in_data' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":30)
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\test\test_pattern_gen.v'
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\ai_top.v'
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\swg_pkg.sv'
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_impl.sv'
 WARN  (EX3182) : Initial value of parameter 'BIT_WIDTH' is omitted("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_impl.sv":177)
@@ -165,7 +128,47 @@ Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\
 WARN  (EX3182) : Initial value of parameter 'LEN' is omitted("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\replay_buffer.sv":36)
 WARN  (EX3182) : Initial value of parameter 'REP' is omitted("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\replay_buffer.sv":37)
 WARN  (EX3182) : Initial value of parameter 'W' is omitted("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\replay_buffer.sv":38)
-Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\ai_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\camera_init.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_control.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_jpeg.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_raw.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\ov5640_init_table_rgb.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_raw.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_rgb565.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\ddr3_ctrl_2port.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_ctrl_2port\fifo_ddr3_adapter.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\ddr3_memory_interface\ddr3_memory_interface.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\rd_data_fifo.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ddr\fifo_top\wr_data_fifo.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\camera_pll.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\ddr_pll.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\hdmi_pll.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_clk_drv.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_enc.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_tmds_phy.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\dvi-tx\dvi_tx_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\reset.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\disp_driver.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\hdmi\video-misc\video_timing_ctrl.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\awb_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division\integer_division.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\integer_division_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\blc\isp_blc.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\bnr\isp_bnr.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\ccm_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\ccm\lut_multiplier.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\cfa\cfa_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_top.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v'
+WARN  (EX3628) : Redeclaration of ANSI port 'in_vsync' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":28)
+WARN  (EX3628) : Redeclaration of ANSI port 'in_hsync' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":29)
+WARN  (EX3628) : Redeclaration of ANSI port 'in_den' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":30)
+WARN  (EX3628) : Redeclaration of ANSI port 'in_data' is not allowed("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":31)
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\test\test_pattern_gen.v'
+Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v'
 WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":225)
 Compiling module 'top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":1)
 Compiling module 'camera_PLL'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\camera_pll.v":10)
@@ -175,7 +178,22 @@ Extracting RAM for identifier 'rom'("D:\ren'ren\Documents\fpga\fpgaProject\remak
 Compiling module 'i2c_control'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_control.v":18)
 Compiling module 'i2c_bit_shift'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\i2c_control\i2c_bit_shift.v":18)
 Compiling module 'DVP_Capture_raw'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\dvp_capture\DVP_Capture_raw.v":1)
-Compiling module 'isp_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":1)
+Compiling module 'isp_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v":2)
+Compiling module 'isp_dpc(WIDTH=1024,HEIGHT=1024)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":22)
+Compiling module 'shift_register(WIDTH=1024,LINES=4)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":358)
+Compiling module 'simple_dp_ram(AW=10,SZ=1023)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":329)
+Extracting RAM for identifier 'mem'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":345)
+WARN  (EX1998) : Net 'line_out[3][7]' does not have a driver("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":392)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":250)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":253)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":254)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":255)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":256)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":257)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":258)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":259)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":260)
+Compiling module 'isp_bnr(WIDTH=1024,HEIGHT=1024)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\bnr\isp_bnr.v":14)
 Compiling module 'cfa_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\cfa\cfa_top.v":1)
 Extracting RAM for identifier 'ram'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\cfa\cfa_top.v":80)
 Compiling module 'awb_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\awb\awb_top.v":1)
@@ -967,6 +985,8 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "shift_register" instantiated to "linebuffer" is swept in optimizing("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":46)
+WARN  (NL0002) : The module "simple_dp_ram" instantiated to "u_ram" is swept in optimizing("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\dpc\isp_dpc.v":418)
 WARN  (NL0002) : The module "axi2we" instantiated to "axilight_adapter" is swept in optimizing("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_FMPadding_rtl_0_iktn04pl\fmpadding_axi.sv":105)
 WARN  (NL0002) : The module "LUT6_2" instantiated to "genPipes[10].genSIMD[0].blkVectorize.[1].lut_x" is swept in optimizing("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\mvu_8sx8u_dsp48.sv":121)
 WARN  (NL0002) : The module "DSP48E1" instantiated to "genPipes[10].genSIMD[0].genDSP.dsp" is swept in optimizing("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\mvu\mvu_8sx8u_dsp48.sv":195)
