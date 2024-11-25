@@ -1,28 +1,7 @@
 Reading netlist file: "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\gwsynthesis\remake.vg"
 Parsing netlist file "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\gwsynthesis\remake.vg" completed
-Processing netlist completed
-Reading constraint file: "D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.cst"
-Physical Constraint parsed completed
-Running placement......
-[10%] Placement Phase 0 completed
-[20%] Placement Phase 1 completed
-[30%] Placement Phase 2 completed
-[50%] Placement Phase 3 completed
-Running routing......
-[60%] Routing Phase 0 completed
-[70%] Routing Phase 1 completed
-[80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk50m_d' by the specified constraint. And then it may lead to the excessive delay or skew
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'camera_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
-[90%] Routing Phase 3 completed
-Running timing analysis......
-[95%] Timing analysis completed
-Placement and routing completed
-Bitstream generation in progress......
-Bitstream generation completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\remake.pin.html" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\remake.rpt.html" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\remake.rpt.txt" completed
-Generate file "D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\remake.tr.html" completed
-Mon Nov 25 17:04:49 2024
-
+ERROR  (PA2122) : Not support 'mem_mem_0_0_s'(SP) WRITE_MODE = 2'b10, please change write mode WRITE_MODE = 2'b00 or 2'b01.
+ERROR  (PA2122) : Not support 'mem_mem_0_1_s'(SP) WRITE_MODE = 2'b10, please change write mode WRITE_MODE = 2'b00 or 2'b01.
+ERROR  (PA2122) : Not support 'mem_mem_0_0_s'(SP) WRITE_MODE = 2'b10, please change write mode WRITE_MODE = 2'b00 or 2'b01.
+ERROR  (PA2122) : Not support 'mem_mem_0_1_s'(SP) WRITE_MODE = 2'b10, please change write mode WRITE_MODE = 2'b00 or 2'b01.
+NOTE  (PA0005) : Processing netlist completed with errors

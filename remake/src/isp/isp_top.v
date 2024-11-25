@@ -33,7 +33,7 @@ module isp_top #(
     // DPC (Defective Pixel Correction)
     wire dpc_vsync/* synthesis syn_keep= 1 */;
     wire dpc_hsync/* synthesis syn_keep= 1 */;
-    wire dpc_den = in_den/* synthesis syn_keep= 1 */;
+    wire dpc_den/* synthesis syn_keep= 1 */;
     wire [7:0] dpc_data/* synthesis syn_keep= 1 */;
 
     isp_dpc #(
@@ -45,13 +45,15 @@ module isp_top #(
         .pclk(clk),
         .rst_n(reset_n),
         .threshold(8'd50),  // 设定阈值
+        .in_den(in_den),
         .in_href(in_hsync),
         .in_vsync(in_vsync),
         .in_raw(in_data),
     
         .out_href(dpc_hsync),
         .out_vsync(dpc_vsync),
-        .out_raw(dpc_data)
+        .out_raw(dpc_data),
+        .out_den(dpc_den)
     );
 
     // BNR (Noise Reduction) Module

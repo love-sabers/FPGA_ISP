@@ -1,9 +1,3 @@
-/*************************************************************************
-    > File Name: isp_dpc.v
-    > Author: bxq
-    > Mail: 544177215@qq.com
-    > Created Time: Thu 21 Jan 2021 21:50:04 GMT
- ************************************************************************/
 `timescale 1 ns / 1 ps
 
 /*
@@ -29,6 +23,7 @@ module isp_dpc
 (
 	input pclk,
 	input rst_n,
+    input in_den,	
 
 	input [BITS-1:0] threshold, //阈值越小,检测越松,坏点检测数越多
 
@@ -38,9 +33,22 @@ module isp_dpc
 
 	output out_href,
 	output out_vsync,
-	output [BITS-1:0] out_raw
+	output [BITS-1:0] out_raw,
+    output out_den
 );
+	//对输入信号进行打拍处理
+	reg             r_vsync;
+	reg             r_hsync;
+	reg             r_den;
+	reg [7:0]       r_in_raw;
 
+	always @(posedge pclk) begin
+		r_vsync     <=in_vsync;
+		r_hsync     <=in_href;
+		r_den       <=in_den;
+		r_in_raw    <=in_raw;
+	end
+	
 	wire [BITS-1:0] shiftout/* synthesis syn_keep= 1 */;
 	wire [BITS-1:0] tap3x, tap2x, tap1x, tap0x/* synthesis syn_keep= 1 */;
 	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
@@ -304,6 +312,7 @@ module isp_dpc
 	assign out_href = href_dly[DLY_CLK-1];
 	assign out_vsync = vsync_dly[DLY_CLK-1];
 	assign out_raw = out_href ? t6_center : {BITS{1'b0}};
+    assign out_den = r_den;
 
 	function [BITS-1:0] min;
 		input [BITS-1:0] a, b, c;
@@ -359,7 +368,7 @@ module shift_register
 #(
 	parameter BITS = 8,
 	parameter WIDTH = 480,
-	parameter LINES = 3
+	parameter LINES = 4
 )
 (
 	input                clock,
@@ -390,31 +399,61 @@ module shift_register
 		end
 	end
 	wire [BITS-1:0] line_out[LINES-1:0]/* synthesis syn_keep= 1 */;
-//    simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram(clock, clken, pos, line_out[1-1], clken, pos, line_out[1])/* synthesis syn_keep= 1 */;
-	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (
-		.clk(clock),
-		.wren(clken),
-		.wraddr(pos),
-		.data(in_r),
-		.rden(clken),
-		.rdaddr(pos),
-		.q(line_out[0])
-	) /* synthesis syn_keep= 1 */;
     generate
 		genvar i;
-		for (i = 1; i < LINES; i = i + 1) begin : gen_ram_inst/* synthesis syn_keep= 1 */
+		for (i = 0; i < LINES; i = i + 1) begin : gen_ram_inst/* synthesis syn_keep= 1 */
 			/* synthesis syn_keep= 1 */
             simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (/* synthesis syn_keep= 1 */
 				.clk(clock)/* synthesis syn_keep= 1 */,
 				.wren(clken)/* synthesis syn_keep= 1 */,
 				.wraddr(pos)/* synthesis syn_keep= 1 */,
-				.data(line_out[i-1])/* synthesis syn_keep= 1 */,
+				.data(i == 0 ? in_r : line_out[i-1])/* synthesis syn_keep= 1 */,
 				.rden(clken)/* synthesis syn_keep= 1 */,
 				.rdaddr(pos)/* synthesis syn_keep= 1 */,
-				.q(line_out[i])/* synthesis syn_keep= 1 */
+				.q(line_out[i]/* synthesis syn_keep= 1 */)/* synthesis syn_keep= 1 */
 			) /* synthesis syn_keep=1 */;
 		end
 	endgenerate	
+    // LINES = 4
+//	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram_0 (
+//		.clk(clock),
+//		.wren(clken),
+//		.wraddr(pos),
+//		.data(in_r),
+//		.rden(clken),
+//		.rdaddr(pos),
+//		.q(line_out[0])/* synthesis syn_keep=1 */
+//	);
+
+//	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram_1 (
+//		.clk(clock),
+//		.wren(clken),
+//		.wraddr(pos),
+//		.data(line_out[0]),
+//		.rden(clken),
+//		.rdaddr(pos),
+//		.q(line_out[1])/* synthesis syn_keep=1 */
+//	);
+
+//	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram_2 (
+//		.clk(clock),
+//		.wren(clken),
+//		.wraddr(pos),
+//		.data(line_out[1]),
+//		.rden(clken),
+//		.rdaddr(pos),
+//		.q(line_out[2])/* synthesis syn_keep=1 */
+//	);
+//	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram_3 (
+//		.clk(clock),
+//		.wren(clken),
+//		.wraddr(pos),
+//		.data(line_out[2]),
+//		.rden(clken),
+//		.rdaddr(pos),
+//		.q(line_out[3])/* synthesis syn_keep=1 */
+//	);
+
 
 	assign shiftout = line_out[LINES-1]/* synthesis syn_keep= 1 */;
 	generate

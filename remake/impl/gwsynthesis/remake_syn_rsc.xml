@@ -9,14 +9,14 @@
     </SubModule>
     <SubModule name="DVP_Capture" Register="26" Lut="10"/>
     <SubModule name="isp_inst" Register="26" Lut="129">
-        <SubModule name="dpc_inst" Register="560" Alu="310" Lut="418">
+        <SubModule name="dpc_inst" Register="561" Alu="310" Lut="418">
             <SubModule name="linebuffer" Register="18" Lut="28">
-                <SubModule name="u_ram" Bsram="2"/>
+                <SubModule name="gen_ram_inst[0].u_ram" Bsram="2"/>
             </SubModule>
         </SubModule>
         <SubModule name="bnr_inst" Register="220" Alu="76" Lut="18">
             <SubModule name="linebuffer" Register="18" Lut="27">
-                <SubModule name="u_ram" Bsram="2"/>
+                <SubModule name="gen_ram_inst[0].u_ram" Bsram="2"/>
             </SubModule>
         </SubModule>
         <SubModule name="cfa_top_inst" Register="78" Alu="14" Lut="612" Ssram="130"/>
