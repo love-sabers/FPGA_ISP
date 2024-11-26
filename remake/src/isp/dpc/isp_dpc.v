@@ -51,7 +51,8 @@ module isp_dpc
 	
 	wire [BITS-1:0] shiftout/* synthesis syn_keep= 1 */;
 	wire [BITS-1:0] tap3x, tap2x, tap1x, tap0x/* synthesis syn_keep= 1 */;
-	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
+//	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
+    shift_register #(BITS, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
 	
 	reg [BITS-1:0] in_raw_r/* synthesis syn_keep= 1 */;
 	reg [BITS-1:0] p11,p12,p13,p14,p15/* synthesis syn_keep= 1 */;
@@ -334,87 +335,169 @@ module isp_dpc
 	endfunction
 endmodule
 
-/* Simple Dual-Port RAM */
-module simple_dp_ram
-#(
-	parameter DW = 8,
-	parameter AW = 4,
-	parameter SZ = 2**AW
-)
-(
-	input          clk,
-	input          wren,
-	input [AW-1:0] wraddr,
-	input [DW-1:0] data,
-	input          rden,
-	input [AW-1:0] rdaddr,
-	output reg [DW-1:0] q
+//module shift_register
+//#(
+//    parameter BITS = 8,   // 数据宽度
+//    parameter LINES = 4   // 移位寄存器的行数
+//)
+//(
+//    input                   clk,        // 时钟信号
+//    input                   Reset,      // 重置信号
+//    input  [BITS-1:0]       Din,        // 输入数据
+//    output [BITS-1:0]       Q1,          // 最后一行输出
+//    output [BITS*LINES-1:0] tapsx       // 每一行的输出
+//);
+
+//     内部信号
+//    reg [BITS-1:0] shift_reg[LINES-1:0]; // 模拟行级输出
+//    integer i;
+
+//     实例化 myshift_register
+//    myshift_register myshift_inst (
+//        .clk(clk), 
+//        .Reset(Reset), 
+//        .Din(Din), 
+//        .Q(Q1)
+//    );
+
+//     捕获每一行的输出
+//    always @(posedge clk or posedge Reset) begin
+//        if (Reset) begin
+//             复位所有寄存器行
+//            for (i = 0; i < LINES; i = i + 1) begin
+//                shift_reg[i] <= 0;
+//            end
+//        end else begin
+//             移位逻辑
+//            shift_reg[0] <= Din;              // 第一行保存输入数据
+//            for (i = 1; i < LINES; i = i + 1) begin
+//                shift_reg[i] <= shift_reg[i-1]; // 其他行依次移位
+//            end
+//        end
+//    end
+
+//     生成 tapsx 输出
+//    generate
+//        genvar j;
+//        for (j = 0; j < LINES; j = j + 1) begin : taps_assign
+//            assign tapsx[(BITS*j)+:BITS] = shift_reg[j]; // 将每一行的输出拼接到 tapsx
+//        end
+//    endgenerate
+
+//endmodule
+module shift_register #(
+    parameter BITS = 8,
+    parameter STAGES = 4
+)(
+    input wire pclk,
+    input wire in_href,
+    input wire [BITS-1:0] in_raw,
+    output reg [BITS-1:0] shiftout,
+    output wire [BITS*STAGES-1:0] taps
 );
 
-	reg [DW-1:0] mem [SZ-1:0]/* synthesis syn_keep= 1 */;
-	always @ (posedge clk) begin
-		if (wren) begin
-			mem[wraddr] <= data;
-		end
-	end
-	always @ (posedge clk) begin
-		if (rden) begin
-			q <= mem[rdaddr];
-		end
-	end
-endmodule
-/* Shift Register based on Simple Dual-Port RAM */
-module shift_register
-#(
-	parameter BITS = 8,
-	parameter WIDTH = 480,
-	parameter LINES = 4
-)
-(
-	input                clock,
-	input                clken,
-	input  [BITS-1:0]    shiftin,
-	output [BITS-1:0]    shiftout,
-	output [BITS*LINES-1:0] tapsx
-);
+    reg [BITS-1:0] shift_reg [0:STAGES-1];
 
-	localparam RAM_SZ = WIDTH - 1;
-	localparam RAM_AW = clogb2(RAM_SZ);
+    always @(posedge pclk) begin
+        if (in_href) begin
+            shift_reg[0] <= in_raw;
+            for (int i = 1; i < STAGES; i++) begin
+                shift_reg[i] <= shift_reg[i-1];
+            end
+        end
+    end
 
-	reg [RAM_AW-1:0] pos_r/* synthesis syn_keep= 1 */;
-	wire [RAM_AW-1:0] pos = pos_r < RAM_SZ ? pos_r : (RAM_SZ[RAM_AW-1:0] - 1'b1)/* synthesis syn_keep= 1 */;
-	always @ (posedge clock) begin
-		if (clken) begin
-			if (pos_r < RAM_SZ - 1)
-				pos_r <= pos_r + 1'b1;
-			else
-				pos_r <= 0;
-		end
-	end
+    assign shiftout = shift_reg[STAGES-1];
 
-	reg [BITS-1:0] in_r/* synthesis syn_keep= 1 */;
-	always @ (posedge clock) begin
-		if (clken) begin
-			in_r <= shiftin;
-		end
-	end
-	wire [BITS-1:0] line_out[LINES-1:0]/* synthesis syn_keep= 1 */;
+    genvar i;
     generate
-		genvar i;
-		for (i = 0; i < LINES; i = i + 1) begin : gen_ram_inst/* synthesis syn_keep= 1 */
-			/* synthesis syn_keep= 1 */
-            simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (/* synthesis syn_keep= 1 */
-				.clk(clock)/* synthesis syn_keep= 1 */,
-				.wren(clken)/* synthesis syn_keep= 1 */,
-				.wraddr(pos)/* synthesis syn_keep= 1 */,
-				.data(i == 0 ? in_r : line_out[i-1])/* synthesis syn_keep= 1 */,
-				.rden(clken)/* synthesis syn_keep= 1 */,
-				.rdaddr(pos)/* synthesis syn_keep= 1 */,
-				.q(line_out[i]/* synthesis syn_keep= 1 */)/* synthesis syn_keep= 1 */
-			) /* synthesis syn_keep=1 */;
-		end
-	endgenerate	
-    // LINES = 4
+        for (i=0; i<STAGES; i=i+1) begin : tap_assign
+            assign taps[BITS*(STAGES - 1 - i) +: BITS] = shift_reg[i];
+        end
+    endgenerate
+
+endmodule
+/* Simple Dual-Port RAM */
+//module simple_dp_ram
+//#(
+//	parameter DW = 8,
+//	parameter AW = 4,
+//	parameter SZ = 2**AW
+//)
+//(
+//	input          clk,
+//	input          wren,
+//	input [AW-1:0] wraddr,
+//	input [DW-1:0] data,
+//	input          rden,
+//	input [AW-1:0] rdaddr,
+//	output reg [DW-1:0] q
+//);
+
+//	reg [DW-1:0] mem [SZ-1:0]/* synthesis syn_keep= 1 */;
+//	always @ (posedge clk) begin
+//		if (wren) begin
+//			mem[wraddr] <= data;
+//		end
+//	end
+//	always @ (posedge clk) begin
+//		if (rden) begin
+//			q <= mem[rdaddr];
+//		end
+//	end
+//endmodule
+/* Shift Register based on Simple Dual-Port RAM */
+//module shift_register
+//#(
+//	parameter BITS = 8,
+//	parameter WIDTH = 480,
+//	parameter LINES = 4
+//)
+//(
+//	input                clock,
+//	input                clken,
+//	input  [BITS-1:0]    shiftin,
+//	output [BITS-1:0]    shiftout,
+//	output [BITS*LINES-1:0] tapsx
+//);
+
+//	localparam RAM_SZ = WIDTH - 1;
+//	localparam RAM_AW = clogb2(RAM_SZ);
+
+//	reg [RAM_AW-1:0] pos_r/* synthesis syn_keep= 1 */;
+//	wire [RAM_AW-1:0] pos = pos_r < RAM_SZ ? pos_r : (RAM_SZ[RAM_AW-1:0] - 1'b1)/* synthesis syn_keep= 1 */;
+//	always @ (posedge clock) begin
+//		if (clken) begin
+//			if (pos_r < RAM_SZ - 1)
+//				pos_r <= pos_r + 1'b1;
+//			else
+//				pos_r <= 0;
+//		end
+//	end
+
+//	reg [BITS-1:0] in_r/* synthesis syn_keep= 1 */;
+//	always @ (posedge clock) begin
+//		if (clken) begin
+//			in_r <= shiftin;
+//		end
+//	end
+//	wire [BITS-1:0] line_out[LINES-1:0]/* synthesis syn_keep= 1 */;
+//    generate
+//		genvar i;
+//		for (i = 0; i < LINES; i = i + 1) begin : gen_ram_inst/* synthesis syn_keep= 1 */
+//			/* synthesis syn_keep= 1 */
+//            simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram (/* synthesis syn_keep= 1 */
+//				.clk(clock)/* synthesis syn_keep= 1 */,
+//				.wren(clken)/* synthesis syn_keep= 1 */,
+//				.wraddr(pos)/* synthesis syn_keep= 1 */,
+//				.data(i == 0 ? in_r : line_out[i-1])/* synthesis syn_keep= 1 */,
+//				.rden(clken)/* synthesis syn_keep= 1 */,
+//				.rdaddr(pos)/* synthesis syn_keep= 1 */,
+//				.q(line_out[i]/* synthesis syn_keep= 1 */)/* synthesis syn_keep= 1 */
+//			) /* synthesis syn_keep=1 */;
+//		end
+//	endgenerate	
+//     LINES = 4
 //	simple_dp_ram #(BITS, RAM_AW, RAM_SZ) u_ram_0 (
 //		.clk(clock),
 //		.wren(clken),
@@ -455,19 +538,19 @@ module shift_register
 //	);
 
 
-	assign shiftout = line_out[LINES-1]/* synthesis syn_keep= 1 */;
-	generate
-		genvar j;
-		for (j = 0; j < LINES; j = j + 1) begin : gen_taps_assign
-			assign tapsx[(BITS*j)+:BITS] = line_out[j]/* synthesis syn_keep= 1 */;
-		end
-	endgenerate
+//	assign shiftout = line_out[LINES-1]/* synthesis syn_keep= 1 */;
+//	generate
+//		genvar j;
+//		for (j = 0; j < LINES; j = j + 1) begin : gen_taps_assign
+//			assign tapsx[(BITS*j)+:BITS] = line_out[j]/* synthesis syn_keep= 1 */;
+//		end
+//	endgenerate
 
-	function integer clogb2;
-	input integer depth;
-	begin
-		for (clogb2 = 0; depth > 0; clogb2 = clogb2 + 1)
-			depth = depth >> 1;
-	end
-	endfunction
-endmodule
+//	function integer clogb2;
+//	input integer depth;
+//	begin
+//		for (clogb2 = 0; depth > 0; clogb2 = clogb2 + 1)
+//			depth = depth >> 1;
+//	end
+//	endfunction
+//endmodule

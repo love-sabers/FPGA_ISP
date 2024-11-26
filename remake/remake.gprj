@@ -5,6 +5,7 @@
     <Version>5</Version>
     <Device name="GW5AST-138B" pn="GW5AST-LV138FPG676AES">gw5ast138b-002</Device>
     <FileList>
+        <File path="src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v" type="file.verilog" enable="1"/>
         <File path="src/ai/ai_top.v" type="file.verilog" enable="1"/>
         <File path="src/ai/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3/ConvolutionInputGenerator_rtl_0_impl.sv" type="file.verilog" enable="1"/>
         <File path="src/ai/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3/ConvolutionInputGenerator_rtl_0_wrapper.v" type="file.verilog" enable="1"/>

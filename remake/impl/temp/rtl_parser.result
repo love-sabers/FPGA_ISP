@@ -1,5 +1,23 @@
 [
  {
+  "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+  "InstLine" : 83,
+  "InstName" : "myshift_register",
+  "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+  "ModuleLine" : 83,
+  "ModuleName" : "myshift_register",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+    "InstLine" : 96,
+    "InstName" : "u_RAM_based_shift_reg",
+    "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "~RAM_based_shift_reg.myshift_register"
+   }
+  ]
+ },
+ {
   "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/ai/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3/swg_common.sv",
   "InstLine" : 149,
   "InstName" : "swg_cyclic_buffer_addressable",
@@ -119,45 +137,11 @@
       "SubInsts" : [
        {
         "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-        "InstLine" : 54,
+        "InstLine" : 55,
         "InstName" : "linebuffer",
         "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-        "ModuleLine" : 367,
-        "ModuleName" : "shift_register",
-        "SubInsts" : [
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[0].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[1].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[2].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[3].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         }
-        ]
+        "ModuleLine" : 388,
+        "ModuleName" : "shift_register"
        }
       ]
      },
@@ -171,45 +155,11 @@
       "SubInsts" : [
        {
         "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/bnr/isp_bnr.v",
-        "InstLine" : 32,
+        "InstLine" : 33,
         "InstName" : "linebuffer",
         "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-        "ModuleLine" : 367,
-        "ModuleName" : "shift_register",
-        "SubInsts" : [
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[0].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[1].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[2].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         },
-         {
-          "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "InstLine" : 406,
-          "InstName" : "gen_ram_inst[3].u_ram",
-          "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/dpc/isp_dpc.v",
-          "ModuleLine" : 338,
-          "ModuleName" : "simple_dp_ram"
-         }
-        ]
+        "ModuleLine" : 388,
+        "ModuleName" : "shift_register"
        }
       ]
      },

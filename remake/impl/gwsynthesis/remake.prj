@@ -4,6 +4,7 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\RAM_based_shift_reg_top\RAM_based_shift_reg_top.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\ai_top.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_impl.sv" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\code_gen_ipgen_ConvolutionInputGenerator_rtl_0_zhwgopw3\ConvolutionInputGenerator_rtl_0_wrapper.v" type="verilog"/>

@@ -2,6 +2,10 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/RAM_based_shift_reg_top/RAM_based_shift_reg_top.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/ai/ai_top.v",
    "Type" : "verilog"
   },

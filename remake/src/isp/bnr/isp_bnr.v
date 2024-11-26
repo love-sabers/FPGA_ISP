@@ -29,8 +29,9 @@ module isp_bnr
 
 	wire [BITS-1:0] shiftout/* synthesis syn_keep= 1 */;
 	wire [BITS-1:0] tap3x, tap2x, tap1x, tap0x/* synthesis syn_keep= 1 */;
-	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
-	
+//	shift_register #(BITS, WIDTH, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
+    shift_register #(BITS, 4) linebuffer(pclk, in_href, in_raw, shiftout, {tap3x, tap2x, tap1x, tap0x})/* synthesis syn_keep= 1 */;
+
 	reg [BITS-1:0] in_raw_r;
 	reg [BITS-1:0] p11,p12,p13,p14,p15;
 	reg [BITS-1:0] p21,p22,p23,p24,p25;
