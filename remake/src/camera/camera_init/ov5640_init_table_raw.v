@@ -30,7 +30,7 @@ module ov5640_init_table_raw #(
   output reg [(DATA_WIDTH-1):0] q;
 
   localparam IMAGE_FLIP_DAT   = IMAGE_FLIP_EN ? 8'h47 : 8'h40;
-  localparam IMAGE_MIRROR_DAT = IMAGE_MIRROR_EN ? 4'h0 : 4'h7;
+  localparam IMAGE_MIRROR_DAT = IMAGE_MIRROR_EN ? 4'h0 : 4'h2;
 
   // Declare the ROM variable
   reg [23:0] rom[251:0];
@@ -274,18 +274,28 @@ module ov5640_init_table_raw #(
 
     //fps
     //rom[ 4]=   24'h3108_01;
-    // rom[81]=   24'h3034_1A;
-    // rom[82]=   24'h3035_21;
-    // rom[83]=   24'h3036_fc;
-    // rom[84]=   24'h3037_03;
-    // rom[85]=   24'h3824_02;
-
-    rom[81]=   24'h3034_18;
-    rom[82]=   24'h3035_21;//must 21
-    rom[83]=   24'h3036_63;
-    rom[84]=   24'h3037_12;
+    rom[81]=   24'h3034_1A;
+    rom[82]=   24'h3035_11;
+    rom[83]=   24'h3036_46;
+    rom[84]=   24'h3037_13;
     rom[85]=   24'h3824_02;
+    // OV5640要求输入的时钟频率为6-27MHz,一般情况下输入24MHz，在本次计算中也以24MHz为输入频率；
+    // 输入时钟首先经过pre-divider进行分频，分频系数由3037[3:0]确定，在本次计算中3037[3:0]为3，故经过分频之后的输出为24/3=8MHz；
+    // 经过pre-divider分频后需要给分频后的时钟做一次倍频，乘法因子为3036[6:0]=0x46=70，经过倍频后的时钟频率为8MHz*70=560MHz;
+    // Sys divider0分频，分频系数为0x3035[7:4]，在demo中的值为1；560MHz/1=560MHz;
+    // PLL R divider分频，如果0x3037[4]为高电平，则进行2分频，否则不分频；在demo中3037[4]为0，故没有分频；560MHz/1=560MHz;
+    // BIT divider分频，分频系数为0x3034[3:0]，如果是8，则是2分频，如果是A则是2.5分频，如果是其他则为1分频；560MHz/2.5=224MHz;
+    // PCLK divider分频, 分频系数为0x3108[5:4],00:1分频；01:2分频；10:4分频；11:8分频；在demo中0x3108[5:4]=2’b00,故需要进行1分频；224MHz/1=224MHz；
+    // P divider分频，如果是mipi2 lane,则分频系数是0x3035[3:0],如果是DVP 接口则分频系数为2*0x3035[3:0]；224MHz/2=112MHz；
+    // Scale divider分频，分频系数为0x3824[4:0],在demo中0x3824[4:0]=2故需要进行2分频，112MHz/2=56MHz。
+    // 通过以上分析可以看出在demo中输入时钟为24MHz时，输出时钟为56MHz。
 
+    //74.25MHz
+    // rom[81]=   24'h3034_18;
+    // rom[82]=   24'h3035_21;//must 21
+    // rom[83]=   24'h3036_63;
+    // rom[84]=   24'h3037_12;
+    // rom[85]=   24'h3824_02;
     // OV5640要求输入的时钟频率为6-27MHz,一般情况下输入24MHz，在本次计算中也以24MHz为输入频率；
     // 输入时钟首先经过pre-divider进行分频，分频系数由3037[3:0]确定，在本次计算中3037[3:0]为2，故经过分频之后的输出为24/2=12MHz；
     // 经过pre-divider分频后需要给分频后的时钟做一次倍频，乘法因子为3036[6:0]=0xfc=252，经过倍频后的时钟频率为12MHz*99=1188MHz;
@@ -296,7 +306,9 @@ module ov5640_init_table_raw #(
     // P divider分频，如果是mipi2 lane,则分频系数是0x3035[3:0],如果是DVP 接口则分频系数为2*0x3035[3:0]；297MHz/2=148.5MHz；
     // Scale divider分频，分频系数为0x3824[4:0],在demo中0x3824[4:0]=2故需要进行2分频，148.5MHz/2=74.25MHz。
     // 通过以上分析可以看出在demo中输入时钟为24MHz时，输出时钟为74.25MHz。
-
+    
+    rom[86] = {16'h3820, IMAGE_FLIP_DAT}; // flip
+    rom[87] = {20'h38210, IMAGE_MIRROR_DAT}; // no mirror
 
   end
 

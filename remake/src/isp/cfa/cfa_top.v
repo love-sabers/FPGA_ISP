@@ -116,21 +116,21 @@ always @(posedge clk or negedge reset_n) begin
                     out_data_R<=8'h01;
                     out_data_G<=8'h01; 
                     out_data_B<=8'h01;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-                    out_data_R<=r_in_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-                    out_data_B<=r_ul_raw;
                 end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
+                    out_data_R<=r_in_raw;
+                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
+                    out_data_B<=r_ul_raw;
+                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
                     out_data_R<=r_le_raw;
                     out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
                     out_data_B<=r_up_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
+                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
                     out_data_R<=r_up_raw;
                     out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
                     out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
+                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
                     out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
+                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
                     out_data_B<=r_in_raw;
                 end
             end 
@@ -163,21 +163,21 @@ always @(posedge clk or negedge reset_n) begin
                     out_data_G<=8'h01; 
                     out_data_B<=8'h01;
                 end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
+                    out_data_R<=r_in_raw;
+                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
+                    out_data_B<=r_ul_raw;
+                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
                     out_data_R<=r_le_raw;
                     out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
                     out_data_B<=r_up_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-                    out_data_R<=r_in_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_ul_raw;
                 end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-                    out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_in_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
                     out_data_R<=r_up_raw;
                     out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
                     out_data_B<=r_le_raw;
+                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
+                    out_data_R<=r_ul_raw;
+                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
+                    out_data_B<=r_in_raw;
                 end
             end
             3:begin
