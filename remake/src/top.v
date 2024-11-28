@@ -185,8 +185,9 @@ module top
             gamma_type <= 2'd2;  // 复位时，gamma_type 初始化为 0
         end else begin
             case (tx_data)
-                8'h31: gamma_type <= 2'd1;  // tx_data 为 0x31 时，gamma_type 赋值为 0d1
-                8'h32: gamma_type <= 2'd2;  // tx_data 为 0x32 时，gamma_type 赋值为 0d2
+                8'h31: gamma_type <= 2'd1;  // gamma=1.8
+                8'h32: gamma_type <= 2'd2;  // gamma=2.2
+                8'h33: gamma_type <= 2'd3;  // gamma=2.4
                 default: gamma_type <= 2'd2; // 其他情况下，gamma_type 保持为 0
             endcase
         end

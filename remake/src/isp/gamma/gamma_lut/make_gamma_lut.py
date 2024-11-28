@@ -3,7 +3,7 @@ import os
 
 source = np.arange(256).astype(float)
 # 定义Gamma值
-gamma = 1
+gamma = 1.8
 # 应用Gamma校正
 gamma_corrected = np.power(source / 255.0, 1.0/gamma) * 255.0
 # 将结果转换为8位整数

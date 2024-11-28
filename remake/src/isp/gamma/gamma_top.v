@@ -46,7 +46,7 @@ gamma_lut gamma_lut_inst(
     .in_R (r_data_R),       // 8位输入
     .in_G (r_data_G),       // 8位输入
     .in_B (r_data_B),       // 8位输入
-    .gamma_type(gamma_type),//1 : gamma = 1    2 : gamma = 2.2
+    .gamma_type(gamma_type),//1 : gamma = 1.8    2 : gamma = 2.2   3 : gamma = 2.4
     .out_R(r_data_R_fix),       // 8位输出
     .out_G(r_data_G_fix),       // 8位输出
     .out_B(r_data_B_fix)        // 8位输出

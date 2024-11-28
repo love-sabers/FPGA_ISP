@@ -147,7 +147,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 235,
+    "InstLine" : 236,
     "InstName" : "isp_inst",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/isp/isp_top.v",
     "ModuleLine" : 2,
@@ -3049,7 +3049,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 269,
+    "InstLine" : 270,
     "InstName" : "ddr_PLL_inst",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/gowin_pll/ddr_pll.v",
     "ModuleLine" : 10,
@@ -3057,7 +3057,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 320,
+    "InstLine" : 321,
     "InstName" : "ddr3_ctrl_2port",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/ddr/ddr3_ctrl_2port/ddr3_ctrl_2port.v",
     "ModuleLine" : 1,
@@ -3131,7 +3131,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 372,
+    "InstLine" : 373,
     "InstName" : "hdmi_PLL_inst",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/gowin_pll/hdmi_pll.v",
     "ModuleLine" : 10,
@@ -3139,7 +3139,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 382,
+    "InstLine" : 383,
     "InstName" : "u_Reset_Sync",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/hdmi/reset.v",
     "ModuleLine" : 1,
@@ -3147,7 +3147,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 409,
+    "InstLine" : 410,
     "InstName" : "disp_driver0",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/hdmi/video-misc/disp_driver.v",
     "ModuleLine" : 3,
@@ -3165,7 +3165,7 @@
    },
    {
     "InstFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
-    "InstLine" : 427,
+    "InstLine" : 428,
     "InstName" : "dvi_tx_top_inst",
     "ModuleFile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/hdmi/dvi-tx/dvi_tx_top.v",
     "ModuleLine" : 1,

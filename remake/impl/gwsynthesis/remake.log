@@ -173,7 +173,7 @@ Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v'
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_rx.v'
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_top.v'
 Analyzing Verilog file 'D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_tx.v'
-WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":253)
+WARN  (EX3073) : Port 'out_hsync' remains unconnected for this instance("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":254)
 Compiling module 'top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v":1)
 Compiling module 'camera_PLL'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\gowin_pll\camera_pll.v":10)
 Compiling module 'camera_init(IMAGE_TYPE=2,IMAGE_WIDTH=1024,IMAGE_HEIGHT=1024)'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\camera\camera_init\camera_init.v":18)
@@ -246,6 +246,7 @@ Compiling module 'gma_top'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp
 Compiling module 'gamma_lut'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v":1)
 Extracting RAM for identifier 'lut1'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v":13)
 Extracting RAM for identifier 'lut2'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v":14)
+Extracting RAM for identifier 'lut3'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\gamma\gamma_lut\gamma_lut.v":15)
 Compiling module 'top_camera_integration'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\ai_top.v":1)
 Compiling module 'finn_design_wrapper'("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\hdl\finn_design_wrapper.v":12)
 WARN  (EX3073) : Port 's_axilite_AWREADY' remains unconnected for this instance("D:\ren'ren\Documents\fpga\fpgaProject\remake\src\ai\finn_design\synth\finn_design.v":167)
