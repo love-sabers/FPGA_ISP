@@ -58,11 +58,11 @@ module mvu_8sx8u_dsp48 #(
 	output	logic signed [PE-1:0][ACCU_WIDTH-1:0]  p
 );
 	// for verilator always use behavioral code
-	localparam bit  BEHAVIORAL =
-`ifdef VERILATOR
-		1 ||
-`endif
-		FORCE_BEHAVIORAL;
+	localparam bit  BEHAVIORAL = 0;
+//`ifdef VERILATOR
+//		1 ||
+//`endif
+//		FORCE_BEHAVIORAL;
 
 	typedef int unsigned  leave_load_t[2*SIMD-1];
 	function leave_load_t init_leave_loads();
@@ -85,7 +85,7 @@ module mvu_8sx8u_dsp48 #(
 	localparam int unsigned  D[2:0] = '{ ACCU_WIDTH+SINGLE_PROD_WIDTH, SINGLE_PROD_WIDTH, 0 }; // Lane offsets
 
 	localparam int unsigned  PIPE_COUNT = (PE+1)/2;
-	for(genvar  c = 0; c < PIPE_COUNT; c++) begin : genPipes
+	for(genvar  c = 0; c < PIPE_COUNT; c++) begin : genPipes/* synthesis syn_keep= 1 */
 
 		localparam int unsigned  PE_BEG = 2*c;
 		localparam int unsigned  PE_END = PE < 2*(c+1)? PE : 2*(c+1);
@@ -109,7 +109,7 @@ module mvu_8sx8u_dsp48 #(
 						if(BEHAVIORAL)  assign  xx = zero? 0 : ww[pe] * a[s];
 `ifndef VERILATOR
 						else begin
-							LUT6_2 #(.INIT(64'h0000_6AC0_0000_8888)) lut_x (
+							LUT6_2 #(.INIT(64'h0000_6AC0_0000_8888)) lut_x (//synthesis keep
 								.O6(xx[1]),
 								.O5(xx[0]),
 								.I5(1'b1),
@@ -177,7 +177,7 @@ module mvu_8sx8u_dsp48 #(
 //P_OUT = P + (D - A) × B + 48'hFFFFFFFFFFFF
 				localparam logic [6:0]  OPMODE_INVERSION = 7'b010_01_01;
 				uwire [6:0]  opmode = { { 1'b0, L[2], 1'b0 }, 4'b00_00 };
-                DSP48E1 dsp(/* synthesis syn_keep= 1 */
+                DSP48E1 dsp(/* synthesis keep_hierarchy=true */
                     .dout(pp), //output [47:0] dout
                     .a(dd), //input [25:0] a
                     .b(bb), //input [17:0] b

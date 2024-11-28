@@ -234,3 +234,8 @@ IO_LOC "outlook_vs_cam" V17;
 IO_PORT "outlook_vs_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
 IO_LOC "outlook_den_cam" V16;
 IO_PORT "outlook_den_cam" BANK_VCCIO=3.3 PULL_MODE=NONE;
+
+IO_LOC "uart_tx" P15;
+IO_PORT "uart_tx" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "uart_rx" N16;
+IO_PORT "uart_rx" PULL_MODE=NONE BANK_VCCIO=3.3;

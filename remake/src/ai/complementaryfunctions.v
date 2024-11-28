@@ -3,7 +3,7 @@ module LUT6_2 #(
 )(
     input wire I0, I1, I2, I3, I4, I5,
     output wire O5, O6
-);
+)/* synthesis keep_hierarchy=true */;
 
     // 提取 INIT 参数的不同部分
     localparam [15:0] INIT_LUT4_1 = INIT[15:0];    // 前16位给第一个LUT4

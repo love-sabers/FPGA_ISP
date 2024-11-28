@@ -15,7 +15,7 @@ module top
 	parameter video_vbp_len		= 36,
 	parameter video_v_visible	= 1080,
 
-    parameter isp_disp_mode_num	= 4
+    parameter isp_disp_mode_num	= 6
 )
 (
 
@@ -74,8 +74,11 @@ module top
 
     output outlook_clk_cam,
     output outlook_vs_cam,
-    output outlook_den_cam
+    output outlook_den_cam,
 
+    //uart
+    input                        uart_rx,
+	output                       uart_tx
 );
     assign i2c_sel = 'b101;
     assign led={1'b1,~camera_init_done,~ddr_init_calib_complete,1'b0,1'b0,1'b0};
@@ -166,6 +169,30 @@ module top
     // assign outlook_vs=gen_vsync;
     // assign outlook_den=gen_den;
 
+    reg [7:0] tx_data;
+    uart_test myuart(
+        .clk(clk50m),
+        .rst(~reset_n),
+        .uart_rx(uart_rx),
+        .uart_tx(uart_tx),
+        .tx_data(tx_data)
+    );
+
+    reg [1:0] gamma_type;  // 用来保存 gamma 的值
+    // gamma_type 的值根据 tx_data 来设置
+    always @ (posedge clk50m or negedge reset_n) begin
+        if (~reset_n) begin
+            gamma_type <= 2'd2;  // 复位时，gamma_type 初始化为 0
+        end else begin
+            case (tx_data)
+                8'h31: gamma_type <= 2'd1;  // tx_data 为 0x31 时，gamma_type 赋值为 0d1
+                8'h32: gamma_type <= 2'd2;  // tx_data 为 0x32 时，gamma_type 赋值为 0d2
+                default: gamma_type <= 2'd2; // 其他情况下，gamma_type 保持为 0
+            endcase
+        end
+    end
+    
+
     //isp
 	wire isp_clk;
 	wire isp_vsync;
@@ -201,7 +228,7 @@ module top
 
     
     
-
+    
     isp_top  #(
         .source_h(source_h),
         .source_v(source_v)
@@ -215,6 +242,7 @@ module top
 		.in_data    (DVP_DataPixel),
 
         .isp_disp_mode(isp_mode),
+        .gamma_type(gamma_type),
 	
         .out_clk    (isp_clk),
 		.out_vsync  (isp_vsync),

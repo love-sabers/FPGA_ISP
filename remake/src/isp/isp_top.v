@@ -1,4 +1,4 @@
-//RAW 输入 → DPC → BLC(×) → BNR → DGAIN → DEMOSAIC(×) → cfa → AWB → WB(×) → CCM → (CSC → 2DNR → EE) → Gamma
+//RAW 输入 → DPC → BLC(×) → BNR → DGAIN(×) → DEMOSAIC(×) → cfa → AWB → WB(×) → CCM → (CSC → 2DNR → EE) → Gamma
 module isp_top #(
 	parameter	source_h = 1024,
 	parameter   source_v = 1024
@@ -12,6 +12,7 @@ module isp_top #(
 	input [8-1:0] 			    		in_data,
 	
 	input [3:0]                         isp_disp_mode,
+    input [1:0]                         gamma_type,
 	
 	output 								out_clk,
 	output	reg						    out_vsync,
@@ -185,6 +186,7 @@ module isp_top #(
         .in_data_R	(ccm_R), 	
 		.in_data_G	(ccm_G), 	
 		.in_data_B	(ccm_B), 	
+        .gamma_type (gamma_type),
 
         .out_vsync	(gma_vsync),		
         .out_hsync	(gma_hsync),		
@@ -195,12 +197,12 @@ module isp_top #(
     );
 
     // Enhance outputs
-    wire        enhance_vsync;
-    wire        enhance_hsync;
-    wire        enhance_den;
-    wire [7:0]  enhance_R;
-    wire [7:0]  enhance_G;
-    wire [7:0]  enhance_B;
+    wire        enhance_vsync/* synthesis syn_keep= 1 */;
+    wire        enhance_hsync/* synthesis syn_keep= 1 */;
+    wire        enhance_den/* synthesis syn_keep= 1 */;
+    wire [7:0]  enhance_R/* synthesis syn_keep= 1 */;
+    wire [7:0]  enhance_G/* synthesis syn_keep= 1 */;
+    wire [7:0]  enhance_B/* synthesis syn_keep= 1 */;
 
     // Top enhancement integration
     top_camera_integration enhance_module (

@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138B
   <Device Version>: B
-  <Created Time>:Tue Nov 26 21:53:24 2024
+  <Created Time>:Fri Nov 29 00:40:05 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
-    Placement Phase 1: CPU time = 0h 0m 0.641s, Elapsed time = 0h 0m 0.641s
-    Placement Phase 2: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
-    Placement Phase 3: CPU time = 0h 0m 17s, Elapsed time = 0h 0m 17s
-    Total Placement: CPU time = 0h 0m 36s, Elapsed time = 0h 0m 36s
+    Placement Phase 0: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Placement Phase 1: CPU time = 0h 0m 0.695s, Elapsed time = 0h 0m 0.695s
+    Placement Phase 2: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
+    Placement Phase 3: CPU time = 0h 1m 47s, Elapsed time = 0h 1m 47s
+    Total Placement: CPU time = 0h 2m 7s, Elapsed time = 0h 2m 7s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.898s, Elapsed time = 0h 0m 0.897s
-    Routing Phase 1: CPU time = 0h 0m 40s, Elapsed time = 0h 0m 40s
-    Routing Phase 2: CPU time = 0h 0m 0.972s, Elapsed time = 0h 0m 0.973s
+    Routing Phase 0: CPU time = 0h 0m 0.946s, Elapsed time = 0h 0m 0.946s
+    Routing Phase 1: CPU time = 0h 0m 43s, Elapsed time = 0h 0m 43s
+    Routing Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 42s, Elapsed time = 0h 0m 42s
+    Total Routing: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s
  Generate output files:
     CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s
 
- Total Time and Memory Usage: CPU time = 0h 1m 30s, Elapsed time = 0h 1m 30s, Peak memory usage = 1943MB
+ Total Time and Memory Usage: CPU time = 0h 3m 5s, Elapsed time = 0h 3m 5s, Peak memory usage = 1769MB
 
 
 3. Resource Usage Summary
@@ -40,19 +40,19 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 10675/138240  8%
-    --LUT,ALU,ROM16           | 9895(7658 LUT, 2237 ALU, 0 ROM16)
+  Logic                       | 10470/138240  8%
+    --LUT,ALU,ROM16           | 9690(7444 LUT, 2246 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 130
-  Register                    | 10906/139140  8%
+  Register                    | 10970/139140  8%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 10906/138240  8%
+    --Logic Register as FF    | 10970/138240  8%
     --I/O Register as Latch   | 0/900  0%
     --I/O Register as FF      | 0/900  0%
-  CLS                         | 9766/69120  15%
-  I/O Port                    | 116
-  I/O Buf                     | 107
-    --Input Buf               | 14
-    --Output Buf              | 56
+  CLS                         | 9476/69120  14%
+  I/O Port                    | 118
+  I/O Buf                     | 109
+    --Input Buf               | 15
+    --Output Buf              | 57
     --Inout Buf               | 37
   IOLOGIC                     | 35%
     --IDES8_MEM               | 32
@@ -63,7 +63,7 @@
   BSRAM                       | 15%
     --SDPB                    | 26
     --SDPX9B                  | 16
-    --pROM                    | 5
+    --pROM                    | 8
     --pROMX9                  | 1
   DSP                         | 8%
     --MULT12X12               | 3
@@ -88,7 +88,7 @@
   I/O Bank  | Usage       
   -----------------------
   bank 2   | 17/50(34%)  
-  bank 3   | 11/50(22%)  
+  bank 3   | 13/50(26%)  
   bank 4   | 1/50(2%)    
   bank 5   | 16/50(32%)  
   bank 6   | 44/50(88%)  
@@ -116,14 +116,14 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  clk50m_d       | PRIMARY        |  PBR2 PBR3
+  clk50m_d       | PRIMARY        |  PBR1 PBR2 PBR3
   camera_pclk_d  | PRIMARY        |  PTR1 PTR2 PTR3 PBR1 PBR2 PBR3
   camera_xclk_d  | PRIMARY        |  PBR1
-  ddr_clk100m    | PRIMARY        |  PTR1 PBR1
+  ddr_clk100m    | PRIMARY        |  PBR0 PBR1
   ddr_memory_clk400m| PRIMARY        |  PTR0 PBR0
   rdfifo_clk     | PRIMARY        |  PTR1 PTR2 PTR3 PBR1 PBR2
   hdmi5_clk742m5 | PRIMARY        |  PTR3
-  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
+  ddr3_ctrl_2port/ui_clk| PRIMARY        |  PTR0 PTR1 PBR0 PBR1 PBR2
   clr_wr         | LW             |  -
   ddr3_ctrl_2port/your_instance_name/gw3_top/ui_clk_sync_rst| LW             |  -
   ddr_memory_clk400m| HCLK           |  -
@@ -150,6 +150,7 @@ camera_data[4]   |           | E20/5         | Y          | in    | IOB68[A] | L
 camera_data[5]   |           | D18/5         | Y          | in    | IOB62[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_data[6]   |           | C18/5         | Y          | in    | IOB62[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_data[7]   |           | B17/5         | Y          | in    | IOB51[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+uart_rx          |           | N16/3         | Y          | in    | IOR101[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[0]           |           | J14/4         | Y          | out   | IOB97[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[1]           |           | R26/3         | Y          | out   | IOR65[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led[2]           |           | L20/3         | Y          | out   | IOR92[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
@@ -206,6 +207,7 @@ outlook_den_dvp  |           | Y20/2         | Y          | out   | IOR17[B] | L
 outlook_clk_cam  |           | Y21/2         | Y          | out   | IOR24[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 outlook_vs_cam   |           | V17/2         | Y          | out   | IOR2[B]  | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 outlook_den_cam  |           | V16/2         | Y          | out   | IOR2[A]  | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+uart_tx          |           | P15/3         | Y          | out   | IOR103[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 camera_sdat      |           | K26/3         | Y          | io    | IOR94[B] | LVCMOS33   | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 ddr_dq[0]        |           | G4/6          | Y          | io    | IOL78[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM       
 ddr_dq[1]        |           | J6/6          | Y          | io    | IOL74[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM       
@@ -559,9 +561,9 @@ P18/3    | -                | in    | IOR96[A] | LVCMOS33 | 8     | UP        | 
 N18/3    | -                | in    | IOR96[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R16/3    | -                | in    | IOR98[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R17/3    | -                | in    | IOR98[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-N16/3    | -                | in    | IOR101[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+N16/3    | uart_rx          | in    | IOR101[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 N17/3    | -                | in    | IOR101[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-P15/3    | -                | in    | IOR103[A] | LVCMOS33 | 8     | DOWN      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+P15/3    | uart_tx          | out   | IOR103[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 P16/3    | clk50m           | in    | IOR103[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R14/3    | -                | in    | IOR105[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 R15/3    | -                | in    | IOR105[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       

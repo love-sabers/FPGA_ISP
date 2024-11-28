@@ -86,6 +86,9 @@
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\isp\isp_top.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\test\test_pattern_gen.v" type="verilog"/>
         <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_rx.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_top.v" type="verilog"/>
+        <File path="D:\ren'ren\Documents\fpga\fpgaProject\remake\src\uart\uart_tx.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

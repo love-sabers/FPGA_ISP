@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="5" Lut="10">
+<Module name="top" Register="7" Lut="11">
     <SubModule name="camera_PLL_inst"/>
     <SubModule name="camera_init" Register="34" Lut="73">
         <SubModule name="ov5640_init_table_raw_inst" Bsram="1"/>
-        <SubModule name="i2c_control" Register="44" Lut="106">
+        <SubModule name="i2c_control" Register="44" Lut="109">
             <SubModule name="i2c_bit_shift" Register="23" Lut="77"/>
         </SubModule>
     </SubModule>
     <SubModule name="DVP_Capture" Register="26" Lut="10"/>
-    <SubModule name="isp_inst" Register="26" Lut="128">
-        <SubModule name="dpc_inst" Register="561" Alu="310" Lut="415">
+    <SubModule name="myuart" Register="11" Lut="5">
+        <SubModule name="uart_rx_inst" Register="41" Alu="3" Lut="60"/>
+        <SubModule name="uart_tx_inst" Register="32" Alu="3" Lut="52"/>
+    </SubModule>
+    <SubModule name="isp_inst" Register="26" Lut="131">
+        <SubModule name="dpc_inst" Register="561" Alu="310" Lut="407">
             <SubModule name="linebuffer" Register="32"/>
         </SubModule>
         <SubModule name="bnr_inst" Register="220" Alu="76" Lut="18">
             <SubModule name="linebuffer" Register="32"/>
         </SubModule>
-        <SubModule name="cfa_top_inst" Register="78" Alu="14" Lut="592" Ssram="130"/>
+        <SubModule name="cfa_top_inst" Register="80" Alu="14" Lut="595" Ssram="130"/>
         <SubModule name="awb_top_inst" Register="174" Alu="138" Lut="132" MULTALU27X18="3">
             <SubModule name="div_core_inst" Register="135" Lut="99">
                 <SubModule name="div_inst" Register="1474" Alu="602" Lut="133"/>
@@ -26,21 +30,21 @@
             <SubModule name="lut_mul_instG" Bsram="1"/>
             <SubModule name="lut_mul_instB" Bsram="3"/>
         </SubModule>
-        <SubModule name="gma_top_inst" Register="52">
-            <SubModule name="gamma_lut_inst" Lut="383"/>
+        <SubModule name="gma_top_inst" Register="28">
+            <SubModule name="gamma_lut_inst" Lut="24" Bsram="3"/>
         </SubModule>
         <SubModule name="enhance_module" Register="4">
             <SubModule name="finn_design_inst">
                 <SubModule name="finn_design_i">
                     <SubModule name="ConvolutionInputGenerator_rtl_0">
                         <SubModule name="inst">
-                            <SubModule name="impl" Register="38" Alu="53" Lut="72">
+                            <SubModule name="impl" Register="38" Alu="54" Lut="72">
                                 <SubModule name="window_buffer_inst">
                                     <SubModule name="reg_buffer_inst_0" Register="72"/>
                                     <SubModule name="reg_buffer_inst_1" Register="48"/>
                                     <SubModule name="reg_buffer_inst_2" Register="48"/>
                                     <SubModule name="ram_buffer_inst_0" Register="16" Lut="27" Bsram="1"/>
-                                    <SubModule name="ram_buffer_inst_1" Register="16" Lut="29" Bsram="1"/>
+                                    <SubModule name="ram_buffer_inst_1" Register="16" Lut="28" Bsram="1"/>
                                 </SubModule>
                                 <SubModule name="controller_inst" Register="20" Lut="32"/>
                             </SubModule>
@@ -92,7 +96,7 @@
                     <SubModule name="StreamingDataWidthConverter_rtl_0">
                         <SubModule name="inst">
                             <SubModule name="impl">
-                                <SubModule name="core" Register="365" Lut="227"/>
+                                <SubModule name="core" Register="365" Lut="226"/>
                             </SubModule>
                         </SubModule>
                     </SubModule>
@@ -123,12 +127,12 @@
                     </SubModule>
                 </SubModule>
             </SubModule>
-            <SubModule name="enhance_proc_inst" Register="91" Alu="102" Lut="63" MULT12X12="3" MULT27X36="5"/>
+            <SubModule name="enhance_proc_inst" Register="91" Alu="102" Lut="72" MULT12X12="3" MULT27X36="5"/>
         </SubModule>
     </SubModule>
     <SubModule name="ddr_PLL_inst"/>
     <SubModule name="ddr3_ctrl_2port">
-        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="274">
+        <SubModule name="fifo_ddr3_adapter" Register="155" Lut="278">
             <SubModule name="rd_data_fifo" Register="97" Alu="20" Lut="370" Bsram="8"/>
             <SubModule name="wr_data_fifo" Register="90" Alu="20" Lut="79" Bsram="8"/>
         </SubModule>
@@ -136,15 +140,15 @@
     </SubModule>
     <SubModule name="hdmi_PLL_inst"/>
     <SubModule name="u_Reset_Sync" Register="4" Alu="4" Lut="2"/>
-    <SubModule name="disp_driver0" Lut="35">
-        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="56"/>
+    <SubModule name="disp_driver0" Lut="26">
+        <SubModule name="video_timing_ctrl_inst0" Register="28" Lut="66"/>
     </SubModule>
     <SubModule name="dvi_tx_top_inst">
-        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="99"/>
+        <SubModule name="gen_enc[0].dvi_tx_tmds_enc_inst" Register="29" Alu="39" Lut="103"/>
         <SubModule name="gen_enc[0].dvi_tx_tmds_phy_inst" Register="1"/>
-        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="91"/>
+        <SubModule name="gen_enc[1].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="99"/>
         <SubModule name="gen_enc[1].dvi_tx_tmds_phy_inst"/>
-        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="91"/>
+        <SubModule name="gen_enc[2].dvi_tx_tmds_enc_inst" Register="26" Alu="39" Lut="93"/>
         <SubModule name="gen_enc[2].dvi_tx_tmds_phy_inst"/>
         <SubModule name="clock_phy"/>
     </SubModule>

@@ -6,7 +6,7 @@
  "CMSER_CHECKSUM" : false,
  "CMSER_MODE" : "auto",
  "COMPRESS" : false,
- "CPU" : false,
+ "CPU" : true,
  "CRC_CHECK" : true,
  "Clock_Conversion" : true,
  "Clock_Route_Order" : 0,
@@ -42,7 +42,7 @@
  "IncludePath" : [
 
  ],
- "Incremental_Compile" : "",
+ "Incremental_Compile" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/impl/incremental.cfg",
  "Initialize_Primitives" : false,
  "JTAG" : false,
  "MODE_IO" : false,
@@ -66,7 +66,7 @@
  "PlaceInRegToIob" : false,
  "PlaceIoRegToIob" : false,
  "PlaceOutRegToIob" : false,
- "Place_Option" : "0",
+ "Place_Option" : "2",
  "Process_Configuration_Verion" : "1.0",
  "Promote_Physical_Constraint_Warning_to_Error" : true,
  "Push_Tristates" : true,

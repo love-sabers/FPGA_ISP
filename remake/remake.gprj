@@ -89,6 +89,9 @@
         <File path="src/isp/isp_top.v" type="file.verilog" enable="1"/>
         <File path="src/test/test_pattern_gen.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_top.v" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_tx.v" type="file.verilog" enable="1"/>
         <File path="src/top.cst" type="file.cst" enable="1"/>
     </FileList>
 </Project>

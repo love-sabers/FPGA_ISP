@@ -183,7 +183,7 @@ module mvu_vvu_axi #(
 	//- Conditionally Pumped DSP Compute ------------------------------------
 	typedef logic [PE-1:0][ACCU_WIDTH-1:0]  dsp_p_t;
 	uwire  ovld;
-	uwire dsp_p_t  odat;
+	uwire dsp_p_t  odat/* synthesis syn_keep= 1 */;
 	if(1) begin : blkDsp
 		localparam int unsigned  EFFECTIVE_SIMD = SIMD_UNEVEN && PUMPED_COMPUTE ? SIMD+1 : SIMD;
 		localparam int unsigned  DSP_SIMD = EFFECTIVE_SIMD/(PUMPED_COMPUTE+1);
@@ -199,7 +199,7 @@ module mvu_vvu_axi #(
 		uwire dsp_a_t  dsp_a;
 
 		uwire  dsp_vld;
-		uwire dsp_p_t  dsp_p;
+		uwire dsp_p_t  dsp_p/* synthesis syn_keep= 1 */;
 
 		if(!PUMPED_COMPUTE) begin : genUnpumpedCompute
 			assign	dsp_clk = clk;

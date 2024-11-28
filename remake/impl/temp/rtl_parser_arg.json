@@ -328,6 +328,18 @@
   {
    "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/top.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/uart/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/uart/uart_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/ren'ren/Documents/fpga/fpgaProject/remake/src/uart/uart_tx.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

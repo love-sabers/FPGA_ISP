@@ -3,6 +3,7 @@
 -pn GW5AST-LV138FPG676AES
 -cst D:\ren'ren\Documents\fpga\fpgaProject\remake\src\top.cst
 -cfg D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\pnr\device.cfg
+-inc D:\ren'ren\Documents\fpga\fpgaProject\remake\impl\incremental.cfg
 -bit
 -tr
 -ph
@@ -11,5 +12,6 @@
 -oreg_not_in_iob
 -ioreg_not_in_iob
 -cst_error
+-place_option 2
 -correct_hold 1
 -route_maxfan 23

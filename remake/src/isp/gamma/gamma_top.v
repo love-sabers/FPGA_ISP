@@ -10,6 +10,7 @@ module gma_top #(
 	input [7:0] in_data_R, 	
     input [7:0] in_data_G, 	
     input [7:0] in_data_B, 	
+    input [1:0] gamma_type,
 
     output reg      out_vsync,		
     output reg      out_hsync,		
@@ -37,18 +38,15 @@ always @(posedge clk) begin
 end
 
 //校正
-wire [8-1:0]     r_data_R_fix;
-wire [8-1:0]     r_data_G_fix;
-wire [8-1:0]     r_data_B_fix;
+wire [8-1:0]     r_data_R_fix/* synthesis syn_keep= 1 */;
+wire [8-1:0]     r_data_G_fix/* synthesis syn_keep= 1 */;
+wire [8-1:0]     r_data_B_fix/* synthesis syn_keep= 1 */;
 
-gamma_lut #(
-    .gamma_type(2)
-    //1 : gamma = 1
-    //2 : gamma = 2.2
-)gamma_lut_inst(
+gamma_lut gamma_lut_inst(
     .in_R (r_data_R),       // 8位输入
     .in_G (r_data_G),       // 8位输入
     .in_B (r_data_B),       // 8位输入
+    .gamma_type(gamma_type),//1 : gamma = 1    2 : gamma = 2.2
     .out_R(r_data_R_fix),       // 8位输出
     .out_G(r_data_G_fix),       // 8位输出
     .out_B(r_data_B_fix)        // 8位输出
