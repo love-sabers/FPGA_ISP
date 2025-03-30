@@ -136,7 +136,7 @@ int main(void)
 
   本部分移植自**武汉芯路恒科技有限公司小梅哥ACG525例程**。
 
-![](camera_overall.svg)
+![](./markdown-img/ISP.assets/camera_overall.svg)
 
 ##### 资源消耗  
 基于Tang Mega 138k pro Dock开发
@@ -205,7 +205,7 @@ int main(void)
 
 ##### 系统框图
 
-![](camera_init.svg)
+![](./markdown-img/ISP.assets/camera_init.svg)
 
 ##### 设计简介
 
@@ -299,7 +299,7 @@ DVP_Capture_raw子模块实现了对DVP（Digital Video Port）接口数据流�
 
 ##### 系统框图
 
-![](dvp.svg)
+![](./markdown-img/ISP.assets/dvp.svg)
 
 ##### 设计简介
 
@@ -411,7 +411,7 @@ DVP_Capture_raw子模块实现了对DVP（Digital Video Port）接口数据流�
 
   本项目使用的**完全自研**的ISP系统及其子模块，具有**结构精炼，资源占用少，系统频率高**等一系列优点。同时该部分配置了一个按键用于实现isp输出显示模式的切换，支持RAW源图像、CFA处理后图像、AWB处理后图像、CCM处理后图像、GAMMA处理后图像五种模式。
 
-![](isp_overall.svg)
+![](./markdown-img/ISP.assets/isp_overall.svg)
 
   本部分由本团队**完全自研**。
 
@@ -430,7 +430,7 @@ DVP_Capture_raw子模块实现了对DVP（Digital Video Port）接口数据流�
 
   CFA模块的数据来自图像源的RAW图像数据，在经过插值运算后输出。**对于不同的Bayer阵列输出方式使用不同的插值算法。**
 
-![](cfa.svg)
+![](./markdown-img/ISP.assets/cfa.svg)
 
 ##### 算法简介
 
@@ -440,7 +440,7 @@ CFA(Color Filter Array) Interpolation，色彩滤波阵列插值。计算原理�
 
   根据传感器阵列的不同（BGGR，RGGB，GBRG，GRBG），该模块将会选择相似但略有不同的插值算法，为了提高系统运行的效率，本模块采取了最轻量的插值算法，即保留当前处理像素所在位置及其左边、上边、左上三个位置处的拜尔值进行插值运算。R，B的值直接选取该区块的相应的拜尔值，G的值平均后输出。
 
-![](cfa_method.svg)
+![](./markdown-img/ISP.assets/cfa_method.svg)
 
 ##### 实现细节
 
@@ -500,7 +500,7 @@ CFA模块的实现过程包含以下几个核心步骤：
 
 本模块运算后数据会将延时2个时钟周期后输出。
 
-![](cfa_tim.svg)
+![](./markdown-img/ISP.assets/cfa_tim.svg)
 
 ##### 资源消耗  
 基于Tang Mega 138k pro Dock开发
@@ -517,7 +517,7 @@ CFA模块的实现过程包含以下几个核心步骤：
 
   AWB模块的数据来自图像源的RGB图像数据，在经过灰度世界假设处理后进行输出。其中AWB统计增益（Gain）的运算通过Integer Division Core模块计算。Integer Division Core模块通过**分时复用gowin的integer_division IP核，实现了通过R、G、B通道数据平均值（Mean）在60个clk内计算三个24位的AWB统计增益（Gain）**。
 
-![](awb.svg)
+![](./markdown-img/ISP.assets/awb.svg)
 
 ##### 算法简介
 
@@ -616,7 +616,7 @@ AWB模块的实现细节分为信号打拍、累加器、增益计算、增益�
 
 本模块运算后数据会将延时3个时钟周期后输出。
 
-![](awb_tim.svg)
+![](./markdown-img/ISP.assets/awb_tim.svg)
 
 ##### 资源消耗  
 基于Tang Mega 138k pro Dock开发
@@ -633,7 +633,7 @@ AWB模块的实现细节分为信号打拍、累加器、增益计算、增益�
 
   CCM模块的数据来自图像源的RGB图像数据，在经过应用颜色校正矩阵后进行输出。其中颜色校正矩阵为预先调节好的参数值，为了提高乘法效率，**使用查找表的方法实现乘法**。同时为了适配高频工作环境，通过**奇偶位置（像素坐标位置和的奇偶性质）分开处理的方法，减半加法器的调用频率**，使得其可以在高频环境中稳定输出。
 
-![](ccm.svg)
+![](./markdown-img/ISP.assets/ccm.svg)
 
 ##### 算法简介
 
@@ -720,7 +720,7 @@ CCM模块的具体实现过程分为信号打拍、查找表乘法、奇偶像�
 
 本模块运算后数据会将延时5个时钟周期后输出。
 
-![](ccm_tim.svg)
+![](./markdown-img/ISP.assets/ccm_tim.svg)
 
 ##### 资源消耗  
 基于Tang Mega 138k pro Dock开发
@@ -737,7 +737,7 @@ CCM模块的具体实现过程分为信号打拍、查找表乘法、奇偶像�
 
   GAMMA模块的数据来自图像源的RGB图像数据，在经过查找gamma校正查找表后将原值替换并进行输出。其中校正查找表为预先使用python计算好的参数值。
 
-![](gma.svg)
+![](./markdown-img/ISP.assets/gma.svg)
 
 ##### 算法简介
 
@@ -800,7 +800,7 @@ GAMMA校正模块的实现分为以下几个核心部分：
 
 本模块运算后数据会将延时2个时钟周期后输出。
 
-![](gma_tim.svg)
+![](./markdown-img/ISP.assets/gma_tim.svg)
 
 ##### 资源消耗  
 基于Tang Mega 138k pro Dock开发
@@ -819,7 +819,7 @@ GAMMA校正模块的实现分为以下几个核心部分：
 
   本模块的基于时序控制和FIFO缓冲，通过双时钟域FIFO缓冲，解决了DDR3接口速率与FPGA读写速率不匹配的问题。
 
-![](ddr.svg)
+![](./markdown-img/ISP.assets/ddr.svg)
 
 ##### 设计简介
 
@@ -913,7 +913,7 @@ GAMMA校正模块的实现分为以下几个核心部分：
 
   本模块的基于显示器要求，生成帧控制信号，并从外部读取数据后，通过TMDS编码后由DVI接口发出至显示器。
 
-![](hdmi.svg)
+![](./markdown-img/ISP.assets/hdmi.svg)
 
 ##### 设计简介
 
@@ -1024,7 +1024,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 
 ##### 系统框图
 
-![](ai.png)
+![](./markdown-img/ISP.assets/ai.png)
 
 ##### 设计简介
 
@@ -1032,7 +1032,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 
   通过对比，训练与比较，我们确定了效果良好且适用于FPGA部署的网络Zero-DCE[2]。其原始结构如下所示：
 
-![](ai1.svg)
+![](./markdown-img/ISP.assets/ai1.svg)
 
   首先，我们尝试了hls4ml[3]库。由于我们处理的图像对于hls4ml来说比较大，我们进行尝试后发现会因为生成的HLS文件过大而导致转换不成功。通过研究其原始代码我们发现这个库为了优化conv2d采取了打表的方式，这在对于图像来说的网络而言并不有效，会产生臃肿的代码。
 
@@ -1133,7 +1133,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 
 ##### 系统框图
 
-![](uvc.svg)
+![](./markdown-img/ISP.assets/uvc.svg)
 
 ##### 设计简介
 
@@ -1148,40 +1148,27 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 
 ![42e8deb0ccc61f7ca6566345e63c5d5](./markdown-img/ISP.assets/42e8deb0ccc61f7ca6566345e63c5d5.png)
 
-# **第三部分**  **完成情况及性能参数**
+# **第三部分**  **性能参数**
 
-## 3.1 完成情况
+## 3.1 性能参数测试
 
-### 3.1.1 项目整体进度
+### 3.1.1 色彩还原度实验测试
 
-- 项目设计已完成 80%。
-
-### 3.1.2 各模块进度
-
-- **ISP 系统**：核心设计和基本功能测试已完成。
-- **UVC 模块**：已实现数据传输功能，正在进行兼容性测试。
-- **AI 夜景处理模块**：基础模型已集成，优化和测试中。
-- **总体整合**：模块已基本整合完成，预计在下月完成初步测试。
-
-## 3.2 性能参数测试
-
-### 3.2.1 色彩还原度实验测试
-
-#### 3.2.1.1 测试目的
+#### 3.1.1.1 测试目的
 
 测试成像系统的色彩还原能力，用成像设备拍摄测试卡得到数字图像作为分析样本。
 
-#### 3.2.1.2 测试图卡
+#### 3.1.1.2 测试图卡
 
 美侬24色色卡
 
-#### 3.2.1.3 测试要求
+#### 3.1.1.3 测试要求
 
 - 色温6500K;照度800Lux
 - 三脚架、云台调水平，图像画面占比在1/2到2/3之间
 - 测试设备自动对焦、保持成像的默认状态下进行拍摄。
 
-#### 3.2.1.4 实验环境搭建
+#### 3.1.1.4 实验环境搭建
 
 ![微信图片_20241111230517](./markdown-img/ISP.assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241111230517.png)
 
@@ -1189,7 +1176,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 - 固定138k pro开发板，高显色指数柔光灯，水平与台面
 - 连接hdmi显示屏，为开发板上电并调整色卡位置，让图像画面占比在1/2到2/3之间
 
-#### 3.2.1.5 imatest 分析结果
+#### 3.1.1.5 imatest 分析结果
 
 **色差评价**
 
@@ -1257,17 +1244,17 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 - 横轴为频率（以每像素周期为单位），纵轴为噪声功率。低频区域的噪声功率较高，说明传感器在低频下的噪声较明显。
 - 各个通道的噪声功率曲线随频率升高逐渐下降，这意味着噪声主要集中在低频部分。
 
-### 3.2.2 灰阶响应实验测试
+### 3.1.2 灰阶响应实验测试
 
-#### 3.2.2.1 测试目的
+#### 3.1.2.1 测试目的
 
 测试成像系统的灰阶响应，采集成像设备拍摄测试卡的数字图像样本
 
-#### 3.2.2.2 测试图卡
+#### 3.1.2.2 测试图卡
 
 美侬24色色卡的部分
 
-#### 3.2.2.3测试要求
+#### 3.1.2.3测试要求
 
 - 使用D65光源色温6500K，照度是200Lux。
 - 三脚架、云台调水平，图像拍摄比例适中，保证灰阶区域占比像素在1000像素以上
@@ -1294,7 +1281,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 - **暗部区域的失真**：摄像头在暗部细节表现不足，可能由于低光环境下的噪声增多或灵敏度不足，导致灰度值未能反映实际亮度。
 
 
- ## 3.3 性能总结
+ ## 3.2 性能总结
 
 ​	在本次测试中，我们实验测试的性能参数涵盖了 色彩还原度、信噪比、灰阶响应 等多个指标。
 ​	在色彩还原度测试中，**平均彩度为122.7%**，达到色彩鲜艳且不失真实的效果；白平衡准确性表现良好，色温和饱和度误差较小；**信噪比（SNR）**方面，亮度通道（Y）为**32.4 dB**，绿色通道为**31.9 dB**，确保了低噪声和丰富的细节表现；**灰阶响应**测试中，中等灰度区域的灰度准确，高亮度和低灰度区域灰度略偏低但**符合标准**；**Gamma值为0.595**，表明摄像头具备良好的亮度信号平衡性；噪声特性测试显示低频噪声较高，但随频率增加显著下降，**噪声控制表现稳定**，整体画面纯净度高。这些数据表明该摄像头具备高质量的成像性能，适用于高清拍摄需求。
@@ -1308,65 +1295,7 @@ HDMI模块的设计满足了高分辨率视频传输的要求，并在频率与�
 | Gamma 值      | Gamma 曲线拟合测试          | 0.595（约1/1.68）                        | 亮部和暗部细节平衡良好             |
 | 噪声特性      | 噪声频谱分析                | 低频噪声较高，随频率增加显著下降         | 噪声特性稳定，画面纯净度高         |
 
-# **第四部分**  **总结**
-
-
-
-## 4.1 可拓展之处
-
-### 1. **UVC和AI模块的上机实战测试方案**：
-
-   - **UVC模块测试**：
-     - **多场景高负荷测试**：进行高分辨率、高帧率下的传输测试，观察系统在长时间运行中的稳定性，包括丢帧率、延迟以及设备兼容性。
-     - **兼容性测试**：测试UVC模块在不同操作系统（如Windows、Linux）及不同设备（如不同品牌摄像头和主机）上的表现，确保其即插即用的效果。
-     - **应急恢复能力**：设计断开连接、异常插拔等情况的应急测试，确保系统能够在意外情况下自动恢复传输，并减少因意外断连导致的传输错误。
-   - **AI模块测试**：
-     - **多环境图像处理效果**：针对不同光照条件（如夜间、隧道、逆光）进行AI增强效果测试，评估图像质量、细节恢复及亮度对比度等参数。
-     - **实时处理测试**：模拟实际场景下的AI处理速度，确保在低延迟条件下实现夜景优化，同时减少画质失真。
-     - **边缘场景优化测试**：测试AI模块在低算力场景（如降频运行）或边缘设备上的表现，确保模型轻量化和高效性。
-
-### 2. **资源优化和统筹规划**：
-
-   - **FPGA资源分配优化**：
-     - **模块资源预留与协同**：在FPGA设计中为UVC传输和AI处理模块预留专用资源，以保证在高负荷运算下各模块的稳定性。利用资源共享和时序优化方法，让AI和UVC模块可以在时间上交替使用某些算力资源，避免资源冲突。
-     - **存储和带宽管理**：优化存储器分配和数据带宽，以支持UVC和AI模块的并行运行，减少数据传输瓶颈，提高数据流畅性。
-   - **开发和测试资源的合理调配**：
-     - **软硬件资源协同**：在开发和测试阶段，通过合理分配CPU与FPGA的任务负荷，优化AI模型的运算流程，确保低延迟的实时性。使用FPGA加速模块和外部CPU协同运算的方式分担负载。
-     - **自动化测试工具和反馈系统**：利用自动化测试工具和脚本，定期检测UVC和AI模块在实际应用场景中的表现，收集日志与异常情况，以便实时调整优化策略。
-
-## 4.2 心得体会
-
-在完成基于FPGA的高性能实时图像信号处理系统项目的过程中，我们深刻体会到以下几点：
-
-### 1. **系统架构设计的重要性**
-
-本项目中，ISP模块、UVC模块和AI夜景处理模块的分工明确且紧密配合，通过合理的架构设计实现了高效的图像处理流程。这使我认识到在嵌入式系统设计中，模块的耦合性和解耦性设计至关重要，良好的系统架构可以显著提升系统的性能和扩展性。
-
-### 2. **硬件和算法的协同优化**
-
-FPGA平台不同于传统的CPU和GPU，要求设计者在算法优化上充分考虑硬件资源的限制。在实现AI夜景处理模块时，通过针对FPGA架构的优化，成功将CNN模型部署到FPGA上并保持了高效的处理速度，这让我深刻理解了硬件与算法协同优化的重要性。
-
-### 3. **低延迟与高吞吐率的平衡**
-
-实时图像处理系统对延迟和吞吐率的要求较高，尤其是应用在自动驾驶等安全性要求高的领域。本项目通过合理的时钟资源分配和数据流设计，达成了低延迟与高吞吐率的平衡。我认识到，设计时既要考虑系统的实时性，也要注重数据处理的连续性，才能保证整体的平稳运行。
-
-### 4. **深度学习与嵌入式系统的结合前景**
-
-本项目采用了Zero-DCE深度学习模型来提升夜间图像的清晰度，这是深度学习在嵌入式系统应用上的一次尝试。经过实践，我发现嵌入式设备（尤其是FPGA）虽在算力上有限，但通过优化可以实现特定深度学习模型的部署。未来，随着硬件性能的提升，深度学习将会在嵌入式系统中有更广泛的应用。
-
-### 5. **应对实际工程问题的能力提升**
-
-在项目开发过程中遇到了许多工程性问题，包括摄像头接口的兼容性、时钟同步以及模块间的数据传输效率等。通过不断分析问题、查找资料并调试解决，使我在实际工程问题处理方面积累了宝贵的经验，也加深了对FPGA系统设计的理解。
-
-### 6. **团队协作与项目管理**
-
-本项目涉及多个模块的开发，需要团队成员间密切协作和任务分配。在实际项目推进中，我学会了如何有效沟通和协调任务，确保项目在时间节点内顺利完成。这让我意识到团队合作和良好的项目管理对项目成功实施的重要性。
-
-### 7. **国产平台生态系统的优化与突破**
-
-在本次项目中，我们采用了国产的TangMega138K Pro平台，虽然在功能上满足了系统的需求，但在开发过程中也遇到了一些生态系统不够完善的问题。例如，开发工具链的稳定性和相关技术文档的丰富程度仍需提高。这让我意识到，作为技术开发者，面对关键技术“卡脖子”问题，我们不仅要深入掌握现有技术，更要勇于挑战，积极参与国产平台的开发和优化。少年强则国强，我们要肩负起历史责任，努力学习，不断积累经验和知识，为未来突破技术瓶颈、推进国产化进程贡献自己的力量。
-
-# **第五部分**  **参考文献**
+# **第四部分**  **参考文献**
 
 **[1].**  **Dawnlh. (2023). awesome-low-light-image-enhancement. GitHub.** [**https://github.com/dawnlh/awesome-low-light-image-enhancement**](https://github.com/dawnlh/awesome-low-light-image-enhancement)
 
@@ -1417,1168 +1346,3 @@ FPGA平台不同于传统的CPU和GPU，要求设计者在算法优化上充分�
 **[23].** **杨海钢，孙嘉斌，王慰. “FPGA器件设计技术发展综述”. *电子与信息学报*, 2009年, 第31卷第4期, 页码751-757. **[**https://www.jeit.ac.cn/cn/article/doi/10.3724/SP.J.1146.2009.00751**](https://www.jeit.ac.cn/cn/article/doi/10.3724/SP.J.1146.2009.00751)
 
 **[24].** **J. J. Rodriguez-Andina, M. J. Moure, M. D. Valdes. “Features, design tools, and application domains of FPGAs”. *IEEE Transactions on Industrial Electronics*, 2007年, 第54卷第4期, 页码1810-1823. **
-
-# **第六部分**  **附录**
-
-本项目中自研ISP模块代码见下：
-
-#### isp_top.v
-
-```verilog
-module isp_top #(
-	parameter	source_h = 1024,
-	parameter   source_v = 1024
-	)(
-	input 							    clk, 
-	input							    reset_n,
-
-	input 							    in_vsync,
-	input 							    in_hsync,
-	input 							    in_den,
-	input [8-1:0] 			    		in_data,
-	
-	input [3:0]                         isp_disp_mode,
-	
-	output 								out_clk,
-	output	reg						    out_vsync,
-	output	reg						    out_hsync,
-	output	reg						    out_den,
-	output  reg [8-1:0] 				out_data_R,
-	output  reg [8-1:0] 				out_data_G,
-	output  reg [8-1:0] 				out_data_B	
-);
-
-	//clk
-	assign out_clk=clk;
-
-	// reg 		raw_vsync/* synthesis syn_keep= 1 */;
-    // reg 		raw_hsync/* synthesis syn_keep= 1 */;
-    // reg 		raw_den/* synthesis syn_keep= 1 */;
-    // reg [7:0] 	raw_data/* synthesis syn_keep= 1 */;
-
-
-	// always @(posedge clk ) begin
-	// 	raw_vsync<=in_vsync;
-	// 	raw_hsync<=in_hsync;
-	// 	raw_den<=in_den;
-	// 	raw_data<=in_data;
-	// end
-
-
-	//cfa
-	wire 		cfa_vsync/* synthesis syn_keep= 1 */;
-    wire 		cfa_hsync/* synthesis syn_keep= 1 */;
-    wire 		cfa_den/* synthesis syn_keep= 1 */;
-    wire [7:0] 	cfa_R/* synthesis syn_keep= 1 */;
-    wire [7:0] 	cfa_G/* synthesis syn_keep= 1 */;
-    wire [7:0] 	cfa_B/* synthesis syn_keep= 1 */;
-
-    cfa_top#(
-        .source_h	(source_h),
-	    .source_v	(source_v)
-    )cfa_top_inst(
-        .clk		(clk),
-        .reset_n	(reset_n),
-        .in_vsync	(in_vsync),		
-        .in_hsync	(in_hsync),		
-        .in_den		(in_den),			
-        .in_raw		(in_data), 	
-
-        .out_vsync	(cfa_vsync),		
-        .out_hsync	(cfa_hsync),		
-        .out_den	(cfa_den),			
-        .out_data_R	(cfa_R), 	
-        .out_data_G	(cfa_G),
-        .out_data_B	(cfa_B)
-    );
-
-
-	//awb
-	wire 		awb_vsync/* synthesis syn_keep= 1 */;
-    wire 		awb_hsync/* synthesis syn_keep= 1 */;
-    wire 		awb_den/* synthesis syn_keep= 1 */;
-    wire [7:0] 	awb_R/* synthesis syn_keep= 1 */;
-    wire [7:0] 	awb_G/* synthesis syn_keep= 1 */;
-    wire [7:0] 	awb_B/* synthesis syn_keep= 1 */;
-
-	awb_top#(
-        .source_h	(source_h),
-	    .source_v	(source_v)
-    )awb_top_inst(
-        .clk		(clk),
-        .reset_n	(reset_n),
-        .in_vsync	(cfa_vsync),		
-        .in_hsync	(cfa_hsync),		
-        .in_den		(cfa_den),			
-        .in_data_R	(cfa_R), 	
-		.in_data_G	(cfa_G), 	
-		.in_data_B	(cfa_B), 	
-
-        .out_vsync	(awb_vsync),		
-        .out_hsync	(awb_hsync),		
-        .out_den	(awb_den),			
-        .out_data_R	(awb_R), 	
-        .out_data_G	(awb_G),
-        .out_data_B	(awb_B)
-    );
-
-	//ccm
-	wire 		ccm_vsync/* synthesis syn_keep= 1 */;
-    wire 		ccm_hsync/* synthesis syn_keep= 1 */;
-    wire 		ccm_den/* synthesis syn_keep= 1 */;
-    wire [7:0] 	ccm_R/* synthesis syn_keep= 1 */;
-    wire [7:0] 	ccm_G/* synthesis syn_keep= 1 */;
-    wire [7:0] 	ccm_B/* synthesis syn_keep= 1 */;
-
-	ccm_top#(
-        .source_h	(source_h),
-	    .source_v	(source_v)
-    )ccm_top_inst(
-        .clk		(clk),
-        .reset_n	(reset_n),
-        .in_vsync	(awb_vsync),		
-        .in_hsync	(awb_hsync),		
-        .in_den		(awb_den),			
-        .in_data_R	(awb_R), 	
-		.in_data_G	(awb_G), 	
-		.in_data_B	(awb_B), 	
-
-        .out_vsync	(ccm_vsync),		
-        .out_hsync	(ccm_hsync),		
-        .out_den	(ccm_den),			
-        .out_data_R	(ccm_R), 	
-        .out_data_G	(ccm_G),
-        .out_data_B	(ccm_B)
-    );
-
-	//gamma
-	wire 		gma_vsync/* synthesis syn_keep= 1 */;
-    wire 		gma_hsync/* synthesis syn_keep= 1 */;
-    wire 		gma_den/* synthesis syn_keep= 1 */;
-    wire [7:0] 	gma_R/* synthesis syn_keep= 1 */;
-    wire [7:0] 	gma_G/* synthesis syn_keep= 1 */;
-    wire [7:0] 	gma_B/* synthesis syn_keep= 1 */;
-
-	gma_top#(
-        .source_h	(source_h),
-	    .source_v	(source_v)
-	)gma_top_inst(
-        .clk		(clk),
-        .reset_n	(reset_n),
-        .in_vsync	(ccm_vsync),		
-        .in_hsync	(ccm_hsync),		
-        .in_den		(ccm_den),			
-        .in_data_R	(ccm_R), 	
-		.in_data_G	(ccm_G), 	
-		.in_data_B	(ccm_B), 	
-
-        .out_vsync	(gma_vsync),		
-        .out_hsync	(gma_hsync),		
-        .out_den	(gma_den),			
-        .out_data_R	(gma_R), 	
-        .out_data_G	(gma_G),
-        .out_data_B	(gma_B)
-    );
-
-
-	always @(posedge clk or negedge reset_n) begin
-		if(~reset_n)begin
-			out_vsync	<=1'd0;
-			out_hsync	<=1'd0;
-			out_den		<=1'd0;
-			out_data_R	<=8'd0;
-			out_data_G	<=8'd0;
-			out_data_B	<=8'd0;
-		end else begin
-			casez(isp_disp_mode)/* synthesis parallel_case */
-				4'h0: begin									// RAW
-					out_vsync 	<=  in_vsync;
-					out_hsync 	<=  in_hsync;
-					out_den    	<=  in_den;
-					out_data_R 	<= 	in_data;
-					out_data_G 	<=  in_data;
-					out_data_B 	<=  in_data;
-				end
-				4'h1: begin									// CFA
-					out_vsync 	<=  cfa_vsync;
-					out_hsync 	<=  cfa_hsync;
-					out_den    	<=  cfa_den;
-					out_data_R 	<= 	cfa_R;
-					out_data_G 	<=  cfa_G;
-					out_data_B 	<=  cfa_B;
-				end
-				4'h2: begin									// AWB
-					out_vsync 	<=  awb_vsync;
-					out_hsync 	<=  awb_hsync;
-					out_den    	<=  awb_den;
-					out_data_R 	<= 	awb_R;
-					out_data_G 	<=  awb_G;
-					out_data_B 	<=  awb_B;		
-				end	
-				4'h3: begin									// CCM
-					out_vsync 	<=  ccm_vsync;
-					out_hsync 	<=  ccm_hsync;
-					out_den    	<=  ccm_den;
-					out_data_R 	<= 	ccm_R;
-					out_data_G 	<=  ccm_G;
-					out_data_B 	<=  ccm_B;
-				end
-				4'h4: begin									// CCM
-					out_vsync 	<=  gma_vsync;
-					out_hsync 	<=  gma_hsync;
-					out_den    	<=  gma_den;
-					out_data_R 	<= 	gma_R;
-					out_data_G 	<=  gma_G;
-					out_data_B 	<=  gma_B;
-				end
-				default: begin                              // debug
-					out_vsync 	<=  in_vsync;
-					out_hsync 	<=  in_hsync;
-					out_den    	<=  in_den;
-					out_data_R 	<= 	8'h00;
-					out_data_G 	<=  8'hff;
-					out_data_B 	<=  8'h00;
-				end
-			endcase
-		end
-	end
-
-
-endmodule
-```
-
-
-
-#### cfa_top.v
-
-```verilog
-module cfa_top #(
-    parameter source_h  = 1024,
-	parameter source_v  = 1024,
-    parameter raw_type  = 0
-    // 0: BGGR
-    // 1: RGGB
-    // 2: GBRG
-    // 3: GRBG
-) (
-    input       clk,
-    input       reset_n,
-    input       in_vsync,		
-    input       in_hsync,		
-    input       in_den,			
-	input [7:0] in_raw, 	
-
-    output reg      out_vsync,		
-    output reg      out_hsync,		
-    output reg      out_den,			
-	output reg[7:0] out_data_R, 	
-    output reg[7:0] out_data_G,
-    output reg[7:0] out_data_B
-);
-
-//对输入信号进行打拍处理
-reg         r_vsync;
-reg         r_hsync;
-reg         r_den;
-reg [7:0]   r_in_raw;
-always @(posedge clk) begin
-    r_vsync<=in_vsync;
-    r_hsync<=in_hsync;
-    r_den<=in_den;
-end
-
-always @(posedge clk) begin
-    if(in_den) begin
-        r_in_raw<=in_raw;
-    end else begin
-        r_in_raw<=8'hff;
-    end
-    
-end
-
-//计算位置
-reg [11:0] r_index;
-reg [11:0] r_Xaddr;
-reg [11:0] r_Yaddr;
-
-initial begin
-    r_Xaddr<=12'd0;
-    r_index<=12'd0;
-    r_Yaddr<=12'd0;
-end
-
-always @(posedge clk or negedge reset_n) begin
-    if(!reset_n)begin
-        r_Xaddr<=12'd0;
-        r_index<=12'd0;
-    end else if (in_hsync) begin
-        r_Xaddr<=r_Xaddr+12'd1;
-        r_index<=r_index+12'd1;
-    end else begin
-        r_Xaddr<=12'd0;
-        r_index<=12'd0;
-    end
-end
-
-always @(posedge clk or negedge reset_n) begin
-    if(!reset_n)begin
-        r_Yaddr<=12'd0;
-    end else if (~in_vsync) begin
-        r_Yaddr<=12'd0;
-    end else if ({r_hsync,in_hsync}==2'b01) begin
-        r_Yaddr<=r_Yaddr+12'd1;
-    end else begin
-        r_Yaddr<=r_Yaddr;
-    end
-end
-
-wire[7:0]  r_up_raw;//up 
-reg [7:0]  r_ul_raw;//up left
-reg [7:0]  r_le_raw;//left
-
-reg [7:0]  ram[source_h:0];
-assign r_up_raw=ram[r_index];
-
-always @(posedge clk ) begin
-    ram[r_index]<=r_in_raw;
-end
-
-//存储left，upleft
-always @(posedge clk ) begin
-    r_ul_raw<=r_up_raw;
-    r_le_raw<=r_in_raw;
-end
-
-
-//cfa输出
-always @(posedge clk or negedge reset_n) begin
-    if (!reset_n) begin
-        out_vsync<=1'b0;
-        out_hsync<=1'b0;
-        out_den<=1'b0;
-        out_data_R<=8'd0;
-        out_data_G<=8'd0;
-        out_data_B<=8'd0;
-    end else begin
-        out_vsync<=r_vsync;
-        out_hsync<=r_hsync;
-        out_den<=r_den;
-
-        case (raw_type)
-            0:begin
-                if (r_Xaddr<=12'd1 | r_Yaddr<=12'd1) begin
-                    out_data_R<=8'h01;
-                    out_data_G<=8'h01; 
-                    out_data_B<=8'h01;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-                    out_data_R<=r_in_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_ul_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-                    out_data_R<=r_le_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_up_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-                    out_data_R<=r_up_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-                    out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_in_raw;
-                end
-            end 
-            1:begin
-                if (r_Xaddr<=12'd1 | r_Yaddr<=12'd1) begin
-                    out_data_R<=8'h01;
-                    out_data_G<=8'h01; 
-                    out_data_B<=8'h01;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-                    out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-                    out_data_B<=r_in_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-                    out_data_R<=r_up_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-                    out_data_R<=r_le_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_up_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-                    out_data_R<=r_in_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-                    out_data_B<=r_ul_raw;
-                end
-            end
-            2:begin
-                if (r_Xaddr<=12'd1 | r_Yaddr<=12'd1) begin
-                    out_data_R<=8'h01;
-                    out_data_G<=8'h01; 
-                    out_data_B<=8'h01;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-                    out_data_R<=r_in_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-                    out_data_B<=r_ul_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-                    out_data_R<=r_le_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_up_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-                    out_data_R<=r_up_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-                    out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_up_raw[7:1]}+{1'b0,r_le_raw[7:1]};
-                    out_data_B<=r_in_raw;
-                end
-            end
-            3:begin
-                if (r_Xaddr<=12'd1 | r_Yaddr<=12'd1) begin
-                    out_data_R<=8'h01;
-                    out_data_G<=8'h01; 
-                    out_data_B<=8'h01;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b00) begin
-                    out_data_R<=r_up_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b10) begin
-                    out_data_R<=r_ul_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_le_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b01) begin
-                    out_data_R<=r_le_raw;
-                    out_data_G<={1'b0,r_le_raw[7:1]}+{1'b0,r_up_raw[7:1]};
-                    out_data_B<=r_ul_raw;
-                end else if ({r_Xaddr[0],r_Yaddr[0]}==2'b11) begin
-                    out_data_R<=r_le_raw;
-                    out_data_G<={1'b0,r_in_raw[7:1]}+{1'b0,r_ul_raw[7:1]};
-                    out_data_B<=r_up_raw;
-                end
-            end
-             
-        endcase
-    end
-end
-
-
-    
-endmodule
-```
-
-
-
-#### awb_top.v
-
-```verilog
-module awb_top #(
-    parameter source_h  = 1024,
-	parameter source_v  = 1024
-) (
-    input       clk,
-    input       reset_n,
-    input       in_vsync,		
-    input       in_hsync,		
-    input       in_den,			
-	input [7:0] in_data_R, 	
-    input [7:0] in_data_G, 	
-    input [7:0] in_data_B, 	
-
-    output       out_vsync,		
-    output       out_hsync,		
-    output       out_den,			
-	output [7:0] out_data_R, 	
-    output [7:0] out_data_G,
-    output [7:0] out_data_B
-);
-
-//对输入信号进行打拍处理
-reg             r_vsync;
-reg             r_hsync;
-reg             r_den;
-reg [8-1:0]     r_data_R;
-reg [8-1:0]     r_data_G;
-reg [8-1:0]     r_data_B;
-
-always @(posedge clk) begin
-    r_vsync     <=in_vsync;
-    r_hsync     <=in_hsync;
-    r_den       <=in_den;
-    r_data_R    <=in_data_R;
-    r_data_G    <=in_data_G;
-    r_data_B    <=in_data_B;
-end
-
-//计算增益
-reg [32-1:0] line_R;
-reg [32-1:0] line_G;
-reg [32-1:0] line_B;
-
-reg [32-1:0] frame_R;
-reg [32-1:0] frame_G;
-reg [32-1:0] frame_B;
-
-reg [32-1:0] mean_R;
-reg [32-1:0] mean_G;
-reg [32-1:0] mean_B;
-
-initial begin
-    mean_R  <={16'd1,16'd0};
-    mean_G  <={16'd1,16'd0};
-    mean_B  <={16'd1,16'd0};
-    frame_R <=32'd0;
-    frame_G <=32'd0;
-    frame_B <=32'd0;
-end
-always @(posedge clk or negedge reset_n) begin
-    if(!reset_n)begin
-        mean_R  <={16'd1,16'd0};
-        mean_G  <={16'd1,16'd0};
-        mean_B  <={16'd1,16'd0};
-        frame_R <=32'd0;
-        frame_G <=32'd0;
-        frame_B <=32'd0;
-    end else if ({r_vsync,in_vsync}==2'b10) begin
-        mean_R  <=frame_R+{16'd1,16'd0};//expand 0
-        mean_G  <=frame_G+{16'd1,16'd0};
-        mean_B  <=frame_B+{16'd1,16'd0};
-    end else if ({r_vsync,in_vsync}==2'b01) begin
-        frame_R <=32'd0;
-        frame_G <=32'd0;
-        frame_B <=32'd0;
-    end else if (in_hsync) begin
-        frame_R<=frame_R+in_data_R[7:4];//丢弃低4位，除16
-        frame_G<=frame_G+in_data_G[7:4];
-        frame_B<=frame_B+in_data_B[7:4];
-    end 
-end
-
-//计算增益
-wire [23:0] gain_R;
-wire [23:0] gain_G;
-wire [23:0] gain_B;
-// Integer_Division_Top gain_R_inst(
-//     .clk(clk), //input clk
-//     .rstn(reset_n), //input rstn
-//     .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend//补低8位，乘256
-//     .divisor(mean_R[31:16]), //input [15:0] divisor//丢弃低16位，除256*256
-//     .quotient(gain_R) //output [23:0] quotient
-// );
-// Integer_Division_Top gain_G_inst(
-//     .clk(clk), //input clk
-//     .rstn(reset_n), //input rstn
-//     .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
-//     .divisor(mean_G[31:16]), //input [15:0] divisor
-//     .quotient(gain_G) //output [23:0] quotient
-// );
-// Integer_Division_Top gain_B_inst(
-//     .clk(clk), //input clk
-//     .rstn(reset_n), //input rstn
-//     .dividend({mean_G[31:16],8'd0}), //input [23:0] dividend
-//     .divisor(mean_B[31:16]), //input [15:0] divisor
-//     .quotient(gain_B) //output [23:0] quotient
-// );
-
-integer_division_core_top div_core_inst(
-    .clk        (clk),
-    .reset_n    (reset_n),
-    .vsync      (in_vsync),//vs信号，用于启动模块
-    .mean_R     (mean_R),
-    .mean_G     (mean_G),
-    .mean_B     (mean_B),
-    .gain_R     (gain_R),
-    .gain_G     (gain_G),
-    .gain_B     (gain_B)
-);
-
-//计算图像
-
-wire [24-1:0]    r_data_R_fix;
-wire [24-1:0]    r_data_G_fix;
-wire [24-1:0]    r_data_B_fix;
-// wire [16-1:0]    r_data_R_fix_l;
-// wire [16-1:0]    r_data_G_fix_l;
-// wire [16-1:0]    r_data_B_fix_l;
-
-assign r_data_R_fix = r_data_R*gain_R;
-assign r_data_G_fix = r_data_G*gain_G;
-assign r_data_B_fix = r_data_B*gain_B;
-
-//打拍同步
-reg             rr_vsync;
-reg             rr_hsync;
-reg             rr_den;
-reg [16-1:0]    rr_data_R;
-reg [16-1:0]    rr_data_G;
-reg [16-1:0]    rr_data_B;
-
-always @(posedge clk ) begin
-    rr_vsync<=r_vsync;
-    rr_hsync<=r_hsync;
-    rr_den<=r_den;
-    rr_data_R<=r_data_R_fix[23:8];// 丢弃低8位，除256
-    rr_data_G<=r_data_G_fix[23:8];
-    rr_data_B<=r_data_B_fix[23:8];   
-end
-
-
-wire [8-1:0]    rr_data_R_cut;
-wire [8-1:0]    rr_data_G_cut;
-wire [8-1:0]    rr_data_B_cut;
-
-assign rr_data_R_cut = rr_data_R>255?8'hff:rr_data_R[7:0];
-assign rr_data_G_cut = rr_data_G>255?8'hff:rr_data_G[7:0];
-assign rr_data_B_cut = rr_data_B>255?8'hff:rr_data_B[7:0];
-
-//awb输出
-assign out_vsync   = rr_vsync;
-assign out_hsync   = rr_hsync;
-assign out_den     = rr_den;
-assign out_data_R  = rr_data_R_cut;
-assign out_data_G  = rr_data_G_cut;
-assign out_data_B  = rr_data_B_cut;
-// always @(posedge clk or negedge reset_n) begin
-//     if (!reset_n) begin
-//         out_vsync   <=1'b0;
-//         out_hsync   <=1'b0;
-//         out_den     <=1'b0;
-//         out_data_R  <=8'd0;
-//         out_data_G  <=8'd0;
-//         out_data_B  <=8'd0;
-//     end else begin
-//         out_vsync   <=rr_vsync;
-//         out_hsync   <=rr_hsync;
-//         out_den     <=rr_den;
-//         out_data_R  <=rr_data_R_cut;
-//         out_data_G  <=rr_data_G_cut;
-//         out_data_B  <=rr_data_B_cut;
-
-//     end
-// end
-    
-endmodule
-```
-
-
-
-#### integer_division_top.v
-
-```verilog
-module integer_division_core_top(
-    input               clk,
-    input               reset_n,
-    input               vsync,//vs信号，用于启动模块
-    input [32-1:0]      mean_R,
-    input [32-1:0]      mean_G,
-    input [32-1:0]      mean_B,
-    output reg [23:0]   gain_R,
-    output reg [23:0]   gain_G,
-    output reg [23:0]   gain_B
-);
-
-//时序控制
-//vs触发，计数两个div_delay后停止
-reg [7:0] count;
-initial begin
-    count<=8'd0;
-end
-always @(posedge clk or negedge reset_n) begin
-    if(~reset_n)begin
-        count<=8'd0;
-    end else begin
-        if(count==8'd0)begin
-            if(~vsync)begin
-                count<=8'd1;
-            end else begin
-                count<=count;
-            end
-        end else  begin
-            if(count < 30*2)begin
-                count<=count+8'd1;
-            end else begin
-                count<=8'd0;
-            end
-        end
-    end
-end
-
-reg  [23:0] dividend;
-reg  [15:0] divisor;
-wire [23:0] quotient;
-reg  [23:0] quotient_reg;
-
-Integer_Division_Top div_inst(
-    .clk(clk), //input clk
-    .rstn(reset_n), //input rstn
-    .dividend(dividend), //input [23:0] dividend//补低8位，乘256
-    .divisor(divisor), //input [15:0] divisor//丢弃低16位，除256*256
-    .quotient(quotient) //output [23:0] quotient
-);
-
-wire isblack;
-assign isblack = mean_R[31:16]<16 & mean_G[31:16]<16 & mean_B[31:16]<16;
-
-reg [23:0]   gain_R_reg/* synthesis syn_keep= 1 */;
-reg [23:0]   gain_G_reg/* synthesis syn_keep= 1 */;
-reg [23:0]   gain_B_reg/* synthesis syn_keep= 1 */;
-
-always @(posedge clk or negedge reset_n) begin
-    if(~reset_n)begin
-        dividend<=24'd1;
-        divisor<=16'd1;
-    end else if (isblack) begin
-        gain_R_reg<=24'd0;//make pure black
-        gain_G_reg<=24'd0;
-        gain_B_reg<=24'd0;
-    end else begin
-        casez (count)/* synthesis parallel_case */
-            8'd1 : begin
-                dividend<={mean_G[31:16],8'd0};
-                divisor<=mean_R[31:16];
-            end
-            8'd30 : begin
-                quotient_reg<=quotient;
-            end
-            8'd31 : begin
-                dividend<={mean_G[31:16],8'd0};
-                divisor<=mean_B[31:16];
-            end
-            8'd60 : begin
-                gain_R_reg<=quotient_reg;
-                gain_G_reg<=24'd256;
-                gain_B_reg<=quotient;
-                
-            end
-            default:begin
-                dividend<=dividend;
-                divisor<=divisor;
-                quotient_reg<=quotient;
-            end 
-        endcase
-    end
-end
-
-always @(posedge clk ) begin
-    if(~vsync)begin
-        gain_R<=gain_R_reg;
-        gain_G<=gain_G_reg;
-        gain_B<=gain_B_reg;
-    end
-end
-
-
-
-
-endmodule
-
-```
-
-
-
-
-
-#### ccm_top.v
-
-```verilog
-module ccm_top #(
-    parameter source_h  = 1024,
-	parameter source_v  = 1024
-) (
-    input       clk,
-    input       reset_n,
-    input       in_vsync,		
-    input       in_hsync,		
-    input       in_den,			
-	input [7:0] in_data_R, 	
-    input [7:0] in_data_G, 	
-    input [7:0] in_data_B, 	
-
-    output       out_vsync,		
-    output       out_hsync,		
-    output       out_den,			
-	output [7:0] out_data_R, 	
-    output [7:0] out_data_G,
-    output [7:0] out_data_B
-);
-
-//对输入信号进行打拍处理
-reg             r_vsync;
-reg             r_hsync;
-reg             r_den;
-reg [7:0]       r_data_R;
-reg [7:0]       r_data_G;
-reg [7:0]       r_data_B;
-
-always @(posedge clk) begin
-    r_vsync     <=in_vsync;
-    r_hsync     <=in_hsync;
-    r_den       <=in_den;
-    r_data_R    <=in_data_R;
-    r_data_G    <=in_data_G;
-    r_data_B    <=in_data_B;
-end
-
-//初始化修正参数
-//x*256
-localparam m_rr =  20'd398      ;//1.56
-localparam m_rg = ~20'd30 +20'd1;//-0.12
-localparam m_rb = ~20'd112+20'd1;//-0.44
-localparam m_gr = ~20'd58 +20'd1;//-0.23
-localparam m_gg =  20'd388      ;//1.52
-localparam m_gb = ~20'd74 +20'd1;//-0.29
-localparam m_br = ~20'd25 +20'd1;//0.0
-localparam m_bg = ~20'd112+20'd1;//-0.54
-localparam m_bb =  20'd393      ;//1.54
-
-//计算图像
-//求积
-
-wire [12-1:0]    r_data_fix [9-1:0];
-//x*256*val/256
-//x*val
-lut_multiplier#(
-    .r_value(m_rr),
-    .g_value(m_gr),
-    .b_value(m_br)
-)lut_mul_instR(
-    .in     (r_data_R),              // 8位输入值
-    .r_out  (r_data_fix[0]),         //10位输出结果（18位舍弃末8位）
-    .g_out  (r_data_fix[1]),         //10位输出结果（18位舍弃末8位）
-    .b_out  (r_data_fix[2])          //10位输出结果（18位舍弃末8位）
-);
-
-lut_multiplier#(
-    .r_value(m_rg),
-    .g_value(m_gg),
-    .b_value(m_bg)
-)lut_mul_instG(
-    .in     (r_data_G),              // 8位输入值
-    .r_out  (r_data_fix[3]),         //10位输出结果（18位舍弃末8位）
-    .g_out  (r_data_fix[4]),         //10位输出结果（18位舍弃末8位）
-    .b_out  (r_data_fix[5])          //10位输出结果（18位舍弃末8位）
-);
-
-lut_multiplier#(
-    .r_value(m_rb),
-    .g_value(m_gb),
-    .b_value(m_bb)
-)lut_mul_instB(
-    .in     (r_data_B),              // 8位输入值
-    .r_out  (r_data_fix[6]),         //10位输出结果（18位舍弃末8位）
-    .g_out  (r_data_fix[7]),         //10位输出结果（18位舍弃末8位）
-    .b_out  (r_data_fix[8])          //10位输出结果（18位舍弃末8位）
-);
-
-    //奇偶帧
-reg parity;
-always @(posedge clk ) begin
-    parity<=~parity;
-end
-    //打拍同步
-reg            rr_vsync_o;
-reg            rr_hsync_o;
-reg            rr_den_o;
-reg            rr_vsync_e;
-reg            rr_hsync_e;
-reg            rr_den_e;
-// reg [7:0]      rr_data_R;
-// reg [7:0]      rr_data_G;
-// reg [7:0]      rr_data_B;
-
-reg [12-1:0]   rr_data_fix_o [9-1:0];
-reg [12-1:0]   rr_data_fix_e [9-1:0];
-
-integer i;
-always @(posedge clk ) begin
-    
-    // rr_data_R   <=r_data_R;
-    // rr_data_G   <=r_data_G;
-    // rr_data_B   <=r_data_B;
-
-    //奇偶分拍
-    if(parity)begin
-        rr_vsync_o    <=r_vsync;
-        rr_hsync_o    <=r_hsync;
-        rr_den_o      <=r_den;
-        for(i=0;i<9;i=i+1)begin
-            rr_data_fix_o[i]<=r_data_fix[i];
-        end
-    end else begin
-        rr_vsync_e    <=r_vsync;
-        rr_hsync_e    <=r_hsync;
-        rr_den_e      <=r_den;
-        for(i=0;i<9;i=i+1)begin
-            rr_data_fix_e[i]<=r_data_fix[i];
-        end
-    end
-    
-end
-
-//求和
-//奇偶分和
-wire [12-1:0]    rr_data_R_sum_o;
-wire [12-1:0]    rr_data_G_sum_o;
-wire [12-1:0]    rr_data_B_sum_o;
-assign rr_data_R_sum_o = rr_data_fix_o[0] + rr_data_fix_o[3] + rr_data_fix_o[6] /* synthesis syn_dspstyle = "dsp" */;
-assign rr_data_G_sum_o = rr_data_fix_o[1] + rr_data_fix_o[4] + rr_data_fix_o[7] /* synthesis syn_dspstyle = "dsp" */;
-assign rr_data_B_sum_o = rr_data_fix_o[2] + rr_data_fix_o[5] + rr_data_fix_o[8] /* synthesis syn_dspstyle = "dsp" */;
-
-wire [12-1:0]    rr_data_R_sum_e;
-wire [12-1:0]    rr_data_G_sum_e;
-wire [12-1:0]    rr_data_B_sum_e;
-assign rr_data_R_sum_e = rr_data_fix_e[0] + rr_data_fix_e[3] + rr_data_fix_e[6] /* synthesis syn_dspstyle = "dsp" */;
-assign rr_data_G_sum_e = rr_data_fix_e[1] + rr_data_fix_e[4] + rr_data_fix_e[7] /* synthesis syn_dspstyle = "dsp" */;
-assign rr_data_B_sum_e = rr_data_fix_e[2] + rr_data_fix_e[5] + rr_data_fix_e[8] /* synthesis syn_dspstyle = "dsp" */;
-
-    //打拍同步
-reg             rrr_vsync;
-reg             rrr_hsync;
-reg             rrr_den;
-// reg [7:0]       rrr_data_R;
-// reg [7:0]       rrr_data_G;
-// reg [7:0]       rrr_data_B;
-reg [12-1:0]    rrr_data_R_sum;
-reg [12-1:0]    rrr_data_G_sum;
-reg [12-1:0]    rrr_data_B_sum;
-
-always @(posedge clk ) begin
-    
-    // rrr_data_R      <=rr_data_R;
-    // rrr_data_G      <=rr_data_G;
-    // rrr_data_B      <=rr_data_B;
-    //奇偶同拍
-    if(parity)begin
-        rrr_vsync       <=rr_vsync_o;
-        rrr_hsync       <=rr_hsync_o;
-        rrr_den         <=rr_den_o;
-        rrr_data_R_sum  <=rr_data_R_sum_o;
-        rrr_data_G_sum  <=rr_data_G_sum_o;
-        rrr_data_B_sum  <=rr_data_B_sum_o;
-    end else begin
-        rrr_vsync       <=rr_vsync_e;
-        rrr_hsync       <=rr_hsync_e;
-        rrr_den         <=rr_den_e;
-        rrr_data_R_sum  <=rr_data_R_sum_e;
-        rrr_data_G_sum  <=rr_data_G_sum_e;
-        rrr_data_B_sum  <=rr_data_B_sum_e;
-    end
-    
-end
-
-//裁剪
-wire [8-1:0]    rrr_data_R_cut;
-wire [8-1:0]    rrr_data_G_cut;
-wire [8-1:0]    rrr_data_B_cut;
-
-assign rrr_data_R_cut = rrr_data_R_sum[12-1] ? 8'h00 : rrr_data_R_sum[12-2:8]>0 ? 8'hff : rrr_data_R_sum[7:0];
-assign rrr_data_G_cut = rrr_data_G_sum[12-1] ? 8'h00 : rrr_data_G_sum[12-2:8]>0 ? 8'hff : rrr_data_G_sum[7:0];
-assign rrr_data_B_cut = rrr_data_B_sum[12-1] ? 8'h00 : rrr_data_B_sum[12-2:8]>0 ? 8'hff : rrr_data_B_sum[7:0];
-
-
-//ccm输出
-assign out_vsync   = rrr_vsync;
-assign out_hsync   = rrr_hsync;
-assign out_den     = rrr_den;
-assign out_data_R  = rrr_data_R_cut;
-assign out_data_G  = rrr_data_G_cut;
-assign out_data_B  = rrr_data_B_cut;
-// always @(posedge clk or negedge reset_n) begin
-//     if (!reset_n) begin
-//         out_vsync   <=1'b0;
-//         out_hsync   <=1'b0;
-//         out_den     <=1'b0;
-//         out_data_R  <=8'd0;
-//         out_data_G  <=8'd0;
-//         out_data_B  <=8'd0;
-//     end else begin
-//         out_vsync   <=rrr_vsync;
-//         out_hsync   <=rrr_hsync;
-//         out_den     <=rrr_den;
-//         out_data_R  <=rrr_data_R_cut;
-//         out_data_G  <=rrr_data_G_cut;
-//         out_data_B  <=rrr_data_B_cut;
-
-//         // out_vsync   <=rr_vsync;
-//         // out_hsync   <=rr_hsync;
-//         // out_den     <=rr_den;
-//         // out_data_R  <=rr_data_R_sum[7:0];
-//         // out_data_G  <=rr_data_G_sum[7:0];
-//         // out_data_B  <=rr_data_B_sum[7:0];
-
-//     end
-// end
-    
-endmodule
-```
-
-
-
-#### lut_multiplier.v
-
-```verilog
-module lut_multiplier#(
-    parameter r_value = 256,
-    parameter g_value = 256,
-    parameter b_value = 256
-) (
-    input [7:0] in,            // 8位输入值
-    output reg [12-1:0] r_out,    //12位输出结果（20位舍弃末8位）
-    output reg [12-1:0] g_out,    //12位输出结果（20位舍弃末8位）
-    output reg [12-1:0] b_out     //12位输出结果（20位舍弃末8位）
-);
-    // 定义查找表，256个条目，每个条目是16位
-    reg [32-1:0] r_lut [255:0];   
-    reg [32-1:0] g_lut [255:0];
-    reg [32-1:0] b_lut [255:0];
-
-    // 初始化查找表，存储预先计算的乘积结果
-    initial begin : init_lut
-        integer i;
-        for (i = 0; i < 256; i = i + 1) begin
-            r_lut[i] = i * r_value;  
-            g_lut[i] = i * g_value;  
-            b_lut[i] = i * b_value;  
-        end
-    end
-
-    // 查找并输出结果
-    always @(*) begin
-        r_out = r_lut[in][19:8];
-        g_out = g_lut[in][19:8];
-        b_out = b_lut[in][19:8];
-    end
-endmodule
-
-```
-
-
-
-#### gamma_top.v
-
-```verilog
-module gma_top #(
-    parameter source_h  = 1024,
-	parameter source_v  = 1024
-) (
-    input       clk,
-    input       reset_n,
-    input       in_vsync,		
-    input       in_hsync,		
-    input       in_den,			
-	input [7:0] in_data_R, 	
-    input [7:0] in_data_G, 	
-    input [7:0] in_data_B, 	
-
-    output       out_vsync,		
-    output       out_hsync,		
-    output       out_den,			
-	output [7:0] out_data_R, 	
-    output [7:0] out_data_G,
-    output [7:0] out_data_B
-);
-
-//对输入信号进行打拍处理
-reg             r_vsync;
-reg             r_hsync;
-reg             r_den;
-reg [8-1:0]     r_data_R;
-reg [8-1:0]     r_data_G;
-reg [8-1:0]     r_data_B;
-
-always @(posedge clk) begin
-    r_vsync     <=in_vsync;
-    r_hsync     <=in_hsync;
-    r_den       <=in_den;
-    r_data_R    <=in_data_R;
-    r_data_G    <=in_data_G;
-    r_data_B    <=in_data_B;
-end
-
-//校正
-wire [8-1:0]     r_data_R_fix;
-wire [8-1:0]     r_data_G_fix;
-wire [8-1:0]     r_data_B_fix;
-
-gamma_lut #(
-    .gamma_type(2)
-    //1 : gamma = 1
-    //2 : gamma = 2.2
-)gamma_lut_inst(
-    .in_R (r_data_R),       // 8位输入
-    .in_G (r_data_G),       // 8位输入
-    .in_B (r_data_B),       // 8位输入
-    .out_R(r_data_R_fix),       // 8位输出
-    .out_G(r_data_G_fix),       // 8位输出
-    .out_B(r_data_B_fix)        // 8位输出
-);
-
-
-//gamma输出
-assign out_vsync   = r_vsync;
-assign out_hsync   = r_hsync;
-assign out_den     = r_den;
-assign out_data_R  = r_data_R_fix;
-assign out_data_G  = r_data_G_fix;
-assign out_data_B  = r_data_B_fix;
-// always @(posedge clk or negedge reset_n) begin
-//     if (!reset_n) begin
-//         out_vsync   <=1'b0;
-//         out_hsync   <=1'b0;
-//         out_den     <=1'b0;
-//         out_data_R  <=8'd0;
-//         out_data_G  <=8'd0;
-//         out_data_B  <=8'd0;
-//     end else begin
-//         out_vsync   <=r_vsync;
-//         out_hsync   <=r_hsync;
-//         out_den     <=r_den;
-//         out_data_R  <=r_data_R_fix;
-//         out_data_G  <=r_data_G_fix;
-//         out_data_B  <=r_data_B_fix;
-
-//     end
-// end
-    
-endmodule
-```
-
-
-
-#### gamma_lut.v
-
-```verilog
-module gamma_lut#(
-    parameter  gamma_type = 1
-    //1 : gamma = 1
-    //2 : gamma = 2.2
-) (
-    input      [7:0] in_R,      // 8位输入
-    input      [7:0] in_G,      // 8位输入
-    input      [7:0] in_B,      // 8位输入
-    output reg [7:0] out_R,     // 8位输出
-    output reg [7:0] out_G,     // 8位输出
-    output reg [7:0] out_B      // 8位输出
-) ;
-    // // 定义查找表，256个条目，每个条目是8位
-    reg [7:0] lut [255:0] /* synthesis syn_preserve = 1 */;   
-
-    // 初始化查找表，存储预先计算的乘积结果
-    initial begin : init_lut
-        if(gamma_type==1)begin
-            $readmemh("gamma_lut1.txt", lut);
-        end else begin
-            $readmemh("gamma_lut2p2.txt", lut);
-        end
-    end
-
-    // 查找并输出结果
-    always @(*) begin
-        out_R = lut[in_R][7:0];
-        out_G = lut[in_G][7:0];
-        out_B = lut[in_B][7:0];
-    end
-endmodule
-
-```
-
